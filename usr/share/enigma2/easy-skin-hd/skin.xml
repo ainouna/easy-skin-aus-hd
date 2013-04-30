@@ -662,14 +662,11 @@
 		<widget source="session.CurrentService" render="Label" position="170,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
 			<convert type="EGExtraInfo">NetInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="577,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="600,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
 			<convert type="EGExtraInfo">CryptoBar</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="10,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
 			<convert type="EGExtraInfo">CamName</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="777,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
-			<convert type="EGExtraInfo">E-C-N</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="36,605" size="129,72" halign="center" font="Regular; 40" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2" valign="top" text="23:24">
 			<convert type="nBmExtendedServiceInfo">Number</convert>
