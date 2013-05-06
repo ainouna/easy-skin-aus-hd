@@ -3377,8 +3377,7 @@ self.autoResize()
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm"/>
-	</screen>	 
-
+	</screen>
 	<screen name="SleepTimerEdit" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Sleep Timer">
 		<ePixmap pixmap="skin_default/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 22" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -3401,18 +3400,6 @@ self.autoResize()
 		<widget position="650,195" size="510,384" name="config" backgroundColor="background" transparent="1" font="Regular;20" halign="center" zPosition="2" />
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm"/>
 	</screen> 
- 
- 
- 
-
- 
- 
- 
-
-
-
-
-	
 	<screen flags="wfNoBorder" name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor">
 		<eLabel backgroundColor="grey" position="80,125" size="300,420" zPosition="1"/>
 		<eLabel backgroundColor="black" position="81,126" size="298,418" zPosition="2"/>
@@ -3861,8 +3848,58 @@ self.autoResize()
 		<panel name="FullscreenBlue1Panel" />
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/key_menu.png" position="75,645" size="35,25" zPosition="2"/>	    
 	</screen>
-
-	
+	<screen name="WeatherPluginEntriesListConfigScreenfore" position="0,0" size="1280,720" title="WeatherPlugin: List of Entries (foreca.com)" backgroundColor="un44000000" flags="wfNoBorder">
+		<panel name="FullScreenWindow" />
+		<eLabel position="890, 80" size="320, 22" text="WeatherPlugin: List of Entries (foreca.com)" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>		
+		<widget name="city" position="605, 115" size="150,50" font="Regular;20" halign="left"/>
+		<widget name="language" position="735, 115" size="150,50" font="Regular;20" halign="left"/>
+		<widget position="590, 170" size="610, 415" name="entrylist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+	</screen>
+	<screen name="WeatherPluginEntryConfigScreenfore" position="0,0" size="1280,720" title="WeatherPlugin: Edit Entry (foreca.com)" backgroundColor="un44000000" flags="wfNoBorder">
+		<panel name="FullScreenWindow" />
+		<eLabel position="890, 80" size="320, 22" text="WeatherPlugin: Edit Entry (foreca.com)" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>		
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+	</screen>
+	<screen name="GmailSetup" position="0,0" size="1280,720" title="Gmail Settings" backgroundColor="un44000000" flags="wfNoBorder">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreenWindow" />
+		<eLabel position="890, 80" size="320, 22" text="Gmail - Settings" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>			
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget name="info" position="605, 115" size="150,50" font="Regular;20" halign="left"/>
+	</screen>
+	<screen name="Gmailbodyviewer" position="0,0" size="1280,720" title="Gmail - View Mail"  backgroundColor="un44000000" flags="wfNoBorder">
+		<widget name="titel" position="123,110" size="1020,30" zPosition="1" font="Regular;20" transparent="1"  foregroundColor="crypt_emm" backgroundColor="black" valign="center" halign="left" />
+		<widget name="author" position="123,140" size="1020,30" transparent="1" halign="left" font="Regular;20" foregroundColor="yellow"/>
+		<widget name="tdate" position="123,170" size="1020,30" transparent="1" halign="left" font="Regular;20" foregroundColor="yellow"/>
+		<widget name="text" position="center,210" size="1020,400" scrollbarMode="showOnDemand" transparent="1" zPosition="2" font="Regular;22" />
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreenWindow" />  
+	</screen>
+	<screen name="Gmailfeedsscrn" position="0,0" size="1280,720" title="Gmail - Mail List" backgroundColor="un44000000" flags="wfNoBorder">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreenWindow" />  
+		<eLabel position="890, 80" size="320, 22" text="Gmail - Mail List" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>					
+		<widget name="menu" position="center,center" size="1020,500" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
+		<widget name="info" position="center,center" zPosition="4" size="620,300" font="Regular;24" foregroundColor="#ffffff" transparent="1" halign="center" valign="center" />
+	</screen>
+		
  <screen name="PluginDetails" position="270, 90" size="700,576" title="Plugin details">
   <widget source="key_red" render="Label" position="120, 535" zPosition="1" size="200, 36" font="Regular;22" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1"/>
   <widget source="key_green" render="Label" position="390, 535" zPosition="1" size="200, 36" font="Regular;22" foregroundColor="green" halign="center" valign="center" backgroundColor="black" transparent="1"/>
