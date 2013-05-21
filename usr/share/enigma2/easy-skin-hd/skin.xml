@@ -3899,6 +3899,25 @@ self.autoResize()
 		<widget name="menu" position="center,center" size="1020,500" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
 		<widget name="info" position="center,center" zPosition="4" size="620,300" font="Regular;24" foregroundColor="#ffffff" transparent="1" halign="center" valign="center" />
 	</screen>
+	<screen name="GeneralSetup" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreenWindow" />  
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
+		<widget font="Regular;20" halign="center" name="description" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
+		<eLabel position="890, 80" size="320, 22" text="Setup" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
+		<widget name="list" position="515, 120" size="385, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_380x50.png" backgroundColorSelected="#41000000" transparent="1" />
+		<widget name="sublist" position="950,125" size="250,475" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_250x50.png" backgroundColorSelected="#41000000" transparent="1"/>
+		<!--<eLabel position="920,145" size="2,450" backgroundColor="darkgrey" zPosition="3" />-->
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_320x495.png" position="920,110" size="400,495" zPosition="-1"/>
+		
+	</screen> 
+	
+		
+		
+		
 		
  <screen name="PluginDetails" position="270, 90" size="700,576" title="Plugin details">
   <widget source="key_red" render="Label" position="120, 535" zPosition="1" size="200, 36" font="Regular;22" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1"/>
