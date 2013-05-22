@@ -500,18 +500,6 @@
 		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-
 	<screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent2" flags="wfNoBorder">
 		<widget source="session.CurrentService" render="Pixmap" position="813,8" size="462,75" zPosition="-1" alphatest="blend" pixmap="easy-skin-hd/weather_panel.png">
 			<convert type="wheaterSpz">Existe</convert>
@@ -3914,6 +3902,16 @@ self.autoResize()
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_320x495.png" position="920,110" size="400,495" zPosition="-1"/>
 		
 	</screen> 
+	<screen name="AP_ConfigScreen" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />  
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="AirPlayer Setup" foregroundColor="crypt_emm"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
 	
 		
 		
