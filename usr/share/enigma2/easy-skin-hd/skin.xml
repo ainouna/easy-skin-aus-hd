@@ -1515,6 +1515,129 @@
 		<eLabel position="55, 618" size="760, 2" backgroundColor="crypt_emm"/>
 		<widget source="introduction" render="Label" position="55, 575" size="740, 30" zPosition="10" font="Regular; 24" halign="center" valign="center" backgroundColor="black" transparent="1"/>
 	</screen>
+	<screen name="NetworkServiceSetup" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreenWindow" />
+		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
+		<widget name="lab1" position="200,235" size="150,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
+		<widget name="labactive" position="360,235" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
+		<widget name="lab2" position="200,305" size="150,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
+		<widget name="labstop" position="360,305" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="3"/>
+		<widget name="labrun" position="360,305" size="100,30" font="Regular;20" valign="center"  halign="center" backgroundColor="green" zPosition="4"/>
+	</screen>
+	<screen name="NetworkFtp" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullScreenWindow" />
+		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
+		<widget name="lab1" position="200,235" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
+		<widget name="lab2" position="200,305" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
+		<widget name="labstop" position="360,305" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="3"/>
+		<widget name="labrun" position="360,305" size="100,30" font="Regular;20" valign="center"  halign="center" backgroundColor="green" zPosition="4"/>
+	</screen>	
+	<screen name="NetworkNfs" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullScreenWindow" />
+		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
+		<widget name="lab1" position="200,235" size="150,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
+		<widget name="labactive" position="360,235" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
+		<widget name="lab2" position="200,305" size="150,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
+		<widget name="labstop" position="360,305" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="3"/>
+		<widget name="labrun" position="360,305" size="100,30" font="Regular;20" valign="center"  halign="center" backgroundColor="green" zPosition="4"/>
+	</screen>
+	<screen name="NetworkInadyn" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder">
+		<widget name="autostart" position="410,170" size="100,24" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labdisabled" position="510,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+		<widget name="labactive" position="510,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
+		<widget name="status" position="640,170" size="150,24" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labstop" position="790,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+		<widget name="labrun" position="790,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
+		<widget name="time" position="410,220" size="230,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="labtime" position="640,220" size="100,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
+		<widget name="username" position="410,270" size="150,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="labuser" position="560,170" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
+		<widget name="password" position="410,320" size="150,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="labpass" position="560,320" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
+		<widget name="alias" position="410,370" size="150,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="labalias" position="560,370" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
+		<widget name="sinactive" position="410,420" zPosition="1" pixmap="icons/lock_off.png" size="32,32"  alphatest="on" />
+		<widget name="sactive" position="410,420" zPosition="2" pixmap="icons/lock_on.png" size="32,32"  alphatest="on" />
+		<widget name="system" position="450,420" size="100,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="labsys" position="560,420" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
+		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_menu.png" transparent="1" alphatest="blend"/>
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreenWindow" />
+	</screen>
+	<screen name="InadynSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<widget name="HelpWindow" pixmap="vkey_icon.png" position="55, 155" zPosition="1" size="440,350" transparent="1" alphatest="on" />
+		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_text.png" transparent="1" alphatest="blend"/>		
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Setup" foregroundColor="crypt_emm"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+	<screen name="NetworkInadynLog" position="center,center" size="590,410">
+		<widget name="infotext" position="10,10" size="590,410" font="Console;16" />
+	</screen>
+	<screen name="NetworkMiniDLNA" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder">
+		<widget name="autostart" position="410,170" size="100,24" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labdisabled" position="510,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+		<widget name="labactive" position="510,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
+		<widget name="status" position="640,170" size="150,24" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labstop" position="790,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+		<widget name="labrun" position="790,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
+		<widget name="username" position="410,220" size="150,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="labuser" position="560,220" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
+		<widget name="iface" position="410,260" size="150,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="labiface" position="560,260" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
+		<widget name="port" position="410,300" size="150,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="labport" position="560,300" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
+		<widget name="serialno" position="410,340" size="150,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="labserialno" position="560,340" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
+		<widget name="sharedir" position="410,380" size="150,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="labsharedir" position="560,380" size="310,90" font="Regular;20" valign="top" backgroundColor="#4D5375"/>
+		<widget name="inotify" position="410,470" size="180,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="inotifyinactive" position="600,470" zPosition="1" pixmap="icons/lock_off.png" size="32,32"  alphatest="on" />
+		<widget name="inotifyactive" position="600,470" zPosition="2" pixmap="icons/lock_on.png" size="32,32"  alphatest="on" />
+		<widget name="tivo" position="410,500" size="180,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="tivoinactive" position="600,500" zPosition="1" pixmap="icons/lock_off.png" size="32,32"  alphatest="on" />
+		<widget name="tivoactive" position="600,500" zPosition="2" pixmap="icons/lock_on.png" size="32,32"  alphatest="on" />
+		<widget name="dlna" position="650,470" size="200,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="dlnainactive" position="770,470" zPosition="1" pixmap="icons/lock_off.png" size="32,32"  alphatest="on" />
+		<widget name="dlnaactive" position="770,470" zPosition="2" pixmap="icons/lock_on.png" size="32,32"  alphatest="on" />
+		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_menu.png" transparent="1" alphatest="blend"/>
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreenWindow" />
+	</screen>
+	<screen name="uShareSelection" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullScreenWindow" />  
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<widget name="checkList" position="590, 170" size="610, 415" transparent="1" scrollbarMode="showOnDemand" />
+	</screen>
+	<screen name="NetworkuShareSetup" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<widget name="HelpWindow" pixmap="vkey_icon.png" position="55, 155" zPosition="1" size="440,350" transparent="1" alphatest="on" />
+		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_text.png" transparent="1" alphatest="blend"/>
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Setup" foregroundColor="crypt_emm"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
 	<!--Wlan Status -->
 	<screen name="WlanStatus" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Wireless Network State">
  		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
@@ -1591,13 +1714,13 @@
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" source="key_green" render="Label" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#a08500" font="Regular;20" halign="center" source="key_yellow" render="Label" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<ePixmap position="825, 140" size="300, 450" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_scan.png" transparent="1" alphatest="on"/>
-	</screen>	
+	</screen>
 	<screen name="BouquetSelector" position="center,center" size="560,550" backgroundColor="background">
 		<widget name="menu" position="0,0" size="560,512" itemHeight="30" foregroundColor="white" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="ChannelContextMenu" position="center,center" size="560,550" backgroundColor="background">
 		<widget name="menu" position="0,0" size="580,480" itemHeight="30" foregroundColor="white" backgroundColor="background" transparent="0" scrollbarMode="showOnDemand" />
-	</screen>	
+	</screen>
 	<screen name="ChannelSelection" position="0, 0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Channel Selection">
 		<panel name="FullScreenWindow" />
 		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
