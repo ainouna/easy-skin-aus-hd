@@ -4056,7 +4056,7 @@ self.autoResize()
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
 		<widget font="Regular;20" halign="center" name="description" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
 		<eLabel position="890, 80" size="320, 22" text="Setup" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<widget name="list" position="515, 120" size="385, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_380x50.png" backgroundColor="#41000000" transparent="1" />
+		<widget name="list" position="515, 120" size="380, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_380x50.png" backgroundColor="#41000000" transparent="1" />
 		<widget name="sublist" position="950,125" size="250,475" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_250x50.png" backgroundColor="#41000000" transparent="1"/>
 		<!--<eLabel position="920,145" size="2,450" backgroundColor="darkgrey" zPosition="3" />-->
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_320x495.png" position="920,110" size="400,495" zPosition="-1"/>
