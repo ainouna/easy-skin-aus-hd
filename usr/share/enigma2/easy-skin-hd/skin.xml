@@ -81,7 +81,6 @@
 	</colors>
 	<fonts>
 		<font filename="ds_digital.ttf" name="LCD" scale="100"/>
-		<font filename="ds_digital.ttf" name="RegularLCD" scale="100"/>
 		<font filename="nmsbd.ttf" name="Regular" scale="100"/>
 		<font filename="ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1"/>
 		<font filename="tuxtxt.ttf" name="Console" scale="100"/>
@@ -4073,7 +4072,38 @@ self.autoResize()
 		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
-	
+	<screen name="EcasaPictureWall" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue2Panel" />
+
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Flickr Wall" foregroundColor="crypt_emm"/>
+
+		<!--<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/key_menu.png" position="75,645" size="35,25" zPosition="2"/>-->
+		<widget name="waitingtext" position="center,center" size="1280,720" backgroundColor="#41000000"  valign="center" halign="center" font="Regular;26" transparent="1"/>
+		
+		<widget name="image0"  position="110,110"  size="190,160"/>
+		<widget name="image1"  position="320,110"  size="190,160"/>
+		<widget name="image2"  position="530,110"  size="190,160"/>
+		<widget name="image3"  position="740,110"  size="190,160"/>
+		<widget name="image4"  position="950,110"  size="190,160"/>
+		
+		<widget name="image5"  position="110,280"  size="190,160"/>
+		<widget name="image6"  position="320,280" size="190,160"/>
+		<widget name="image7"  position="530,280" size="190,160"/>
+		<widget name="image8"  position="740,280" size="190,160"/>
+		<widget name="image9"  position="950,280" size="190,160"/>
+		
+		<widget name="image10" position="110,450"  size="190,160"/>
+		<widget name="image11" position="320,450" size="190,160"/>
+		<widget name="image12" position="530,450" size="190,160"/>
+		<widget name="image13" position="740,450" size="190,160"/>
+		<widget name="image14" position="950,450" size="190,160"/>
+		<!-- TODO: find some better picture -->
+		<widget name="highlight" position="110,272" size="190,5"/>
+	</screen>
 		
 		
 		
@@ -4550,4 +4580,5 @@ self.autoResize()
   <eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Simple RSS Reader" foregroundColor="crypt_emm"/>
   <widget source="summary" render="Label" position="400, 560" size="810, 95" font="Regular;16" transparent="1" backgroundColor="black"/>
  </screen>
+ 
 </skin>
