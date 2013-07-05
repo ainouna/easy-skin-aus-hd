@@ -4104,10 +4104,90 @@ self.autoResize()
 		<!-- TODO: find some better picture -->
 		<widget name="highlight" position="110,272" size="190,5"/>
 	</screen>
-		
-		
-		
-		
+	<screen name="ViewerSelectScreen" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreenWindow" />
+		<eLabel position="890, 80" size="320, 22" text="Web Cam Viewer" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>			
+		<widget position="590, 170" size="610, 415" name="list" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+	<screen name="WebcamViewer" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreenWindow" />
+		<eLabel position="890, 80" size="320, 22" text="Web Cam Viewer" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>			
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="menu" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+	<screen name="TravelWebcamviewer" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
+		<widget source="list" render="Listbox" position="590, 140" size="610, 445" zPosition="1" scrollbarMode="showOnDemand" transparent="1"  >
+			<convert type="TemplatedMultiContent">
+			{"templates":
+				{"default": (77,[
+						MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (100, 75), png = 4), # index 4 is the thumbnail
+						MultiContentEntryText(pos = (100, 1), size = (500, 22), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
+						MultiContentEntryText(pos = (100, 24), size = (300, 18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
+						MultiContentEntryText(pos = (100, 43), size = (300, 18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
+						MultiContentEntryText(pos = (400, 24), size = (200, 18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
+						MultiContentEntryText(pos = (400, 43), size = (200, 18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
+					]),
+				"status": (77,[
+						MultiContentEntryText(pos = (10, 1), size = (500, 28), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (10, 22), size = (500, 46), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
+					])
+				},
+				"fonts": [gFont("Regular", 22),gFont("Regular", 18),gFont("Regular", 26),gFont("Regular", 20)],
+				"itemHeight": 77
+			}
+			</convert>
+		</widget>
+		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
+		<eLabel position="890, 80" size="320, 22" text="Web Cam Travel" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>			
+
+		<widget name="count" position="25,585" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="page" position="170,585" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="currentnumbers" position="315,585" zPosition="5" size="240,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreenWindow" />
+	</screen>
+	<screen  name="GnewsFeedScreenList" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreenWindow" />
+		<eLabel position="890, 80" size="320, 22" text="Google News" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
+		<widget position="590, 150" size="610, 440" name="mylist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+	<screen  name="GnewsFeedScreenContent" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreenWindow" />
+		<widget position="890, 80" size="320, 22" name="info" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_radio.png" position="45, 155" size="300,500"/>
+		<widget position="360, 150" size="830, 430" name="mylist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_820x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+		<screen name="FMenusimple" position="center,center" size="920,600" title="Feed"  flags="wfNoBorder" >
+		<widget name="titel" position="20,0" zPosition="1" size="560,130" font="Regular;24" transparent="1"  backgroundColor="#00000000" foregroundColor="yellow" valign="center" halign="left" />
+		<widget name="leagueNumberWidget" position="830,60" size="90,30" transparent="1" halign="left" font="Regular;20" foregroundColor="yellow"/>
+		<ePixmap position="830,20" zPosition="4" size="60,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/arrows.png" transparent="1" alphatest="on" />
+		<ePixmap position="15,88" size="890,12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/slider.png" alphatest="blend" transparent="1" backgroundColor="transparent"/>
+		<widget name="text" position="20,100" size="880,400" font="Regular;22" />
+		<ePixmap position="15,510" size="890,5" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/slider.png" alphatest="blend" transparent="1" backgroundColor="transparent"/>
+	</screen>
+      
  <screen name="PluginDetails" position="270, 90" size="700,576" title="Plugin details">
   <widget source="key_red" render="Label" position="120, 535" zPosition="1" size="200, 36" font="Regular;22" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1"/>
   <widget source="key_green" render="Label" position="390, 535" zPosition="1" size="200, 36" font="Regular;22" foregroundColor="green" halign="center" valign="center" backgroundColor="black" transparent="1"/>
