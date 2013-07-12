@@ -4130,7 +4130,14 @@ self.autoResize()
 		<panel name="FullScreenWindow" />
 		<eLabel position="890, 80" size="320, 22" text="Web Cam Viewer" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>			
 		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="menu" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0) ],
+				"fonts": [gFont("Regular", 24)],
+				"itemHeight": 50
+				}
+			</convert>
+		</widget>
 	</screen>
 	<screen name="TravelWebcamviewer" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
 		<widget source="list" render="Listbox" position="590, 140" size="610, 445" zPosition="1" scrollbarMode="showOnDemand" transparent="1"  >
