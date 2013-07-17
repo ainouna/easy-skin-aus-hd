@@ -663,7 +663,7 @@
 		<widget source="session.CurrentService" render="Label" position="170,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
 			<convert type="EGExtraInfo">NetInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="600,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="730,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
 			<convert type="EGExtraInfo">CryptoBar</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="10,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
@@ -852,7 +852,7 @@
 		<widget source="session.CurrentService" render="Label" position="170,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
 			<convert type="EGExtraInfo">NetInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="600,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="730,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
 			<convert type="EGExtraInfo">CryptoBar</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="10,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
@@ -2518,6 +2518,19 @@ self.autoResize()
 		<widget font="Regular;23" name="channel" position="35,15" size="110,25" valign="center"/>
 		<widget font="Regular;23" halign="right" name="number" position="145,15" size="80,25" valign="center"/>
 		<widget font="Regular;23" halign="right" name="servicename" position="35,45" size="210,25" valign="center"/>
+	</screen>
+	<screen name="HistoryZapSelector" position="center,center" size="350,240" title="History zap...">
+		<widget source="menu" render="Listbox" position="0,0" size="350,240" scrollbarMode="showOnDemand" transparent="1" zPosition="2">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 0), size = (20, 22), flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (40, 0), size = (290, 22), font = 1, flags = RT_HALIGN_LEFT, text = 2)
+					],
+				 "fonts": [gFont("Regular", 22), gFont("Regular", 20)],
+				 "itemHeight": 22
+				}
+			</convert>
+		</widget>
 	</screen>
 	<!-- Parental control - change pin -->
 	<screen align="center" flags="wfNoBorder" name="ParentalControlChangePin" position="0,0" size="1280,720" title="Change pin code">
