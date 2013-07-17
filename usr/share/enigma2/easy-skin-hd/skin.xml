@@ -584,9 +584,9 @@
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Picon" position="51,525" size="100,60" zPosition="21" transparent="1" alphatest="on">
+		<!--<widget source="session.CurrentService" render="Picon" position="51,525" size="100,60" zPosition="21" transparent="1" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
-		</widget>
+		      </widget>-->
 		<widget source="session.Event_Now" render="Label" position="182,615" size="73,28" halign="left" font="Regular; 21" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
@@ -689,9 +689,6 @@
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="37,686" size="129,20" font="Regular; 14" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2">
-			<convert type="nBmExtendedServiceInfo">CamName</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" font="Regular;14" position="1143,605" size="50,20" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
@@ -773,9 +770,9 @@
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Picon" position="51,525" size="100,60" zPosition="21" transparent="1" alphatest="on">
+		<!--<widget source="session.CurrentService" render="Picon" position="51,525" size="100,60" zPosition="21" transparent="1" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
-		</widget>
+		      </widget>-->
 		<widget source="session.Event_Now" render="Label" position="182,615" size="73,28" halign="left" font="Regular; 21" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
@@ -879,9 +876,6 @@
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="37,686" size="129,20" font="Regular; 14" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2">
-			<convert type="nBmExtendedServiceInfo">CamName</convert>
-		</widget>
 		<widget source="session.CurrentService" render="Label" font="Regular;14" position="1143,605" size="50,20" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
@@ -927,7 +921,7 @@
 		<ePixmap position="51,525" size="100,60" zPosition="20" pixmap="easy-skin-hd/picon_default.png" alphatest="blend" />-->
 
 		<widget source="session.CurrentService" render="Label" position="62,41" size="92,30" halign="center" font="Regular; 20" backgroundColor="background" transparent="1" foregroundColor="grey" zPosition="20" noWrap="1" text="555">
-			<convert type="nBmExtendedServiceInfo">Number</convert>
+			<convert type="EGServiceName">ServiceNumber</convert>
 		</widget> 
 		<widget source="session.CurrentService" render="Label" position="156,41" size="414,30" font="Regular; 20" transparent="1" valign="center" zPosition="20" backgroundColor="black" halign="left" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2" noWrap="1">
 			<convert type="ServiceName">Name</convert>
