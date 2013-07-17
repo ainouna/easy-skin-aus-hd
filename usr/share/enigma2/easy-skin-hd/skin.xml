@@ -663,7 +663,7 @@
 		<widget source="session.CurrentService" render="Label" position="170,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
 			<convert type="EGExtraInfo">NetInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="730,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="750,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
 			<convert type="EGExtraInfo">CryptoBar</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="10,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
@@ -852,7 +852,7 @@
 		<widget source="session.CurrentService" render="Label" position="170,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
 			<convert type="EGExtraInfo">NetInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="730,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="750,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
 			<convert type="EGExtraInfo">CryptoBar</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="10,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
