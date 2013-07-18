@@ -916,7 +916,9 @@
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget> 
 		<ePixmap position="693,27" size="184,58" pixmap="easy-skin-hd/time_panel.png" alphatest="blend" zPosition="-1" />
-
+		<widget source="session.CurrentService" render="Picon" position="50,575" size="100,60" zPosition="21" transparent="1" alphatest="on">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
 		<!--<ePixmap position="32,515" size="131,83" zPosition="30" pixmap="easy-skin-hd/frame/frame_picon.png" transparent="1" alphatest="blend" />
 		<ePixmap position="51,525" size="100,60" zPosition="20" pixmap="easy-skin-hd/picon_default.png" alphatest="blend" />-->
 
