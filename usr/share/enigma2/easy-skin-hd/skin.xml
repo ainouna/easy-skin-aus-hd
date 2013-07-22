@@ -3236,9 +3236,30 @@ self.autoResize()
 		<widget source="session.CurrentService" render="Progress" position="23,35" size="170,15" zPosition="3" pixmap="easy-skin-hd/slider.png" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-	</screen>	
-	
-	
+	</screen>
+	<screen name="UserInterfacePositioner" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Choose your Skin">
+		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 22" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 22" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<eLabel position="890, 80" size="320, 22" text="OSD Positioner" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
+		<eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
+		<widget position="655, 185" size="350, 375" name="config" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" source="key_green" render="Label" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+		<widget backgroundColor="#a08500" font="Regular;20" halign="center" source="key_yellow" render="Label" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+		<widget backgroundColor="#18188b" font="Regular;20" halign="center" source="key_blue" render="Label" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+		<widget source="status" render="Label" position="410, 510" size="436, 24" zPosition="10" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1"/>
+		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm"/>
+	</screen>
 	<!-- Positioner setup -->
 	<screen flags="wfNoBorder" name="PositionerSetup" backgroundColor="background" position="0,0" size="1280,720" title="Positioner setup">
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
