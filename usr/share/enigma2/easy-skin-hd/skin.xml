@@ -2887,7 +2887,7 @@ self.autoResize()
 		<widget name="videofps" position="5,230" size="470,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="left" foregroundColor="blue"/>
 	</screen>
 	<!-- Subtitle area -->
-	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-2" backgroundColor="transparent" flags="wfNoBorder"/>
+	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent"/>    
 	<!-- TextBox -->
 	<screen name="TextBox" backgroundColor="background" position="0,0" size="550,400" title="Message...">
 		<widget font="Regular;18" name="text" position="0,0" size="540,390"/>
