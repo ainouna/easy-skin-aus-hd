@@ -1989,17 +1989,17 @@ self.autoResize()
 		<widget name="datetime" position="810,18" size="250,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="duration" position="1060,18" size="150,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="FullDescription" position="10,50" size="1260,140" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
-	</screen>
-	<screen name="EventViewContextMenu" position="center,center" size="560,550">
-		<widget name="menu"  render="Listbox" position="0,0" size="560,533" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
+	</screen>-->
+	<screen name="EventViewContextMenu" position="center,center" size="560,250">
+		<widget name="menu"  render="Listbox" position="0,0" size="580,233" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1">
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,0), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (560,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
 				"fonts": [gFont("Regular",28)],
 				"itemHeight": 38
 				}
 			</convert>
 		</widget>
-	</screen>-->
+	</screen>
 <!-- Harddisk selection -->
         <screen flags="wfNoBorder" name="HarddiskSelection" backgroundColor="un44000000" position="0,0" size="1280,720" title="Select HDD">
 		<panel name="FullScreenWindow" />
