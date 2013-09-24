@@ -2849,12 +2849,12 @@ self.autoResize()
 		<widget backgroundColor="#44000000" font="Console;16" halign="center" name="help2"  position="260,195" size="120,30" valign="center"/>
 	</screen>
  	<!-- Picture in picture -->
-	<screen flags="wfNoBorder" name="PictureInPicture" position="800,60" size="240,192" zPosition="-1">
-		<widget backgroundColor="transparent" name="video" position="0,0" size="240,192"/>
+	<screen name="PictureInPicture" position="400,60" zPosition="-1" size="240,192" flags="wfNoBorder">
+		<widget name="video" position="0,0" size="240,192" backgroundColor="transparent" />
 	</screen>
 	<!-- Picture in picture setup -->
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="PiPSetup" position="328,400" size="624,202" title="PiPSetup">
-		<widget font="Regular;23" name="text" position="0,0" size="600,150"/>
+	<screen name="PiPSetup" position="center,center" size="600,150" backgroundColor="transparent" flags="wfNoBorder" >
+		<widget name="text" position="0,0" size="600,150" font="Regular;23" />
 	</screen>
 	<screen name="SimpleChannelSelection" position="90,90" backgroundColor="background" size="1100,570" title="Channel Selection">
 		<eLabel position="800, 25" size="300, 22" text="Channel Selection" font="Regular; 20" transparent="1" zPosition="2"/>
