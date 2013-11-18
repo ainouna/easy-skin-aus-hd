@@ -1014,9 +1014,9 @@
 		<eLabel position="0,565" size="1281,78" zPosition="-4" backgroundColor="abackground" transparent="0" />
 		<eLabel position="86, 676" size="180, 1" backgroundColor="crypt_emm" zPosition="2"/>
 		<ePixmap position="20,20" zPosition="-1" size="95,75" transparent="1" pixmap="easy-skin-hd/frame/frame80_95x75.png" />
-		<widget name="statusicon" position="45,45" size="20,20" zPosition="3" alphatest="on" pixmaps="easy-skin-hd/icon/play.png,easy-skin-hd/icon/pause.png,easy-skin-hd/icon/stop.png,easy-skin-hd/icon/forward.png,easy-skin-hd/icon/backward.png,easy-skin-hd/icon/slow.png,easy-skin-hd/icon/blank.png" />
+		<widget name="statusicon" position="45,45" size="20,20" zPosition="3" alphatest="on" pixmaps="easy-skin-hd/icons/play.png,easy-skin-hd/icons/pause.png,easy-skin-hd/icons/stop.png,easy-skin-hd/icons/forward.png,easy-skin-hd/icons/backward.png,easy-skin-hd/icons/slow.png,easy-skin-hd/icons/blank.png" />
 		<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="4" />	      
-		<widget position="196, 620" size="36,36" source="session.RecordState" render="Pixmap" pixmap="easy-skin-hd/icon/i_rec.png" zPosition="2" alphatest="on">
+		<widget position="196, 620" size="36,36" source="session.RecordState" render="Pixmap" pixmap="easy-skin-hd/icons/i_rec.png" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<ePixmap pixmap="easy-skin-hd/infobar/ico_dolby_off.png" position="82, 620" size="57, 36" zPosition="1" alphatest="on"/>
@@ -1103,15 +1103,15 @@
 		<!-- Chapter info -->
 		<widget name="chapterLabel" position="184, 645" size="380, 22" font="Regular;20" foregroundColor="unc3c3c9" backgroundColor="black" transparent="1"/>
 		<!-- Icons for help -->
-		<ePixmap position="1056, 594" pixmap="easy-skin-hd/icon/icon_rewind.png" size="36,36" alphatest="on"/>
-		<ePixmap position="1094, 594" pixmap="easy-skin-hd/icon/icon_play.png" size="36,36" alphatest="on"/>
-		<ePixmap position="1132, 594" pixmap="easy-skin-hd/icon/icon_pause.png" size="36,36" alphatest="on"/>
-		<ePixmap position="1170, 594" pixmap="easy-skin-hd/icon/icon_forward.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1056, 594" pixmap="easy-skin-hd/icons/icon_rewind.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1094, 594" pixmap="easy-skin-hd/icons/icon_play.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1132, 594" pixmap="easy-skin-hd/icons/icon_pause.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1170, 594" pixmap="easy-skin-hd/icons/icon_forward.png" size="36,36" alphatest="on"/>
 		<!-- Audio icon (is there multichannel audio?) -->
-		<ePixmap pixmap="easy-skin-hd/icon/i_dolby.png" position="1018, 594" zPosition="1" size="36,36" alphatest="on"/>
+		<ePixmap pixmap="easy-skin-hd/icons/i_dolby.png" position="1018, 594" zPosition="1" size="36,36" alphatest="on"/>
 		<widget name="audioLabel" position="968, 645" size="130,22" font="Regular;18" backgroundColor="black" shadowColor="#1d354c" shadowOffset="-1,-1" transparent="1" valign="bottom"/>
 		<!-- Subtitle track info -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icon/i_txt.png" position="980, 594" zPosition="1" size="36,36" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_txt.png" position="980, 594" zPosition="1" size="36,36" alphatest="on">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -1749,36 +1749,36 @@
 			    foregroundColorServiceNotAvail="#777777"
 			    picServiceEventProgressbar="slider/slider_1280x10_hfg.png"    
 			    serviceItemHeight="50" serviceNumberFont="Regular;23" serviceNameFont="Regular;22" serviceInfoFont="Regular;21" scrollbarMode="always"/>
-	<!--	<ePixmap pixmap="easy-skin-hd/icon/i_dolby_no.png" position="296, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icon/i_dolby.png" position="296, 110" size="36,36" zPosition="2" alphatest="on">
+	<!--	<ePixmap pixmap="easy-skin-hd/icons/i_dolby_no.png" position="296, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_dolby.png" position="296, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icon/i_format_no.png" position="259, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icon/i_format.png" position="259, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="easy-skin-hd/icons/i_format_no.png" position="259, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_format.png" position="259, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icon/i_txt_no.png" position="333, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icon/i_txt.png" position="333, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="easy-skin-hd/icons/i_txt_no.png" position="333, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_txt.png" position="333, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icon/i_fta.png" position="370, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icon/i_crypt.png" position="370, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="easy-skin-hd/icons/i_fta.png" position="370, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_crypt.png" position="370, 110" size="36,36" zPosition="2" alphatest="on">
 			  <convert type="ServiceInfo">IsCrypted</convert>
 			  <convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icon/i_sub_no.png" position="222, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icon/i_sub.png" position="222, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="easy-skin-hd/icons/i_sub_no.png" position="222, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_sub.png" position="222, 110" size="36,36" zPosition="2" alphatest="on">
 			  <convert type="ServiceInfo">SubservicesAvailable</convert>
 			  <convert type="ConditionalShowHide"/>
 		</widget>
-		<widget position="445, 110" size="36,36" source="session.RecordState" render="Pixmap" pixmap="easy-skin-hd/icon/i_rec.png" zPosition="1">
+		<widget position="445, 110" size="36,36" source="session.RecordState" render="Pixmap" pixmap="easy-skin-hd/icons/i_rec.png" zPosition="1">
 			  <convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icon/i_sd.png" position="1170,565" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icon/i_hd.png" position="407, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="easy-skin-hd/icons/i_sd.png" position="1170,565" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_hd.png" position="407, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">800,2000</convert>
 			<convert type="ConditionalShowHide"/>
@@ -1823,7 +1823,7 @@
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<ePixmap position="50, 592" size="15, 10" pixmap="easy-skin-hd/icon/icon_event.png" alphatest="on"/>
+		<ePixmap position="50, 592" size="15, 10" pixmap="easy-skin-hd/icons/icon_event.png" alphatest="on"/>
 	</screen>
 	<!-- Channel selection - Radio -->
 	<screen name="ChannelSelectionRadio" position="150,100" size="980,560" title="Channel Selection" zPosition="-2">
@@ -2731,7 +2731,7 @@ self.autoResize()
 		<widget name="header" position="890, 80" size="320, 22" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
 		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x400.png" position="150,195" size="400,400"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/icon/dish_scan.png" position="220,250" size="119,110" transparent="1" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/icons/dish_scan.png" position="220,250" size="119,110" transparent="1" zPosition="1"/>
 		<widget font="Regular;23" name="introduction" position="350,260" size="90,30" transparent="1" zPosition="2"/>
 		<widget font="Regular;19" halign="center" position="260,325" render="Label" size="260,20" source="Frontend" transparent="1" valign="center" zPosition="2">
 			<convert type="FrontendInfo">SNRdB</convert>
@@ -2751,11 +2751,11 @@ self.autoResize()
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
 		<eLabel font="Regular;21" name="lock" position="200,530" size="240,22" text="Lock:"/>
-		<widget alphatest="on" pixmap="easy-skin-hd/icon/lock_on.png" position="463,525" render="Pixmap" size="80,23" source="Frontend" zPosition="1">
+		<widget alphatest="on" pixmap="easy-skin-hd/icons/lock_on.png" position="463,525" render="Pixmap" size="80,23" source="Frontend" zPosition="1">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/icon/lock_off.png" position="463,525" render="Pixmap" size="80,23" source="Frontend" zPosition="1">
+		<widget alphatest="on" pixmap="easy-skin-hd/icons/lock_off.png" position="463,525" render="Pixmap" size="80,23" source="Frontend" zPosition="1">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
@@ -2778,17 +2778,17 @@ self.autoResize()
 		<eLabel backgroundColor="white" position="665,180" size="450,2" zPosition="2"/>
 		<widget backgroundColor="#33000000" name="servicelist" position="650,195" selectionDisabled="1" size="485,500" transparent="1" zPosition="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x300.png" position="150,195" size="400,300" zPosition="-1"/>
-		<widget alphatest="on" pixmap="easy-skin-hd/icon/scan-s.png" position="170,210" render="Pixmap" size="64,64" source="FrontendInfo" transparent="1" zPosition="1">
+		<widget alphatest="on" pixmap="easy-skin-hd/icons/scan-s.png" position="170,210" render="Pixmap" size="64,64" source="FrontendInfo" transparent="1" zPosition="1">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/icon/scan-c.png" position="170,210" render="Pixmap" size="64,64" source="FrontendInfo" transparent="1" zPosition="1">
+		<widget alphatest="on" pixmap="easy-skin-hd/icons/scan-c.png" position="170,210" render="Pixmap" size="64,64" source="FrontendInfo" transparent="1" zPosition="1">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/icon/scan-t.png" position="170,210" render="Pixmap" size="64,64" source="FrontendInfo" transparent="1" zPosition="1">
+		<widget alphatest="on" pixmap="easy-skin-hd/icons/scan-t.png" position="170,210" render="Pixmap" size="64,64" source="FrontendInfo" transparent="1" zPosition="1">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide"/>
@@ -2881,13 +2881,13 @@ self.autoResize()
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<!-- Channellogo (Picon) -->
-		<ePixmap pixmap="easy-skin-hd/icon/picon_default.png" position="70,532" size="70,60" zPosition="2"/>
+		<ePixmap pixmap="easy-skin-hd/icons/picon_default.png" position="70,532" size="70,60" zPosition="2"/>
 		<widget backgroundColor="#33294a6b" font="Regular;30" halign="left" name="CurrentSubserviceNumber" position="185,485" shadowColor="black" shadowOffset="-1,-1" size="50,34" transparent="1" valign="bottom" zPosition="2"/>
 		<widget backgroundColor="#33294a6b" font="Regular;30" halign="left" position="235,485" render="Label" shadowColor="black" shadowOffset="-1,-1" size="600,34" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<!-- Blinking pixmap (recording in progress?) -->
-		<widget pixmap="easy-skin-hd/icon/icon_rec.png" position="1150,556" render="Pixmap" size="48,48" source="session.RecordState" zPosition="1">
+		<widget pixmap="easy-skin-hd/icons/icon_rec.png" position="1150,556" render="Pixmap" size="48,48" source="session.RecordState" zPosition="1">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen> 
@@ -3229,7 +3229,7 @@ self.autoResize()
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm"/>
 	</screen>	
 	<screen name="PTSTimeshiftState" position="center,40"  backgroundColor="background" size="420,70" >
-		<widget name="statusicon" position="12,5" size="20,20" pixmaps="easy-skin-hd/icon/play.png,easy-skin-hd/icon/pause.png,easy-skin-hd/icon/stop.png,easy-skin-hd/icon/forward.png,easy-skin-hd/icon/backward.png,easy-skin-hd/icon/slow.png" zPosition="5" alphatest="on" />
+		<widget name="statusicon" position="12,5" size="20,20" pixmaps="easy-skin-hd/icons/play.png,easy-skin-hd/icons/pause.png,easy-skin-hd/icons/stop.png,easy-skin-hd/icons/forward.png,easy-skin-hd/icons/backward.png,easy-skin-hd/icons/slow.png" zPosition="5" alphatest="on" />
 		<widget name="speed" position="35,7" size="80,15" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="5" />
 		<widget source="session.CurrentService" render="Label" position="95,5" size="200,27" font="Regular;20" halign="left" foregroundColor="white"  backgroundColor="background">
 			<convert type="ServicePosition">Position</convert>
@@ -3245,7 +3245,7 @@ self.autoResize()
 		<widget name="eventname" position="60,49" zPosition="4" size="320,20" font="Regular;18" halign="center" backgroundColor="background"/>
 	</screen>
 	<screen name="TimeshiftState" position="90,50"  backgroundColor="background" size="216,74" >
-		<widget name="statusicon" position="20,15" size="20,20" zPosition="3" alphatest="on" pixmaps="easy-skin-hd/icon/play.png,easy-skin-hd/icon/pause.png,easy-skin-hd/icon/stop.png,easy-skin-hd/icon/forward.png,easy-skin-hd/icon/backward.png,easy-skin-hd/icon/slow.png" />
+		<widget name="statusicon" position="20,15" size="20,20" zPosition="3" alphatest="on" pixmaps="easy-skin-hd/icons/play.png,easy-skin-hd/icons/pause.png,easy-skin-hd/icons/stop.png,easy-skin-hd/icons/forward.png,easy-skin-hd/icons/backward.png,easy-skin-hd/icons/slow.png" />
 		<widget name="speed" position="45,18" size="80,18" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="4" />
 		<widget name="state" position="0,0" size="0,0" />
 		<widget source="session.CurrentService" render="Label" position="88,17" size="50,20" font="Regular;17" foregroundColor="foreground" backgroundColor="background" halign="center" transparent="1" zPosition="2" valign="top">
@@ -3377,10 +3377,10 @@ self.autoResize()
  <!-- MyTubePlayer -->
 	<screen name="MyTubePlayer" position="0,0" zPosition="-1" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap pixmap="easy-skin-hd/infobar.png" position="0, 70" size="1280,720" zPosition="-1"/>
-		<ePixmap position="82, 601" zPosition="0" size="36,36" pixmap="easy-skin-hd/icon/icon_rewind.png" alphatest="on" transparent="1"/>
-		<ePixmap position="120, 601" zPosition="0" size="36,36" pixmap="easy-skin-hd/icon/icon_play.png" alphatest="on" transparent="1"/>
-		<ePixmap position="158, 601" zPosition="0" size="36,36" pixmap="easy-skin-hd/icon/icon_pause.png" alphatest="on" transparent="1"/>
-		<ePixmap position="196, 601" zPosition="0" size="36,36" pixmap="easy-skin-hd/icon/icon_forward.png" alphatest="on" transparent="1"/>
+		<ePixmap position="82, 601" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_rewind.png" alphatest="on" transparent="1"/>
+		<ePixmap position="120, 601" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_play.png" alphatest="on" transparent="1"/>
+		<ePixmap position="158, 601" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_pause.png" alphatest="on" transparent="1"/>
+		<ePixmap position="196, 601" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_forward.png" alphatest="on" transparent="1"/>
 		<eLabel position="55, 659" size="205, 1" backgroundColor="crypt_emm" zPosition="2"/>
 		<widget source="session.CurrentService" render="Label" font="Regular; 18" position="93, 665" size="57, 20" halign="right" transparent="1" foregroundColor="white" backgroundColor="black">
 			<convert type="ServiceInfo">VideoWidth</convert>
@@ -3642,11 +3642,11 @@ self.autoResize()
 		<widget name="SeekState" position="365,585" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>
 		<widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="easy-skin-hd/position_arrow.png:3,5" position="479,587" size="696,20" zPosition="3"/>
 		<eLabel backgroundColor="black" font="Regular;20" position="1060,630" size="140,22" text="OK = Menu" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="easy-skin-hd/icon/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
-		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icon/icon_play.png"/>
-		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icon/icon_pause.png"/>
-		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icon/icon_forward.png"/>
-		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icon/icon_stop.png"/>
+		<ePixmap pixmap="easy-skin-hd/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
+		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_play.png"/>
+		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_pause.png"/>
+		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_forward.png"/>
+		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_stop.png"/>
 	</screen>
 	<screen name="MovieContextMenu" position="340,180" size="600,400" title="Movielist menu">
 		<widget name="menu" position="20,20" size="560,360" scrollbarMode="showOnDemand" transparent="1"/>
@@ -3677,11 +3677,11 @@ self.autoResize()
 		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icon/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
-		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icon/icon_play.png"/>
-		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icon/icon_pause.png"/>
-		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icon/icon_forward.png"/>
-		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icon/icon_stop.png"/>
+		<ePixmap pixmap="easy-skin-hd/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
+		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_play.png"/>
+		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_pause.png"/>
+		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_forward.png"/>
+		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_stop.png"/>
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="un808888" pointer="easy-skin-hd/position_arrow.png:3,5" foregroundColor="black"/>
 		<widget name="SeekState" position="365, 585" zPosition="10" size="100,25" halign="center" font="Regular;20" valign="center" transparent="1"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
@@ -4668,10 +4668,10 @@ self.autoResize()
  
  <screen name="MusicExplorer" position="0, 70" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" zPosition="-1">
   <ePixmap position="0, 0" zPosition="-1" size="1280,720" pixmap="easy-skin-hd/infobar.png"/>
-  <ePixmap position="82, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icon/icon_rewind.png" alphatest="on" transparent="1"/>
-  <ePixmap position="120, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icon/icon_play.png" alphatest="on" transparent="1"/>
-  <ePixmap position="158, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icon/icon_pause.png" alphatest="on" transparent="1"/>
-  <ePixmap position="196, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icon/icon_forward.png" alphatest="on" transparent="1"/>
+  <ePixmap position="82, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_rewind.png" alphatest="on" transparent="1"/>
+  <ePixmap position="120, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_play.png" alphatest="on" transparent="1"/>
+  <ePixmap position="158, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_pause.png" alphatest="on" transparent="1"/>
+  <ePixmap position="196, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_forward.png" alphatest="on" transparent="1"/>
   <widget source="session.CurrentService" render="Label" position="55, 490" size="1220, 26" font="Named; 20" halign="center" valign="center" noWrap="1" backgroundColor="black" transparent="1" foregroundColor="white">
    <convert type="ServiceName">Name</convert>
   </widget>
@@ -4694,7 +4694,7 @@ self.autoResize()
   <widget source="global.CurrentTime" render="Label" position="1068, 595" size="140, 20" font="Named; 16" valign="top" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
    <convert type="ClockToText">Format:%d.%m.%Y</convert>
   </widget>
-  <ePixmap position="234, 520" size="36, 36" pixmap="easy-skin-hd/icon/icon_stop.png" alphatest="on" transparent="1"/>
+  <ePixmap position="234, 520" size="36, 36" pixmap="easy-skin-hd/icons/icon_stop.png" alphatest="on" transparent="1"/>
  </screen>
  <screen name="RSSSetup" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Simple RSS Reader Setup">
   <ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
