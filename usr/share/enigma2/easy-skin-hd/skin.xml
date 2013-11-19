@@ -2776,7 +2776,7 @@ self.autoResize()
 		<eLabel font="Regular;28" position="675,140" size="485,35" text="Scanned services:" transparent="1" zPosition="2"/>
 		
 		<eLabel backgroundColor="white" position="665,180" size="450,2" zPosition="2"/>
-		<widget backgroundColor="#33000000" name="servicelist" position="650,195" selectionDisabled="1" size="485,500" transparent="1" zPosition="1"/>
+		<widget backgroundColor="#33000000" name="servicelist" position="650,195" selectionDisabled="1" size="485,400" transparent="1" zPosition="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x300.png" position="150,195" size="400,300" zPosition="-1"/>
 		<widget alphatest="on" pixmap="easy-skin-hd/icons/scan-s.png" position="170,210" render="Pixmap" size="64,64" source="FrontendInfo" transparent="1" zPosition="1">
 			<convert type="FrontendInfo">TYPE</convert>
