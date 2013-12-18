@@ -2798,6 +2798,7 @@ self.autoResize()
 		<widget font="Regular;20" halign="center" name="transponder" position="170,360" size="360,25" transparent="1" zPosition="1"/>				
 		<widget font="Regular;20" halign="center" name="scan_state" position="170,410" size="360,45" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;20" halign="center" name="pass" position="170,410" size="360,45" transparent="1" valign="center" zPosition="1"/>
+		<widget name="done_text" position="center, center" size="720, 100" font="Named; 29" halign="center" zPosition="12" foregroundColor="white" backgroundColor="black"/>
 	</screen>
 	<!-- IMDB -->
 	<screen name="IMDB" flags="wfNoBorder" position="0,0" size="1280, 720" backgroundColor="un44000000" title="IMDb Details Plugin">
