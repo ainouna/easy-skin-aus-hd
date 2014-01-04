@@ -2453,7 +2453,7 @@ self.autoResize()
 		<eLabel backgroundColor="white" position="665,80" size="450,2" zPosition="2"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_495x310.png" position="645,95" size="495,310"/>
-		<widget font="Regular;20" halign="center" name="text" position="665,115" size="455,190" transparent="1" valign="center" zPosition="12"/>	
+		<widget font="Regular;20" halign="center" name="text" position="665,115" size="455,240" transparent="1" valign="center" zPosition="12"/>
 		<widget enableWrapAround="1" position="650,425" size="510,250" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
