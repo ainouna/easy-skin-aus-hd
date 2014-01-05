@@ -1183,6 +1183,16 @@
 		<eLabel backgroundColor="#a08500" font="Regular;20" halign="center" position="673, 635" size="200,36" text="Pause" transparent="1" valign="center" zPosition="3"/>
 		<eLabel backgroundColor="#18188b" font="Regular;20" halign="center" position="948, 635" size="200,36" text="Forward" transparent="1" valign="center" zPosition="3"/>
 	</screen>
+	<screen name="MediaPlayerDirectoryBrowser" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="File Browser">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="File Browser" foregroundColor="crypt_emm"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="filelist" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>	
         <screen flags="wfNoBorder"  name="LastFMScreenMain" position="0, 0" size="1280, 720" backgroundColor="background" title="Last.FM" >
 	    	<panel name="FullScreenWindow" /> 
 		<widget font="Regular;18" foregroundColor="#777777" halign="right" name="artist" position="100,420" size="100,19" transparent="1" valign="top" zPosition="2"/>
