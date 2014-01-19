@@ -1350,8 +1350,7 @@
 	<screen name="About" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="About">
 		<panel name="FullScreenWindow" />
 		<eLabel text="About" position="50, 80" size="1160, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" foregroundColor="crypt_emm"/>
-		<eLabel text="INI-Series" position="680,140" size="465,32" font="Regular;25" halign="center" backgroundColor="black" transparent="1"/>
-		<widget name="AboutScrollLabel" position="630,190" size="580,379" font="Regular;22" halign="center" zPosition="2" transparent="1"/>
+		<widget name="AboutScrollLabel" position="630,140" size="580,379" font="Regular;22" halign="left" zPosition="2" transparent="1"/>
 		<ePixmap position="250,155" size="300,470" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>		
 	</screen>
 	<screen name="AboutOE" position="center,center" size="560,450">
@@ -4309,7 +4308,23 @@ self.autoResize()
 		<widget name="name" position="914,368" size="330,30" foregroundColor="#00ffffff" backgroundColor="#26181d20" transparent="1" font="mediaportal;28" valign="top" halign="center" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/setup.png" position="989,424"  zPosition="1" size="176,200" alphatest="on" />
 	</screen>
-
+	<!-- Setup -->
+	<screen name="TranscodingSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Transcoding Setup">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Transcoding Setup" foregroundColor="crypt_emm"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
+		<widget font="Regular;20" halign="center" name="description" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
+		<widget font="Regular;20" halign="center" name="text" position="590,510" size="610, 30" transparent="1" valign="center" zPosition="2"/>
+	</screen>
+	
+	
+	
  <screen name="PluginDetails" position="270, 90" size="700,576" title="Plugin details">
   <widget source="key_red" render="Label" position="120, 535" zPosition="1" size="200, 36" font="Regular;22" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1"/>
   <widget source="key_green" render="Label" position="390, 535" zPosition="1" size="200, 36" font="Regular;22" foregroundColor="green" halign="center" valign="center" backgroundColor="black" transparent="1"/>
