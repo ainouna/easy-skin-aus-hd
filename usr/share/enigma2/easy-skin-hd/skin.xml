@@ -2059,14 +2059,14 @@ self.autoResize()
 	<!-- Help menu -->
 	<screen flags="wfNoBorder" name="HelpMenu" backgroundColor="un44000000" position="0,0" size="1280,720" title="Menu">
 		<panel name="FullScreenWindow" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Help..." foregroundColor="crypt_emm"/>		
-		<widget name="list" position="650,195" scrollbarMode="showOnDemand" size="510,400" transparent="1" zPosition="2"/>
-		<widget alphatest="on" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" position="250,140" size="154,500" zPosition="10"/>
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Help..." foregroundColor="crypt_emm"/>
+		<widget name="list" position="650,135" scrollbarMode="showOnDemand" size="510,430" transparent="1" zPosition="2"/>
+		<widget alphatest="on" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" position="250,110" size="154,500" zPosition="10"/>
 		<widget alphatest="on" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
 		<widget alphatest="on" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
 		<widget alphatest="on" name="arrowup" pixmap="easy-skin-hd/arrowup.png" position="-100,-100" size="37,70" zPosition="11"/>
 		<widget alphatest="on" name="arrowup2" pixmap="easy-skin-hd/arrowup.png" position="-100,-100" size="37,70" zPosition="11"/>
-		<widget font="Regular;25" foregroundColor="yellow" halign="center" name="long_key" position="650,610" size="500,50"/>
+		<widget font="Regular;25" foregroundColor="yellow" halign="center" name="long_key" position="650,580" size="500,50"/>
 	</screen>
 	<screen name="InputBox" position="340,100" size="600,560" title="Search">
 		<widget name="text" position="10,30" size="580,30" font="Regular;22" halign="center" transparent="1"/>
@@ -2276,8 +2276,9 @@ self.autoResize()
 	</screen>
 	<!--Netowrk Wizard -->
  	<screen flags="wfNoBorder" name="NetworkWizard" backgroundColor="background" position="0,0" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>
-		<eLabel font="Regular;28" position="675,40" size="485,35" text="Welcome..." transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
+		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
 		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -2285,24 +2286,21 @@ self.autoResize()
 		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<eLabel backgroundColor="white" position="665,80" size="450,2" zPosition="2"/>
-		<widget alphatest="on" name="wizard" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_495x310.png" position="645,95" size="495,310"/>
-		<widget font="Regular;20" halign="center" name="text" position="665,115" size="455,270" transparent="1" valign="center" zPosition="12"/>
-		<!--<widget name="HelpWindow" position="150,195" zPosition="1" transparent="1" alphatest="on"/>-->
-		<widget enableWrapAround="1" position="650,425" size="510,250" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
+		<widget font="Regular;20" name="text" position="565,115" size="555,215" transparent="1" valign="center" halign="center" zPosition="12"/>
+		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (415, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (435, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
+						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
 					],
 				"fonts": [gFont("Regular", 20)],
 				"itemHeight": 50
 				}
 			</convert>
 		</widget>
-		<widget position="650,425" size="500,250" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
 		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
 		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
@@ -2310,11 +2308,13 @@ self.autoResize()
 		<widget position="-100,-100" size="37,70" name="arrowup" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
 		<widget position="-100,-100" size="37,70" name="arrowup2" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
 		<widget backgroundColor="#41000000" font="Regular;20" halign="center" name="languagetext" position="150,575" size="200,36" transparent="1" valign="center" zPosition="12"/>-->
+		<!--<widget name="HelpWindow" position="150,195" zPosition="1" transparent="1" alphatest="on"/>-->
 	</screen>
 	<!-- Default wizard -->
 	<screen flags="wfNoBorder" name="DefaultWizard" backgroundColor="background" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>
-		<eLabel font="Regular;28" position="675,40" size="485,35" text="Welcome..." transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
+		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
 		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -2322,22 +2322,21 @@ self.autoResize()
 		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<eLabel backgroundColor="white" position="665,80" size="450,2" zPosition="2"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_495x310.png" position="645,95" size="495,310"/>
-		<widget font="Regular;20" halign="center" name="text" position="665,115" size="455,170" transparent="1" valign="center" zPosition="12"/>
-		<widget enableWrapAround="1" position="650,425" size="510,250" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
+		<widget font="Regular;20" halign="center" name="text" position="565,115" size="555,215" transparent="1" valign="center" zPosition="12"/>
+		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (415, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (435, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
+						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
 					],
 				"fonts": [gFont("Regular", 20)],
 				"itemHeight": 50
 				}
 			</convert>
 		</widget>
-		<widget position="650,425" size="510,250" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
 		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
 		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
@@ -2348,8 +2347,9 @@ self.autoResize()
 	</screen>
 	<!-- DefaultSatLists -->
 	<screen flags="wfNoBorder" backgroundColor="background"  name="DefaultSatLists" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>
-		<eLabel font="Regular;28" position="675,40" size="485,35" text="Welcome..." transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
+		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
 		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -2357,22 +2357,21 @@ self.autoResize()
 		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<eLabel backgroundColor="white" position="665,80" size="450,2" zPosition="2"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_495x310.png" position="645,95" size="495,310"/>
-		<widget font="Regular;20" halign="center" name="text" position="665,115" size="455,170" transparent="1" valign="center" zPosition="12"/>
-		<widget enableWrapAround="1" position="650,425" size="510,250" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
+		<widget font="Regular;20" halign="center" name="text" position="565,115" size="555,215" transparent="1" valign="center" zPosition="12"/>
+		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (415, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (435, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
+						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
 					],
 				"fonts": [gFont("Regular", 20)],
 				"itemHeight": 50
 				}
 			</convert>
 		</widget>
-		<widget position="650,425" size="510,250" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
 		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
 		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
@@ -2383,8 +2382,9 @@ self.autoResize()
 	</screen>
 	<!-- DreamPackageWizard -->
 	<screen flags="wfNoBorder" backgroundColor="background" name="DreamPackageWizard" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>
-		<eLabel font="Regular;28" position="675,40" size="485,35" text="Welcome..." transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
+		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
 		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -2392,22 +2392,21 @@ self.autoResize()
 		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<eLabel backgroundColor="white" position="665,80" size="450,2" zPosition="2"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_495x310.png" position="645,95" size="495,310"/>
-		<widget font="Regular;20" halign="center" name="text" position="665,115" size="455,170" transparent="1" valign="center" zPosition="12"/>
-		<widget enableWrapAround="1" position="650,425" size="510,250" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
+		<widget font="Regular;20" halign="center" name="text" position="565,115" size="555,215" transparent="1" valign="center" zPosition="12"/>
+		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (415, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (435, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
+						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
 					],
 				"fonts": [gFont("Regular", 20)],
 				"itemHeight": 50
 				}
 			</convert>
 		</widget>
-		<widget position="650,425" size="510,250" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
 		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
 		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
@@ -2419,8 +2418,8 @@ self.autoResize()
 	<!-- Language Wizard -->
 	<screen flags="wfNoBorder" backgroundColor="background" name="LanguageWizard" position="0,0" size="1280,720" title="Language selection">
 		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>
-		<eLabel font="Regular;28" position="675,100" size="485,35" text="Language Selection" transparent="1" zPosition="2"/>
-		<eLabel backgroundColor="white" position="665,140" size="450,2" zPosition="2"/>
+		<eLabel font="Regular;28" position="675,40" size="485,35" text="Language Selection" transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="white" position="665,80" size="470,2" zPosition="2"/>
 		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -2428,7 +2427,7 @@ self.autoResize()
 		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<widget position="650,155" size="510,450" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x64.png" backgroundColorSelected="#41000000"  source="languages" transparent="1" zPosition="2">
+		<widget position="650,115" size="510,500" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x64.png" backgroundColorSelected="#41000000"  source="languages" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
@@ -2450,8 +2449,9 @@ self.autoResize()
 	</screen>
 	<!--Start Wizard -->
 	<screen flags="wfNoBorder" backgroundColor="background" name="StartWizard" position="0,0" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>
-		<eLabel font="Regular;28" position="675,40" size="485,35" text="Welcome..." transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
+		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
 		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -2459,22 +2459,21 @@ self.autoResize()
 		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<eLabel backgroundColor="white" position="665,80" size="450,2" zPosition="2"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_495x310.png" position="645,95" size="495,310"/>
-		<widget font="Regular;20" halign="center" name="text" position="665,115" size="455,240" transparent="1" valign="center" zPosition="12"/>
-		<widget enableWrapAround="1" position="650,425" size="510,250" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
+		<widget font="Regular;20" halign="center" name="text" position="565,115" size="555,215" transparent="1" valign="center" zPosition="12"/>
+		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (415, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (435, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
+						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
 					],
 				"fonts": [gFont("Regular", 20)],
 				"itemHeight": 50
 				}
 			</convert>
 		</widget>
-		<widget position="650,425" size="500,250" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
 		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
 		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
@@ -2507,8 +2506,9 @@ self.autoResize()
 	</screen>
 	<!-- VideoWizard -->
 	<screen name="VideoWizard" position="0,0" size="1280,720" title="Select Video Output..." backgroundColor="background" flags="wfNoBorder">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>
-		<eLabel font="Regular;28" position="675,40" size="485,35" text="Select Video Output..." transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
+		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
+		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
 		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
@@ -2516,22 +2516,21 @@ self.autoResize()
 		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<eLabel backgroundColor="white" position="665,80" size="450,2" zPosition="2"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_495x310.png" position="645,95" size="495,310"/>
-		<widget font="Regular;20" halign="center" name="text" position="665,115" size="455,170" transparent="1" valign="center" zPosition="12"/>
-		<widget enableWrapAround="1" position="650,425" size="510,250" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
+		<widget font="Regular;20" halign="center" name="text" position="565,115" size="555,215" transparent="1" valign="center" zPosition="12"/>
+		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (415, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (435, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
+						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
 					],
 				"fonts": [gFont("Regular", 20)],
 				"itemHeight": 50
 				}
 			</convert>
 		</widget>
-		<widget position="650,425" size="510,250" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
 		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
 		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
@@ -4131,10 +4130,10 @@ self.autoResize()
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
 		<widget font="Regular;20" halign="center" name="description" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
 		<eLabel position="890, 80" size="320, 22" text="Setup" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<widget name="list" position="515, 120" size="380, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_380x50.png" backgroundColor="#41000000" transparent="1" />
-		<widget name="sublist" position="950,125" size="250,475" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_250x50.png" backgroundColor="#41000000" transparent="1"/>
+		<widget name="list" position="500, 120" size="380, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_380x50.png" backgroundColor="#41000000" transparent="1" />
+		<widget name="sublist" position="920,125" size="300,475" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_300x50.png" backgroundColor="#41000000" transparent="1"/>
 		<!--<eLabel position="920,145" size="2,450" backgroundColor="darkgrey" zPosition="3" />-->
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_320x495.png" position="920,110" size="400,495" zPosition="-1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_320x495.png" position="910,110" size="400,495" zPosition="-1"/>
 		
 	</screen> 
 	<screen name="AP_ConfigScreen" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
