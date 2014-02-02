@@ -3102,7 +3102,7 @@ self.autoResize()
 		<widget name="timeline_text" position="0,10" size="1280,30" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="0" />
 		<widget name="bouquetlist" position="0,35" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="0,65" size="1280,590" backgroundColor="background" EntryForegroundColorSelected="blue" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="1" />
-		<widget name="timeline_now" position="0,65" zPosition="3" size="19,590" pixmap="easy-skin-hd/timeline-now.png" alphatest="on" />
+		<widget name="timeline_now" position="0,50" zPosition="3" size="19,615" pixmap="easy-skin-hd/timeline-now.png" alphatest="on" />
 		<ePixmap position="65,665" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_menu.png" transparent="1" alphatest="blend"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 665" size="200,60" zPosition="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 665" size="200,60" zPosition="1"/>
@@ -3118,7 +3118,7 @@ self.autoResize()
 		<widget name="timeline_text" position="0,10" size="1280,30" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="0" />
 		<widget name="bouquetlist" position="0,35" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="0,65" size="1280,590" backgroundColor="background" EntryForegroundColorSelected="blue" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="1" />
-		<widget name="timeline_now" position="0,65" zPosition="3" size="19,590" pixmap="easy-skin-hd/timeline-now.png" alphatest="on" />
+		<widget name="timeline_now" position="0,50" zPosition="3" size="19,615" pixmap="easy-skin-hd/timeline-now.png" alphatest="on" />
 		<ePixmap position="65,665" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_menu.png" transparent="1" alphatest="blend"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 665" size="200,60" zPosition="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 665" size="200,60" zPosition="1"/>
