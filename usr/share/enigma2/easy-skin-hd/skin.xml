@@ -4321,7 +4321,113 @@ self.autoResize()
 		<widget font="Regular;20" halign="center" name="description" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;20" halign="center" name="text" position="590,510" size="610, 30" transparent="1" valign="center" zPosition="2"/>
 	</screen>
-	
+	<screen name="CrossEPG_Setup" position="0,0" size="1280, 720" backgroundColor="un44000000" title="CrossEPG Configuration" flags="wfNoBorder" >
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="CrossEPG Configuration" foregroundColor="crypt_emm"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 410" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
+		<widget font="Regular;20" halign="center" name="information" position="100,210" size="300,160" transparent="1" valign="center" zPosition="2"/>
+	</screen>
+	<screen name="CrossEPG_Menu" position="0,0" size="1280, 720" backgroundColor="un44000000" title="CrossEPG Menu" flags="wfNoBorder" >
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<eLabel backgroundColor="#9f1313" font="Regular;20" halign="center" text="Exit" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="CrossEPG Menu" foregroundColor="crypt_emm"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (0, 5), size = (0, 0), png = 0),
+					MultiContentEntryText(pos = (35, 15), size = (510, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 50
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="CrossEPG_Providers" position="0,0" size="1280, 720" backgroundColor="un44000000"  title="CrossEPG Provider XMLTV-OpenTV-XEPGDB-MHW2-M7-RAI" flags="wfNoBorder" >
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="CrossEPG Provider" foregroundColor="crypt_emm"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (35, 10), size = (400, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryPixmapAlphaBlend(pos = (490, 8), size = (30, 30), png = 1),
+					],
+					"fonts": [gFont("Regular", 20)],
+					"itemHeight": 50
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="CrossEPG_Ordering" position="0,0" size="1280,720" title="CrossEPG Order Download List" backgroundColor="un44000000" flags="wfNoBorder" > 
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="CrossEPG Order Download List" foregroundColor="crypt_emm"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (35, 0), size = (520, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryPixmapAlphaTest(pos = (490, 0), size = (25, 30), png = 1),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 50
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="CrossEPG_Info" position="0,0" size="1280,720" title="CrossEPG - DB Info" backgroundColor="un44000000" flags="wfNoBorder" >
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="CrossEPG - DB Info" foregroundColor="crypt_emm"/>
+		<widget name="version"            position="60,120" size="720,25" font="Regular;26" foregroundColor="bluette" backgroundColor="black" transparent="1" />
+		<ePixmap position="60,150" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />
+		<widget name="create"             position="60,180" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
+		<widget name="last_update"        position="60,210" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
+		<ePixmap position="60,240" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />
+		<widget name="headersdb_size"     position="60,270" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
+		<widget name="descriptorsdb_size" position="60,300" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
+		<ePixmap position="60,330" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />
+		<widget name="indexesdb_size"     position="60,360" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
+		<widget name="aliasesdb_size"     position="60,390" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
+		<widget name="total_size"         position="60,420" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
+		<ePixmap position="60,450" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />
+		<widget name="channels_count"     position="60,480" size="720,25" font="Regular;20" foregroundColor="bluette" backgroundColor="black" transparent="1" />
+		<widget name="events_count"       position="60,510" size="720,25" font="Regular;20" foregroundColor="bluette" backgroundColor="black" transparent="1" />
+		<widget name="hashes_count"       position="60,540" size="720,25" font="Regular;20" foregroundColor="bluette" backgroundColor="black" transparent="1" />
+	</screen>
+	<screen name="CrossEPG_About" position="0,0" size="1280,720" title="CrossEPG About" backgroundColor="un44000000" flags="wfNoBorder" > 
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="CrossEPG - About" foregroundColor="crypt_emm"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget name="about" position="490, 170" size="710, 410" font="Regular;20" backgroundColor="black" transparent="1" zPosition="4" />
+	</screen>	
+		
 	
 	
  <screen name="PluginDetails" position="270, 90" size="700,576" title="Plugin details">
