@@ -1016,7 +1016,7 @@
 		<ePixmap position="20,20" zPosition="-1" size="95,75" transparent="1" pixmap="easy-skin-hd/frame/frame80_95x75.png" />
 		<widget name="statusicon" position="45,45" size="20,20" zPosition="3" alphatest="on" pixmaps="easy-skin-hd/icons/play.png,easy-skin-hd/icons/pause.png,easy-skin-hd/icons/stop.png,easy-skin-hd/icons/forward.png,easy-skin-hd/icons/backward.png,easy-skin-hd/icons/slow.png,easy-skin-hd/icons/blank.png" />
 		<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="4" />	      
-		<widget position="196, 620" size="36,36" source="session.RecordState" render="Pixmap" pixmap="easy-skin-hd/icons/i_rec.png" zPosition="2" alphatest="on">
+		<widget position="266, 620" size="36,36" source="session.RecordState" render="Pixmap" pixmap="easy-skin-hd/icons/i_rec.png" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<ePixmap pixmap="easy-skin-hd/infobar/ico_dolby_off.png" position="82, 620" size="57, 36" zPosition="1" alphatest="on"/>
@@ -1497,7 +1497,7 @@
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget position="55, 160" size="710, 415" name="menulist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 160" size="710, 415" name="menulist" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="55, 155" size="1100, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<widget source="description" render="Label" position="825, 180" size="300, 420" font="Regular;19" halign="center" valign="center" backgroundColor="black" transparent="1"/>
