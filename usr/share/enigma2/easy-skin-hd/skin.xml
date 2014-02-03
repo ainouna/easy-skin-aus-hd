@@ -1351,7 +1351,7 @@
 		<panel name="FullScreenWindow" />
 		<eLabel text="About" position="50, 80" size="1160, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" foregroundColor="crypt_emm"/>
 		<widget name="AboutScrollLabel" position="630,140" size="580,379" font="Regular;22" halign="left" zPosition="2" transparent="1"/>
-		<ePixmap position="250,155" size="300,470" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>		
+		<ePixmap position="250,155" size="300,470" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>
 	</screen>
 	<screen name="AboutOE" position="center,center" size="560,450">
 		<widget source="lab1" render="Label" position="30,0" size="458,25" font="Named;24" transparent="1" />
@@ -2959,12 +2959,15 @@ self.autoResize()
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
 	</screen>
-	<screen name="ScanIP" position="320,90" backgroundColor="un44000000" size="560,140" title="Scan IP">
-		<widget source="key_red" render="Label" position="20, 90" zPosition="1" size="140,40" font="Regular;22" halign="center" foregroundColor="red" valign="center" backgroundColor="black" transparent="1"/>
-		<widget source="key_green" render="Label" position="180, 90" zPosition="1" size="200, 40" font="Regular;22" halign="center" foregroundColor="green" valign="center" backgroundColor="black" transparent="1"/>
-		<widget source="key_yellow" render="Label" position="400, 90" zPosition="1" size="140,40" font="Regular;22" halign="center" foregroundColor="yellow" valign="center" backgroundColor="black" transparent="1"/>
-		<widget name="config" position="5, 10" size="540, 50" scrollbarMode="showOnDemand"/>
-		<eLabel position="0, 80" size="560, 2" backgroundColor="crypt_emm"/>
+	<screen name="ScanIP" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Scan Ip">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Enter IP to Scan..." foregroundColor="crypt_emm"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 150" size="610, 435" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="AutoMountEdit" backgroundColor="un44000000" position="0,0" size="1280,720" flags="wfNoBorder" title="MountEdit">
 		<panel name="FullScreenWindow" />
