@@ -2055,6 +2055,34 @@ self.autoResize()
 	<!-- Harddisk wait -->
       	<screen flags="wfNoBorder" name="HarddiskWait" backgroundColor="un44000000" position="0,0" size="1280,720" title="Harddisk wait">
 		<widget font="Regular;23" halign="center" name="wait" position="390,450" size="500,25" transparent="1" valign="center" zPosition="1"/>
+	</screen>
+	<screen name="JobView" position="center,center" size="520,250">
+		<widget source="job_name" render="Label" position="20,0" size="480,60" font="Regular;28" />
+		<widget source="job_task" render="Label" position="20,30" size="480,50" font="Regular;23" />
+		<widget source="job_progress" render="Progress" position="20,62" size="480,36" borderWidth="2" backgroundColor="#254f7497" />
+		<widget source="job_progress" render="Label" position="120,66" size="280,32" font="Regular;28" foregroundColor="black" zPosition="2" halign="center" transparent="1">
+			<convert type="ProgressToText" />
+		</widget>
+		<widget source="job_status" render="Label" position="20,112" size="480,26" font="Regular;23" />
+		<widget name="config" position="20,154" size="480,20" />
+		<widget source="cancelable" render="Pixmap" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="20,200" size="200,60" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="cancelable" render="FixedLabel" text="Cancel" position="20,203" size="200,25" font="Regular;20" halign="center" valign="center" transparent="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="finished" render="Pixmap" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="240,200" size="200,60" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="finished" render="FixedLabel" text="OK" position="240,203" size="200,25" font="Regular;20" halign="center" valign="center" transparent="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="backgroundable" render="Pixmap" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="250,200" size="200,60" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="backgroundable" render="FixedLabel" text="In background" position="250,203" size="200,25" font="Regular;20" halign="center" valign="center" transparent="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
 	</screen>	
 	<!-- Help menu -->
 	<screen flags="wfNoBorder" name="HelpMenu" backgroundColor="un44000000" position="0,0" size="1280,720" title="Menu">
