@@ -1267,7 +1267,7 @@
 	<screen flags="wfNoBorder" name="TimerEditList" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer Editor">
 		<panel name="FullScreenWindow" />
 		<eLabel position="890, 80" size="320, 22" text="Timer Editor" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<widget enableWrapAround="1" name="timerlist" position="650,195" scrollbarMode="showOnDemand" size="510,400" transparent="1" zPosition="2"/>
+		<widget position="590, 145" size="610, 450" name="timerlist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>		
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
@@ -2110,7 +2110,7 @@ self.autoResize()
 		<widget name="slider" position="10,100" size="530,15" pixmap="progress_big.png" borderWidth="2" borderColor="window-fg" />
 	</screen>
 	<screen name="InstallWizardIpkgUpdater" position="c-300,c-25" size="600,50" title=" ">
-		<widget source="statusbar" render="Label" position="10,5" zPosition="10" size="e-10,30" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+		<widget source="statusbar" render="Label" position="0,0" zPosition="10" size="600,30" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 	</screen>
 	<!-- Location Box -->
 	<screen flags="wfNoBorder" name="LocationBox" backgroundColor="background" position="0,0" size="1280,720">
@@ -3689,6 +3689,79 @@ self.autoResize()
 		<widget position="650,195" size="510,384" name="config" backgroundColor="background" transparent="1" font="Regular;20" halign="center" zPosition="2" />
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm"/>
 	</screen> 
+	<!-- AutoTimer Plugin -->
+	<screen name="AutoTimerHelp" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Help">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Help" foregroundColor="crypt_emm"/>
+		<widget position="590, 145" size="610, 450" name="detailtext" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+	<screen name="AutoTimerOverview" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Overview">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Overview" foregroundColor="crypt_emm"/>
+		<widget position="590, 145" size="610, 450" name="entries" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+	<screen name="AutoTimerEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Editor">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Editor" foregroundColor="crypt_emm"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
+		<widget font="Regular;20" halign="center" source="help" render="Label" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
+		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+	<screen name="AutoTimerSettings" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Settings">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Settings" foregroundColor="crypt_emm"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
+		<widget font="Regular;20" halign="center" name="help" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
+		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+	<screen name="AutoTimerImporter" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Importer">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Importer" foregroundColor="crypt_emm"/>
+		<widget position="590, 145" size="610, 450" name="list" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+	<screen name="AutoTimerFilterEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Filter Editor">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Filter Editor" foregroundColor="crypt_emm"/>
+		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+	<screen name="AutoTimerServiceEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Service Editor">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Service Editor" foregroundColor="crypt_emm"/>
+		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
 	<screen flags="wfNoBorder" name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor">
 		<eLabel backgroundColor="grey" position="80,125" size="300,420" zPosition="1"/>
 		<eLabel backgroundColor="black" position="81,126" size="298,418" zPosition="2"/>
@@ -3897,6 +3970,38 @@ self.autoResize()
 		</widget>
 		<eLabel position="0,167" size="680,1" backgroundColor="grey" zPosition="3"/>
 	</screen> 
+	<screen name="SoftwareManagerSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Software Manager Setup">
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Software Manager Setup" foregroundColor="crypt_emm"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
+		<widget font="Regular;20" halign="center" source="introduction" render="Label" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
+		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+	<screen name="SoftwareManagerInfo" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Softwaremanager informations" >
+		<panel name="FullScreenWindow" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue2Panel" />
+   		<eLabel position="890, 80" size="320, 22" text="Software Manager Informations" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
+		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
+		<widget position="590, 170" size="610, 415" source="list" render="Listbox" scrollbarMode="showOnDemand" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" selectionDisabled="0">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 0), size = (595, 50), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
+					],
+				"fonts": [gFont("Regular", 24),gFont("Regular", 22)],
+				"itemHeight": 50
+				}
+			</convert>
+		</widget>
+		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
+		<widget source="introduction" render="Label" position="125, 135" size="400,400" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
+	</screen>	
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Software Update...">
 		<panel name="FullScreenWindow" />
 		<widget name="activityslider" transparent="1" backgroundColor="transpBlack"  position="center,270" size="503,5" zPosition="10"/>
