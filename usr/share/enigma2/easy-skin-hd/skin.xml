@@ -84,7 +84,7 @@
 		<font filename="nmsbd.ttf" name="Regular" scale="100"/>
 		<font filename="ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1"/>
 		<font filename="tuxtxt.ttf" name="Console" scale="100"/>
-		<font filename="DroidSans-Bold.ttf" name="Named" scale="100"/>
+		<font filename="goodtime.ttf" name="Named" scale="100"/>
 	</fonts>
 	<windowstyle type="skinned" id="0">
 		<title offset="20,8" font="Named;23"/>
@@ -508,9 +508,10 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue2Panel" />
+		<widget name="HelpWindow" position="50,370" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Setup" foregroundColor="crypt_emm"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
-		<widget font="Regular;20" halign="center" name="description" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,155" size="400,200"/>
+		<widget font="Regular;20" halign="center" name="description" position="100,170" size="300,170" transparent="1" valign="center" zPosition="2"/>
 		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 
