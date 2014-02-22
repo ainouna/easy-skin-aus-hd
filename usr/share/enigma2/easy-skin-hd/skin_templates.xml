@@ -1,0 +1,66 @@
+<skin>
+	<!--Templates -->
+	<screen name="FullscreenRed1Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+	<screen name="FullscreenGreen1Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+	<screen name="FullscreenYellow1Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="key_yellow" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+	<screen name="FullscreenBlue1Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#18188b" font="Regular;20" halign="center" name="key_blue" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+	<screen name="FullscreenRed2Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+	<screen name="FullscreenGreen2Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" source="key_green" render="Label" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+	<screen name="FullscreenYellow2Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#a08500" font="Regular;20" halign="center" source="key_yellow" render="Label" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+	<screen name="FullscreenBlue2Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#18188b" font="Regular;20" halign="center" source="key_blue" render="Label" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+	<screen name="FullScreenWindow">
+		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<widget source="title" render="Label" position="50, 30" size="1160, 35" font="Named; 25" backgroundColor="black" halign="right" transparent="1" foregroundColor="white"/>
+		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 25" font="Named; 22" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 25" font="Named; 22" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<eLabel position="50, 65" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
+		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
+	</screen>
+	<screen name="FullScreen2Window">
+		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<widget source="Title" render="Label" position="50, 30" size="1160, 35" font="Named; 25" backgroundColor="black" halign="right" transparent="1" foregroundColor="white"/>
+		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 25" font="Named; 22" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 25" font="Named; 22" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<eLabel position="50, 65" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
+		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>	
+	</screen>
+	<screen name="FullscreenMenuButtonPanel">
+		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_menu.png" transparent="1" alphatest="blend"/>
+	</screen>
+	<screen name="FullscreenTextButtonPanel">
+		<widget name="VKeyIcon" position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_text.png" transparent="1" alphatest="blend"/>
+	</screen>
+
+</skin>
