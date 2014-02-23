@@ -1,0 +1,98 @@
+<skin>
+	<screen flags="wfNoBorder" name="Menu" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
+		<panel name="FullScreen2Window" />
+		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
+				"fonts": [gFont("Regular", 24)],
+				"itemHeight": 50
+				}
+			</convert>
+		</widget>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv.png" position="250,155" size="300,470" zPosition="2"/>		
+	</screen>
+	<screen flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
+		<panel name="FullScreen2Window" />
+		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
+				"fonts": [gFont("Regular", 24)],
+				"itemHeight": 50
+				}
+			</convert>
+		</widget>
+		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_sleeptimer.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="1">
+			<convert type="MenuEntryCompare">mainmenu_tasks_power_sleeptimer</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_standby.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="1">
+			<convert type="MenuEntryCompare">mainmenu_tasks_power_standby</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_reboot.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="1">
+			<convert type="MenuEntryCompare">mainmenu_tasks_power_reboot</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_shutdown.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="1">
+			<convert type="MenuEntryCompare">mainmenu_tasks_power_shutdown</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_restartshell.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="1">
+			<convert type="MenuEntryCompare">mainmenu_tasks_power_restartshell</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+	</screen>	
+	<screen flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
+		<panel name="FullScreen2Window" />
+		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
+				"fonts": [gFont("Regular", 24)],
+				"itemHeight": 50
+				}
+			</convert>
+		</widget>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2"/>
+	</screen>
+	<screen name="ServiceInfo" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Serviceinfo">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreen2Window" />  		
+		<widget name="infolist" position="450, 165" size="780, 495" selectionDisabled="1" transparent="1" scrollbarMode="showOnDemand"/>
+		<ePixmap position="55, 155" size="300, 500" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>
+	</screen>
+	<screen name="About" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="About">
+		<panel name="FullScreen2Window" />
+		<widget name="AboutScrollLabel" position="630,140" size="580,379" font="Regular;22" halign="left" zPosition="2" transparent="1"/>
+		<ePixmap position="250,155" size="300,470" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>
+	</screen>
+	<screen name="TranslationInfo" position="center,center" size="420,350" title="Translation">
+		<eLabel position="10,20" size="380,23" font="Regular;23" text="Translation:" />
+		<widget source="TranslatorName" render="Label" position="10,55" size="380,20" font="Regular;20" />
+		<widget source="TranslationInfo" render="Label" position="10,100" size="380,250" font="Regular;20" />
+	</screen>
+	<screen name="SystemMemoryInfo"  size="1280,720" backgroundColor="background" flags="wfNoBorder" title="About">
+		<panel name="FullScreen2Window" />
+		<widget name="AboutScrollLabel" position="630,190" size="580,379" font="Regular;22" halign="left" zPosition="2" transparent="1"/>
+		<ePixmap position="250,155" size="300,470" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>
+	</screen>
+	<screen name="SystemNetworkInfo" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="About">
+		<panel name="FullScreen2Window" />
+		<widget name="AboutScrollLabel" position="630,110" size="580,560" font="Regular;22" halign="left" zPosition="2" transparent="1"/>
+		<widget source="IFtext" render="Label" position="630,635" size="120,21" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="window-bg" />
+		<widget source="IF" render="Label" position="730,635" size="600,21" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="window-bg" />
+		<widget source="Statustext" render="Label" position="630,655" size="115,21" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="window-bg" />
+		<widget name="statuspic" pixmaps="buttons/button_green.png,buttons/button_green_off.png" position="690,660" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+		<ePixmap position="250,155" size="300,470" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>
+	</screen>
+	<screen name="Devices"  size="1280,720" backgroundColor="background" flags="wfNoBorder" title="About">
+		<panel name="FullScreen2Window" />
+		<widget name="AboutScrollLabel" position="630,190" size="580,379" font="Regular;22" halign="left" zPosition="2" transparent="1"/>
+		<ePixmap position="250,155" size="300,470" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>
+	</screen>	
+</skin>

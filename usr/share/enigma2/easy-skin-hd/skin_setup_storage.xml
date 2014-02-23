@@ -1,0 +1,31 @@
+<skin>
+	<!-- Harddisk Setup use SETUP screen skin -->
+	<!-- Format and Initialize -->
+        <screen flags="wfNoBorder" name="HarddiskSelection" backgroundColor="un44000000" position="0,0" size="1280,720" title="Select HDD">
+		<panel name="FullScreen2Window" />
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<widget name="hddlist" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_mount.png" position="55, 155" size="300,500"/>
+	</screen>
+	<!-- Harddisk setup -->
+        <screen flags="wfNoBorder" name="HarddiskSetup" backgroundColor="un44000000" position="0,0" size="1280,720" title="Harddisk Setup">
+		<panel name="FullScreen2Window" />
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="150,195" size="400,400"/>
+        	<widget font="Regular;23" name="model" position="164,240" size="380,25" transparent="1" zPosition="1"/>
+        	<widget font="Regular;23" name="capacity" position="164,270" size="380,25" transparent="1" zPosition="1"/>
+        	<widget font="Regular;23" name="bus" position="164,300" size="380,25" transparent="1" zPosition="1"/>
+		<widget backgroundColor="#9f1313" name="initialize" position="123, 635" size="200,36" transparent="1" zPosition="3"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="initializetext" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+        </screen>
+	<!-- Harddisk wait -->
+      	<screen flags="wfNoBorder" name="HarddiskWait" backgroundColor="un44000000" position="0,0" size="1280,720" title="Harddisk wait">
+		<widget font="Regular;23" halign="center" name="wait" position="390,450" size="500,25" transparent="1" valign="center" zPosition="1"/>
+	</screen>
+</skin>

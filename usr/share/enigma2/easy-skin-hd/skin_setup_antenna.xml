@@ -1,10 +1,10 @@
 <skin>
 	<!-- Tuner Configuration -->
 	<screen name="NimSelection" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Choose Tuner">
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue2Panel" />
 		<panel name="FullScreen2Window" />  
 		<widget enableWrapAround="1" position="650,195" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_515x120.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" size="525,400" source="nimlist" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
@@ -131,7 +131,45 @@
 		<widget font="Regular;20" halign="center" name="scan_state" position="170,410" size="360,45" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;20" halign="center" name="pass" position="170,410" size="360,45" transparent="1" valign="center" zPosition="1"/>
 		<widget name="done_text" position="center, center" size="720, 100" font="Named; 29" halign="center" zPosition="12" foregroundColor="white" backgroundColor="black"/>
-	</screen> 
+	</screen>
+	<!-- Positioner setup -->
+	<screen flags="wfNoBorder" name="PositionerSetup" backgroundColor="background" position="0,0" size="1280,720" title="Positioner setup">
+		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
+		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<eLabel position="890, 80" size="320, 22" text="Positioner setup" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
+		<eLabel position="50, 101" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
+		<widget enableWrapAround="1" name="list" position="650,195" scrollbarMode="showOnDemand" size="510,384" transparent="1" zPosition="2"/>
+		<eLabel position="50, 101" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="red" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="green" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="yellow" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+		<widget backgroundColor="#18188b" font="Regular;20" halign="center" name="blue" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x300.png" position="150,195" size="400,400"/>
+		<eLabel font="Regular;21" halign="center" position="180,223" size="60,22" text="SNR:" transparent="1" valign="center" zPosition="1"/>
+		<widget name="snr_bar" position="242,224" size="200,14" transparent="1" zPosition="1"/>
+		<widget font="Regular;21" halign="center" name="snr_percentage" position="463,223" size="60,22" transparent="1" valign="center" zPosition="1"/>
+		<eLabel font="Regular;21" halign="center" position="180,260" size="60,22" text="BER:" transparent="1" valign="center" zPosition="1"/>
+		<widget name="ber_bar" position="242,261" size="200,14" transparent="1" zPosition="1"/>
+		<widget font="Regular;21" halign="center" name="ber_value" position="463,260" size="60,22" transparent="1" valign="center" zPosition="1"/>
+		<eLabel font="Regular;21" halign="left" position="180,334" size="60,22" text="Lock:" transparent="1" valign="center" zPosition="1"/>
+		<eLabel font="Regular;21" halign="left" position="180,371" size="150,22" text="Frequency:" transparent="1" valign="center" zPosition="1"/>
+		<eLabel font="Regular;21" halign="left" position="180,408" size="150,22" text="Symbolrate:" transparent="1" valign="center" zPosition="1"/>
+		<eLabel font="Regular;21" halign="left" position="180,445" size="150,22" text="FEC:" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;21" halign="reight" name="lock_state" position="370,334" size="150,22" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;21" halign="reight" name="frequency_value" position="370,371" size="150,22" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;21" halign="reight" name="symbolrate_value" position="370,408" size="150,22" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;21" halign="reight" name="fec_value" position="370,445" size="150,22" transparent="1" valign="center" zPosition="1"/>
+	</screen>	
 	<screen name="FastScanScreen" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="FastScanScreen">
 		<panel name="FullScreen2Window" />
 		<panel name="FullscreenRed2Panel" />

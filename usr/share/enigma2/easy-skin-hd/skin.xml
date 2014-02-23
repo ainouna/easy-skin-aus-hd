@@ -138,6 +138,8 @@
 	
 	<!-- Load Template Screens -->
 	<include filename="easy-skin-hd/skin_templates.xml"/>
+	<!-- Load Menu->Wizards Screens -->
+	<include filename="easy-skin-hd/skin_wizards.xml"/>	
 	<!-- Load Infobars Screens -->
 	<include filename="easy-skin-hd/skin_infobars.xml"/>
 	<!-- Load Menu->Setup->System Screens -->
@@ -148,364 +150,28 @@
 	<include filename="easy-skin-hd/skin_setup_antenna.xml"/>
 	<!-- Load Menu->Setup->TV Screens -->
 	<include filename="easy-skin-hd/skin_setup_tv.xml"/>
-		
-	<!-- MainMenu-->
-	<screen flags="wfNoBorder" name="Menu" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv.png" position="250,155" size="300,470" zPosition="2"/>		
-	</screen>
-	<!-- Main menu -->
-	<screen flags="wfNoBorder" name="menu_mainmenu" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_photo.png" position="250,155" render="Pixmap" size="300,470" source="menu" >
-			<convert type="MenuEntryCompare">picture_player</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_source_locale.png" position="250,155" render="Pixmap" size="300,470" source="menu" >
-			<convert type="MenuEntryCompare">media_player</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_source_locale.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black">
-			<convert type="MenuEntryCompare">movie_player</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_source_locale.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">dmc_mainmenu</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">info_screen</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_plugin.png" position="250,155" render="Pixmap" size="300,470" source="menu" >
-			<convert type="MenuEntryCompare">plugin_selection</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">timer_menu</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">timer_edit</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>		
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">setup_selection</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">standby_restart_list</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_source_scart.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">scart_switch</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_movies_dvdlibrary_dvdeject.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">dvd_player</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-	</screen>
-	<screen flags="wfNoBorder" name="menu_timermenu" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2"/>		
-	</screen>	
-	<!-- Menu Shutdown -->
-	<screen flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_sleeptimer.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="1">
-			<convert type="MenuEntryCompare">mainmenu_tasks_power_sleeptimer</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_standby.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="1">
-			<convert type="MenuEntryCompare">mainmenu_tasks_power_standby</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_reboot.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="1">
-			<convert type="MenuEntryCompare">mainmenu_tasks_power_reboot</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_shutdown.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="1">
-			<convert type="MenuEntryCompare">mainmenu_tasks_power_shutdown</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_restartshell.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="1">
-			<convert type="MenuEntryCompare">mainmenu_tasks_power_restartshell</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-	</screen>	
-	<screen flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tv_search.png" position="250,155" size="300,470" zPosition="2"/>
-	</screen>
-	<screen flags="wfNoBorder" name="menu_setup" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_system.png" position="250,155" size="300,470" zPosition="1"/>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">tv_selection</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv_ci.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">cam_setup</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_parental.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">parental_setup</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_softwaremanager.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">softwareupdate</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_factoryreset.png" position="250,155" render="Pixmap" size="300,470" source="menu" zPosition="2">
-			<convert type="MenuEntryCompare">factory_reset</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>		
-	</screen>
-	<screen flags="wfNoBorder" name="menu_scan" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_scan.png" position="250,155" size="300,470" zPosition="2"/>
-	</screen>
-	<screen flags="wfNoBorder" name="menu_system" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_system.png" position="250,155" size="300,470" zPosition="2"/>
-	</screen>
-	<screen flags="wfNoBorder" name="menu_harddisk" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_system.png" position="250,155" size="300,470" zPosition="2"/>
-	</screen>
- 	<screen flags="wfNoBorder" name="menu_cam" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv_ci.png" position="250,155" size="300,470" zPosition="2"/>
-	</screen>
- 	<screen flags="wfNoBorder" name="menu_av" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv.png" position="250,155" size="300,470" zPosition="2"/>
-	</screen>
- 	<screen flags="wfNoBorder" name="menu_expert" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_factoryreset.png" position="250,155" size="300,470" zPosition="2"/>
-	</screen>
- 	<screen flags="wfNoBorder" name="menu_network2" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_softwaremanager.png" position="250,155" size="300,470" zPosition="2"/>
-	</screen>
- 	<screen flags="wfNoBorder" name="menu_osd_menu" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv.png" position="250,155" size="300,470" zPosition="2"/>
-	</screen>
- 	<screen flags="wfNoBorder" name="menu_epg" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
-		<panel name="FullScreenWindow" />
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2"/>
-	</screen>
-	<!--mainmenu end-->
-
-
-	<!-- Mediaplayer -->
-	<screen flags="wfNoBorder" name="MediaPlayer" position="0, 0" size="1280, 720" backgroundColor="background" title="MediaPlayer">
-		<panel name="FullScreenWindow" />
-		<eLabel position="890, 80" size="320, 22" text="MediaPlayer" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<eLabel backgroundColor="white" position="665,340" size="450,2" zPosition="2"/>
-		<widget enableWrapAround="1" name="filelist" position="650,120" scrollbarMode="showOnDemand" size="570,207" transparent="1" zPosition="2"/>
-		<widget enableWrapAround="1" name="playlist" position="650,347" scrollbarMode="showOnDemand" size="570,254" transparent="1" zPosition="2"/>
-		<widget alphatest="on" name="coverArt" pixmap="easy-skin-hd/general/no_coverArt.png" position="250,150" size="200,200" transparent="1"/>
-		<widget font="Regular;22" name="title" position="120,370" size="470,26" transparent="1" valign="top" zPosition="2"/>
-		<eLabel backgroundColor="#777777" position="120,405" size="470,1" zPosition="2"/>
-		<widget font="Regular;18" foregroundColor="#777777" halign="right" name="artisttext" position="100,420" size="100,19" transparent="1" valign="top" zPosition="2"/>
-		<widget font="Regular;18" name="artist" position="220,420" size="370,19" transparent="1" valign="top" zPosition="2"/>
-		<widget font="Regular;18" foregroundColor="#777777" halign="right" name="albumtext" position="100,445" size="100,19" transparent="1" valign="top" zPosition="2"/>
-		<widget font="Regular;18" name="album" position="220,445" size="370,19" transparent="1" valign="top" zPosition="2"/>
-		<widget font="Regular;18" foregroundColor="#777777" halign="right" name="yeartext" position="100,470" size="100,19" transparent="1" valign="top" zPosition="2"/>
-		<widget font="Regular;18" name="year" position="220,470" size="370,19" transparent="1" valign="top" zPosition="2"/>
-		<widget font="Regular;18" foregroundColor="#777777" halign="right" name="genretext" position="100,495" size="100,19" transparent="1" valign="top" zPosition="2"/>
-		<widget font="Regular;18" name="genre" position="220,495" size="370,19" transparent="1" valign="top" zPosition="2"/>
-		<eLabel backgroundColor="#777777" position="120,530" size="470,1" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/slider/slider_10x400_hbg.png" position="135,556" size="400,14" transparent="1" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/slider/slider_10_fg_ab.png" position="135,556" size="7,14" transparent="1" zPosition="2"/>
-		<widget name="PositionGauge" pointer="easy-skin-hd/slider/slider_10x497_hfg.png:490,0" position="142,555" size="393,14" transparent="1" zPosition="4"/>
-		<widget alphatest="on" name="repeat" pixmaps="easy-skin-hd/buttons/button_20x20_blue_off.png,easy-skin-hd/buttons/button_20x20_blue_on.png" position="560,554" size="20,20" transparent="1" zPosition="2"/>	
-		<widget name="currenttext" position="0,0" size="0,0"/>
-		<widget name="titletext" position="0,0" size="0,0"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/key_menu.png" position="75,645" size="35,25" zPosition="2"/>
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<eLabel backgroundColor="#9f1313" font="Regular;20" halign="center" position="123, 635" size="200,36" text="Rewind" transparent="1" valign="center" zPosition="3"/>
-		<eLabel backgroundColor="#1f771f" font="Regular;20" halign="center" position="398, 635" size="200,36" text="Play" transparent="1" valign="center" zPosition="3"/>
-		<eLabel backgroundColor="#a08500" font="Regular;20" halign="center" position="673, 635" size="200,36" text="Pause" transparent="1" valign="center" zPosition="3"/>
-		<eLabel backgroundColor="#18188b" font="Regular;20" halign="center" position="948, 635" size="200,36" text="Forward" transparent="1" valign="center" zPosition="3"/>
-	</screen>
-	<screen name="MediaPlayerDirectoryBrowser" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="File Browser">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="File Browser" foregroundColor="crypt_emm"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="filelist" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>	
-        <screen flags="wfNoBorder"  name="LastFMScreenMain" position="0, 0" size="1280, 720" backgroundColor="background" title="Last.FM" >
-	    	<panel name="FullScreenWindow" /> 
-		<widget font="Regular;18" foregroundColor="#777777" halign="right" name="artist" position="100,420" size="100,19" transparent="1" valign="top" zPosition="2"/>
-		<widget font="Regular;18" name="info_artist" position="220,420" size="370,19" transparent="1" valign="top" zPosition="2"/>
-		<widget font="Regular;18" foregroundColor="#777777" halign="right" name="album" position="100,445" size="100,19" transparent="1" valign="top" zPosition="2"/>
-		<widget font="Regular;18" name="info_album" position="220,445" size="370,19" transparent="1" valign="top" zPosition="2"/>
-		<widget font="Regular;22" foregroundColor="#777777" name="track" position="120,370" size="470,26" transparent="1" valign="top" zPosition="2"/>
-		<widget font="Regular;22" name="info_track" position="220,370" size="370,30" transparent="1" valign="center" halign="left" zPosition="2" />                 
-		<widget name="duration" position="420,370" size="60,30" valign="center" halign="right" zPosition="2"  transparent="1" font="Regular;18" />          
-		<widget alphatest="on" name="info_cover" pixmap="easy-skin-hd/general/no_coverArt.png" position="250,150" size="200,200" transparent="1"/>   
-		<eLabel position="890, 80" size="320, 22" text="Last.FM" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<eLabel backgroundColor="white" position="665,340" size="450,2" zPosition="2"/>
-		<widget enableWrapAround="1" name="tablist" position="650,120" scrollbarMode="showOnDemand" size="570,207" transparent="1" zPosition="2"/>
-		<widget enableWrapAround="1" name="streamlist" position="650,347" scrollbarMode="showOnDemand" size="570,254" transparent="1" zPosition="2"/>
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/key_menu.png" position="75,645" size="35,25" zPosition="2"/>
-            <widget name="infolabel" position="0,600" size="1280,20" valign="center" halign="center" zPosition="2" transparent="1" font="Regular;18" />           
-        </screen>
+	<!-- Load Menu->Setup->MEDIA Screens -->
+	<include filename="easy-skin-hd/skin_setup_media.xml"/>
+	<!-- Load Menu->Setup->Plugins  Screens -->
+	<include filename="easy-skin-hd/skin_setup_plugins.xml"/>
+	<!-- Load Menu->Setup->Storage  Screens -->
+	<include filename="easy-skin-hd/skin_setup_storage.xml"/>
+	<!-- Load Menu->Setup->Storage  Screens -->
+	<include filename="easy-skin-hd/skin_setup_swmanager.xml"/>
+	<!-- Load Menu->Plugins  Screens -->
+	<include filename="easy-skin-hd/skin_plugins.xml"/>
+	<!-- Load Menu->Photos  Screens -->
+	<include filename="easy-skin-hd/skin_photos.xml"/>
+	<!-- Load Menu->Music Screens -->
+	<include filename="easy-skin-hd/skin_music.xml"/>
+	<!-- Load Menu->Movies Screens -->
+	<include filename="easy-skin-hd/skin_videos.xml"/>
+	<!-- Load Menu->Tasks Screens -->
+	<include filename="easy-skin-hd/skin_setup.xml"/>
+	
 	<!-- Timer Screens -->
 	<screen name="CronTimers" position="center,center" size="590,400" title="Cron Manager">
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<widget name="lab1" position="10,0" size="100,24" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labdisabled" position="110,0" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labactive" position="110,0" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -519,10 +185,10 @@
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
-	</screen>	
+	</screen>		
 	<!-- Timer Screens -->
 	<screen name="CronTimers" position="center,center" size="590,400" title="Cron Manager">
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<widget name="lab1" position="10,0" size="100,24" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labdisabled" position="110,0" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labactive" position="110,0" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -555,8 +221,7 @@
 	</screen>
 	<!-- Timer edit list -->
 	<screen flags="wfNoBorder" name="TimerEditList" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer Editor">
-		<panel name="FullScreenWindow" />
-		<eLabel position="890, 80" size="320, 22" text="Timer Editor" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
+		<panel name="FullScreen2Window" />
 		<widget position="590, 145" size="610, 450" name="timerlist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>		
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
@@ -566,8 +231,7 @@
 	</screen>
 	<!-- Timer entry -->
 	<screen flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer entry">
-		<panel name="FullScreenWindow" />
-		<eLabel position="890, 80" size="320, 22" text="Timer entry" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
+		<panel name="FullScreen2Window" />
 		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<widget name="HelpWindow" position="150,195" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="canceltext" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
@@ -585,8 +249,7 @@
 	</screen>
 	<!-- Timer log -->
 	<screen flags="wfNoBorder" name="TimerLog" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer log">
-		<panel name="FullScreenWindow" />
-		<eLabel position="890, 80" size="320, 22" text="Timer log" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
+		<panel name="FullScreen2Window" />
 		<widget enableWrapAround="1" name="loglist" position="650,195" scrollbarMode="showOnDemand" size="510,400" transparent="1" zPosition="2"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="150,195" size="400,200"/>
 		<widget font="Regular;20" halign="center" name="logentry" position="170,215" size="360,160" transparent="1" valign="center" zPosition="2"/>
@@ -597,8 +260,7 @@
 	</screen>
 	<!-- Timer sanity conflict -->
 	<screen flags="wfNoBorder" name="TimerSanityConflict" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer sanity error">
-		<panel name="FullScreenWindow" />
-		<eLabel position="890, 80" size="320, 22" text="Timer sanity error" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
+		<panel name="FullScreen2Window" />
 		<widget name="list" position="385,195" scrollbarMode="showOnDemand" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="timer1" position="120,415" scrollbarMode="showOnDemand" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="timer2" position="650,415" scrollbarMode="showOnDemand" size="510,200" transparent="1" zPosition="2"/>
@@ -609,78 +271,12 @@
 	</screen>
 	<!-- Timer Selection -->
 	<screen flags="wfNoBorder" name="TimerSelection" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer selection">
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<widget enableWrapAround="1" name="timerlist" position="650,195" scrollbarMode="showOnDemand" size="510,400" transparent="1" zPosition="2"/>
 	</screen>
 	<screen name="ServiceInfoSimple" position="center,center" size="650,300" title="Service info">
 		<widget name="infolist" position="0,0" size="650,300" selectionDisabled="1" />
 	</screen>	
-	<screen name="ServiceInfo" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Serviceinfo">
-		<widget name="infolist" position="450, 165" size="780, 495" selectionDisabled="1" transparent="1" scrollbarMode="showOnDemand"/>
-		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="890, 80" size="320, 22" text="Service Info" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<eLabel position="50, 101" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="red" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="green" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="yellow" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#18188b" font="Regular;20" halign="center" name="blue" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<ePixmap position="55, 155" size="300, 500" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>
-	</screen>	
- 
-	<screen name="About" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="About">
-		<panel name="FullScreenWindow" />
-		<eLabel text="About" position="50, 80" size="1160, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" foregroundColor="crypt_emm"/>
-		<widget name="AboutScrollLabel" position="630,140" size="580,379" font="Regular;22" halign="left" zPosition="2" transparent="1"/>
-		<ePixmap position="250,155" size="300,470" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>
-	</screen>
-	<screen name="AboutOE" position="center,center" size="560,450">
-		<widget source="lab1" render="Label" position="30,0" size="458,25" font="Named;24" transparent="1" />
-		<widget source="lab2" render="Label" position="30,30" size="458,25" font="Italic;19" transparent="1" />
-		<widget source="lab3" render="Label" position="30,60" size="458,25" font="Italic;19" transparent="1" />
-		<widget name="AboutScrollLabel" position="30,90" size="458,300" font="Regular;20" transparent="1" />
-		<ePixmap pixmap="buttons/key_info.png" position="e-35,0" size="35,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="buttons/green.png" position="0,e-40" size="140,40" alphatest="on" />
-		<widget name="key_green" position="0,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
-	</screen>
-	<screen name="TranslationInfo" position="center,center" size="420,350" title="Translation">
-		<eLabel position="10,20" size="380,23" font="Regular;23" text="Translation:" />
-		<widget source="TranslatorName" render="Label" position="10,55" size="380,20" font="Regular;20" />
-		<widget source="TranslationInfo" render="Label" position="10,100" size="380,250" font="Regular;20" />
-	</screen>
-	<screen name="SystemMemoryInfo"  size="1280,720" backgroundColor="background" flags="wfNoBorder" title="About">
-		<panel name="FullScreenWindow" />
-		<eLabel text="About" position="50, 80" size="1160, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" foregroundColor="crypt_emm"/>
-		<widget name="AboutScrollLabel" position="630,190" size="580,379" font="Regular;22" halign="left" zPosition="2" transparent="1"/>
-		<ePixmap position="250,155" size="300,470" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>
-	</screen>
-	<screen name="SystemNetworkInfo" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="About">
-		<panel name="FullScreenWindow" />
-		<widget name="AboutScrollLabel" position="630,190" size="580,379" font="Regular;22" halign="left" zPosition="2" transparent="1"/>
-		<ePixmap pixmap="div-h.png" position="630,500" zPosition="1" size="560,2" />
-		<widget source="IFtext" render="Label" position="630,505" size="120,21" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="window-bg" />
-		<widget source="IF" render="Label" position="730,505" size="600,21" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="window-bg" />
-		<widget source="Statustext" render="Label" position="630,525" size="115,21" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="window-bg" />
-		<widget name="statuspic" pixmaps="buttons/button_green.png,buttons/button_green_off.png" position="690,530" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
-		<ePixmap position="250,155" size="300,470" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>
-		<panel name="MenuRed2Panel" />
-	</screen>
-	<screen name="Devices"  size="1280,720" backgroundColor="background" flags="wfNoBorder" title="About">
-		<panel name="FullScreenWindow" />
-		<eLabel text="About" position="50, 80" size="1160, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" foregroundColor="crypt_emm"/>
-		<widget name="AboutScrollLabel" position="630,190" size="580,379" font="Regular;22" halign="left" zPosition="2" transparent="1"/>
-		<ePixmap position="250,155" size="300,470" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png"/>		
-	</screen>
 
 	<screen name="BouquetSelector" position="center,center" size="560,550" backgroundColor="background">
 		<widget name="menu" position="0,0" size="560,512" itemHeight="30" foregroundColor="white" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
@@ -689,7 +285,11 @@
 		<widget name="menu" position="0,0" size="580,480" itemHeight="30" foregroundColor="white" backgroundColor="background" transparent="0" scrollbarMode="showOnDemand" />
 	</screen>
 	<screen name="ChannelSelection" position="0, 0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Channel Selection">
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
 		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
 			    backgroundColorSelected="#41000000"
 			    selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png"
@@ -733,15 +333,10 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap position="55, 105" size="126,82" pixmap="easy-skin-hd/frame_hd.png" zPosition="1" alphatest="on"/>
-		<widget source="ServiceEvent" render="Picon2" position="68,116" size="100,60" zPosition="2" transparent="1" alphatest="on"/>-->
-
-		<widget position="70, 590" size="70, 24" source="ServiceEvent" render="Label" font="Named; 17" valign="top" halign="center" transparent="1" backgroundColor="black" foregroundColor="grey">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget position="140, 590" size="436, 24" source="ServiceEvent" render="Label" font="Named; 17" valign="bottom" noWrap="1" transparent="1" backgroundColor="black" foregroundColor="grey">
-			<convert type="EventName">NextName</convert>
-		</widget>
+		<widget source="ServiceEvent" render="Picon2" position="68,116" size="100,60" zPosition="2" transparent="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Label" position="585, 80" size="625, 20" font="Named;18" halign="center" backgroundColor="black" foregroundColor="grey" transparent="1" zPosition="3">
+			<convert type="ServiceName">Provider</convert>
+		</widget>-->
 		<widget source="ServiceEvent" render="Label" position="50, 146" zPosition="1" size="526, 22" font="Named; 21" halign="center" foregroundColor="white" transparent="1" backgroundColor="black">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -755,8 +350,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="505, 176" zPosition="1" size="71, 22" font="Named; 19" halign="center" transparent="1" foregroundColor="white" backgroundColor="black">
 			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">
-		</convert>
+			<convert type="ClockToText"></convert>
 		</widget>
 		<widget source="ServiceEvent" render="Progress" position="137, 183" zPosition="1" pixmap="easy-skin-hd/progress.png" size="350, 8" borderWidth="1" borderColor="uncccccc">
 			<convert type="EventTime">Progress</convert>
@@ -764,15 +358,17 @@
 		<widget source="ServiceEvent" render="Label" position="55, 245" zPosition="1" size="521, 324" font="Regular; 20" transparent="1" backgroundColor="black" foregroundColor="grey">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="585, 80" size="625, 20" font="Named;18" halign="center" backgroundColor="black" foregroundColor="grey" transparent="1" zPosition="3">
-			<convert type="ServiceName">Provider</convert>
-		</widget>
+
 		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_menu.png" transparent="1" alphatest="blend"/>
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<ePixmap position="50, 592" size="15, 10" pixmap="easy-skin-hd/icons/icon_event.png" alphatest="on"/>
+
+		<ePixmap position="50, 597" size="15, 10" pixmap="easy-skin-hd/icons/icon_event.png" alphatest="on"/>
+		<widget position="70, 590" size="70, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" halign="center" transparent="1" backgroundColor="black" foregroundColor="grey">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget position="140, 590" size="436, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" noWrap="1" transparent="1" backgroundColor="black" foregroundColor="grey">
+			<convert type="EventName">NextName</convert>
+		</widget>		
 	</screen>
 	<!-- Channel selection - Radio -->
 	<screen name="ChannelSelectionRadio" position="150,100" size="980,560" title="Channel Selection" zPosition="-2">
@@ -802,21 +398,10 @@ self.autoResize()
 	<screen name="RecordTimerQuestion" position="center,center" size="240,70" zPosition="5" flags="wfNoBorder" >
 		<widget name="text" position="0,0" size="0,0" font="Regular;22" />
 		<widget name="list" position="10,10" size="220,50" enableWrapAround="1" />
-	</screen>	
-
-
+	</screen>
 	<screen name="Console" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Command execution...">
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="910, 70" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Command execution..." foregroundColor="crypt_emm"/>
-		<eLabel position="55, 93" size="1100,2" backgroundColor="crypt_emm"/>
+		<panel name="FullScreen2Window" />
 		<widget name="text" position="55,100" size="1060,520" transparent="1" font="Console;21"/>
-		<eLabel position="55, 625" size="1100,2" backgroundColor="crypt_emm"/>
 	</screen>	
 	<screen name="clockDisplay" position="center,center" size="300,300">
 		<widget name="okbutton" position="10,10" size="280,40" transparent="0" />
@@ -894,16 +479,14 @@ self.autoResize()
 		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="key_yellow" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#18188b" font="Regular;20" halign="center" name="key_blue" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<eLabel position="50, 625" size="1100, 2" backgroundColor="crypt_emm"/>
-		<eLabel position="890, 80" size="320, 22" text="EPG Selection" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
 	</screen>
 	<!-- EventView -->
 	<screen name="EventView" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Eventview">
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<widget name="channel" position="90, 105" size="340,25" font="Named; 20" backgroundColor="black" transparent="1" foregroundColor="white"/>
 		<widget name="datetime" position="430, 105" size="340,25" font="Named; 20" halign="center" backgroundColor="black" transparent="1" foregroundColor="white"/>
 		<widget name="duration" position="770, 105" size="340,25" font="Named; 20" halign="right" backgroundColor="black" transparent="1" foregroundColor="white"/>
 		<widget name="epg_description" position="90, 160" size="1040, 445" font="Regular; 23" backgroundColor="background" transparent="1" foregroundColor="white"/>
-		<eLabel position="890, 80" size="320, 22" text="Eventview" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
@@ -911,7 +494,6 @@ self.autoResize()
 	</screen>
 	<screen name="EventViewSimple" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Eventview">
 		<panel name="FullScreen2Window" />
-		<eLabel position="890, 80" size="320, 22" text="Eventview" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
 		<widget name="datetime" position="430, 105" size="340,25" font="Named; 20" halign="center" backgroundColor="black" transparent="1" foregroundColor="white"/>
 		<widget name="duration" position="770, 105" size="340,25" font="Named; 20" halign="right" backgroundColor="black" transparent="1" foregroundColor="white"/>
 		<widget name="FullDescription" position="90, 160" size="1040, 445" font="Regular; 23" backgroundColor="background" transparent="1" foregroundColor="white"/>
@@ -933,31 +515,7 @@ self.autoResize()
 			</convert>
 		</widget>
 	</screen>
-<!-- Harddisk selection -->
-        <screen flags="wfNoBorder" name="HarddiskSelection" backgroundColor="un44000000" position="0,0" size="1280,720" title="Select HDD">
-		<panel name="FullScreenWindow" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Select HDD" foregroundColor="crypt_emm"/>    		
-		<widget name="hddlist" position="650,195" size="510,400"/>
-	</screen>
-	<!-- Harddisk setup -->
-        <screen flags="wfNoBorder" name="HarddiskSetup" backgroundColor="un44000000" position="0,0" size="1280,720" title="Harddisk">
-		<panel name="FullScreenWindow" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Harddisk setup" foregroundColor="crypt_emm"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="150,195" size="400,400"/>
-        	<widget font="Regular;23" name="model" position="164,220" size="380,25" transparent="1" zPosition="1"/>
-        	<widget font="Regular;23" name="capacity" position="164,250" size="380,25" transparent="1" zPosition="1"/>
-        	<widget font="Regular;23" name="bus" position="164,280" size="380,25" transparent="1" zPosition="1"/>
-		<widget backgroundColor="#9f1313" name="initialize" position="123, 635" size="200,36" transparent="1" zPosition="3"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="initializetext" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-        </screen>
-	<!-- Harddisk wait -->
-      	<screen flags="wfNoBorder" name="HarddiskWait" backgroundColor="un44000000" position="0,0" size="1280,720" title="Harddisk wait">
-		<widget font="Regular;23" halign="center" name="wait" position="390,450" size="500,25" transparent="1" valign="center" zPosition="1"/>
-	</screen>
+	
 	<screen name="JobView" position="center,center" size="520,250">
 		<widget source="job_name" render="Label" position="20,0" size="480,60" font="Regular;28" />
 		<widget source="job_task" render="Label" position="20,30" size="480,50" font="Regular;23" />
@@ -988,8 +546,7 @@ self.autoResize()
 	</screen>	
 	<!-- Help menu -->
 	<screen flags="wfNoBorder" name="HelpMenu" backgroundColor="un44000000" position="0,0" size="1280,720" title="Menu">
-		<panel name="FullScreenWindow" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Help..." foregroundColor="crypt_emm"/>
+		<panel name="FullScreen2Window" />
 		<widget name="list" position="650,135" scrollbarMode="showOnDemand" size="510,430" transparent="1" zPosition="2"/>
 		<widget alphatest="on" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" position="250,110" size="154,500" zPosition="10"/>
 		<widget alphatest="on" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
@@ -1015,8 +572,7 @@ self.autoResize()
 	</screen>
 	<!-- Location Box -->
 	<screen flags="wfNoBorder" name="LocationBox" backgroundColor="background" position="0,0" size="1280,720">
-		<panel name="FullScreenWindow" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" name="text" foregroundColor="crypt_emm"/>
+		<panel name="FullScreen2Window" />
 		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,150" transparent="1" zPosition="2"/>
 		<widget name="booklist" position="650,335" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="textbook" position="650,295" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
@@ -1034,8 +590,7 @@ self.autoResize()
 	</screen>
 	<!-- Movie Location Box -->
 	<screen name="MovieLocationBox" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
-		<panel name="FullScreenWindow" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" name="text" foregroundColor="crypt_emm"/>
+		<panel name="FullScreen2Window" />
 		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,150" transparent="1" zPosition="2"/>
 		<widget name="booklist" position="650,335" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="textbook" position="650,295" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
@@ -1053,8 +608,7 @@ self.autoResize()
 	</screen>
 	<!-- Timeshift Location Box -->
 	<screen name="TimeshiftLocationBox" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
-		<panel name="FullScreenWindow" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" name="text" foregroundColor="crypt_emm"/>
+		<panel name="FullScreen2Window" />
 		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,150" transparent="1" zPosition="2"/>
 		<widget name="booklist" position="650,335" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="textbook" position="650,295" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
@@ -1087,7 +641,7 @@ self.autoResize()
 		 <panel name= "MessageBoxTemplate" />
 	</screen>
 	<screen name="InputDeviceSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Input device">
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<eLabel position="675,140" size="430,35" text="Select input device" font="Regular;28" transparent="1" zPosition="2" />
 		<eLabel position="665,180" size="450,2" backgroundColor="white" zPosition="2" />
 		<widget position="650,195" size="510,400" source="list" render="Listbox" zPosition="2" >
@@ -1109,7 +663,7 @@ self.autoResize()
 		<panel name="FullscreenBlue2Panel" />
 	</screen>
 	<screen name="InputDeviceSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Input device setup">
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<eLabel position="675,140" size="430,35" text="Input device setup" font="Regular;28" transparent="1" zPosition="2" />
 		<eLabel position="665,180" size="450,2" backgroundColor="white" zPosition="2" />
 		<widget position="650,195" size="510,400" name="config" zPosition="2" />
@@ -1123,45 +677,7 @@ self.autoResize()
 	<screen name="MinuteInput" position="center,center" size="280,60">
 		<widget name="minutes" position="80,15" size="160,25" halign="right" font="Regular;23" transparent="1" />
 	</screen>	
-	<!-- Movie Selection -->
-	<screen name="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Select a movie">
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<widget name="waitingtext" position="55, 135" size="760, 448" backgroundColor="background" zPosition="4" font="Regular;22" halign="center" valign="center"/>
-		<widget source="Service" render="Label" position="280, 95" zPosition="1" size="190, 22" font="Named;18" halign="center" backgroundColor="background" transparent="1" foregroundColor="grey">
-			<convert type="MovieInfo">FileSize</convert>
-		</widget>
-		<widget name="list" backgroundColor="background" position="55, 135" size="752,450" scrollbarMode="always" enableWrapAround="1" zPosition="1"/>
-		<widget name="freeDiskSpace" backgroundColor="un44000000" position="55, 593" size="755, 25" font="Regular;22" halign="center" foregroundColor="foreground"/>
-		<widget source="Service" render="Label" position="825, 102" backgroundColor="background" zPosition="1" size="320, 44" font="Regular; 19" halign="center" foregroundColor="white">
-			<convert type="MovieInfo">RecordServiceName</convert>
-		</widget>
-		<widget source="Service" render="Label" position="830, 150" backgroundColor="background" zPosition="1" size="320, 220" font="Regular; 17" halign="left" foregroundColor="grey">
-			<convert type="MovieInfo">ShortDescription</convert>
-		</widget>
-		<widget source="Service" render="Label" position="825, 374" backgroundColor="background" zPosition="1" size="320, 22" font="Regular; 20" halign="center" foregroundColor="white">
-			<convert type="ServiceTime">Duration</convert>
-			<convert type="ClockToText">AsLength</convert>
-		</widget>
-		<widget source="Service" render="Label" position="830, 403" backgroundColor="background" zPosition="1" size="320, 220" font="Regular; 17" foregroundColor="grey">
-			<convert type="EventName">ExtendedDescription</convert>
-		</widget>
-		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_menu.png" transparent="1" alphatest="blend"/>
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<widget backgroundColor="background" name="DescriptionBorder" position="0,0" size="0,0"/>
-		<eLabel position="820, 80" size="1, 546" backgroundColor="crypt_emm"/>
-		<eLabel position="55, 625" size="1100, 2" backgroundColor="crypt_emm"/>
-		<eLabel position="55, 80" size="1100, 1" backgroundColor="crypt_emm"/>
-		<eLabel position="835, 60" size="320, 20" font="Named; 16" backgroundColor="black" halign="right" transparent="1" foregroundColor="crypt_emm" text="Select a movie"/>
-	</screen>
+	
 	<!-- RASS -->
 	<screen flags="wfNoBorder" name="RassInteractive" position="0,0" size="1280,720" title="RassInteractive">
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/icons/rass_logo.png" position="675,143" size="50,21" transparent="1"/>
@@ -1204,306 +720,7 @@ self.autoResize()
 		<ePixmap pixmap="easy-skin-hd/general/volume.png" position="0,0" size="485,78"/>
 		<widget name="Volume" pixmap="easy-skin-hd/slider/slider_main.png" position="62,32" size="333,20" transparent="1" zPosition="2"/>
 	</screen>
-	<!--Netowrk Wizard -->
- 	<screen flags="wfNoBorder" name="NetworkWizard" backgroundColor="background" position="0,0" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
-		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
-		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
-		<widget font="Regular;20" name="text" position="565,115" size="555,215" transparent="1" valign="center" halign="center" zPosition="12"/>
-		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
-					],
-				"fonts": [gFont("Regular", 20)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
-		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
-		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="0,0" size="37,70" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup2" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget backgroundColor="#41000000" font="Regular;20" halign="center" name="languagetext" position="150,575" size="200,36" transparent="1" valign="center" zPosition="12"/>-->
-		<!--<widget name="HelpWindow" position="150,195" zPosition="1" transparent="1" alphatest="on"/>-->
-	</screen>
-	<!-- Default wizard -->
-	<screen flags="wfNoBorder" name="DefaultWizard" backgroundColor="background" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
-		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
-		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
-		<widget font="Regular;20" halign="center" name="text" position="565,115" size="555,215" transparent="1" valign="center" zPosition="12"/>
-		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
-					],
-				"fonts": [gFont("Regular", 20)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
-		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
-		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="0,0" size="37,70" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup2" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget backgroundColor="#41000000" font="Regular;20" halign="center" name="languagetext" position="150,575" size="200,36" transparent="1" valign="center" zPosition="12"/>-->
-	</screen>
-	<!-- DefaultSatLists -->
-	<screen flags="wfNoBorder" backgroundColor="background"  name="DefaultSatLists" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
-		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
-		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
-		<widget font="Regular;20" halign="center" name="text" position="565,115" size="555,215" transparent="1" valign="center" zPosition="12"/>
-		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
-					],
-				"fonts": [gFont("Regular", 20)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
-		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
-		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="0,0" size="37,70" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup2" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget backgroundColor="#41000000" font="Regular;20" halign="center" name="languagetext" position="150,575" size="200,36" transparent="1" valign="center" zPosition="12"/>-->
-	</screen>
-	<!-- DreamPackageWizard -->
-	<screen flags="wfNoBorder" backgroundColor="background" name="DreamPackageWizard" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
-		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
-		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
-		<widget font="Regular;20" halign="center" name="text" position="565,115" size="555,215" transparent="1" valign="center" zPosition="12"/>
-		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
-					],
-				"fonts": [gFont("Regular", 20)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
-		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
-		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="0,0" size="37,70" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup2" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget backgroundColor="#41000000" font="Regular;20" halign="center" name="languagetext" position="150,575" size="200,36" transparent="1" valign="center" zPosition="12"/>-->
-	</screen>
-	<!-- Language Wizard -->
-	<screen flags="wfNoBorder" backgroundColor="background" name="LanguageWizard" position="0,0" size="1280,720" title="Language selection">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>
-		<eLabel font="Regular;28" position="675,40" size="485,35" text="Language Selection" transparent="1" zPosition="2"/>
-		<eLabel backgroundColor="white" position="665,80" size="470,2" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<widget position="650,115" size="510,500" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x64.png" backgroundColorSelected="#41000000"  source="languages" transparent="1" zPosition="2">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
-						MultiContentEntryPixmap(pos = (10, 10), size = (60, 40), png = 2), # index 2 is the pixmap
-					],
-				 "fonts": [gFont("Regular", 20)],
-				 "itemHeight": 64
-				}
-			</convert>
-		</widget>
-		<widget alphatest="blend" name="wizard" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="blend" pixmap="easy-skin-hd/frame/frame_495x160.png" position="110,455" size="495,210"/>
-		<widget backgroundColor="#41000000" font="Regular;20" halign="center" name="text" position="130,445" size="455,170" valign="center" zPosition="3" transparent="1" />
-		<!--<widget name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" position="445,195" zPosition="10" size="154,500" transparent="1" alphatest="on"/>
-		<widget name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-		<widget name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-		<widget name="arrowup" pixmap="easy-skin-hd/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-		<widget name="arrowup2" pixmap="easy-skin-hd/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />-->
-	</screen>
-	<!--Start Wizard -->
-	<screen flags="wfNoBorder" backgroundColor="background" name="StartWizard" position="0,0" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
-		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
-		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
-		<widget font="Regular;20" halign="center" name="text" position="565,115" size="555,215" transparent="1" valign="center" zPosition="12"/>
-		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
-					],
-				"fonts": [gFont("Regular", 20)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
-		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
-		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="0,0" size="37,70" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup2" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget backgroundColor="#41000000" font="Regular;20" halign="center" name="languagetext" position="150,575" size="200,36" transparent="1" valign="center" zPosition="12"/>-->
-	</screen>
-	<!-- Tutorial Wizard -->
-	<screen flags="wfNoBorder" backgroundColor="background" name="TutorialWizard" position="0,0" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>
-		<eLabel font="Regular;28" position="675,40" size="485,35" text="Welcome..." transparent="1" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel backgroundColor="white" position="665,80" size="450,2" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_495x310.png" position="645,95" size="495,310"/>
-		<widget font="Regular;20" halign="center" name="text" position="665,115" size="455,170" transparent="1" valign="center" zPosition="12"/>
-		<widget name="list" position="650,425" size="510,250" transparent="1" zPosition="2"/>
-		<!--<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
-		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="0,0" size="37,70" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup2" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>-->
-	</screen>
-	<!-- VideoWizard -->
-	<screen name="VideoWizard" position="0,0" size="1280,720" title="Select Video Output..." backgroundColor="background" flags="wfNoBorder">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
-		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
-		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
-		<widget font="Regular;20" halign="center" name="text" position="565,115" size="555,215" transparent="1" valign="center" zPosition="12"/>
-		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
-					],
-				"fonts": [gFont("Regular", 20)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
-		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
-		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="0,0" size="37,70" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup2" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget backgroundColor="#41000000" font="Regular;20" halign="center" name="languagetext" position="150,575" size="200,36" transparent="1" valign="center" zPosition="12"/>-->
-	</screen>
-	<!--Image Backup Wizard -->
-	<screen flags="wfNoBorder" backgroundColor="background" name="ImageWizard" position="0,0" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>	
-		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
-		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_595x250.png" position="545,95" size="595,250"/>
-		<widget font="Regular;20" halign="center" name="text" position="565,115" size="555,215" transparent="1" valign="center" zPosition="12"/>
-		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000"  source="list" transparent="1" zPosition="2">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
-					],
-				"fonts": [gFont("Regular", 20)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<widget position="550,365" size="600,300" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<!--<widget position="150,508" size="330,106" name="red" pixmap="easy-skin-hd/frame/frame_language.png" alphatest="on" zPosition="11" />
-		<widget position="429,195" size="154,500" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" transparent="1" alphatest="on" zPosition="10"/>
-		<widget position="0,0" size="37,70" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="0,0" size="37,70" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget position="-100,-100" size="37,70" name="arrowup2" pixmap="easy-skin-hd/arrowup.png" transparent="1" alphatest="on" zPosition="12"/>
-		<widget backgroundColor="#41000000" font="Regular;20" halign="center" name="languagetext" position="150,575" size="200,36" transparent="1" valign="center" zPosition="12"/>-->
-	</screen>	
+	
 	<!-- Numberzap -->
 	<screen name="NumberZap" position="460,300" size="260,79" title="Channel">
 		<widget font="Regular;23" name="channel" position="35,15" size="110,25" valign="center"/>
@@ -1524,76 +741,11 @@ self.autoResize()
 		</widget>
 	</screen>
 
-
-	<!-- Plugin Browser -->
-	<screen name="PluginBrowser" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Plugin browser">
-		<widget name="list" position="510, 130" size="700, 480" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
-		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="890, 80" size="320, 22" text="Plugins" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<eLabel position="50, 101" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<ePixmap position="55, 155" size="300, 500" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_plugin.png"/>
-	</screen>
-	<!-- Plugin Browser Download -->
-	<screen name="PluginDownloadBrowser" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Downloadable plugins">
-		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="890, 80" size="320, 22" text="Download Plugins" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<eLabel position="50, 101" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<widget backgroundColor="#44000000" enableWrapAround="1" name="list" position="650,195" scrollbarMode="showOnDemand" size="510,400" transparent="1" zPosition="1"/>
-		<ePixmap alphatest="on" name="textborder" pixmap="easy-skin-hd/frame/frame_400x200.png" position="150,195" size="400,200"/>
-		<widget font="Regular;18" halign="center" name="text" position="170,195" size="360,200" transparent="1" valign="center" zPosition="2"/>
-	</screen>
-
-	<!-- IMDB -->
-	<screen name="IMDB" flags="wfNoBorder" position="0,0" size="1280, 720" backgroundColor="un44000000" title="IMDb Details Plugin">
-		<widget name="titellabel" position="20, 10" size="744, 36" font="Regular;25" valign="center" transparent="1"/>
-		<widget name="starsbg" position="790,10" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="2" alphatest="blend"/>
-		<widget name="stars" position="790,10" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="3" transparent="1"/>
-		<widget name="ratinglabel" position="790,34" size="210,24" font="Regular;20" halign="center" foregroundColor="unf0b400" transparent="1"/>
-		<widget name="poster" position="30,60" size="110,180" alphatest="blend"/>
-		<widget name="detailslabel" position="170,60" size="650, 173" font="Regular;20" transparent="1"/>
-		<widget name="castlabel" position="20,245" size="1060, 235" font="Regular;20" transparent="1"/>
-		<widget name="extralabel" position="20,170" size="1060, 310" font="Regular;20" transparent="1"/>
-		<widget name="menu" position="20,170" size="1050,300" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="statusbar" position="10,490" size="1080,20" font="Regular;18" foregroundColor="uncccccc" transparent="1"/>
-		<eLabel position="0,518" size="1100,2" backgroundColor="crypt_emm"/>
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-	</screen>
 	<!-- PVR state -->
 	<screen backgroundColor="transpBlack" flags="wfNoBorder" name="PVRState" position="70,70" size="174,79">
 		<widget backgroundColor="black" font="Regular;25" foregroundColor="white" halign="center" name="state" position="12,15" size="130,25"/>
 	</screen>	
-	<!-- Media Player Settings -->
-	<screen name="MediaPlayerSettings" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Setup" foregroundColor="crypt_emm"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
+
 	<!-- Numerical help dialog -->
 	<screen flags="wfNoBorder" name="NumericalTextInputHelpDialog" position="150,195" size="400,255" zPosition="2">
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x255.png" position="0,0" size="400,255" zPosition="-1"/>
@@ -1618,15 +770,22 @@ self.autoResize()
 	<screen name="PiPSetup" position="center,center" size="600,150" backgroundColor="transparent" flags="wfNoBorder" >
 		<widget name="text" position="0,0" size="600,150" font="Regular;23" />
 	</screen>
-	<screen name="SimpleChannelSelection" position="90,90" backgroundColor="background" size="1100,570" title="Channel Selection">
-		<eLabel position="800, 25" size="300, 22" text="Channel Selection" font="Regular; 20" transparent="1" zPosition="2"/>
-		<eLabel position="645, 45" size="450,2" backgroundColor="crypt_emm" zPosition="2"/>
-		<widget position="590, 105" size="510,400" name="list" scrollbarMode="showOnDemand" transparent="1" zPosition="2"/>
-		<panel name="FullscreenRed1Panel" />
+	<screen name="SimpleChannelSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Channel Selection">
+		<panel name="FullScreen2Window" /> 
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tv.png" position="55, 115" size="400,500"/>
+		
+		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
+			    backgroundColorSelected="#41000000"
+			    selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png"
+			    colorServiceDescription="#999999"
+			    colorServiceDescriptionSelected="#bbbbbb"
+			    foregroundColorServiceNotAvail="#777777"
+			    picServiceEventProgressbar="slider/slider_1280x10_hfg.png"    
+			    serviceItemHeight="50" serviceNumberFont="Regular;23" serviceNameFont="Regular;22" serviceInfoFont="Regular;21" scrollbarMode="always"/>
+			    <panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<eLabel position="0, 515" size="1100, 2" backgroundColor="crypt_emm"/>
 	</screen> 
 	<!-- Subservice selection -->
 	<screen flags="wfNoBorder" name="SubserviceSelection" position="0,0" size="1280,720" title="Subservices">
@@ -1816,7 +975,6 @@ self.autoResize()
 		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 22" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<eLabel position="890, 80" size="320, 22" text="Choose your Skin" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
 		<eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
 		<widget position="655, 185" size="350, 375" name="SkinList" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
@@ -1860,298 +1018,6 @@ self.autoResize()
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 	</screen>
-	
-	<!-- Positioner setup -->
-	<screen flags="wfNoBorder" name="PositionerSetup" backgroundColor="background" position="0,0" size="1280,720" title="Positioner setup">
-		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="890, 80" size="320, 22" text="Positioner setup" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<eLabel position="50, 101" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<widget enableWrapAround="1" name="list" position="650,195" scrollbarMode="showOnDemand" size="510,384" transparent="1" zPosition="2"/>
-		<eLabel position="50, 101" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="red" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="green" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="yellow" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#18188b" font="Regular;20" halign="center" name="blue" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x300.png" position="150,195" size="400,400"/>
-		<eLabel font="Regular;21" halign="center" position="180,223" size="60,22" text="SNR:" transparent="1" valign="center" zPosition="1"/>
-		<widget name="snr_bar" position="242,224" size="200,14" transparent="1" zPosition="1"/>
-		<widget font="Regular;21" halign="center" name="snr_percentage" position="463,223" size="60,22" transparent="1" valign="center" zPosition="1"/>
-		<eLabel font="Regular;21" halign="center" position="180,260" size="60,22" text="BER:" transparent="1" valign="center" zPosition="1"/>
-		<widget name="ber_bar" position="242,261" size="200,14" transparent="1" zPosition="1"/>
-		<widget font="Regular;21" halign="center" name="ber_value" position="463,260" size="60,22" transparent="1" valign="center" zPosition="1"/>
-		<eLabel font="Regular;21" halign="left" position="180,334" size="60,22" text="Lock:" transparent="1" valign="center" zPosition="1"/>
-		<eLabel font="Regular;21" halign="left" position="180,371" size="150,22" text="Frequency:" transparent="1" valign="center" zPosition="1"/>
-		<eLabel font="Regular;21" halign="left" position="180,408" size="150,22" text="Symbolrate:" transparent="1" valign="center" zPosition="1"/>
-		<eLabel font="Regular;21" halign="left" position="180,445" size="150,22" text="FEC:" transparent="1" valign="center" zPosition="1"/>
-		<widget font="Regular;21" halign="reight" name="lock_state" position="370,334" size="150,22" transparent="1" valign="center" zPosition="1"/>
-		<widget font="Regular;21" halign="reight" name="frequency_value" position="370,371" size="150,22" transparent="1" valign="center" zPosition="1"/>
-		<widget font="Regular;21" halign="reight" name="symbolrate_value" position="370,408" size="150,22" transparent="1" valign="center" zPosition="1"/>
-		<widget font="Regular;21" halign="reight" name="fec_value" position="370,445" size="150,22" transparent="1" valign="center" zPosition="1"/>
-	</screen>
-
- 
-	<screen name="picshow" position="0,0" backgroundColor="background" size="1280,720" flags="wfNoBorder" title="PicturePlayer">
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="PicturePlayer" foregroundColor="crypt_emm"/>
-		<widget position="650,150" size="510,450" name="filelist" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>		
-		<widget position="169,150" size="372,280" name="thn" transparent="1" alphatest="on" />
-		<eLabel position="120,445" size="470,1" backgroundColor="#777777" zPosition="2" />
-		<widget position="140,460" size="430,110" source="label" render="Label" font="Regular;18" valign="top" foregroundColor="#777777" transparent="1" zPosition="2" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" source="key_green" render="Label" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#a08500" font="Regular;20" halign="center" source="key_yellow" render="Label" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#18188b" font="Regular;20" halign="center" source="key_blue" render="Label" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-	</screen>
- 
-	<screen name="Pic_Exif" position="0,0" backgroundColor="background" size="1280,720" flags="wfNoBorder" title="PicturePlayer">
-		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="890, 80" size="320, 22" text="PicturePlayer" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<eLabel position="50, 101" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<ePixmap position="55, 155" size="300, 500" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_photo.png"/>
-		<widget source="menu" backgroundColor="background" render="Listbox" position="510, 130" size="700, 480" zPosition="3" scrollbarMode="showOnDemand" selectionDisabled="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (5, 7), size = (350, 30), flags = RT_HALIGN_LEFT, text = 0), 
-				MultiContentEntryText(pos = (360, 7), size = (390, 30), flags = RT_HALIGN_LEFT, text = 1)], 
-				"fonts": [gFont("Regular", 20)], 
-				"itemHeight": 35 }
-			</convert>
-		</widget>
-	</screen>
-
- <!-- MyTubePlayer -->
-	<screen name="MyTubePlayer" position="0,0" zPosition="-1" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-		<ePixmap pixmap="easy-skin-hd/infobar.png" position="0, 70" size="1280,720" zPosition="-1"/>
-		<ePixmap position="82, 601" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_rewind.png" alphatest="on" transparent="1"/>
-		<ePixmap position="120, 601" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_play.png" alphatest="on" transparent="1"/>
-		<ePixmap position="158, 601" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_pause.png" alphatest="on" transparent="1"/>
-		<ePixmap position="196, 601" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_forward.png" alphatest="on" transparent="1"/>
-		<eLabel position="55, 659" size="205, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<widget source="session.CurrentService" render="Label" font="Regular; 18" position="93, 665" size="57, 20" halign="right" transparent="1" foregroundColor="white" backgroundColor="black">
-			<convert type="ServiceInfo">VideoWidth</convert>
-		</widget>
-		<eLabel text="x" font="Regular; 18" position="154, 665" size="15, 20" halign="center" transparent="1" foregroundColor="grey" backgroundColor="black"/>
-		<widget source="session.CurrentService" render="Label" font="Regular; 18" position="172, 665" size="57, 20" halign="left" transparent="1" foregroundColor="white" backgroundColor="black">
-			<convert type="ServiceInfo">VideoHeight</convert>
-		</widget>
-		<ePixmap position="1100, 593" size="100,40" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MyTube/plugin.png" alphatest="on" transparent="1"/>
-		<widget source="global.CurrentTime" render="Label" position="1088, 641" size="120, 26" font="Named; 21" valign="top" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1068, 667" size="140, 20" font="Named; 16" valign="top" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
-			<convert type="ClockToText">Format:%d.%m.%Y</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="55, 560" size="1220, 25" font="Named; 23" halign="center" valign="center" noWrap="1" backgroundColor="black" transparent="1" foregroundColor="white">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="325, 640" size="100, 24" font="Regular;21" halign="center" valign="right" backgroundColor="black" transparent="1">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<ePixmap position="393, 620" size="600,16" pixmap="easy-skin-hd/mpslider.png" zPosition="3" alphatest="on"/>
-		<widget source="session.CurrentService" render="PositionGauge" position="413, 621" size="560,14" zPosition="2" pointer="easy-skin-hd/pointer.png:13,3">
-			<convert type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="960, 640" size="100, 24" font="Regular;21" halign="center" valign="left" backgroundColor="black" transparent="1">
-			<convert type="ServicePosition">Remaining</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="655, 640" size="100, 24" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-		<widget position="655, 594" size="100, 22" source="session.CurrentService" render="Label" font="Regular;20" valign="center" halign="center" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ServiceInfo">Framerate</convert>
-		</widget>
-	</screen>
-	<screen name="MyTubeVideoHelpScreen" position="300,90" size="680,570" title="MyTubePlayerHelpScreen...">
-		<widget name="detailtext" position="10,10" size="660, 500" zPosition="3" font="Regular;22" transparent="1" halign="left" valign="top"/>
-		<eLabel position="0,518" size="680,2" backgroundColor="crypt_emm"/>
-		<widget position=" 50,525" size="200,36" name="key_red" font="Regular;20" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/> &gt;
-		<ePixmap position="570,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
-		<widget name="title" position="0,0" size="0,0"/>
-	</screen>
-	<screen name="MyTubeVideoInfoScreen" position="90,90" size="1100,570" title="MyTubePlayerMainScreen...">
-		<widget name="title" position="10,15" size="1080,30" zPosition="5" valign="center" halign="left" font="Regular;26" backgroundColor="unb67a2" transparent="1" noWrap="1"/>
-		<widget name="author" position="20,70" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
-		<widget name="duration" position="20,110" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
-		<widget name="published" position="20,140" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
-		<widget name="views" position="20,170" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
-		<widget name="tags" position="20,200" size="300, 195" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
-		<widget name="starsbg" position="125, 425" size="100,20" pixmap="~/starsbar_empty.png" zPosition="5" transparent="1" alphatest="on"/>
-		<widget name="stars" position="125, 425" size="100,20" pixmap="~/starsbar_filled.png" zPosition="6" transparent="1"/>
-		<widget source="infolist" render="Listbox" position="350,60" size="740,135" zPosition="6" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
-		<convert type="TemplatedMultiContent">
-				      {"templates":
-					      {"default": (135,[
-							      MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (180, 135), png = 0), # index 0 is the thumbnail
-							      MultiContentEntryPixmapAlphaTest(pos = (190, 0), size = (180, 135), png = 1), # index 0 is the thumbnail
-							      MultiContentEntryPixmapAlphaTest(pos = (370, 0), size = (180, 135), png = 2), # index 0 is the thumbnail
-							      MultiContentEntryPixmapAlphaTest(pos = (550, 0), size = (180, 135), png = 3), # index 0 is the thumbnail							
-						      ]),
-					      "state": (135,[
-							      MultiContentEntryText(pos = (0, 35), size = (740, 65), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER| RT_WRAP, text = 0), # index 0 is the name
-						      ])
-					      },
-					      "fonts": [gFont("Regular", 20),gFont("Regular", 14),gFont("Regular", 28)],
-					      "itemHeight": 135
-				      }
-				      </convert>
-		</widget>
-		<widget name="detailtext" position="350,225" size="730,280" zPosition="10" font="Regular;22" foregroundColor="white" backgroundColor="darkgrey" transparent="1"/>
-		<eLabel position="0,518" size="1100,2" backgroundColor="crypt_emm"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position=" 80,525" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position=" 80,525" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<ePixmap position="980,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
-		<widget name="thumbnail" position="0,0" size="180,135" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
-	</screen>
-	<screen name="MyTubeSettingsScreen" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="MyTubeSettingsScreen">
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
-		<eLabel position="910, 80" size="350, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="MyTubeSettingsScreen" foregroundColor="crypt_emm"/>
-		
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-	</screen>
-	<screen name="MyTubeTasksScreen" backgroundColor="background" position="300,90" size="680,570" title="MyTubeTasksScreen">
-		<widget name="title" position="80,60" size="600, 32" font="Regular;27" halign="center" backgroundColor="unb67a2" transparent="1"/>
-		<widget source="tasklist" render="Listbox" position="10, 100" size="640, 410" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
-		<convert type="TemplatedMultiContent">
-					      {"template": [
-							      MultiContentEntryText(pos = (10, 3), size = (230, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
-							      MultiContentEntryText(pos = (250, 3), size = (180, 24), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
-							      MultiContentEntryProgress(pos = (440, 3), size = (100, 24), percent = -3), # index 3 should be progress 
-							      MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
-						      ],
-					      "fonts": [gFont("Regular", 22),gFont("Regular", 18)],
-					      "itemHeight": 30
-					      }
-				      </convert>
-		</widget>
-		<eLabel position="0,518" size="680,2" backgroundColor="crypt_emm"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position=" 80,525" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position=" 80,525" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<ePixmap position="550,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
-		<widget name="title" position="0,0" size="0,0"/>
-	</screen>
-	<screen name="MyTubePlayerMainScreen" backgroundColor="background" position="0,0" size="1280,720" title="MyTubePlayerMainScreen..." flags="wfNoBorder">
-		<eLabel position="910, 50" size="300, 22" text="MyTube Player" font="Regular; 20" halign="right" foregroundColor="crypt_emm" transparent="1" zPosition="2" backgroundColor="black"/>
-		<widget name="config" backgroundColor="background" zPosition="2" position="80, 110" size="505, 26" foregroundColor="black" scrollbarMode="showNever" transparent="1"/>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<widget source="feedlist" selectionPixmap="easy-skin-hd/menu/on_main_menu_625x85.png" backgroundColor="#41000000" render="Listbox" position="590, 110" size="635, 465" zPosition="2" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"templates":
-					{"default": (85,[
-							MultiContentEntryPixmapAlphaTest(pos = (5, 1), size = (100, 75), png = 4),
-							MultiContentEntryText(pos = (110, 1), size = (590, 25), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1),
-							MultiContentEntryText(pos = (110, 27), size = (300, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5),
-							MultiContentEntryText(pos = (110, 48), size = (300, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6),
-							MultiContentEntryText(pos = (400, 27), size = (200, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7),
-							MultiContentEntryText(pos = (400, 48), size = (200, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8),
-						]),
-					"state": (85,[
-							MultiContentEntryText(pos = (20, 1), size = (560, 40), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0),
-							MultiContentEntryText(pos = (20, 43), size = (560, 30), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1),
-						])
-					},
-					"fonts": [gFont("Regular", 20),gFont("Regular", 16),gFont("Regular", 22),gFont("Regular", 18)],
-					"itemHeight": 85
-				}
-				</convert>
-		</widget>
-		<ePixmap pixmap="easy-skin-hd/buttons/key_menu.png" position="1170, 650" zPosition="4" size="35,25" alphatest="blend"/>
-		<eLabel position="50, 72" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="key_yellow" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<eLabel backgroundColor="#18188b" font="Regular;20" halign="center" text="Info" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
-		<widget name="HelpWindow" position="90,210" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<eLabel position="0, 0" size="10, 10"/>
-		<widget name="VKeyIcon" position="0,0" size="0,0"/>
-		<eLabel position="50, 610" size="1160, 1" backgroundColor="crypt_emm"/>
-	</screen>
-	<screen name="MyTubeSuggestionsListScreen" position="80, 140" backgroundColor="background" zPosition="6" size="502, 227" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-1" size="505, 227" alphatest="on" transparent="1" backgroundColor="transparent"/>
-		<widget source="suggestionslist" render="Listbox"  backgroundColor="background" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x20.png" position="0, 0" zPosition="7" size="500, 225" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="TemplatedMultiContent">
-						      {"template": [
-								      MultiContentEntryText(pos = (0, 1), size = (380, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-								      MultiContentEntryText(pos = (390, 1), size = (180, 24), font=1, flags = RT_HALIGN_RIGHT, text = 1), # index 1 are the rtesults
-							      ],
-						      "fonts": [gFont("Regular", 22),gFont("Regular", 18)],
-						      "itemHeight": 25
-						      }
-			</convert>
-		</widget>
-	</screen>
-	<screen name="MyTubeHistoryScreen" position="80, 140" backgroundColor="background" zPosition="6" size="505, 227" flags="wfNoBorder">
-		<widget source="historylist" render="Listbox"  backgroundColor="background" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x20.png" position="0, 0" zPosition="7" size="503, 225" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="TemplatedMultiContent">
-						      {"template": [
-								      MultiContentEntryText(pos = (0, 1), size = (340, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							      ],
-						      "fonts": [gFont("Regular", 22),gFont("Regular", 18)],
-						      "itemHeight": 25
-						      }
-			</convert>
-		</widget>
-	</screen>
-
 	<screen name="SleepTimerEdit" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Sleep Timer">
 		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 22" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -2160,7 +1026,6 @@ self.autoResize()
 		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 22" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<eLabel position="890, 80" size="320, 22" text="Sleep Timer" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
 		<eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
 		<ePixmap position="150,195" size="400,200" pixmap="easy-skin-hd/frame/frame_400x200.png" alphatest="on" zPosition="2" />
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
@@ -2174,79 +1039,6 @@ self.autoResize()
 		<widget position="650,195" size="510,384" name="config" backgroundColor="background" transparent="1" font="Regular;20" halign="center" zPosition="2" />
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm"/>
 	</screen> 
-	<!-- AutoTimer Plugin -->
-	<screen name="AutoTimerHelp" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Help">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Help" foregroundColor="crypt_emm"/>
-		<widget position="590, 145" size="610, 450" name="detailtext" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
-	<screen name="AutoTimerOverview" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Overview">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Overview" foregroundColor="crypt_emm"/>
-		<widget position="590, 145" size="610, 450" name="entries" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
-	<screen name="AutoTimerEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Editor">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Editor" foregroundColor="crypt_emm"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
-		<widget font="Regular;20" halign="center" source="help" render="Label" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
-	<screen name="AutoTimerSettings" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Settings">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Settings" foregroundColor="crypt_emm"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
-		<widget font="Regular;20" halign="center" name="help" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
-	<screen name="AutoTimerImporter" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Importer">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Importer" foregroundColor="crypt_emm"/>
-		<widget position="590, 145" size="610, 450" name="list" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
-	<screen name="AutoTimerFilterEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Filter Editor">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Filter Editor" foregroundColor="crypt_emm"/>
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
-	<screen name="AutoTimerServiceEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Service Editor">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Service Editor" foregroundColor="crypt_emm"/>
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
 	<screen flags="wfNoBorder" name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor">
 		<eLabel backgroundColor="grey" position="80,125" size="300,420" zPosition="1"/>
 		<eLabel backgroundColor="black" position="81,126" size="298,418" zPosition="2"/>
@@ -2281,9 +1073,6 @@ self.autoResize()
 		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_pause.png"/>
 		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_forward.png"/>
 		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_stop.png"/>
-	</screen>
-	<screen name="MovieContextMenu" position="340,180" size="600,400" title="Movielist menu">
-		<widget name="menu" position="20,20" size="560,360" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="Standby" position="0,0" size="1280,720" title="Standby" flags="wfNoBorder"/>
 	<screen name="TitleCutter" position="0,0" size="1280,720" title="Cutlist editor" flags="wfNoBorder">
@@ -2341,30 +1130,6 @@ self.autoResize()
 		<widget name="streamlist" position="400,170" size="810,415" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<eLabel position="50,625" size="1160,1" backgroundColor="crypt_emm" zPosition="1"/>
 		<eLabel position="910,80" size="300,22" font="Named;20" backgroundColor="black" halign="right" transparent="1" text="StreamTV List" foregroundColor="crypt_emm"/>
-	</screen>
-
-	<screen name="OpenWebifConfig" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="OpenWebif Config">
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50,30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75,30" size="80,20" font="Named;16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-		<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155,30" size="500,20" font="Named;16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-		<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="50,102" size="1160,1" backgroundColor="crypt_emm" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55,155" size="300,500"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="key_yellow" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#18188b" font="Regular;20" halign="center" name="key_blue" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<widget name="lab1" position="449,593" size="715,30" font="Regular;23" halign="center" transparent="1"/>
-		<eLabel position="50,625" size="1160,1" backgroundColor="crypt_emm" zPosition="1"/>
-		<eLabel position="910,80" size="300,22" font="Named;20" backgroundColor="black" halign="right" transparent="1" text="OpenWebif Config" foregroundColor="crypt_emm"/>
 	</screen>
 	<screen name="VideoEnhancementSetup" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="VideoEnhancementSetup">
 		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50,30" zPosition="3" size="14,14" alphatest="on"/>
@@ -2434,226 +1199,8 @@ self.autoResize()
 		</widget>
 		<eLabel position="0,167" size="680,1" backgroundColor="grey" zPosition="3"/>
 	</screen> 
-	<screen name="SoftwareManagerSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Software Manager Setup">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Software Manager Setup" foregroundColor="crypt_emm"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
-		<widget font="Regular;20" halign="center" source="introduction" render="Label" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
-	<screen name="SoftwareManagerInfo" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Softwaremanager informations" >
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-   		<eLabel position="890, 80" size="320, 22" text="Software Manager Informations" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
-		<widget position="590, 170" size="610, 415" source="list" render="Listbox" scrollbarMode="showOnDemand" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" selectionDisabled="0">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (10, 0), size = (595, 50), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
-					],
-				"fonts": [gFont("Regular", 24),gFont("Regular", 22)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
-		<widget source="introduction" render="Label" position="125, 135" size="400,400" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
-	</screen>	
-	<screen name="UpdatePlugin" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Software Update...">
-		<panel name="FullScreenWindow" />
-		<widget name="activityslider" transparent="1" backgroundColor="transpBlack"  position="center,270" size="503,5" zPosition="10"/>
-		<widget source="package" transparent="1" backgroundColor="transpBlack" render="Label" position="center,330" size="503,35" font="Regular;22" halign="center" valign="center" />
-		<widget source="status" transparent="1" backgroundColor="transpBlack"  render="Label" position="center,360" size="503,30" font="Regular;22" halign="center" valign="center" />
-		<widget name="slider" transparent="1" backgroundColor="transpBlack" position="center,390" size="503,30" />
-	</screen>
-	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Softwaremanager..." >
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-   		<eLabel position="890, 80" size="320, 22" text="Software Manager" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
-		<widget position="665,145" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
-				  MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = '>') ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<widget source="menu" render="Listbox" position="125, 135" size="400,400" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (0, 0), size = (390, 390), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 0 is the MenuText,
-					],
-				"fonts": [gFont("Regular", 19)],
-				"itemHeight": 390
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="RestoreMenu" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Restore Backups">
-		<panel name="FullScreenWindow" />
-		<widget name="filelist" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-	</screen>
-	<screen name="BackupSelection" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Select files/folders to backup">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<widget name="checkList" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
-	</screen>
-	<screen name="IpkgInstaller" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Ipkg Installer...">
-		<widget name="list" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
-		<widget source="introduction" render="Label" position="125, 135" size="400,400" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
-	</screen>
-	<screen name="IPKGMenu" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Select IPKG source.....">
-		<widget name="filelist" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
-		<panel name="FullScreenWindow" />		
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />	
-	</screen>
-	<screen name="IPKGSource" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="IPKG source">
-		<widget name="text" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<panel name="FullScreenWindow" />
-	</screen>
-	<screen name="BackupScreen" position="135,144" size="350,310" title="Backup is running">
-		<widget name="config" position="10,10" size="330,250" transparent="1" scrollbarMode="showOnDemand"/>
-	</screen>
- 	<screen name="PacketManager" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Softwaremanager..." >
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-   		<eLabel position="890, 80" size="320, 22" text="Software Manager" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<widget source="list" render="Listbox" position="665,145"  size="500,450" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (10, 5), size = (670, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (10, 35), size = (670, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (690, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
-						MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index 4 is the div pixmap
-					],
-				"fonts": [gFont("Regular", 22),gFont("Regular", 17)],
-
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="PluginManager" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extensions management">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-   		<eLabel position="890, 80" size="320, 22" text="Software Manager" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<widget source="list" render="Listbox" position="535,145" size="710, 463" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand">
-			<convert type="TemplatedMultiContent">
-				{"templates":
-					{"default": (51,[
-							MultiContentEntryText(pos = (30, 1), size = (570, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (30, 25), size = (570, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-							MultiContentEntryPixmapAlphaTest(pos = (635, 0), size = (48, 48), png = 5), # index 5 is the status pixmap
-							MultiContentEntryPixmapAlphaTest(pos = (0, 49), size = (650, 2), png = 6), # index 6 is the div pixmap
-						]),
-					"category": (50,[
-							MultiContentEntryText(pos = (30, 0), size = (600, 22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (30, 22), size = (600, 16), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-							MultiContentEntryPixmapAlphaTest(pos = (0, 38), size = (650, 2), png = 3), # index 3 is the div pixmap
-						])
-					},
-					"fonts": [gFont("Regular", 22),gFont("Regular", 16)],
-					"itemHeight": 50
-				}
-			</convert>
-		</widget>	
-		<ePixmap position="60, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
-		<widget source="status" render="Label" position="60, 135" size="390,400" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
-	</screen>
- 	<screen name="PluginManagerInfo" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extensions management">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-   		<eLabel position="890, 80" size="320, 22" text="Plugin manager activity information" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>		
-		<widget source="list" render="Listbox" position="535,145" size="710, 463" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand">
-				<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (50, 1), size = (250, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (50, 25), size = (640, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
-							MultiContentEntryPixmapAlphaTest(pos = (0, 1), size = (48, 48), png = 2), # index 2 is the status pixmap
-							MultiContentEntryPixmapAlphaTest(pos = (0, 49), size = (650, 2), png = 3), # index 3 is the div pixmap
-						],
-					"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
-					"itemHeight": 50
-					}
-				</convert>
-		</widget>
-		<ePixmap position="60, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
-		<widget source="status" render="Label" position="60, 135" size="390,400" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
-	</screen>
-	<screen name="PluginManagerHelp" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extensions management">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-   		<eLabel position="890, 80" size="320, 22" text="Plugin manager activity information" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>		
-		<widget source="list" render="Listbox" pposition="535,145" size="710, 463" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand">
-			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (50, 1), size = (540, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (50, 25), size = (540, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
-							MultiContentEntryPixmapAlphaTest(pos = (0, 1), size = (48, 48), png = 2), # index 2 is the status pixmap
-							MultiContentEntryPixmapAlphaTest(pos = (0, 49), size = (550, 2), png = 3), # index 3 is the div pixmap
-						],
-					"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
-					"itemHeight": 50
-					}
-			</convert>
-		</widget>
-		<ePixmap position="60, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
-		<widget source="status" render="Label" position="60, 135" size="390,400" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
-	</screen>
-	<screen name="ZapHistoryConfigurator" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
 	<screen name="ZapHistoryBrowser" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
@@ -2661,27 +1208,8 @@ self.autoResize()
 		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
 		<widget position="590, 170" size="610, 415" name="list" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
-	<screen name="movieBrowserConfig" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Movie Browser Setup">
-		<panel name="FullScreenWindow" />
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<widget name="plugin" position="50, 185" size="512,288" alphatest="blend" zPosition="1" />
-	</screen>
-	<screen name="mp3BrowserConfig" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Movie Browser Setup">
-		<panel name="FullScreenWindow" />
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<widget name="plugin" position="50, 185" size="512,288" alphatest="blend" zPosition="1" />
-	</screen>
 	<screen name="FileManager" position="0,0" size="1280,720" title="File Manager" backgroundColor="un44000000" flags="wfNoBorder">
-		<panel name="FullScreenWindow" />
-   		<eLabel position="890, 80" size="320, 22" text="File Manager" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>		
+		<panel name="FullScreen2Window" />
 		<widget name="list_left_text" font="Regular;28" position="90,70" size="150,35" zPosition="1" foregroundColor="white" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="list_right_text" font="Regular;28" position="655,70" size="150,35" zPosition="1" foregroundColor="white" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="list_left" position="40,120" size="590,490" zPosition="1" transparent="1" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="background"/>
@@ -2692,237 +1220,13 @@ self.autoResize()
 		<panel name="FullscreenBlue1Panel" />
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/key_menu.png" position="75,645" size="35,25" zPosition="2"/>	    
 	</screen>
-	<screen name="WeatherPluginEntriesListConfigScreenfore" position="0,0" size="1280,720" title="WeatherPlugin: List of Entries (foreca.com)" backgroundColor="un44000000" flags="wfNoBorder">
-		<panel name="FullScreenWindow" />
-		<eLabel position="890, 80" size="320, 22" text="WeatherPlugin: List of Entries (foreca.com)" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>		
-		<widget name="city" position="605, 115" size="150,50" font="Regular;20" halign="left"/>
-		<widget name="language" position="735, 115" size="150,50" font="Regular;20" halign="left"/>
-		<widget position="590, 170" size="610, 415" name="entrylist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-	</screen>
-	<screen name="WeatherPluginEntryConfigScreenfore" position="0,0" size="1280,720" title="WeatherPlugin: Edit Entry (foreca.com)" backgroundColor="un44000000" flags="wfNoBorder">
-		<panel name="FullScreenWindow" />
-		<eLabel position="890, 80" size="320, 22" text="WeatherPlugin: Edit Entry (foreca.com)" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>		
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-	</screen>
-	<screen name="GmailSetup" position="0,0" size="1280,720" title="Gmail Settings" backgroundColor="un44000000" flags="wfNoBorder">
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreenWindow" />
-		<eLabel position="890, 80" size="320, 22" text="Gmail - Settings" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>			
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<widget name="info" position="605, 115" size="150,50" font="Regular;20" halign="left"/>
-	</screen>
-	<screen name="Gmailbodyviewer" position="0,0" size="1280,720" title="Gmail - View Mail"  backgroundColor="un44000000" flags="wfNoBorder">
-		<widget name="titel" position="123,110" size="1020,30" zPosition="1" font="Regular;20" transparent="1"  foregroundColor="crypt_emm" backgroundColor="black" valign="center" halign="left" />
-		<widget name="author" position="123,140" size="1020,30" transparent="1" halign="left" font="Regular;20" foregroundColor="yellow"/>
-		<widget name="tdate" position="123,170" size="1020,30" transparent="1" halign="left" font="Regular;20" foregroundColor="yellow"/>
-		<widget name="text" position="center,210" size="1020,400" scrollbarMode="showOnDemand" transparent="1" zPosition="2" font="Regular;22" />
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreenWindow" />  
-	</screen>
-	<screen name="Gmailfeedsscrn" position="0,0" size="1280,720" title="Gmail - Mail List" backgroundColor="un44000000" flags="wfNoBorder">
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreenWindow" />  
-		<eLabel position="890, 80" size="320, 22" text="Gmail - Mail List" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>					
-		<widget name="menu" position="center,center" size="1020,500" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
-		<widget name="info" position="center,center" zPosition="4" size="620,300" font="Regular;24" foregroundColor="#ffffff" transparent="1" halign="center" valign="center" />
-	</screen>
-
-	<screen name="AP_ConfigScreen" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<panel name="FullScreenWindow" />  
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="AirPlayer Setup" foregroundColor="crypt_emm"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
-	<screen name="EcasaPictureWall" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Flickr Wall" foregroundColor="crypt_emm"/>
-
-		<!--<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/key_menu.png" position="75,645" size="35,25" zPosition="2"/>-->
-		<widget name="waitingtext" position="center,center" size="1280,720" backgroundColor="#41000000"  valign="center" halign="center" font="Regular;26" transparent="1"/>
-		
-		<widget name="image0"  position="110,110"  size="190,160"/>
-		<widget name="image1"  position="320,110"  size="190,160"/>
-		<widget name="image2"  position="530,110"  size="190,160"/>
-		<widget name="image3"  position="740,110"  size="190,160"/>
-		<widget name="image4"  position="950,110"  size="190,160"/>
-		
-		<widget name="image5"  position="110,280"  size="190,160"/>
-		<widget name="image6"  position="320,280" size="190,160"/>
-		<widget name="image7"  position="530,280" size="190,160"/>
-		<widget name="image8"  position="740,280" size="190,160"/>
-		<widget name="image9"  position="950,280" size="190,160"/>
-		
-		<widget name="image10" position="110,450"  size="190,160"/>
-		<widget name="image11" position="320,450" size="190,160"/>
-		<widget name="image12" position="530,450" size="190,160"/>
-		<widget name="image13" position="740,450" size="190,160"/>
-		<widget name="image14" position="950,450" size="190,160"/>
-		<!-- TODO: find some better picture -->
-		<widget name="highlight" position="110,272" size="190,5"/>
-	</screen>
-	<screen name="ViewerSelectScreen" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreenWindow" />
-		<eLabel position="890, 80" size="320, 22" text="Web Cam Viewer" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>			
-		<widget position="590, 170" size="610, 415" name="list" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
-	<screen name="WebcamViewer" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreenWindow" />
-		<eLabel position="890, 80" size="320, 22" text="Web Cam Viewer" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>			
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
-		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="TravelWebcamviewer" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
-		<widget source="list" render="Listbox" position="590, 140" size="610, 445" zPosition="1" scrollbarMode="showOnDemand" transparent="1"  >
-			<convert type="TemplatedMultiContent">
-			{"templates":
-				{"default": (77,[
-						MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (100, 75), png = 4), # index 4 is the thumbnail
-						MultiContentEntryText(pos = (100, 1), size = (500, 22), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
-						MultiContentEntryText(pos = (100, 24), size = (300, 18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
-						MultiContentEntryText(pos = (100, 43), size = (300, 18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
-						MultiContentEntryText(pos = (400, 24), size = (200, 18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
-						MultiContentEntryText(pos = (400, 43), size = (200, 18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
-					]),
-				"status": (77,[
-						MultiContentEntryText(pos = (10, 1), size = (500, 28), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (10, 22), size = (500, 46), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
-					])
-				},
-				"fonts": [gFont("Regular", 22),gFont("Regular", 18),gFont("Regular", 26),gFont("Regular", 20)],
-				"itemHeight": 77
-			}
-			</convert>
-		</widget>
-		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
-		<eLabel position="890, 80" size="320, 22" text="Web Cam Travel" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>			
-
-		<widget name="count" position="25,585" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="page" position="170,585" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="currentnumbers" position="315,585" zPosition="5" size="240,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreenWindow" />
-	</screen>
-	<screen  name="GnewsFeedScreenList" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreenWindow" />
-		<eLabel position="890, 80" size="320, 22" text="Google News" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
-		<widget position="590, 150" size="610, 440" name="mylist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
-	<screen  name="GnewsFeedScreenContent" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreenWindow" />
-		<widget position="890, 80" size="320, 22" name="info" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_radio.png" position="45, 155" size="300,500"/>
-		<widget position="360, 150" size="830, 430" name="mylist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_820x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
-		<screen name="FMenusimple" position="center,center" size="920,600" title="Feed"  flags="wfNoBorder" >
-		<widget name="titel" position="20,0" zPosition="1" size="560,130" font="Regular;24" transparent="1"  backgroundColor="#00000000" foregroundColor="yellow" valign="center" halign="left" />
-		<widget name="leagueNumberWidget" position="830,60" size="90,30" transparent="1" halign="left" font="Regular;20" foregroundColor="yellow"/>
-		<ePixmap position="830,20" zPosition="4" size="60,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/arrows.png" transparent="1" alphatest="on" />
-		<ePixmap position="15,88" size="890,12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/slider.png" alphatest="blend" transparent="1" backgroundColor="transparent"/>
-		<widget name="text" position="20,100" size="880,400" font="Regular;22" />
-		<ePixmap position="15,510" size="890,5" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/slider.png" alphatest="blend" transparent="1" backgroundColor="transparent"/>
-	</screen>
-	<screen name="haupt_Screen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/mpback.png" />
-		<widget source="session.VideoPicture" render="Pig" position="886,22" size="328,186" zPosition="3" backgroundColor="transparent" />
-		<ePixmap position="1160,555" size="90,36" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/buttongrey.png" alphatest="blend" backgroundColor="#26181d20" />
-		<eLabel text="Menu " position="1160,555" size="90,36" transparent="1" font="mediaportal; 18" backgroundColor="#26181d20" foregroundColor="#00ffffff" valign="center" halign="center" zPosition="1" />
-		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/tec/images/buttonglas.png" position="1160,555" size="90,36" alphatest="blend" zPosition="2" />
-		<ePixmap position="1160,605" size="90,36" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/buttongrey.png" alphatest="blend" backgroundColor="#26181d20" />
-		<eLabel text=" Help " position="1160,605" size="90,36" transparent="1" font="mediaportal; 18" backgroundColor="#26181d20" foregroundColor="#00ffffff" valign="center" halign="center" zPosition="1" />
-		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/tec/images/buttonglas.png" position="1160,605" size="90,36" alphatest="blend" zPosition="2" />
-		<ePixmap position="1160,655" size="90,36" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/buttongrey.png" alphatest="blend" backgroundColor="#26181d20" />
-		<eLabel text=" Exit " position="1160,655" size="90,36" transparent="1" font="mediaportal; 18" backgroundColor="#26181d20" foregroundColor="#00ffffff" valign="center" halign="center" zPosition="1" />
-		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/tec/images/buttonglas.png" position="1160,655" size="90,36" alphatest="blend" zPosition="2" />
-		<!-- select screen -->
-		<widget name="Mediatheken" position="40,165" size="280,30" backgroundColor="#26181d20" zPosition="5" font="mediaportal; 26" halign="left" transparent="1" foregroundColor="#00ffffff" />
-		<widget name="mediatheken" position="40,210" size="280,480" scrollbarMode="showOnDemand" backgroundColor="#26181d20" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/sel.png" foregroundColor="#00bbbbbb" />
-		<widget name="Grauzone" position="322,165" size="280,30" backgroundColor="#26181d20" zPosition="5" font="mediaportal; 26" halign="left" transparent="1" foregroundColor="#00ffffff" />
-		<widget name="grauzone" position="322,210" size="280,480" scrollbarMode="showOnDemand" backgroundColor="#26181d20" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/sel.png" foregroundColor="#00bbbbbb" />
-		<widget name="Funsport" position="604,165" size="280,30" backgroundColor="#26181d20" zPosition="5" font="mediaportal; 26" halign="left" transparent="1" foregroundColor="#00ffffff" />
-		<widget name="funsport" position="604,210" size="280,480" scrollbarMode="showOnDemand" backgroundColor="#26181d20" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/sel.png" foregroundColor="#00bbbbbb" />
-		<widget name="Porn" position="886,215" size="280,30" backgroundColor="#26181d20" zPosition="5" font="mediaportal; 26" halign="left" transparent="1" foregroundColor="#00ffffff" />
-		<widget name="porn" position="886,255" size="280,455" backgroundColor="#26181d20" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/sel.png" foregroundColor="#00bbbbbb" />
-		<widget name="name" position="77,102" size="600,40" foregroundColor="#00ffffff" backgroundColor="#26181d20" transparent="1" font="mediaportal;32" valign="center" halign="center" />
-		<eLabel position="885,21" size="330,188" backgroundColor="#00ffffff" zPosition="0" name="Videoback" foregroundColor="#00ffffff" />
-	</screen>
-	<screen name="hauptScreenSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/mpback.png" />
-		<widget source="global.CurrentTime" render="Label" position="840,42" size="300,28" font="mediaportal; 25" halign="left" backgroundColor="#26181d20" transparent="1" foregroundColor="#00bbbbbb">
-			<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1140,42" size="100,28" font="mediaportal;25" halign="center" backgroundColor="#26181d20" transparent="1" foregroundColor="#00bbbbbb">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="session.VideoPicture" render="Pig" position="913,136" size="328,186" zPosition="3" backgroundColor="transparent" />
-		<eLabel position="912,135" size="330,188" backgroundColor="#00ffffff" zPosition="0" name="Videoback" foregroundColor="#00ffffff" />
-		<widget name="title" position="55,108" size="850,55" backgroundColor="#26181d20" transparent="1" zPosition="1" font="mediaportal; 26" valign="center" halign="left" foregroundColor="#00bbbbbb" />
-		<widget name="config" position="55,173" itemHeight="50" size="830,500" backgroundColor="#26181d20" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="easy-skin-hd/menu/on_main_menu_820x50.png" zPosition="1" foregroundColor="#00bbbbbb" />
-		<widget name="name" position="914,368" size="330,30" foregroundColor="#00ffffff" backgroundColor="#26181d20" transparent="1" font="mediaportal;28" valign="top" halign="center" />
-		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/setup.png" position="989,424"  zPosition="1" size="176,200" alphatest="on" />
-	</screen>
 	<!-- Setup -->
 	<screen name="TranscodingSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Transcoding Setup">
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Transcoding Setup" foregroundColor="crypt_emm"/>
 		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
@@ -2930,25 +1234,23 @@ self.autoResize()
 		<widget font="Regular;20" halign="center" name="text" position="590,510" size="610, 30" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<screen name="CrossEPG_Setup" position="0,0" size="1280, 720" backgroundColor="un44000000" title="CrossEPG Configuration" flags="wfNoBorder" >
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="CrossEPG Configuration" foregroundColor="crypt_emm"/>
 		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget position="590, 170" size="610, 410" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
 		<widget font="Regular;20" halign="center" name="information" position="100,210" size="300,160" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<screen name="CrossEPG_Menu" position="0,0" size="1280, 720" backgroundColor="un44000000" title="CrossEPG Menu" flags="wfNoBorder" >
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<panel name="FullscreenRed2Panel" />
 		<eLabel backgroundColor="#9f1313" font="Regular;20" halign="center" text="Exit" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="CrossEPG Menu" foregroundColor="crypt_emm"/>
 		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
@@ -2963,12 +1265,11 @@ self.autoResize()
 		</widget>
 	</screen>
 	<screen name="CrossEPG_Providers" position="0,0" size="1280, 720" backgroundColor="un44000000"  title="CrossEPG Provider XMLTV-OpenTV-XEPGDB-MHW2-M7-RAI" flags="wfNoBorder" >
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="CrossEPG Provider" foregroundColor="crypt_emm"/>
 		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
@@ -2983,12 +1284,11 @@ self.autoResize()
 		</widget>
 	</screen>
 	<screen name="CrossEPG_Ordering" position="0,0" size="1280,720" title="CrossEPG Order Download List" backgroundColor="un44000000" flags="wfNoBorder" > 
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="CrossEPG Order Download List" foregroundColor="crypt_emm"/>
 		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
@@ -3003,12 +1303,11 @@ self.autoResize()
 		</widget>
 	</screen>
 	<screen name="CrossEPG_Info" position="0,0" size="1280,720" title="CrossEPG - DB Info" backgroundColor="un44000000" flags="wfNoBorder" >
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="CrossEPG - DB Info" foregroundColor="crypt_emm"/>
 		<widget name="version"            position="60,120" size="720,25" font="Regular;26" foregroundColor="bluette" backgroundColor="black" transparent="1" />
 		<ePixmap position="60,150" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />
 		<widget name="create"             position="60,180" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
@@ -3026,42 +1325,15 @@ self.autoResize()
 		<widget name="hashes_count"       position="60,540" size="720,25" font="Regular;20" foregroundColor="bluette" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="CrossEPG_About" position="0,0" size="1280,720" title="CrossEPG About" backgroundColor="un44000000" flags="wfNoBorder" > 
-		<panel name="FullScreenWindow" />
+		<panel name="FullScreen2Window" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="CrossEPG - About" foregroundColor="crypt_emm"/>
 		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget name="about" position="490, 170" size="710, 410" font="Regular;20" backgroundColor="black" transparent="1" zPosition="4" />
 	</screen>	
-		
-	
-	
- <screen name="PluginDetails" position="270, 90" size="700,576" title="Plugin details">
-  <widget source="key_red" render="Label" position="120, 535" zPosition="1" size="200, 36" font="Regular;22" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1"/>
-  <widget source="key_green" render="Label" position="390, 535" zPosition="1" size="200, 36" font="Regular;22" foregroundColor="green" halign="center" valign="center" backgroundColor="black" transparent="1"/>
-  <widget source="author" render="Label" position="10,50" size="500,25" zPosition="10" font="Regular;21" transparent="1"/>
-  <widget name="statuspic" position="553, 34" size="48,48" alphatest="on"/>
-  <widget name="divpic" position="0,80" size="600,2" alphatest="on"/>
-  <widget name="detailtext" position="10, 120" size="330, 350" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top"/>
-  <widget name="screenshot" position="360, 120" size="330, 350" alphatest="on"/>
-  <eLabel position="0, 525" size="700, 2" backgroundColor="crypt_emm"/>
- </screen>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
  <screen name="VlcMediaListScreen" position="90,90" size="1100,576" title="VlcMediaListScreen">
   <eLabel position="800, 25" size="300, 22" text="vlc player" font="Regular; 20" halign="center"/>
   <eLabel position="740,100" size="540,2" backgroundColor="crypt_emm"/>
@@ -3307,82 +1579,6 @@ self.autoResize()
   <widget name="config" position="10, 10" size="580, 240" transparent="1"/>
   <eLabel position="0, 290" size="600, 1" backgroundColor="crypt_emm"/>
  </screen>
-
- 
- 
- 
- 
- 
- <screen name="SHOUTcastWidget" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="SHOUTcast">
-  <eLabel text="SHOUTcast" position="630, 58" size="555, 22" font="Named; 16" halign="right" backgroundColor="transpBlack" transparent="1" foregroundColor="crypt_emm"/>
-  <ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-  <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-   <convert type="ClockToText">Default</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-   <convert type="ClockToText">Date</convert>
-  </widget>
-  <eLabel position="455, 80" size="730, 1" zPosition="1" backgroundColor="crypt_emm"/>
-  <ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-  <ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-  <ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-  <ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-  <widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-  <widget backgroundColor="#1f771f" font="Regular;20" halign="center" source="key_green" render="Label" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-  <widget backgroundColor="#a08500" font="Regular;20" halign="center" source="key_yellow" render="Label" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-  <widget backgroundColor="#18188b" font="Regular;20" halign="center" source="key_blue" render="Label" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-  
-  <widget name="headertext" position="127, 120" zPosition="1" size="1060, 23" font="Regular;20" transparent="1" backgroundColor="black"/>
-  <widget name="statustext" position="69, 260" zPosition="1" size="1160, 90" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="black"/>
-  <widget name="list" position="127, 155" zPosition="2" size="1060, 316" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black"/>
-  <widget name="titel" position="240, 490" zPosition="1" size="950, 20" font="Regular;18" transparent="1" backgroundColor="black"/>
-  <widget name="station" position="240, 510" zPosition="1" size="950, 40" font="Regular;18" transparent="1" backgroundColor="black"/>
-  <widget name="console" position="240, 550" zPosition="1" size="950, 50" font="Regular;18" transparent="1" backgroundColor="black"/>
-  <widget name="cover" zPosition="2" position="127, 490" size="102,110" alphatest="blend"/>
-  <ePixmap position="75, 70" zPosition="4" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" transparent="1" alphatest="on"/>
-  <eLabel position="127, 148" size="1060, 2" backgroundColor="crypt_emm"/>
-  <eLabel position="127, 479" size="1060, 2" backgroundColor="crypt_emm"/>
-  <eLabel position="127, 610" size="1060, 1" backgroundColor="crypt_emm"/>
- </screen>
-	<screen name="SHOUTcastSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
-		<panel name="FullScreenWindow" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Setup" foregroundColor="crypt_emm"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
- <screen name="SHOUTcastStreamripperRecordingPath" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Select record path for streamripper">
-  <ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-  <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-   <convert type="ClockToText">Default</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-   <convert type="ClockToText">Date</convert>
-  </widget>
-  <eLabel position="50, 102" size="1053, 1" backgroundColor="crypt_emm" zPosition="2"/>
-  <ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-  <eLabel text="Select record path for streamripper" position="550, 81" size="555, 22" font="Named; 16" halign="right" backgroundColor="transpBlack" transparent="1" foregroundColor="crypt_emm"/>
-  <widget name="target" position="400, 150" size="705, 22" valign="center" font="Regular;22" transparent="1" backgroundColor="black"/>
-  <widget name="filelist" position="400, 200" zPosition="1" size="705, 380" scrollbarMode="showOnDemand" transparent="1"/>
-  <ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-  <ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-  <ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-  <ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-  <widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-  <widget backgroundColor="#1f771f" font="Regular;20" halign="center" source="key_green" render="Label" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-  <widget backgroundColor="#a08500" font="Regular;20" halign="center" source="key_yellow" render="Label" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-  <widget backgroundColor="#18188b" font="Regular;20" halign="center" source="key_blue" render="Label" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-  <eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
- </screen>
- 
- 
- 
- 
- 
- 
  <screen name="MusicExplorer" position="0, 70" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" zPosition="-1">
   <ePixmap position="0, 0" zPosition="-1" size="1280,720" pixmap="easy-skin-hd/infobar.png"/>
   <ePixmap position="82, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_rewind.png" alphatest="on" transparent="1"/>
@@ -3434,7 +1630,6 @@ self.autoResize()
   <widget backgroundColor="#18188b" font="Regular;20" halign="center" source="key_blue" render="Label" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
   
   <eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
-  <eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Simple RSS Reader Setup" foregroundColor="crypt_emm"/>
  </screen>
  <screen name="RSSFeedView" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Simple RSS Reader">
   <ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
@@ -3444,7 +1639,6 @@ self.autoResize()
   <widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
    <convert type="ClockToText">Date</convert>
   </widget>
-  <eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Simple RSS Reader" foregroundColor="crypt_emm"/>
   <eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
   <widget source="info" render="Label" position="155, 120" size="1060, 30" halign="right" font="Regular; 18" backgroundColor="black" transparent="1"/>
   <widget source="content" render="Listbox" position="155, 153" size="1060, 383" transparent="1" scrollbarMode="showOnDemand">
@@ -3471,7 +1665,6 @@ self.autoResize()
   <ePixmap pixmap="easy-skin-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
   <widget source="info" render="Label" position="400, 120" size="810, 30" halign="right" font="Regular; 18" backgroundColor="black" transparent="1"/>
   <widget name="content" position="400, 170" size="810, 480" font="Regular; 22" backgroundColor="black" transparent="1"/>
-  <eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Simple RSS Reader" foregroundColor="crypt_emm"/>
  </screen>
  <screen name="RSSOverview" position="0,0" backgroundColor="un44000000" flags="wfNoBorder" size="1280,720" title="Simple RSS Reader">
   <ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
@@ -3485,8 +1678,6 @@ self.autoResize()
   <ePixmap pixmap="easy-skin-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
   <widget source="info" render="Label" position="400, 120" size="810, 30" halign="right" font="Regular; 18" backgroundColor="black" transparent="1"/>
   <widget name="content" position="400, 170" size="810, 380" font="Regular; 22" backgroundColor="black" transparent="1"/>
-  <eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Simple RSS Reader" foregroundColor="crypt_emm"/>
   <widget source="summary" render="Label" position="400, 560" size="810, 95" font="Regular;16" transparent="1" backgroundColor="black"/>
  </screen>
- 
 </skin>
