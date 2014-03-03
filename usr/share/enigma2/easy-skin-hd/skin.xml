@@ -267,8 +267,10 @@
 	<!-- Timer entry -->
 	<screen flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer entry">
 		<panel name="FullScreen2Window" />
-		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<widget name="HelpWindow" position="150,195" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget position="590, 90" size="610, 500" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<ePixmap pixmap="easy-skin-hd/frame/frame_400x255.png" position="50,90" size="400,255" alphatest="on" />
+		<widget name="description" position="70,100" size="360,235"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="HelpWindow" position="50,345" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="canceltext" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="oktext" position="440,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="cancel" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>

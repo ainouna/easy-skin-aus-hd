@@ -12,7 +12,7 @@
 		</widget>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv.png" position="250,155" size="300,470" zPosition="2"/>		
 	</screen>
-	<screen flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
+	<screen flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1280,720" backgroundColor="background" title="Power / Restart">
 		<panel name="FullScreen2Window" />
 		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -44,7 +44,7 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>	
-	<screen flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" backgroundColor="background" title="Main menu">
+	<screen flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" backgroundColor="background" title="Informations">
 		<panel name="FullScreen2Window" />
 		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
