@@ -584,7 +584,7 @@ self.autoResize()
 	<!-- Help menu -->
 	<screen flags="wfNoBorder" name="HelpMenu" backgroundColor="un44000000" position="0,0" size="1280,720" title="Menu">
 		<panel name="FullScreen2Window" />
-		<widget name="list" position="650,135" scrollbarMode="showOnDemand" size="510,430" transparent="1" zPosition="2"/>
+		<widget name="list" position="500,135" scrollbarMode="showOnDemand" size="660,430" transparent="1" zPosition="2"/>
 		<widget alphatest="on" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" position="250,110" size="154,500" zPosition="10"/>
 		<widget alphatest="on" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
 		<widget alphatest="on" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
