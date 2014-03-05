@@ -202,7 +202,7 @@
 		<widget source="Service" render="Label" position="830, 403" backgroundColor="background" zPosition="1" size="320, 220" font="Regular; 17" foregroundColor="grey">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_menu.png" transparent="1" alphatest="blend"/>
+		<panel name="FullscreenMenuButtonPanel" />
 		<widget backgroundColor="background" name="DescriptionBorder" position="0,0" size="0,0"/>
 		<eLabel position="820, 80" size="1, 546" backgroundColor="crypt_emm"/>
 	</screen> 
