@@ -267,8 +267,10 @@
 	<!-- Timer entry -->
 	<screen flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer entry">
 		<panel name="FullScreen2Window" />
-		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<widget name="HelpWindow" position="150,195" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget position="590, 90" size="610, 500" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<ePixmap pixmap="easy-skin-hd/frame/frame_400x255.png" position="50,90" size="400,255" alphatest="on" />
+		<widget name="description" position="70,100" size="360,235"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="HelpWindow" position="50,345" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="canceltext" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="oktext" position="440,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="cancel" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
@@ -394,7 +396,7 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 
-		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_menu.png" transparent="1" alphatest="blend"/>
+		<ePixmap position="32, 635" size="60, 60" zPosition="10" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" transparent="1" alphatest="blend"/>
 
 		<ePixmap position="50, 597" size="15, 10" pixmap="easy-skin-hd/icons/icon_event.png" alphatest="on"/>
 		<widget position="70, 590" size="70, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" halign="center" transparent="1" backgroundColor="black" foregroundColor="grey">
@@ -582,7 +584,7 @@ self.autoResize()
 	<!-- Help menu -->
 	<screen flags="wfNoBorder" name="HelpMenu" backgroundColor="un44000000" position="0,0" size="1280,720" title="Menu">
 		<panel name="FullScreen2Window" />
-		<widget name="list" position="650,135" scrollbarMode="showOnDemand" size="510,430" transparent="1" zPosition="2"/>
+		<widget name="list" position="500,135" scrollbarMode="showOnDemand" size="660,430" transparent="1" zPosition="2"/>
 		<widget alphatest="on" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" position="250,110" size="154,500" zPosition="10"/>
 		<widget alphatest="on" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
 		<widget alphatest="on" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
@@ -889,7 +891,7 @@ self.autoResize()
 		<widget name="bouquetlist" position="0,35" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="0,65" size="1280,590" backgroundColor="background" EntryForegroundColorSelected="blue" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="1" />
 		<widget name="timeline_now" position="0,50" zPosition="3" size="19,615" pixmap="easy-skin-hd/timeline-now.png" alphatest="on" />
-		<ePixmap position="65,665" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_menu.png" transparent="1" alphatest="blend"/>
+		<ePixmap position="32, 665" size="60, 60" zPosition="10" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" transparent="1" alphatest="blend"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 665" size="200,60" zPosition="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 665" size="200,60" zPosition="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 665" size="200,60" zPosition="1"/>
@@ -905,7 +907,7 @@ self.autoResize()
 		<widget name="bouquetlist" position="0,35" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="0,65" size="1280,590" backgroundColor="background" EntryForegroundColorSelected="blue" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="1" />
 		<widget name="timeline_now" position="0,50" zPosition="3" size="19,615" pixmap="easy-skin-hd/timeline-now.png" alphatest="on" />
-		<ePixmap position="65,665" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_menu.png" transparent="1" alphatest="blend"/>
+		<ePixmap position="32, 665" size="60, 60" zPosition="10" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" transparent="1" alphatest="blend"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 665" size="200,60" zPosition="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 665" size="200,60" zPosition="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 665" size="200,60" zPosition="1"/>
@@ -1109,6 +1111,16 @@ self.autoResize()
 		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_forward.png"/>
 		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_stop.png"/>
 	</screen>
+	<screen name="CutListMenu" position="center,center" size="510,485" backgroundColor="background" title="Cutlist editor - menu">
+		<widget source="menu" render="Listbox" position="0,0" size="485,500" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" scrollbarMode="showNever">
+			<convert type="TemplatedMultiContent">
+				{"template": [	MultiContentEntryText(pos = (20,0), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Regular",28)],
+				"itemHeight": 50
+				}
+			</convert>
+		</widget>
+	</screen>
 	<screen name="Standby" position="0,0" size="1280,720" title="Standby" flags="wfNoBorder"/>
 	<screen name="TitleCutter" position="0,0" size="1280,720" title="Cutlist editor" flags="wfNoBorder">
 		<eLabel position="80,125" size="300,420" zPosition="1" backgroundColor="grey"/>
@@ -1253,7 +1265,7 @@ self.autoResize()
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/key_menu.png" position="75,645" size="35,25" zPosition="2"/>	    
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" position="32, 635" size="35,25" zPosition="2"/>    
 	</screen>
 	<!-- Setup -->
 	<screen name="TranscodingSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Transcoding Setup">

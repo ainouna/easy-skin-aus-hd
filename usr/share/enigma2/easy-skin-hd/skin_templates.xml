@@ -57,7 +57,7 @@
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>	
 	</screen>
 	<screen name="FullscreenMenuButtonPanel">
-		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_menu.png" transparent="1" alphatest="blend"/>
+		<ePixmap position="32, 635" size="60, 60" zPosition="10" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" transparent="1" alphatest="blend"/>
 	</screen>
 	<screen name="FullscreenTextButtonPanel">
 		<widget name="VKeyIcon" position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_text.png" transparent="1" alphatest="blend"/>
