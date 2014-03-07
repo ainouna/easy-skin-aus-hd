@@ -498,7 +498,7 @@ self.autoResize()
 		<widget name="next_text" position="332, 117" zPosition="4" size="250,25" text="NEXT" font="Regular;20" halign="center" backgroundColor="black" transparent="1"/>
 		<widget name="more_text" position="582, 117" zPosition="4" size="250,25" text="MORE" font="Regular;20" halign="center" backgroundColor="black" transparent="1"/>
 		<widget name="date" position="930, 115" size="200,28" font="Regular;24" valign="center" halign="right" backgroundColor="black" transparent="1"/>
-		<widget name="list" position="80, 155" size="1060,450" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="80, 155" size="1060,450" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget position="75, 30" size="95, 20" halign="left" source="global.CurrentTime" render="Label" font="Named; 16" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
