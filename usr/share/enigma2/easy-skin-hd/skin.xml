@@ -498,7 +498,7 @@ self.autoResize()
 		<widget name="next_text" position="332, 117" zPosition="4" size="250,25" text="NEXT" font="Regular;20" halign="center" backgroundColor="black" transparent="1"/>
 		<widget name="more_text" position="582, 117" zPosition="4" size="250,25" text="MORE" font="Regular;20" halign="center" backgroundColor="black" transparent="1"/>
 		<widget name="date" position="930, 115" size="200,28" font="Regular;24" valign="center" halign="right" backgroundColor="black" transparent="1"/>
-		<widget name="list" position="80, 155" size="1060,450" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="80, 155" size="1060,450" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget position="75, 30" size="95, 20" halign="left" source="global.CurrentTime" render="Label" font="Named; 16" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -584,7 +584,7 @@ self.autoResize()
 	<!-- Help menu -->
 	<screen flags="wfNoBorder" name="HelpMenu" backgroundColor="un44000000" position="0,0" size="1280,720" title="Menu">
 		<panel name="FullScreen2Window" />
-		<widget name="list" position="500,135" scrollbarMode="showOnDemand" size="660,430" transparent="1" zPosition="2"/>
+		<widget name="list" position="500,110" scrollbarMode="showOnDemand" size="660,450" transparent="1" zPosition="2"/>
 		<widget alphatest="on" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" position="250,110" size="154,500" zPosition="10"/>
 		<widget alphatest="on" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
 		<widget alphatest="on" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
