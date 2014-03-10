@@ -125,7 +125,7 @@
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="scan_progress" position="245,260" size="280,14" transparent="1" zPosition="1"/>
+		<widget name="scan_progress" borderWidth="1" position="245,260" size="280,14" transparent="1" zPosition="1"/>
 		<widget font="Regular;20" halign="center" name="network" position="170,310" size="360,25" transparent="1" zPosition="1"/>
 		<widget font="Regular;20" halign="center" name="transponder" position="170,360" size="360,25" transparent="1" zPosition="1"/>
 		<widget font="Regular;20" halign="center" name="scan_state" position="170,410" size="360,45" transparent="1" valign="center" zPosition="2"/>
