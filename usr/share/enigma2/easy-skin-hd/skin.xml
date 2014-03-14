@@ -749,12 +749,12 @@ self.autoResize()
         	<widget backgroundColor="#000000" font="Regular;22" halign="left" name="RadioText" noWrap="1" position="185,630" shadowColor="#000000" shadowOffset="-1,-1" size="850,53" transparent="1" valign="bottom"/>
 	</screen>
 	<!-- Mute -->
-	<screen backgroundColor="#ff000000" flags="wfNoBorder" name="Mute" position="1050,42" size="100,100" title="Mute" zPosition="10">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/mute.png" position="0,0" size="100,100"/>
+	<screen backgroundColor="#ff000000" flags="wfNoBorder" name="Mute" position="1210,20" size="50,50" title="Mute" zPosition="10">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/mute_50x50_tx.png" position="0,0" size="50,50"/>
 	</screen>
 	<!-- Volume -->
 	<screen backgroundColor="black" flags="wfNoBorder" name="Volume" position="397,58" size="485,78" title="Volume" zPosition="1">
-		<ePixmap pixmap="easy-skin-hd/general/volume.png" position="0,0" size="485,78"/>
+		<ePixmap pixmap="easy-skin-hd/general/volume_tx.png" position="0,0" size="485,78"/>
 		<widget name="Volume" pixmap="easy-skin-hd/slider/slider_main.png" position="62,32" size="333,20" transparent="1" zPosition="2"/>
 	</screen>
 	
