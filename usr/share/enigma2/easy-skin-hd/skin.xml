@@ -1267,6 +1267,29 @@ self.autoResize()
 		<panel name="FullscreenBlue1Panel" />
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" position="32, 635" size="35,25" zPosition="2"/>    
 	</screen>
+	<screen name="FileCommanderScreen" position="0,0" size="1280,720" title="File Commander" backgroundColor="un44000000" flags="wfNoBorder">
+		<panel name="FullScreen2Window" />
+		<widget name="list_left_head" font="Regular;18" position="50,70" size="570,35" zPosition="1" foregroundColor="yellow" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="list_right_head" font="Regular;18" position="655,70" size="570,35" zPosition="1" foregroundColor="yellow" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="list_left" position="40,120" size="590,490" zPosition="1" transparent="1" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="background"/>
+		<widget name="list_right" position="645,120" size="580,490" zPosition="1" transparent="1" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="background" />
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" position="32, 635" size="60,60" zPosition="2"/>    
+	</screen>
+	<screen name="FileCommanderConfigScreen" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
+	  <!--<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv.png" position="55, 155" size="300,500"/>-->
+		<panel name="FullScreen2Window" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<ePixmap pixmap="easy-skin-hd/frame/frame_400x400.png" position="50,115" size="400,400" alphatest="on" />
+		<widget name="help" position="100,130" size="300,350"  font="Regular;19" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>	
 	<!-- Setup -->
 	<screen name="TranscodingSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Transcoding Setup">
 		<panel name="FullScreen2Window" />
