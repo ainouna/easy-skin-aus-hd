@@ -334,7 +334,7 @@
 			    colorServiceDescriptionSelected="#bbbbbb"
 			    foregroundColorServiceNotAvail="#777777"
 			    picServiceEventProgressbar="slider/slider_1280x10_hfg.png"    
-			    serviceItemHeight="50" serviceNumberFont="Regular;23" serviceNameFont="Regular;22" serviceInfoFont="Regular;21" scrollbarMode="always"/>
+			    serviceItemHeight="50" serviceNumberFont="Regular;23" serviceNameFont="Regular;22" serviceInfoFont="Regular;21" scrollbarMode="showAlways"/>
 	<!--	<ePixmap pixmap="easy-skin-hd/icons/i_dolby_no.png" position="296, 110" size="36,36" zPosition="1" alphatest="on"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_dolby.png" position="296, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
@@ -818,7 +818,7 @@ self.autoResize()
 			    colorServiceDescriptionSelected="#bbbbbb"
 			    foregroundColorServiceNotAvail="#777777"
 			    picServiceEventProgressbar="slider/slider_1280x10_hfg.png"    
-			    serviceItemHeight="50" serviceNumberFont="Regular;23" serviceNameFont="Regular;22" serviceInfoFont="Regular;21" scrollbarMode="always"/>
+			    serviceItemHeight="50" serviceNumberFont="Regular;23" serviceNameFont="Regular;22" serviceInfoFont="Regular;21" scrollbarMode="showAlways"/>
 			    <panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
