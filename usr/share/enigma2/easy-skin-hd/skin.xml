@@ -1658,14 +1658,14 @@ self.autoResize()
   <widget source="session.CurrentService" render="Label" position="55, 490" size="1220, 26" font="Named; 20" halign="center" valign="center" noWrap="1" backgroundColor="black" transparent="1" foregroundColor="white">
    <convert type="ServiceName">Name</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="370, 570" size="100, 22" font="Regular; 19" halign="center" valign="right" backgroundColor="black" shadowColor="black" shadowOffset="-1,-1" transparent="1">
+  <widget source="session.CurrentService" render="Label" position="370, 570" size="100, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" shadowColor="black" shadowOffset="-1,-1" transparent="1">
    <convert type="ServicePosition">Position</convert>
   </widget>
   <ePixmap position="393, 540" size="600,16" pixmap="easy-skin-hd/mpslider.png" zPosition="3" alphatest="on"/>
   <widget source="session.CurrentService" render="PositionGauge" position="413, 541" size="560,14" zPosition="2" pointer="easy-skin-hd/pointer.png:13,3">
    <convert type="ServicePosition">Gauge</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="910, 570" size="100, 22" font="Regular; 19" halign="center" valign="left" backgroundColor="black" transparent="1">
+  <widget source="session.CurrentService" render="Label" position="910, 570" size="100, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1">
    <convert type="ServicePosition">Remaining</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="655, 570" size="110, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1">

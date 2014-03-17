@@ -420,7 +420,7 @@
 		<widget source="IFtext" render="Label" position="55, 115" size="140,25" zPosition="10" font="Regular;22" transparent="1"/>
 		<widget source="IF" render="Label" position="210, 115" size="480,25" zPosition="10" font="Regular;22" transparent="1"/>
 		<eLabel position="55, 155" size="760, 2" backgroundColor="crypt_emm"/>
-		<widget source="LabelBSSID" render="Label" position="60, 180" size="250,35" valign="left" font="Regular;22" transparent="1"/>
+		<widget source="LabelBSSID" render="Label" position="60, 180" size="250,35" valign="center" font="Regular;22" transparent="1"/>
 		<widget source="LabelESSID" render="Label" position="60, 220" size="250,35" valign="center" font="Regular;22" transparent="1"/>
 		<widget source="LabelQuality" render="Label" position="60, 260" size="250,35" valign="center" font="Regular;22" transparent="1"/>
 		<widget source="LabelSignal" render="Label" position="60, 300" size="250,35" valign="center" font="Regular;22" transparent="1"/>
