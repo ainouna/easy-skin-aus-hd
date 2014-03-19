@@ -1565,6 +1565,7 @@ self.autoResize()
   <widget name="list" position="120,170" size="540,225" selectionDisabled="1" transparent="1"/>
   <eLabel position="780,0" size="2,518" backgroundColor="crypt_emm"/>
   <eLabel position="0,518" size="1100,2" backgroundColor="crypt_emm"/>
+  <widget name="country" position="120,530" size="740,25" transparent="1" font="Regular;24" halign="center" valign="center" foregroundColor="yellow"/>
   <ePixmap position="795, 55" size="300, 460" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_music_shuffle.png" transparent="1" alphatest="blend"/>
  </screen>
 
