@@ -24,14 +24,14 @@
 		<widget source="session.CurrentService" render="Label" position="55, 560" size="1220, 25" font="Named; 23" halign="center" valign="center" noWrap="1" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="325, 640" size="100, 24" font="Regular;21" halign="center" valign="right" backgroundColor="black" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="325, 640" size="100, 24" font="Regular;21" halign="center" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<ePixmap position="393, 620" size="600,16" pixmap="easy-skin-hd/mpslider.png" zPosition="3" alphatest="on"/>
 		<widget source="session.CurrentService" render="PositionGauge" position="413, 621" size="560,14" zPosition="2" pointer="easy-skin-hd/pointer.png:13,3">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="960, 640" size="100, 24" font="Regular;21" halign="center" valign="left" backgroundColor="black" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="960, 640" size="100, 24" font="Regular;21" halign="center" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="655, 640" size="100, 24" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1">
