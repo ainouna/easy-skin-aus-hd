@@ -44,7 +44,7 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>	
-	<screen flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" backgroundColor="background" title="Informations">
+	<screen flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" backgroundColor="background" title="Information">
 		<panel name="FullScreen2Window" />
 		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
