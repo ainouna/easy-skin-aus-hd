@@ -28,6 +28,7 @@
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullscreenMenuButtonPanel" />
+		<panel name="FullscreenHelpButtonPanel"/>
 		<eLabel backgroundColor="#9f1313" font="Regular;20" halign="center" position="123, 635" size="200,36" text="Rewind" transparent="1" valign="center" zPosition="3"/>
 		<eLabel backgroundColor="#1f771f" font="Regular;20" halign="center" position="398, 635" size="200,36" text="Play" transparent="1" valign="center" zPosition="3"/>
 		<eLabel backgroundColor="#a08500" font="Regular;20" halign="center" position="673, 635" size="200,36" text="Pause" transparent="1" valign="center" zPosition="3"/>
@@ -60,6 +61,7 @@
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullscreenMenuButtonPanel" />
+		<panel name="FullscreenHelpButtonPanel"/>
 		<widget name="infolabel" position="0,600" size="1280,20" valign="center" halign="center" zPosition="2" transparent="1" font="Regular;18" />           
         </screen> 
 	<screen name="SHOUTcastWidget" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="SHOUTcast">
