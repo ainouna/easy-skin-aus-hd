@@ -23,11 +23,11 @@
 		<widget alphatest="on" name="repeat" pixmaps="easy-skin-hd/buttons/button_20x20_blue_off.png,easy-skin-hd/buttons/button_20x20_blue_on.png" position="560,554" size="20,20" transparent="1" zPosition="2"/>	
 		<widget name="currenttext" position="0,0" size="0,0"/>
 		<widget name="titletext" position="0,0" size="0,0"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" position="32, 635" size="60, 60" zPosition="2"/>
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullscreenMenuButtonPanel" />
 		<eLabel backgroundColor="#9f1313" font="Regular;20" halign="center" position="123, 635" size="200,36" text="Rewind" transparent="1" valign="center" zPosition="3"/>
 		<eLabel backgroundColor="#1f771f" font="Regular;20" halign="center" position="398, 635" size="200,36" text="Play" transparent="1" valign="center" zPosition="3"/>
 		<eLabel backgroundColor="#a08500" font="Regular;20" halign="center" position="673, 635" size="200,36" text="Pause" transparent="1" valign="center" zPosition="3"/>
@@ -59,7 +59,7 @@
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" position="32, 635" size="60, 60" zPosition="2"/>
+		<panel name="FullscreenMenuButtonPanel" />
 		<widget name="infolabel" position="0,600" size="1280,20" valign="center" halign="center" zPosition="2" transparent="1" font="Regular;18" />           
         </screen> 
 	<screen name="SHOUTcastWidget" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="SHOUTcast">
