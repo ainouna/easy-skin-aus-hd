@@ -1272,7 +1272,7 @@ self.autoResize()
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" position="32, 635" size="60,60" zPosition="2"/>    
+		<panel name="FullscreenMenuButtonPanel" />
 	</screen>
 	<screen name="FileCommanderConfigScreen" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
 	  <!--<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv.png" position="55, 155" size="300,500"/>-->
