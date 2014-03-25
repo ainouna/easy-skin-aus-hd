@@ -9,7 +9,7 @@
 		<panel name="FullscreenBlue2Panel" />
 		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
 		<widget name="text" position="60,130" size="380,170"  font="Regular;20" halign="center" transparent="1" valign="top" zPosition="2"/>
-		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget name="config" position="590,100" size="618,512" itemHeight="32" font="Regular;24" selectionPixmap="easy-skin-hd/menu/on_main_menu_605x32.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>  
 	<!-- Tuner Configuration -->
 	<screen name="NimSelection" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Choose Tuner">
