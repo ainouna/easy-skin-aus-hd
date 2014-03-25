@@ -120,7 +120,7 @@
 		<panel name="FullscreenBlue2Panel" />
 		<eLabel font="Regular;28" position="675,140" size="485,35" text="Scanned services:" transparent="1" zPosition="2"/>
 		<eLabel backgroundColor="white" position="665,180" size="450,2" zPosition="2"/>
-		<widget backgroundColor="#33000000" name="servicelist" position="650,195" selectionDisabled="1" size="485,400" transparent="1" zPosition="1"/>
+		<widget backgroundColor="#33000000" name="servicelist" position="650,195" selectionDisabled="1" size="485,400" transparent="1" scrollbarMode="showOnDemand" zPosition="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x300.png" position="150,195" size="400,300" zPosition="-1"/>
 		<widget alphatest="on" pixmap="easy-skin-hd/icons/scan-s.png" position="170,210" render="Pixmap" size="64,64" source="FrontendInfo" transparent="1" zPosition="1">
 			<convert type="FrontendInfo">TYPE</convert>
@@ -137,12 +137,12 @@
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="scan_progress" borderWidth="1" position="245,260" size="280,14" transparent="1" zPosition="1"/>
-		<widget font="Regular;20" halign="center" name="network" position="170,310" size="360,25" transparent="1" zPosition="1"/>
-		<widget font="Regular;20" halign="center" name="transponder" position="170,360" size="360,25" transparent="1" zPosition="1"/>
-		<widget font="Regular;20" halign="center" name="scan_state" position="170,410" size="360,45" transparent="1" valign="center" zPosition="2"/>
-		<widget font="Regular;20" halign="center" name="pass" position="170,410" size="360,45" transparent="1" valign="center" zPosition="1"/>
-		<widget name="done_text" position="center, center" size="720, 100" font="Named; 29" halign="center" zPosition="12" foregroundColor="white" backgroundColor="black"/>
+		<widget name="scan_progress" borderWidth="1" position="245,225" size="280,14" transparent="1" zPosition="1"/>
+		<widget font="Regular;20" halign="left" name="network" position="245,250" size="280,25" transparent="1" zPosition="1"/>
+		<widget font="Regular;20" halign="center" name="transponder" position="170,300" size="360,25" transparent="1" zPosition="1"/>
+		<widget font="Regular;20" halign="center" name="scan_state" position="170,340" size="360,45" transparent="1" valign="top" zPosition="2"/>
+		<widget font="Regular;20" halign="center" name="pass" position="170,385" size="360,25" transparent="1" valign="top" zPosition="1"/>
+		<widget name="done_text" position="170,410" size="360,100" font="Regular;20" halign="center" valign="top" transparent="1" zPosition="12"/>
 	</screen>
 	<!-- Positioner setup -->
 	<screen flags="wfNoBorder" name="PositionerSetup" backgroundColor="background" position="0,0" size="1280,720" title="Positioner setup">
