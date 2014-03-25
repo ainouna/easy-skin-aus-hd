@@ -1,66 +1,194 @@
 <skin>
-	<!--Templates -->
-	<screen name="FullscreenRed1Panel">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-	</screen>
-	<screen name="FullscreenGreen1Panel">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-	</screen>
-	<screen name="FullscreenYellow1Panel">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="key_yellow" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-	</screen>
-	<screen name="FullscreenBlue1Panel">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#18188b" font="Regular;20" halign="center" name="key_blue" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-	</screen>
-	<screen name="FullscreenRed2Panel">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-	</screen>
-	<screen name="FullscreenGreen2Panel">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" source="key_green" render="Label" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-	</screen>
-	<screen name="FullscreenYellow2Panel">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#a08500" font="Regular;20" halign="center" source="key_yellow" render="Label" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-	</screen>
-	<screen name="FullscreenBlue2Panel">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#18188b" font="Regular;20" halign="center" source="key_blue" render="Label" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-	</screen>
+<!-- Screen Overlay Templates -->
+
+<!-- Screen layer to add heading clock, title and pin strips  -->
+
+<!--
+ |  This is only used in AutoTimerSettings, GnewsFeedScreenList,
+ |  GnewsFeedScreenContent, UpdatePlugin and ParentalControlSetup.
+ |  Given they are identical perhaps these two versions should
+ |  be combined.
+ |
+ |  The clock and title areas should be sized so that they don't
+ |  overlap!  The title should be clipped if it tries to extend into
+ |  the clock area.  I don't want to change this yet in case there
+ |  are reasons for this layout.
+ +-->
+
 	<screen name="FullScreenWindow">
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="title" render="Label" position="50, 30" size="1160, 35" font="Named; 25" backgroundColor="black" halign="right" transparent="1" foregroundColor="white"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 25" font="Named; 22" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/icons/clock.png" position="50,36" size="14,14" zPosition="3" />
+		<widget backgroundColor="black" font="Named;22" foregroundColor="white" halign="left" position="75,30" render="Label" size="525,25" source="global.CurrentTime" transparent="1">
+			<convert type="ClockToText">Format:%a %e-%b-%Y	 %H:%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 25" font="Named; 22" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="50, 65" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
+		<widget backgroundColor="black" font="Named;25" foregroundColor="white" halign="right" position="50,30" render="Label" size="1180,35" source="Title" transparent="1" />
+		<eLabel backgroundColor="grey" position="50,65" size="1180,1" zPosition="2" />
+		<eLabel backgroundColor="grey" position="50,625" size="1180,1" zPosition="1" />
 	</screen>
+
+<!-- Screen layer to add heading clock, title and pin strips -->
+
 	<screen name="FullScreen2Window">
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="Title" render="Label" position="50, 30" size="1160, 35" font="Named; 25" backgroundColor="black" halign="right" transparent="1" foregroundColor="white"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 25" font="Named; 22" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/icons/clock.png" position="50,36" size="14,14" zPosition="3" />
+		<widget backgroundColor="black" font="Named;22" foregroundColor="white" halign="left" position="75,30" render="Label" size="525,25" source="global.CurrentTime" transparent="1">
+			<convert type="ClockToText">Format:%a %e-%b-%Y	 %H:%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 25" font="Named; 22" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="50, 65" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>	
+		<widget backgroundColor="black" font="Named;25" foregroundColor="white" halign="right" position="50,30" render="Label" size="1180,35" source="Title" transparent="1" />
+		<eLabel backgroundColor="grey" position="50,65" size="1180, 1" zPosition="2" />
+		<eLabel backgroundColor="grey" position="50,625" size="1180, 1" zPosition="1" />
 	</screen>
+
+<!-- Screen layer to add the MENU button hint -->
+
 	<screen name="FullscreenMenuButtonPanel">
-		<ePixmap position="32, 635" size="60, 60" zPosition="10" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" transparent="1" alphatest="blend"/>
+		<ePixmap alphatest="blend" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" position="33,635" size="60,60" transparent="1" zPosition="10" />
 	</screen>
+
+<!-- Screen layer to add the TEXT button hint -->
+
 	<screen name="FullscreenTextButtonPanel">
-		<widget name="VKeyIcon" position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_text.png" transparent="1" alphatest="blend"/>
+		<ePixmap alphatest="blend" pixmap="easy-skin-hd/buttons/button_60x60_text.png" position="33,635" size="60,60" transparent="1" zPosition="10" />
+	</screen>
+
+<!-- Screen layer to add the HELP button hint -->
+
+	<screen name="FullscreenHelpButtonPanel">
+		<ePixmap alphatest="blend" pixmap="easy-skin-hd/buttons/button_60x60_help.png" position="1186,635" size="60,60" transparent="1" zPosition="10" />
+	</screen>
+
+<!-- Screen layer to add the RED button hint background -->
+
+	<screen name="FullscreenRed1Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="127,635" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="127,635" size="200,36" transparent="1" valign="center" zPosition="3" />
+	</screen>
+
+<!-- Screen layer to add the RED button hint -->
+
+	<screen name="FullscreenRed2Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="127,635" size="200,60" zPosition="1" />
+		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" position="127,635" render="Label" size="200,36" source="key_red" transparent="1" valign="center" zPosition="3" />
+	</screen>
+
+<!-- Screen layer to add the GREEN button hint background -->
+
+	<screen name="FullscreenGreen1Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="402,635" size="200,60" zPosition="1" />
+		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="402,635" size="200,36" transparent="1" valign="center" zPosition="3" />
+	</screen>
+
+<!-- Screen layer to add the GREEN button hint -->
+
+	<screen name="FullscreenGreen2Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="402,635" size="200,60" zPosition="1" />
+		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" position="402,635" render="Label" size="200,36" source="key_green" transparent="1" valign="center" zPosition="3" />
+	</screen>
+
+<!-- Screen layer to add the YELLOW button hint background -->
+
+	<screen name="FullscreenYellow1Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="677,635" size="200,60" zPosition="1" />
+		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="key_yellow" position="677,635" size="200,36" transparent="1" valign="center" zPosition="3" />
+	</screen>
+
+<!-- Screen layer to add the YELLOW button hint -->
+
+	<screen name="FullscreenYellow2Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="677,635" size="200,60" zPosition="1" />
+		<widget backgroundColor="#a08500" font="Regular;20" halign="center" position="677,635" render="Label" size="200,36" source="key_yellow" transparent="1" valign="center" zPosition="3" />
+	</screen>
+
+<!-- Screen layer to add the BLUE button hint background -->
+
+	<screen name="FullscreenBlue1Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="952,635" size="200,60" zPosition="1" />
+		<widget backgroundColor="#18188b" font="Regular;20" halign="center" name="key_blue" position="952,635" size="200,36" transparent="1" valign="center" zPosition="3" />
+	</screen>
+
+<!-- Screen layer to add the BLUE button hint -->
+
+	<screen name="FullscreenBlue2Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="952,635" size="200,60" zPosition="1" />
+		<widget backgroundColor="#18188b" font="Regular;20" halign="center" position="952,635" render="Label" size="200,36" source="key_blue" transparent="1" valign="center" zPosition="3" />
+	</screen>
+
+<!--
+ |  "Low" button hint backgrounds and button hints
+ |  30 pixels lower on the screen to allow a little more screen
+ |  space. Used in GraphicalEPG and in (unused) GraphicalEPGPIG.
+ +-->
+
+<!-- Screen layer to add the low MENU button hint -->
+
+	<screen name="FullscreenLowMenuButtonPanel">
+		<ePixmap alphatest="blend" pixmap="easy-skin-hd/buttons/button_60x60_menu.png" position="33, 665" size="60, 60" transparent="1" zPosition="10"/>
+	</screen>
+
+<!-- Screen layer to add the low TEXT button hint -->
+
+	<screen name="FullscreenLowTextButtonPanel">
+		<ePixmap alphatest="blend" pixmap="easy-skin-hd/buttons/button_60x60_text.png" position="33, 665" size="60, 60" transparent="1" zPosition="10"/>
+	</screen>
+
+<!-- Screen layer to add the low HELP button hint -->
+
+	<screen name="FullscreenLowHelpButtonPanel">
+		<ePixmap alphatest="blend" pixmap="easy-skin-hd/buttons/button_60x60_help.png" position="1186, 665" size="60, 60" transparent="1" zPosition="10"/>
+	</screen>
+
+<!-- Screen layer to add the low RED button hint background -->
+
+	<screen name="FullscreenLowRed1Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="127, 665" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="127, 665" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+
+<!-- Screen layer to add the low RED button hint -->
+
+	<screen name="FullscreenLowRed2Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="127, 665" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" position="127, 665" render="Label" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+
+<!-- Screen layer to add the low GREEN button hint background -->
+
+	<screen name="FullscreenLowGreen1Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="402,665" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="402,665" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+
+<!-- Screen layer to add the low GREEN button hint -->
+
+	<screen name="FullscreenLowGreen2Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="402,665" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" position="402,665" render="Label" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+
+<!-- Screen layer to add the low YELLOW button hint background -->
+
+	<screen name="FullscreenLowYellow1Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="677,665" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="key_yellow" position="677, 665" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+
+<!-- Screen layer to add the low YELLOW button hint -->
+
+	<screen name="FullscreenLowYellow2Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="677,665" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#a08500" font="Regular;20" halign="center" position="677,665" render="Label" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+
+<!-- Screen layer to add the low BLUE button hint background -->
+
+	<screen name="FullscreenLowBlue1Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="952,665" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#18188b" font="Regular;20" halign="center" name="key_blue" position="952,665" size="200,36" transparent="1" valign="center" zPosition="3"/>
+	</screen>
+
+<!-- Screen layer to add the low BLUE button hint background -->
+
+	<screen name="FullscreenLowBlue2Panel">
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="952,665" size="200,60" zPosition="1"/>
+		<widget backgroundColor="#18188b" font="Regular;20" halign="center" position="952,665" render="Label" size="200,36" transparent="1" valign="center" zPosition="3"/>
 	</screen>
 
 </skin>
