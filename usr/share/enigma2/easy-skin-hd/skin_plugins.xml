@@ -181,5 +181,6 @@
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullscreenMenuButtonPanel"/>
 	</screen>	
 </skin>  
