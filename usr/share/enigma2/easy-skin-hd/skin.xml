@@ -586,11 +586,11 @@ self.autoResize()
 	<screen flags="wfNoBorder" name="HelpMenu" backgroundColor="un44000000" position="0,0" size="1280,720" title="Menu">
 		<panel name="FullScreen2Window" />
 		<widget name="list" position="500,110" scrollbarMode="showOnDemand" size="660,450" transparent="1" zPosition="2"/>
-		<widget alphatest="on" name="rc" pixmaps="easy-skin-hd/rc.png,skin_default/rcold.png" position="250,110" size="154,500" zPosition="10"/>
-		<widget alphatest="on" name="arrowdown" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
-		<widget alphatest="on" name="arrowdown2" pixmap="easy-skin-hd/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
-		<widget alphatest="on" name="arrowup" pixmap="easy-skin-hd/arrowup.png" position="-100,-100" size="37,70" zPosition="11"/>
-		<widget alphatest="on" name="arrowup2" pixmap="easy-skin-hd/arrowup.png" position="-100,-100" size="37,70" zPosition="11"/>
+		<widget alphatest="on" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="250,110" size="154,500" zPosition="10"/>
+		<widget alphatest="on" name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
+		<widget alphatest="on" name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
+		<widget alphatest="on" name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="11"/>
+		<widget alphatest="on" name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="11"/>
 		<widget font="Regular;25" backgroundColor="crypt_emm" foregroundColor="yellow" halign="center" name="long_key" position="650,580" size="500,50" transparent="1"/>
 	</screen>
 	<screen name="InputBox" position="340,100" size="600,560" title="Search">
