@@ -402,7 +402,7 @@
 	</screen>
 
 
-	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder" zPosition="-1">
+	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder" >
 		<ePixmap position="0,640" size="1280,147" pixmap="easy-skin-hd/navy_fondo-fs8.png" zPosition="-1" alphatest="on" />
 		<eLabel position="0,565" size="1281,78" zPosition="-4" backgroundColor="abackground" transparent="0" />
 		<eLabel position="86, 676" size="180, 1" backgroundColor="crypt_emm" zPosition="2"/>
