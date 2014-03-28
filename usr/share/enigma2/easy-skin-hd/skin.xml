@@ -926,17 +926,12 @@ self.autoResize()
 		<widget name="bouquetlist" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="2" transparent="0" />
 		<widget name="list" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
 		<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="easy-skin-hd/timeline-now.png" alphatest="on" />
-		<ePixmap pixmap="buttons/key_menu.png" position="15,166" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
-
-		<ePixmap pixmap="buttons/red.png" position="65,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="key_red" position="115,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="buttons/green.png" position="335,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="key_green" position="395,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="buttons/yellow.png" position="645,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="key_yellow" position="685,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="buttons/blue.png" position="935,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="key_blue" position="975,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="buttons/key_help.png" position="1230,166" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<panel name="FullscreenSmallMenuPanel"/>
+		<panel name="FullscreenSmall2RedPanel"/>
+		<panel name="FullscreenSmall2GreenPanel"/>
+		<panel name="FullscreenSmall2YellowPanel"/>
+		<panel name="FullscreenSmall2BluePanel"/>
+		<panel name="FullscreenSmallHelpButtonPanel"/>
 		<ePixmap pixmap="screens/fs-bg-bot.png" position="0,160" size="1280,40" zPosition="-1" />
 	</screen>	
 	<!-- Graphical Multi EPG -->
