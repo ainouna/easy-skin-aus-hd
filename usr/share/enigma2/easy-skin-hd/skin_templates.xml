@@ -6,11 +6,6 @@
 <!--
  |  This is only used in AutoTimerSettings, GnewsFeedScreenList,
  |  GnewsFeedScreenContent, UpdatePlugin and ParentalControlSetup.
- |
- |  The clock and title areas should be sized so that they don't
- |  overlap!  The title should be clipped if it tries to extend into
- |  the clock area.  I don't want to change this yet in case there
- |  are reasons for this layout.
  +-->
 
 	<screen name="FullScreenWindow">
@@ -30,10 +25,10 @@
 
 	<screen name="FullScreenWindowCommon">
 		<ePixmap alphatest="on" pixmap="easy-skin-hd/icons/clock.png" position="50,36" size="14,14" zPosition="3" />
-		<widget backgroundColor="black" font="Named;22" foregroundColor="white" halign="left" position="75,30" render="Label" size="525,25" source="global.CurrentTime" transparent="1">
+		<widget backgroundColor="black" font="Named;22" foregroundColor="white" halign="left" position="75,30" render="Label" size="280,25" source="global.CurrentTime" transparent="1">
 			<convert type="ClockToText">Format:%a %e-%b-%Y	 %H:%M</convert>
 		</widget>
-		<widget backgroundColor="black" font="Named;25" foregroundColor="white" halign="right" position="50,30" render="Label" size="1180,35" source="Title" transparent="1" />
+		<widget backgroundColor="black" font="Named;25" foregroundColor="white" halign="right" position="360,30" render="Label" size="820,35" source="Title" transparent="1" />
 		<eLabel backgroundColor="grey" position="50,65" size="1180,1" zPosition="2" />
 		<eLabel backgroundColor="grey" position="50,625" size="1180,1" zPosition="1" />
 	</screen>
