@@ -890,7 +890,7 @@ self.autoResize()
 		<widget name="lab1" position="0,10" size="1280,620" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 		<widget name="timeline_text" position="0,10" size="1280,30" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="0" />
 		<widget name="bouquetlist" position="0,35" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="4" transparent="0" />
-		<widget name="list" position="0,65" size="1280,590" backgroundColor="background" EntryForegroundColorSelected="blue" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="1" />
+		<widget name="list" position="0,65" size="1280,590" backgroundColor="background" EntryForegroundColorSelected="white" EntryForegroundColorNowSelected="white" RecordForegroundColorSelected="white" ZapForegroundColorSelected="white" scrollbarMode="showNever" zPosition="1" transparent="1" />
 		<widget name="timeline_now" position="0,50" zPosition="3" size="19,615" pixmap="easy-skin-hd/timeline-now.png" alphatest="on" />
 		<panel name="FullscreenLowRed1Panel"/>
 		<panel name="FullscreenLowGreen1Panel"/>
@@ -903,7 +903,7 @@ self.autoResize()
 		<widget name="lab1" position="0,10" size="1280,620" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 		<widget name="timeline_text" position="0,10" size="1280,30" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="0" />
 		<widget name="bouquetlist" position="0,35" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="4" transparent="0" />
-		<widget name="list" position="0,65" size="1280,590" backgroundColor="background" EntryForegroundColorSelected="blue" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" zPosition="1" transparent="1" />
+		<widget name="list" position="0,65" size="1280,590" backgroundColor="background" EntryForegroundColorSelected="white" EntryForegroundColorNowSelected="white" RecordForegroundColorSelected="white" ZapForegroundColorSelected="white" scrollbarMode="showNever" zPosition="1" transparent="1" />
 		<widget name="timeline_now" position="0,50" zPosition="3" size="19,615" pixmap="easy-skin-hd/timeline-now.png" alphatest="on" />
 		<panel name="FullscreenLowRed1Panel"/>
 		<panel name="FullscreenLowGreen1Panel"/>
