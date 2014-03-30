@@ -371,7 +371,7 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap position="55, 105" size="126,82" pixmap="easy-skin-hd/frame_hd.png" zPosition="1" alphatest="on"/>
-		<widget source="ServiceEvent" render="Picon2" position="68,116" size="100,60" zPosition="2" transparent="1" alphatest="on"/>
+		<widget source="ServiceEvent" render="Picon2" position="68,116" size="100,60" zPosition="2" transparent="1" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Label" position="585, 80" size="625, 20" font="Named;18" halign="center" backgroundColor="black" foregroundColor="grey" transparent="1" zPosition="3">
 			<convert type="ServiceName">Provider</convert>
 		</widget>-->

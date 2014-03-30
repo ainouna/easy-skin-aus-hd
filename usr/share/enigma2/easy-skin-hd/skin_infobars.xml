@@ -25,7 +25,7 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<!-- 	Channellogo (Picon) -->
-		<widget source="session.CurrentService" render="Picon" position="50,575" size="100,60" zPosition="21" transparent="1" alphatest="on">
+		<widget source="session.CurrentService" render="Picon" position="50,575" size="100,60" zPosition="21" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<!-- 	Sedrvice number -->
