@@ -70,11 +70,11 @@
 		<!-- Bottom infobar backgrounds and trim -->
 
 		<!--	Top edge fading towards the top -->
-		<ePixmap position="0,548" size="1281,17" pixmap="easy-skin-hd/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<ePixmap position="0,548" size="1280,17" pixmap="easy-skin-hd/infobar/sombranewarr-fs8.png" zPosition="-1" />
 		<!--	Middle section, eLabel just used for fill colour -->
-		<eLabel position="0,565" size="1281,72" zPosition="-1" backgroundColor="abackground" transparent="0" />
+		<eLabel position="0,565" size="1280,72" zPosition="-1" backgroundColor="abackground" transparent="0" />
 		<!--	Bottom section fading towards the bottom -->
-		<ePixmap position="0,637" size="1380,83" pixmap="easy-skin-hd/navy_fondo-fs8.png" zPosition="-1" />
+		<ePixmap position="0,637" size="1280,83" pixmap="easy-skin-hd/navy_fondo-fs8.png" zPosition="-1" />
 		<!--	Separator between service num/picon and rest of bar -->
 		<ePixmap position="172,574" size="2,110" pixmap="easy-skin-hd/navy_lineamed-fs8.png" />
 
@@ -178,12 +178,12 @@
 		<!-- Current event information -->
 
 		<!--	Start & end time -->
-		<widget source="session.Event_Now" render="Label" position="182,615" size="73,28" halign="left" font="Regular; 21" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget source="session.Event_Now" render="Label" position="175,615" size="73,28" halign="right" font="Regular; 21" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="-" position="250,615" size="20,28" halign="center" font="Regular; 21" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" />
-		<widget source="session.Event_Now" render="Label" position="268,615" size="73,28" halign="left" font="Regular; 21" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
+		<eLabel text="-" position="248,615" size="20,28" halign="center" font="Regular; 21" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" valign="center" />
+		<widget source="session.Event_Now" render="Label" position="268,615" size="73,28" halign="left" font="Regular; 21" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -208,11 +208,11 @@
 		<!-- Next event information -->
 
 		<!--	Start & end time -->
-		<widget source="session.Event_Next" render="Label" position="182,653" size="73,28" halign="left" font="Regular; 21" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget source="session.Event_Next" render="Label" position="175,653" size="73,28" halign="right" font="Regular; 21" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="-" position="250,653" size="20,28" halign="center" font="Regular; 21" foregroundColor="foreground" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" />
+		<eLabel text="-" position="248,653" size="20,28" halign="center" font="Regular; 21" foregroundColor="foreground" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" />
 		<widget source="session.Event_Next" render="Label" position="268,653" size="73,28" halign="left" font="Regular; 21" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
@@ -391,21 +391,22 @@
 		</widget>
 
 		<!-- Event start & end times, and time remaining -->
-		<widget source="session.Event_Now" render="Label" position="97,150" size="66,22" halign="right" font="Regular; 18" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget source="session.Event_Now" render="Label" position="101,150" size="66,28" halign="right" font="Regular; 18" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="180,150" size="66,22" halign="left" font="Regular; 18" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
+		<eLabel text="-" position="168,150" size="20,28" halign="center" font="Regular; 18" foregroundColor="foreground" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" valign="center" />
+		<widget source="session.Event_Now" render="Label" position="188,150" size="66,28" halign="left" font="Regular; 18" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="233,150" size="97,22" halign="right" font="Regular; 18" backgroundColor="background" transparent="1" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget source="session.Event_Now" render="Label" position="241,150" size="97,28" halign="right" font="Regular; 18" backgroundColor="background" transparent="1" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 
 		<!-- Event name -->
-		<widget source="session.Event_Now" render="Label" position="121,127" size="534,23" halign="left" font="Regular; 19" backgroundColor="background" transparent="1" noWrap="1" foregroundColor="colorsel" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget source="session.Event_Now" render="Label" position="121,127" size="520,23" halign="left" font="Regular; 19" backgroundColor="background" transparent="1" noWrap="1" foregroundColor="colorsel" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventName">Name</convert>
 		</widget>
 
@@ -426,22 +427,22 @@
 		<eLabel name="nexticon" position="702,127" size="29,28" halign="center" valign="center" font="Regular; 18" text="&gt;&gt;" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2" transparent="1" />
 
 		<!-- Event start & end times, and duration -->
-		<widget source="session.Event_Next" render="Label" position="732,150" size="66,28" halign="right" font="Regular; 18" foregroundColor="grey" backgroundColor="background" transparent="1" valign="center" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget source="session.Event_Next" render="Label" position="715,150" size="66,28" halign="right" font="Regular; 18" foregroundColor="grey" backgroundColor="background" transparent="1" valign="center" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="-" position="799,150" size="20,28" halign="center" font="Regular; 18" foregroundColor="foreground" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" valign="center" />
-		<widget source="session.Event_Next" render="Label" position="819,150" size="66,28" halign="left" font="Regular; 18" foregroundColor="grey" backgroundColor="background" transparent="1" valign="center" shadowColor="#000000" shadowOffset="-2,-2">
+		<eLabel text="-" position="782,150" size="20,28" halign="center" font="Regular; 18" foregroundColor="foreground" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" valign="center" />
+		<widget source="session.Event_Next" render="Label" position="800,150" size="66,28" halign="left" font="Regular; 18" foregroundColor="grey" backgroundColor="background" transparent="1" valign="center" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="866,150" size="97,28" halign="right" font="Regular; 18" backgroundColor="background" transparent="1" valign="center" shadowColor="#000000" shadowOffset="-2,-2" foregroundColor="un53a9ff">
+		<widget source="session.Event_Next" render="Label" position="853,150" size="97,28" halign="right" font="Regular; 18" backgroundColor="background" transparent="1" valign="center" shadowColor="#000000" shadowOffset="-2,-2" foregroundColor="un53a9ff">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
 
 		<!-- Event name -->
-		<widget source="session.Event_Next" render="Label" position="732,127" size="324,28" halign="left" font="Regular; 18" backgroundColor="background" transparent="1" noWrap="1" valign="center" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget source="session.Event_Next" render="Label" position="732,127" size="494,28" halign="left" font="Regular; 18" backgroundColor="background" transparent="1" noWrap="1" valign="center" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventName">Name</convert>
 		</widget>
 
@@ -467,10 +468,12 @@
 
 		<!-- Bottom infobar backgrounds and trim -->
 
-		<!--	Top section, eLabel just used for fill colour -->
-		<eLabel position="0,565" size="1281,78" zPosition="-1" backgroundColor="abackground" transparent="0" />
+		<!--	Top edge fading towards the top -->
+		<ePixmap position="0,548" size="1280,17" pixmap="easy-skin-hd/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<!--	Middle section, eLabel just used for fill colour -->
+		<eLabel position="0,565" size="1280,72" zPosition="-1" backgroundColor="abackground" transparent="0" />
 		<!--	Bottom section fading towards the bottom -->
-		<ePixmap position="0,640" size="1280,147" pixmap="easy-skin-hd/navy_fondo-fs8.png" zPosition="-1" alphatest="on" />
+		<ePixmap position="0,637" size="1280,83" pixmap="easy-skin-hd/navy_fondo-fs8.png" zPosition="-1" alphatest="on" />
 		<!-- Horizontal divider between status icons and screen resolution -->
 		<eLabel position="86, 676" size="180, 1" backgroundColor="crypt_emm" />
 
@@ -525,7 +528,7 @@
 		</widget>
 
 		<!--	Playback progress bar -->
-		<ePixmap position="393, 640" size="700,16" pixmap="easy-skin-hd/mpslider.png" zPosition="1" alphatest="blend"/>
+		<ePixmap position="393, 640" size="700,16" pixmap="easy-skin-hd/mpslider.png" zPosition="2" alphatest="on"/>
 		<widget source="session.CurrentService" render="PositionGauge" position="413, 641" size="560,14" pointer="easy-skin-hd/pointer.png:13,3">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
