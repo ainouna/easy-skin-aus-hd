@@ -21,6 +21,33 @@
 	 |
 	 +-->
 
+	<!-- Main TV infobar -->
+
+	<screen name="InfoBar" title="Information Bar" position="0,0" size="1280,720" backgroundColor="transparent2" flags="wfNoBorder">
+
+		<!-- Common parts of infobar screens -->
+
+		<panel name="InfoBarCommon"/>
+
+	</screen>
+
+
+	<!-- Second TV infobar with Now/Next extended information -->
+
+	<screen name="SecondInfoBar" title="Event View" position="0,0" size="1280,720" backgroundColor="transparent2" flags="wfNoBorder">
+
+		<!-- Common parts of infobar screens -->
+
+		<panel name="InfoBar"/>
+
+		<!-- Now & Next information panels -->
+
+		<panel name="SecondInfoBarNow"/>
+		<panel name="SecondInfoBarNext"/>
+
+	</screen>
+
+
 	<!-- Common parts of TV infobars -->
 
 	<screen name="InfoBarCommon" position="0,0" size="1280,720" backgroundColor="transparent2" flags="wfNoBorder">
@@ -39,6 +66,17 @@
 		</widget>
 
 		<!-- Bottom bar -->
+
+		<!-- Bottom infobar backgrounds and trim -->
+
+		<!--	Top edge fading towards the top -->
+		<ePixmap position="0,548" size="1281,17" pixmap="easy-skin-hd/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<!--	Middle section, eLabel just used for fill colour -->
+		<eLabel position="0,565" size="1281,72" zPosition="-1" backgroundColor="abackground" transparent="0" />
+		<!--	Bottom section fading towards the bottom -->
+		<ePixmap position="0,637" size="1380,83" pixmap="easy-skin-hd/navy_fondo-fs8.png" zPosition="-1" />
+		<!--	Separator between service num/picon and rest of bar -->
+		<ePixmap position="172,574" size="2,110" pixmap="easy-skin-hd/navy_lineamed-fs8.png" />
 
 		<!-- Bottom bar - service number, name & picon -->
 
@@ -230,10 +268,14 @@
 		 |	naranja (orange), in use for recording
 		 +-->
 
+		 <!--	Unused tuner id - overwritten by tuners in use -->
 		<eLabel text="A" position="1072,628" size="20,24" font="LCD; 21" halign="center" foregroundColor="ungrisalt" backgroundColor="transpBlack" transparent="1" />
 		<eLabel text="B" position="1089,628" size="20,24" font="LCD; 21" halign="center" foregroundColor="ungrisalt" backgroundColor="transpBlack" transparent="1" />
 		<eLabel text="C" position="1072,652" size="20,24" font="LCD; 21" halign="center" foregroundColor="ungrisalt" backgroundColor="transpBlack" transparent="1" />
 		<eLabel text="D" position="1089,652" size="20,24" font="LCD; 21" halign="center" foregroundColor="ungrisalt" backgroundColor="transpBlack" transparent="1" />
+		 <!--	Tuners used for recording
+		  |	- overwrites "unused" background
+		  +-->
 		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="1072,628" zPosition="1" size="20,24" font="LCD; 21" halign="center" foregroundColor="naranja" backgroundColor="transpBlack" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">1</convert>
@@ -244,16 +286,6 @@
 			<convert type="ValueBitTest">2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1072,628" zPosition="2" size="20,24" font="LCD; 21" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">0,0</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="1089,628" zPosition="2" size="20,24" font="LCD; 21" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">1,1</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
 		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="1072,652" zPosition="1" size="20,24" font="LCD; 21" halign="center" foregroundColor="naranja" backgroundColor="transpBlack" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">4</convert>
@@ -262,6 +294,19 @@
 		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="1089,652" zPosition="1" size="20,24" font="LCD; 21" halign="center" foregroundColor="naranja" backgroundColor="transpBlack" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">8</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		 <!--	Tuner used for live TV
+		  |	- overwrites "unused" background & recording tuners
+		  +-->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1072,628" zPosition="2" size="20,24" font="LCD; 21" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">0,0</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="1089,628" zPosition="2" size="20,24" font="LCD; 21" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1072,652" zPosition="2" size="20,24" font="LCD; 21" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
@@ -290,26 +335,15 @@
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 
-		<!--	SNR percentage -->
-		<widget source="session.FrontendStatus" render="Label" position="1212,646" size="49,20" font="Regular; 15" foregroundColor="uncccccc" backgroundColor="background" transparent="1">
-			<convert type="FrontendInfo">SNR</convert>
-		</widget>
-
 		<!--	SNR bar -->
 		<widget position="1109,654" render="Progress" size="100,5" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="easy-skin-hd/progress_snr.png">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 
-		<!-- Bottom infobar backgrounds and trim -->
-
-		<!--	Top edge fading towards the top -->
-		<ePixmap position="0,548" size="1281,17" pixmap="easy-skin-hd/infobar/sombranewarr-fs8.png" zPosition="-1" />
-		<!--	Middle section, eLabel just used for fill colour -->
-		<eLabel position="0,565" size="1281,72" zPosition="-1" backgroundColor="abackground" transparent="0" />
-		<!--	Bottom section fading towards the bottom -->
-		<ePixmap position="0,637" size="1380,83" pixmap="easy-skin-hd/navy_fondo-fs8.png" zPosition="-1" />
-		<!--	Separator between service num/picon and rest of bar -->
-		<ePixmap position="172,574" size="2,110" pixmap="easy-skin-hd/navy_lineamed-fs8.png" />
+		<!--	SNR percentage -->
+		<widget source="session.FrontendStatus" render="Label" position="1212,646" size="49,20" font="Regular; 15" foregroundColor="uncccccc" backgroundColor="background" transparent="1">
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
 
 		<!-- Recording status -->
 
@@ -336,6 +370,7 @@
 		<!--<ePixmap position="32,515" size="131,83" zPosition="30" pixmap="easy-skin-hd/frame/frame_picon.png" transparent="1" alphatest="blend" />
 		<ePixmap position="51,525" size="100,60" zPosition="20" pixmap="easy-skin-hd/picon_default.png" alphatest="blend" />-->
 	</screen>
+
 
 	<!-- Second TV infobar Now extended information -->
 
@@ -378,8 +413,8 @@
 		<widget source="session.Event_Now" render="Label" position="74,184" size="567,330" font="Regular; 19" valign="top" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-
 	</screen>
+
 
 	<!-- Second TV infobar Next extended information -->
 
@@ -416,43 +451,8 @@
 		</widget>
 	</screen>
 
-	<!-- Main TV infobar -->
-
-	<screen name="InfoBar" title="Information Bar" position="0,0" size="1280,720" backgroundColor="transparent2" flags="wfNoBorder">
-
-		<!-- Common parts of infobar screens -->
-
-		<panel name="InfoBarCommon"/>
-
-	</screen>
-
-
-	<!-- Second TV infobar with Now/Next extended information -->
-
-	<screen name="SecondInfoBar" title="Event View" position="0,0" size="1280,720" backgroundColor="transparent2" flags="wfNoBorder">
-
-		<!-- Common parts of infobar screens -->
-
-		<panel name="InfoBar"/>
-
-		<!-- Now & Next information panels -->
-
-		<panel name="SecondInfoBarNow"/>
-		<panel name="SecondInfoBarNext"/>
-
-	</screen>
-
 
 	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder" >
-
-		<!-- Bottom infobar backgrounds and trim -->
-
-		<!--	Bottom section fading towards the bottom -->
-		<ePixmap position="0,640" size="1280,147" pixmap="easy-skin-hd/navy_fondo-fs8.png" zPosition="-1" alphatest="on" />
-		<!--	Top section, eLabel just used for fill colour -->
-		<eLabel position="0,565" size="1281,78" zPosition="-1" backgroundColor="abackground" transparent="0" />
-		<!-- Horizontal divider between status icons and screen resolution -->
-		<eLabel position="86, 676" size="180, 1" backgroundColor="crypt_emm"/>
 
 		<!-- Playback state indicator - top left -->
 
@@ -464,6 +464,15 @@
 
 		<!-- Playback speed indicator -->
 		<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+
+		<!-- Bottom infobar backgrounds and trim -->
+
+		<!--	Top section, eLabel just used for fill colour -->
+		<eLabel position="0,565" size="1281,78" zPosition="-1" backgroundColor="abackground" transparent="0" />
+		<!--	Bottom section fading towards the bottom -->
+		<ePixmap position="0,640" size="1280,147" pixmap="easy-skin-hd/navy_fondo-fs8.png" zPosition="-1" alphatest="on" />
+		<!-- Horizontal divider between status icons and screen resolution -->
+		<eLabel position="86, 676" size="180, 1" backgroundColor="crypt_emm" />
 
 		<!-- Status icons -->
 
@@ -521,14 +530,14 @@
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 
-		<!--	Playback time remaining -->
-		<widget source="session.CurrentService" render="Label" position="910, 670" size="100, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1">
-			<convert type="ServicePosition">Remaining</convert>
-		</widget>
-
 		<!--	Recording length -->
 		<widget source="session.CurrentService" render="Label" position="655, 670" size="110, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Length</convert>
+		</widget>
+
+		<!--	Playback time remaining -->
+		<widget source="session.CurrentService" render="Label" position="910, 670" size="100, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1">
+			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 
 		<!-- Clock  -->
