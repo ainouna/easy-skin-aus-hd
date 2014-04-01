@@ -6,51 +6,35 @@
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullScreen2Window" />  
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
-		<widget name="description" position="100,210" size="300,170" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" />
+		<widget name="description" position="100,150" size="300,150" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 		<widget name="list" position="500, 120" size="380, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_380x50.png" backgroundColor="#41000000" transparent="1" />
 		<widget name="sublist" position="920,125" size="300,475" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_300x50.png" backgroundColor="#41000000" transparent="1"/>
 		<ePixmap pixmap="easy-skin-hd/frame/frame_320x495.png" position="910,110" size="400,495" zPosition="-1" alphatest="on" />
 	</screen>   
 	<!-- Setup -->
 	<screen name="Setup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
-	  <!--<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv.png" position="55, 155" size="300,500"/>-->
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="SetupCommon" />
+		<panel name="SetupTextHelp" />
+		<panel name="SetupConfig"/>
 		<widget name="footnote" position="1,1" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<widget name="HelpWindow" position="50,335" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
 		<widget name="description" position="100,150" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- A/V Settings same as Setup Screen-->
 	<!-- Auto Language Selection same as Setup Screen-->
 	<!-- OSD Positioner -->
 	<screen name="UserInterfacePositioner" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="OSD Positioner">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<widget name="HelpWindow" position="50,335" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
+		<panel name="SetupCommon" />
+		<panel name="SetupTextHelp" />
+		<panel name="SetupConfig"/>
 		<widget source="status" render="Label" position="100,150" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- OSD 3D Setup -->
 	<screen name="OSD3DSetupScreen" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="OSD Positioner">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<widget name="HelpWindow" position="50,335" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
+		<panel name="SetupCommon" />
+		<panel name="SetupTextHelp" />
+		<panel name="SetupConfig"/>
 		<widget source="status" render="Label" position="100,150" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- GUI Setup same as Setup Screen-->
 	<!-- OSD Settings same as Setup Screen-->
@@ -79,14 +63,23 @@
 	<!-- Front Panel Settings same as Setup Screen-->
 	<!-- HDMICec Setup -->
 	<screen name="HdmiCECSetupScreen" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder"  title="HdmiCEC Setup">
+		<panel name="SetupCommon" />
+		<panel name="SetupConfig"/>
+		<widget source="fixed_address" render="Label" position="100,170" size="300,50"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget source="current_address" render="Label" position="100,210" size="300,50"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+	</screen>
+	<screen name="SetupCommon">
 		<panel name="FullScreen2Window" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
 		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
-		<widget source="fixed_address" render="Label" position="100,170" size="300,50"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget source="current_address" render="Label" position="100,210" size="300,50"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+	</screen>
+	<screen name="SetupTextHelp">
+		<widget name="HelpWindow" position="50,335" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+	</screen>
+	<screen name="SetupConfig">
 		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 </skin>

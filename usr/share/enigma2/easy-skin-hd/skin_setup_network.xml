@@ -44,14 +44,9 @@
 	</screen>
 	<!-- Network name server -->
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Nameserver Setup">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
+		<panel name="SetupCommon" />
+		<panel name="SetupConfig"/>
 		<widget source="introduction" render="Label" position="100,150" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- Network Test -->
 	<screen name="NetworkAdapterTest" position="0,0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Network test...">

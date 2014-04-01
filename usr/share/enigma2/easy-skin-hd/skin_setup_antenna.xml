@@ -2,13 +2,8 @@
 	<!-- DVB-T Localization -->
 	<screen name="IniTerrestrialLocation" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
 	  <!--<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv.png" position="55, 155" size="300,500"/>-->
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
-		<widget name="text" position="60,130" size="380,170"  font="Regular;20" halign="center" transparent="1" valign="top" zPosition="2"/>
+		<panel name="SetupCommon" />
+		<widget name="text" position="100,150" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="top" zPosition="2"/>
 		<widget name="config" position="590,100" size="618,512" itemHeight="32" font="Regular;24" selectionPixmap="easy-skin-hd/menu/on_main_menu_605x32.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>  
 	<!-- Tuner Configuration -->
@@ -44,26 +39,17 @@
 	</screen>
 	<!-- Automatic Scan -->
 	<screen name="ScanSimple" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Automatic service scan">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="SetupCommon" />
+		<panel name="SetupTextHelp" />
 		<widget name="footnote" position="1,1" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<widget name="HelpWindow" position="50,335" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
 		<widget name="footer" position="100,150" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- Manual Scan -->
 	<screen flags="wfNoBorder" name="ScanSetup" position="0, 0" size="1280, 720" backgroundColor="un44000000" title="Manual service scan">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="SetupCommon" />
+		<panel name="SetupTextHelp" />
 		<widget name="footnote" position="1,1" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<widget name="HelpWindow" position="50,335" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
 		<widget name="introduction" position="100,150" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
