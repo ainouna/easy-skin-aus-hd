@@ -12,12 +12,7 @@
 	</screen>
 	<!-- Harddisk setup -->
         <screen flags="wfNoBorder" name="HarddiskSetup" backgroundColor="un44000000" position="0,0" size="1280,720" title="Harddisk Setup">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="150,195" size="400,400"/>
+		<panel name="SetupCommon" />
         	<widget font="Regular;23" name="model" position="164,240" size="380,25" transparent="1" zPosition="1"/>
         	<widget font="Regular;23" name="capacity" position="164,270" size="380,25" transparent="1" zPosition="1"/>
         	<widget font="Regular;23" name="bus" position="164,300" size="380,25" transparent="1" zPosition="1"/>

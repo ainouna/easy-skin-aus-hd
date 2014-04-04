@@ -178,11 +178,13 @@
 	</screen>
 	<!-- Movie Selection -->
 	<screen name="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Select a movie">
+		<panel name="FullScreen2Window" />
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreen2Window" />
+		<panel name="FullscreenMenuButtonPanel" />
+		<panel name="FullscreenHelpButtonPanel" />
 		<widget name="waitingtext" position="55, 135" size="760, 448" backgroundColor="background" zPosition="4" font="Regular;22" halign="center" valign="center"/>
 		<widget source="Service" render="Label" position="280, 95" zPosition="1" size="190, 22" font="Named;18" halign="center" backgroundColor="background" transparent="1" foregroundColor="grey">
 			<convert type="MovieInfo">FileSize</convert>
@@ -202,7 +204,6 @@
 		<widget source="Service" render="Label" position="830, 403" backgroundColor="background" zPosition="1" size="320, 220" font="Regular; 17" foregroundColor="grey">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<panel name="FullscreenMenuButtonPanel" />
 		<widget backgroundColor="background" name="DescriptionBorder" position="0,0" size="0,0"/>
 		<eLabel position="820, 80" size="1, 546" backgroundColor="crypt_emm"/>
 	</screen> 
