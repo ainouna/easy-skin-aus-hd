@@ -13,7 +13,7 @@
 	<screen name="PluginDownloadBrowser" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Downloadable plugins">
 		<panel name="SetupCommon" />
 		<widget backgroundColor="#44000000" enableWrapAround="1" name="list" position="650,100" scrollbarMode="showOnDemand" size="510,500" transparent="1" zPosition="1"/>
-		<widget font="Regular;18" halign="center" name="text" position="75,135" size="350,160" transparent="1" valign="center" zPosition="2"/>
+		<widget font="Regular;18" halign="center" name="text" position="60,130" size="380,170" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<!-- Package installer use Choicebox Screen skin -->
 </skin>

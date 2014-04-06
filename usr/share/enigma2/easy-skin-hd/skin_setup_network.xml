@@ -46,7 +46,7 @@
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Nameserver Setup">
 		<panel name="SetupCommon" />
 		<panel name="SetupConfig"/>
-		<widget source="introduction" render="Label" position="75,135" size="350,160"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget source="introduction" render="Label" position="60,130" size="380,170"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<!-- Network Test -->
 	<screen name="NetworkAdapterTest" position="0,0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Network test...">

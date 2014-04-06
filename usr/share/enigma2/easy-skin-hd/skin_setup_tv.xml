@@ -3,7 +3,7 @@
 	<!-- Common interface - selection -->
 	<screen flags="wfNoBorder" name="CiSelection" position="0,0" size="1280, 720" backgroundColor="un44000000"  title="Select Common interface">
 		<panel name="SetupCommon" />
-		<widget name="text" position="75,135" size="350,160"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="text" position="60,130" size="380,170"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 		<widget name="entries" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- Common interface - menu -->

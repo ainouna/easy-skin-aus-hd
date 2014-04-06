@@ -2,7 +2,7 @@
 	<screen name="SoftwareManagerSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Software Manager Setup">
 		<panel name="SetupCommon" />
 		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Software Manager Setup" foregroundColor="crypt_emm"/>
-		<widget font="Regular;20" halign="center" source="introduction" render="Label" position="75,135" size="350,160" transparent="1" valign="center" zPosition="2"/>
+		<widget font="Regular;20" halign="center" source="introduction" render="Label" position="60,130" size="380,170" transparent="1" valign="center" zPosition="2"/>
 		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="SoftwareManagerInfo" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Softwaremanager informations" >
@@ -203,7 +203,7 @@
 		<widget source="author" render="Label" position="810,130" size="500,25" zPosition="10" font="Regular;21" transparent="1"/>
 		<!--<widget name="statuspic" position="1053, 34" size="48,48" alphatest="on"/>
 		<widget name="divpic" position="500,80" size="600,2" alphatest="on"/>-->
-		<widget name="detailtext" position="75,135" size="350,160"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3"/>
+		<widget name="detailtext" position="60,130" size="380,170"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3"/>
 		<widget name="screenshot" position="610, 140" size="330, 350" alphatest="blend"/>
 	</screen> 
 </skin>
