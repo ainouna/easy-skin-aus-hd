@@ -42,7 +42,7 @@
 <!-- Screen layer to add the TEXT button hint -->
 
 	<screen name="FullscreenTextButtonPanel">
-		<widget alphatest="blend" name="VKeyIcon" pixmap="easy-skin-hd/buttons/button_60x60_text.png" position="33,635" size="60,60" transparent="1" zPosition="10" />
+		<widget alphatest="blend" name="VKeyIcon" pixmap="easy-skin-hd/buttons/button_60x60_text.png" position="33,635" size="60,60" transparent="1" zPosition="11" />
 	</screen>
 
 <!-- Screen layer to add the HELP button hint -->
@@ -61,7 +61,7 @@
 <!-- Screen layer to add the RED button hint -->
 
 	<screen name="FullscreenRed2Panel">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="127,635" size="200,60" zPosition="1" />
+		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="127,635" size="200,60" zPosition="1"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" position="127,635" render="Label" size="200,36" source="key_red" transparent="1" valign="center" zPosition="3" />
 	</screen>
 
@@ -122,7 +122,7 @@
 <!-- Screen layer to add the low TEXT button hint -->
 
 	<screen name="FullscreenLowTextButtonPanel">
-		<ePixmap alphatest="blend" pixmap="easy-skin-hd/buttons/button_60x60_text.png" position="33, 665" size="60, 60" transparent="1" zPosition="10"/>
+		<ePixmap alphatest="blend" pixmap="easy-skin-hd/buttons/button_60x60_text.png" position="33, 665" size="60, 60" transparent="1" zPosition="11"/>
 	</screen>
 
 <!-- Screen layer to add the low HELP button hint -->
