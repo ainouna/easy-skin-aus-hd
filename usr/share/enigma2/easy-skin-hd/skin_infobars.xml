@@ -90,7 +90,7 @@
 		</widget>
 		<!--	Service number -->
 		<widget source="session.CurrentService" render="Label" position="36,645" size="129,72" halign="center" font="Regular; 40" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2" valign="top" text="23:24">
-			<convert type="ExtServiceInfo">ServiceNumber</convert>
+			<convert type="ServiceName">ServiceNumber</convert>
 		</widget>
 		<!--	Conditional Access Module (CAM) name -->
 		<widget source="session.CurrentService" render="Label" position="30,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
@@ -163,16 +163,10 @@
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 
-		<!--	Additional service information -->
+		<!--	Digital broadcast type / tranporder info  -->
 
-		<widget source="session.CurrentService" render="Label" position="170,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
-			<convert type="EGExtraInfo">NetInfo</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="750,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
-			<convert type="EGExtraInfo">CryptoBar</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="789,687" size="409,20" font="Regular; 14" halign="right" foregroundColor="grey" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2">
-			<convert type="nBmExtendedServiceInfo">TunerInfo</convert>
+		<widget source="session.CurrentService" render="Label" position="839,677" size="409,60" font="Regular; 14" halign="right" foregroundColor="border1" backgroundColor="black" transparent="1" shadowColor="#000000" shadowOffset="-2,-2">
+			<convert type="PliExtraInfo">TransponderInfo2line</convert>
 		</widget>
 
 		<!-- Current event information -->
@@ -227,25 +221,6 @@
 		<widget source="session.Event_Next" render="Label" position="887,653" size="105,28" halign="right" font="Regular; 21" backgroundColor="background" transparent="1" valign="top" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
-		</widget>
-
-		<!-- Tuner/signal information -->
-
-		<!--	Digital broadcast type - terrestrial/cable/satellite -->
-		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="1204,687" size="55,20" font="Regular; 14" foregroundColor="border1" backgroundColor="black" transparent="1">
-			<convert type="FrontendInfo">TYPE</convert>
-			<convert type="ValueRange">2,2</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1204,687" size="55,20" font="Regular; 14" foregroundColor="border1" backgroundColor="black" transparent="1">
-			<convert type="FrontendInfo">TYPE</convert>
-			<convert type="ValueRange">1,1</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1204,687" size="55,20" font="Regular; 14" foregroundColor="border1" backgroundColor="black" transparent="1">
-			<convert type="FrontendInfo">TYPE</convert>
-			<convert type="ValueRange">0,0</convert>
-			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	Digital broadcast type icons terrestrial/satellite -->
@@ -384,7 +359,7 @@
 
 		<!-- Service number & name -->
 		<widget source="session.CurrentService" render="Label" position="62,84" size="92,30" halign="center" font="Regular; 20" backgroundColor="background" transparent="1" foregroundColor="grey" noWrap="1" text="555">
-			<convert type="ExtServiceInfo">ServiceNumber</convert>
+			<convert type="ServiceName">ServiceNumber</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="156,82" size="414,30" font="Regular; 20" transparent="1" valign="center" backgroundColor="black" halign="left" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2" noWrap="1">
 			<convert type="ServiceName">Name</convert>
