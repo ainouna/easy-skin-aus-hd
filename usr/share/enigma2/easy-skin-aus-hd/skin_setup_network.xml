@@ -6,14 +6,14 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<widget position="55, 160" size="710, 415" name="menulist" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 160" size="710, 415" name="menulist" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="55, 155" size="1100, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<widget source="description" render="Label" position="825, 180" size="300, 420" font="Regular;19" halign="center" valign="center" backgroundColor="black" transparent="1"/>
 		<widget source="IFtext" render="Label" position="55, 120" size="130, 22" zPosition="10" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
 		<widget source="IF" render="Label" position="185, 120" size="600, 22" zPosition="10" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
 		<widget source="Statustext" render="Label" position="908, 120" size="115, 22" zPosition="10" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
-		<widget name="statuspic" pixmaps="easy-skin-hd/buttons/button_green.png,easy-skin-hd/buttons/button_green_off.png" position="968, 122" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+		<widget name="statuspic" pixmaps="easy-skin-aus-hd/buttons/button_green.png,easy-skin-aus-hd/buttons/button_green_off.png" position="968, 122" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
 	</screen>
 	<!-- Network settings/info -->
 	<screen name="AdapterSetup" position="0, 0" size="1280, 720" flags="wfNoBorder" backgroundColor="background" title="Network settings">
@@ -24,7 +24,7 @@
 		<panel name="FullscreenBlue2Panel" /> 
 		<eLabel position="55, 155" size="1100, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
-		<widget position="55, 160" size="710, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 160" size="710, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget source="DNS1text" render="Label" position="865, 370" size="250, 22" zPosition="1" font="Regular;20" halign="center" foregroundColor="transpBlack" backgroundColor="grey"/>
 		<widget source="DNS2text" render="Label" position="865, 440" size="250, 22" zPosition="1" font="Regular;20" halign="center" foregroundColor="transpBlack" backgroundColor="grey"/>
 		<widget source="DNS1" render="Label" position="865, 400" size="250, 22" zPosition="1" font="Regular;20" halign="center"/>
@@ -39,8 +39,8 @@
 		<widget source="Adaptertext" render="Label" position="55, 75" size="140,25" zPosition="10" font="Regular;22" transparent="1"/>
 		<widget source="Adapter" render="Label" position="195, 75" size="600, 25" zPosition="10" font="Regular;22" transparent="1"/>
 		<widget source="introduction2" render="Label" position="55, 570" size="740,30" zPosition="10" font="Regular;24" halign="center" transparent="1"/>
-		<widget name="VKeyIcon" pixmap="easy-skin-hd/buttons/key_text.png" position="55, 638" zPosition="10" size="35,25" transparent="1" alphatest="on"/>
-		<widget name="HelpWindow" pixmap="easy-skin-hd/buttons/key_text.png" position="160,115" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="VKeyIcon" pixmap="easy-skin-aus-hd/buttons/key_text.png" position="55, 638" zPosition="10" size="35,25" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="easy-skin-aus-hd/buttons/key_text.png" position="160,115" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 	</screen>
 	<!-- Network name server -->
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Nameserver Setup">
@@ -57,35 +57,35 @@
 		<panel name="FullscreenBlue2Panel" />
 		<widget name="Adaptertext" position="55, 120" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey"/>
 		<widget name="Adapter" position="55, 150" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c"/>
-		<widget name="AdapterInfo_OK" position="755, 135" size="38,31" zPosition="2" pixmap="easy-skin-hd/icons/lock_on.png" alphatest="on"/>
-		<widget name="AdapterInfo" position="832, 127" size="318,50" zPosition="1" pixmaps="easy-skin-hd/menu/select300_45black.png,easy-skin-hd/menu/select600_50.png"/>
+		<widget name="AdapterInfo_OK" position="755, 135" size="38,31" zPosition="2" pixmap="easy-skin-aus-hd/icons/lock_on.png" alphatest="on"/>
+		<widget name="AdapterInfo" position="832, 127" size="318,50" zPosition="1" pixmaps="easy-skin-aus-hd/menu/select300_45black.png,easy-skin-aus-hd/menu/select600_50.png"/>
 		<widget name="AdapterInfo_Text" position="832, 127" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff"/>
 		<eLabel position="55, 190" size="740,1" backgroundColor="crypt_emm"/>
 		<widget name="Networktext" position="55, 200" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey"/>
 		<widget name="Network" position="55, 230" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c"/>
-		<widget name="NetworkInfo_Check" position="755, 215" size="38,31" zPosition="2" pixmaps="easy-skin-hd/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
-		<widget name="NetworkInfo" position="832, 207" size="318,50" zPosition="1" pixmaps="easy-skin-hd/menu/select300_45black.png,easy-skin-hd/menu/select600_50.png"/>
+		<widget name="NetworkInfo_Check" position="755, 215" size="38,31" zPosition="2" pixmaps="easy-skin-aus-hd/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+		<widget name="NetworkInfo" position="832, 207" size="318,50" zPosition="1" pixmaps="easy-skin-aus-hd/menu/select300_45black.png,easy-skin-aus-hd/menu/select600_50.png"/>
 		<widget name="NetworkInfo_Text" position="832, 207" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff"/>
 		<eLabel position="55, 270" size="740,1" backgroundColor="crypt_emm"/>
 		<widget name="Dhcptext" position="55, 280" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey"/>
 		<widget name="Dhcp" position="55, 310" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c"/>
-		<widget name="DhcpInfo_Check" position="755, 295" size="38,31" zPosition="2" pixmaps="easy-skin-hd/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
-		<widget name="DhcpInfo" position="832, 287" size="318,50" zPosition="1" pixmaps="easy-skin-hd/menu/select300_45black.png,easy-skin-hd/menu/select600_50.png"/>
+		<widget name="DhcpInfo_Check" position="755, 295" size="38,31" zPosition="2" pixmaps="easy-skin-aus-hd/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+		<widget name="DhcpInfo" position="832, 287" size="318,50" zPosition="1" pixmaps="easy-skin-aus-hd/menu/select300_45black.png,easy-skin-aus-hd/menu/select600_50.png"/>
 		<widget name="DhcpInfo_Text" position="832, 287" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff"/>
 		<eLabel position="55, 350" size="740,1" backgroundColor="crypt_emm"/>
 		<widget name="IPtext" position="55, 360" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey"/>
 		<widget name="IP" position="55, 390" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c"/>
-		<widget name="IPInfo_Check" position="755, 375" size="38,31" zPosition="2" pixmaps="easy-skin-hd/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
-		<widget name="IPInfo" position="832, 367" size="318,50" zPosition="1" pixmaps="easy-skin-hd/menu/select300_45black.png,easy-skin-hd/menu/select600_50.png"/>
+		<widget name="IPInfo_Check" position="755, 375" size="38,31" zPosition="2" pixmaps="easy-skin-aus-hd/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+		<widget name="IPInfo" position="832, 367" size="318,50" zPosition="1" pixmaps="easy-skin-aus-hd/menu/select300_45black.png,easy-skin-aus-hd/menu/select600_50.png"/>
 		<widget name="IPInfo_Text" position="832, 367" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff"/>
 		<eLabel position="55, 430" size="740,1" backgroundColor="crypt_emm"/>
 		<widget name="DNStext" position="55, 440" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey"/>
 		<widget name="DNS" position="55, 470" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c"/>
-		<widget name="DNSInfo_Check" position="755, 455" size="38,31" zPosition="2" pixmaps="easy-skin-hd/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
-		<widget name="DNSInfo" position="832, 447" size="318,50" zPosition="1" pixmaps="easy-skin-hd/menu/select300_45black.png,easy-skin-hd/menu/select600_50.png"/>
+		<widget name="DNSInfo_Check" position="755, 455" size="38,31" zPosition="2" pixmaps="easy-skin-aus-hd/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on"/>
+		<widget name="DNSInfo" position="832, 447" size="318,50" zPosition="1" pixmaps="easy-skin-aus-hd/menu/select300_45black.png,easy-skin-aus-hd/menu/select600_50.png"/>
 		<widget name="DNSInfo_Text" position="832, 447" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff"/>
 		<eLabel position="55, 510" size="740,1" backgroundColor="crypt_emm"/>
-		<widget name="EditSettingsButton" position="832, 527" size="318,50" zPosition="1" pixmaps="easy-skin-hd/menu/select300_45black.png,easy-skin-hd/menu/select600_50.png"/>
+		<widget name="EditSettingsButton" position="832, 527" size="318,50" zPosition="1" pixmaps="easy-skin-aus-hd/menu/select300_45black.png,easy-skin-aus-hd/menu/select600_50.png"/>
 		<widget name="EditSettings_Text" position="832, 527" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff"/>
 		<widget name="InfoText" position="55, 122" size="740,476" zPosition="25" font="Regular;24" halign="center" valign="center"/>
 		<widget name="InfoTextBorder" position="0,0" size="0,0"/>
@@ -97,8 +97,8 @@
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullScreen2Window" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
-		<ePixmap position="725, 185" size="400,300" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
+		<ePixmap position="725, 185" size="400,300" pixmap="easy-skin-aus-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
 		<widget name="lab1" position="800,235" size="150,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
 		<widget name="labactive" position="960,235" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
 		<widget name="lab2" position="800,305" size="150,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
@@ -116,8 +116,8 @@
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullscreenMenuButtonPanel" />
 		<panel name="FullScreen2Window" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
-		<ePixmap position="725, 185" size="400,300" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
+		<ePixmap position="725, 185" size="400,300" pixmap="easy-skin-aus-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
 		<widget name="lab1" position="800,235" size="150,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
 		<widget name="labactive" position="960,235" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
 		<widget name="lab2" position="800,305" size="150,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
@@ -131,9 +131,9 @@
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullScreen2Window" />
 		<widget name="HelpWindow" pixmap="vkey_icon.png" position="55, 155" zPosition="1" size="440,350" transparent="1" alphatest="on" />
-		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_text.png" transparent="1" alphatest="blend"/>		
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-aus-hd/buttons/key_text.png" transparent="1" alphatest="blend"/>		
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>	
 	<!-- FTP Service -->
 	<screen name="NetworkFtp" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Network Setup - FTP">
@@ -142,8 +142,8 @@
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullScreen2Window" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
-		<ePixmap position="725, 185" size="400,300" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
+		<ePixmap position="725, 185" size="400,300" pixmap="easy-skin-aus-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
 		<widget name="lab1" position="800,235" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
 		<widget name="lab2" position="800,305" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
 		<widget name="labstop" position="960,305" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="3"/>
@@ -157,7 +157,7 @@
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullScreen2Window" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
 		<widget name="autostart" position="710,170" size="100,24" font="Regular;20" valign="center" transparent="1" />
 		<widget name="labdisabled" position="810,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labactive" position="810,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -192,8 +192,8 @@
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 		<widget name="HelpWindow" position="50,335" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- DLNA Server Setup Menu Selection-->
 	<screen name="uShareSelection" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Network Setup - DLNA Server Setup">
@@ -202,7 +202,7 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget name="checkList" position="590, 170" size="610, 415" transparent="1" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- DynDNS -->
@@ -213,7 +213,7 @@
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullScreen2Window" />
 		<panel name="FullscreenMenuButtonPanel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
 		<widget name="autostart" position="710,170" size="100,24" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labdisabled" position="810,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labactive" position="810,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -240,9 +240,9 @@
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullScreen2Window" />
 		<widget name="HelpWindow" pixmap="vkey_icon.png" position="55, 155" zPosition="1" size="440,350" transparent="1" alphatest="on" />
-		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_text.png" transparent="1" alphatest="blend"/>		
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-aus-hd/buttons/key_text.png" transparent="1" alphatest="blend"/>		
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- Mount Manager -->
 	<screen name="AutoMountManager" backgroundColor="un44000000" position="0,0" size="1280,720" flags="wfNoBorder" title="Mount Manager">
@@ -251,7 +251,7 @@
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
 		<panel name="FullScreen2Window" />
-		<widget source="config" render="Listbox" position="55, 120" size="740,420" zPosition="10" selectionPixmap="easy-skin-hd/menu/on_main_menu_730x70.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
+		<widget source="config" render="Listbox" position="55, 120" size="740,420" zPosition="10" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_730x70.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
 		<convert type="TemplatedMultiContent">
 					    {"template": [
 							    MultiContentEntryText(pos = (60, 10), size = (580, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
@@ -307,11 +307,11 @@
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
 		<panel name="FullscreenTextButtonPanel"/>		
-		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>
 		<widget source="introduction" render="Label" position="55, 575" size="740, 30" zPosition="10" font="Regular;24" halign="center" transparent="1"/>
-		<widget name="HelpWindow" pixmap="easy-skin-hd/vkey_icon.png" position="825,250" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="easy-skin-aus-hd/vkey_icon.png" position="825,250" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel position="55, 100" size="1100, 2" backgroundColor="crypt_emm"/>
 	</screen>
 	<!-- User Management -->
@@ -344,16 +344,16 @@
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
 		<panel name="FullscreenTextButtonPanel"/>		
-		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>
 		<widget source="introduction" render="Label" position="55, 575" size="740, 30" zPosition="10" font="Regular;24" halign="center" transparent="1"/>
-		<widget name="HelpWindow" pixmap="easy-skin-hd/vkey_icon.png" position="825,250" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="easy-skin-aus-hd/vkey_icon.png" position="825,250" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel position="55, 100" size="1100, 2" backgroundColor="crypt_emm"/>
 	</screen> 
 	<screen name="NetworkBrowser" position="0,0" backgroundColor="background" size="1280,720" flags="wfNoBorder" title="Network Neighbourhood">
 		<panel name="FullScreen2Window" />
-		<widget source="list" render="Listbox" position="55, 120" size="740,420" zPosition="10" selectionPixmap="easy-skin-hd/menu/on_main_menu_730x70.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1">
+		<widget source="list" render="Listbox" position="55, 120" size="740,420" zPosition="10" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_730x70.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 					      {"template": [
 							      MultiContentEntryPixmapAlphaTest(pos = (10, 11), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
@@ -380,8 +380,8 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 150" size="610, 435" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 150" size="610, 435" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>	
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Network Setup">
 		<panel name="FullScreen2Window" />
@@ -389,7 +389,7 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<widget position="55, 160" size="710, 415" name="menulist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 160" size="710, 415" name="menulist" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget source="introduction" render="Label" position="c-385, 470" size="740, 30" zPosition="10" font="Regular; 24" halign="center" valign="center" backgroundColor="un9f1313" transparent="1"/>
 	</screen>	
 	<screen name="NetworkSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Network Setup">
@@ -398,7 +398,7 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<widget position="55, 160" size="710, 415" name="menu" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 160" size="710, 415" name="menu" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="815,100" size="2,518" backgroundColor="crypt_emm"/>
 		<eLabel position="55,618" size="1100,2" backgroundColor="crypt_emm"/>
 		<eLabel position="55,100" size="1100,2" backgroundColor="crypt_emm"/>
@@ -455,9 +455,9 @@
 		<widget source="enc" render="Label" position="390, 380" size="280,35" valign="center" font="Regular;22" transparent="1"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 618" size="760, 2" backgroundColor="crypt_emm"/>
-		<ePixmap position="825, 140" size="300, 450" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_scan.png" transparent="1" alphatest="on"/>  
+		<ePixmap position="825, 140" size="300, 450" zPosition="2" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_scan.png" transparent="1" alphatest="on"/>  
 		<widget source="Statustext" render="Label" position="708, 120" size="115, 22" zPosition="10" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
-		<widget name="statuspic" pixmaps="easy-skin-hd/buttons/button_green.png,easy-skin-hd/buttons/button_green_off.png" position="768, 122" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+		<widget name="statuspic" pixmaps="easy-skin-aus-hd/buttons/button_green.png,easy-skin-aus-hd/buttons/button_green_off.png" position="768, 122" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
 	</screen>
 	<!-- WLAN Scan-->
 	<screen name="WlanScan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Choose a Wireless Network">
@@ -486,6 +486,6 @@
 		</widget>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 618" size="760, 2" backgroundColor="crypt_emm"/>
-		<ePixmap position="825, 140" size="300, 450" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_tasks_scan.png" transparent="1" alphatest="on"/>
+		<ePixmap position="825, 140" size="300, 450" zPosition="2" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_scan.png" transparent="1" alphatest="on"/>
 	</screen>
 </skin>

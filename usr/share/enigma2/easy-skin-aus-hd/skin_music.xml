@@ -5,7 +5,7 @@
 		<eLabel backgroundColor="white" position="665,340" size="450,2" zPosition="2"/>
 		<widget enableWrapAround="1" name="filelist" position="650,120" scrollbarMode="showOnDemand" size="570,207" transparent="1" zPosition="2"/>
 		<widget enableWrapAround="1" name="playlist" position="650,347" scrollbarMode="showOnDemand" size="570,254" transparent="1" zPosition="2"/>
-		<widget alphatest="on" name="coverArt" pixmap="easy-skin-hd/general/no_coverArt.png" position="250,150" size="200,200" transparent="1"/>
+		<widget alphatest="on" name="coverArt" pixmap="easy-skin-aus-hd/general/no_coverArt.png" position="250,150" size="200,200" transparent="1"/>
 		<widget font="Regular;22" name="title" position="120,370" size="470,26" transparent="1" valign="top" zPosition="2"/>
 		<eLabel backgroundColor="#777777" position="120,405" size="470,1" zPosition="2"/>
 		<widget font="Regular;18" foregroundColor="#777777" halign="right" name="artisttext" position="100,420" size="100,19" transparent="1" valign="top" zPosition="2"/>
@@ -17,10 +17,10 @@
 		<widget font="Regular;18" foregroundColor="#777777" halign="right" name="genretext" position="100,495" size="100,19" transparent="1" valign="top" zPosition="2"/>
 		<widget font="Regular;18" name="genre" position="220,495" size="370,19" transparent="1" valign="top" zPosition="2"/>
 		<eLabel backgroundColor="#777777" position="120,530" size="470,1" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/slider/slider_10x400_hbg.png" position="135,556" size="400,14" transparent="1" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/slider/slider_10_fg_ab.png" position="135,556" size="7,14" transparent="1" zPosition="2"/>
-		<widget name="PositionGauge" pointer="easy-skin-hd/slider/slider_10x497_hfg.png:490,0" position="142,555" size="393,14" transparent="1" zPosition="4"/>
-		<widget alphatest="on" name="repeat" pixmaps="easy-skin-hd/buttons/button_20x20_blue_off.png,easy-skin-hd/buttons/button_20x20_blue_on.png" position="560,554" size="20,20" transparent="1" zPosition="2"/>	
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/slider/slider_10x400_hbg.png" position="135,556" size="400,14" transparent="1" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/slider/slider_10_fg_ab.png" position="135,556" size="7,14" transparent="1" zPosition="2"/>
+		<widget name="PositionGauge" pointer="easy-skin-aus-hd/slider/slider_10x497_hfg.png:490,0" position="142,555" size="393,14" transparent="1" zPosition="4"/>
+		<widget alphatest="on" name="repeat" pixmaps="easy-skin-aus-hd/buttons/button_20x20_blue_off.png,easy-skin-aus-hd/buttons/button_20x20_blue_on.png" position="560,554" size="20,20" transparent="1" zPosition="2"/>	
 		<widget name="currenttext" position="0,0" size="0,0"/>
 		<widget name="titletext" position="0,0" size="0,0"/>
 		<panel name="FullscreenRed1Panel" />
@@ -40,7 +40,7 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget position="590, 170" size="610, 415" name="filelist" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
         <screen flags="wfNoBorder"  name="LastFMScreenMain" position="0, 0" size="1280, 720" backgroundColor="background" title="Last.FM" >
@@ -52,7 +52,7 @@
 		<widget font="Regular;22" foregroundColor="#777777" name="track" position="120,370" size="470,26" transparent="1" valign="top" zPosition="2"/>
 		<widget font="Regular;22" name="info_track" position="220,370" size="370,30" transparent="1" valign="center" halign="left" zPosition="2" />                 
 		<widget name="duration" position="420,370" size="60,30" valign="center" halign="right" zPosition="2"  transparent="1" font="Regular;18" />          
-		<widget alphatest="on" name="info_cover" pixmap="easy-skin-hd/general/no_coverArt.png" position="250,150" size="200,200" transparent="1"/>   
+		<widget alphatest="on" name="info_cover" pixmap="easy-skin-aus-hd/general/no_coverArt.png" position="250,150" size="200,200" transparent="1"/>   
 		<eLabel backgroundColor="white" position="665,340" size="450,2" zPosition="2"/>
 		<widget enableWrapAround="1" name="tablist" position="650,120" scrollbarMode="showOnDemand" size="570,207" transparent="1" zPosition="2"/>
 		<widget enableWrapAround="1" name="streamlist" position="650,347" scrollbarMode="showOnDemand" size="570,254" transparent="1" zPosition="2"/>
@@ -87,8 +87,8 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
-		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
+		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="SHOUTcastStreamripperRecordingPath" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Select record path for streamripper">
 		<panel name="FullScreen2Window" />
@@ -96,7 +96,7 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget name="target" position="400, 150" size="705, 22" valign="center" font="Regular;22" transparent="1" backgroundColor="black"/>
 		<widget name="filelist" position="400, 200" zPosition="1" size="705, 380" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>

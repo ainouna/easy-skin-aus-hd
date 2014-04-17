@@ -5,7 +5,7 @@
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1280,720" title="Power / Restart">
 		<panel name="FullScreen2Window" />
-		<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
+		<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
 				"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
@@ -15,23 +15,23 @@
 				}
 			</convert>
 		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_sleeptimer.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_power_sleeptimer.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">mainmenu_tasks_power_sleeptimer</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_standby.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_power_standby.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">mainmenu_tasks_power_standby</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_reboot.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_power_reboot.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">mainmenu_tasks_power_reboot</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_shutdown.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_power_shutdown.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">mainmenu_tasks_power_shutdown</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_power_restartshell.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_power_restartshell.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">mainmenu_tasks_power_restartshell</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -41,8 +41,8 @@
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="Menu" position="0,0" size="1280,720" title="Information">
 		<panel name="FullScreen2Window" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv.png" position="200,100" size="300,500" zPosition="2" />
-		<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_tv.png" position="200,100" size="300,500" zPosition="2" />
+		<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
 				"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
@@ -66,7 +66,7 @@
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="About" position="0,0" size="1280,720" title="About">
 		<panel name="FullScreen2Window" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" zPosition="2" />
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" zPosition="2" />
 		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="500,115" size="580,379" transparent="1" zPosition="2" />
 	</screen>
 
@@ -81,7 +81,7 @@
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="SystemNetworkInfo" size="1280,720" title="About">
 		<panel name="FullScreen2Window" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" zPosition="2" />
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" zPosition="2" />
 		<widget backgroundColor="window-bg" font="Regular;20" halign="left" position="500,115" render="Label" size="120,21" source="IFtext" transparent="1" zPosition="10" />
 		<widget backgroundColor="window-bg" font="Regular;20" halign="left" source="IF" render="Label" position="677,115" size="600,21" transparent="1" zPosition="10" />
 		<widget backgroundColor="window-bg" font="Regular;20" halign="left" source="Statustext" render="Label" position="500,138" size="115,21" transparent="1" zPosition="10" />
@@ -93,7 +93,7 @@
 
 	<screen backgroundColor="un44000000" flags="wfNoBorder" name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo">
 		<panel name="FullScreen2Window" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" />
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" />
 		<widget name="infolist" position="500,115" scrollbarMode="showOnDemand" selectionDisabled="1" size="780,495" transparent="1" />
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
@@ -105,8 +105,8 @@
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" title="Main Menu">
 		<panel name="FullScreen2Window" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2" />
-		<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2" />
+		<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
 				"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
@@ -130,7 +130,7 @@
 
 <screen backgroundColor="background" flags="wfNoBorder" name="SystemMemoryInfo" size="1280,720" title="About">
 		<panel name="FullScreen2Window" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2" />
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2" />
 		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="630,190" size="580,379" transparent="1" zPosition="2" />
 	</screen>
 
@@ -138,7 +138,7 @@
 
 <screen backgroundColor="background" flags="wfNoBorder" name="Devices" size="1280,720" title="About">
 		<panel name="FullScreen2Window" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2" />
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2" />
 		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="630,190" size="580,379" transparent="1" zPosition="2" />
 	</screen>
 </skin>

@@ -6,8 +6,8 @@
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
 		<panel name="FullScreen2Window" />  
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- AutoTimer Plugin -->
 	<screen name="AutoTimerHelp" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Help">
@@ -16,8 +16,8 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
-		<widget position="590, 145" size="610, 450" name="detailtext" itemHeight="50" font="Regular; 20" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
+		<widget position="590, 145" size="610, 450" name="detailtext" itemHeight="50" font="Regular; 20" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="AutoTimerOverview" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Overview">
 		<panel name="FullScreen2Window" />
@@ -25,8 +25,8 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
-		<widget position="590, 145" size="610, 450" name="entries" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
+		<widget position="590, 145" size="610, 450" name="entries" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="AutoTimerEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Editor">
 		<panel name="FullScreen2Window" />
@@ -34,9 +34,9 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
 		<widget font="Regular;20" halign="center" source="help" render="Label" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="AutoTimerSettings" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Settings">
 		<panel name="FullScreenWindow" />
@@ -45,9 +45,9 @@
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
 		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Settings" foregroundColor="crypt_emm"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
 		<widget font="Regular;20" halign="center" name="help" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="AutoTimerImporter" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Importer">
 		<panel name="FullScreen2Window" />
@@ -55,8 +55,8 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
-		<widget position="590, 145" size="610, 450" name="list" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
+		<widget position="590, 145" size="610, 450" name="list" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="AutoTimerFilterEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Filter Editor">
 		<panel name="FullScreen2Window" />
@@ -64,8 +64,8 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
+		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="AutoTimerServiceEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Service Editor">
 		<panel name="FullScreen2Window" />
@@ -73,8 +73,8 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="250,155" size="300,470" zPosition="2" />
+		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- GMAIL PLUGIN -->
 	<screen name="GmailSetup" position="0,0" size="1280,720" title="Gmail Settings" backgroundColor="un44000000" flags="wfNoBorder">
@@ -83,7 +83,7 @@
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullScreen2Window" />
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget name="info" position="605, 115" size="150,50" font="Regular;20" halign="left"/>
 	</screen>
 	<screen name="Gmailbodyviewer" position="0,0" size="1280,720" title="Gmail - View Mail"  backgroundColor="un44000000" flags="wfNoBorder">
@@ -110,7 +110,7 @@
 		<panel name="FullScreen2Window" />
 		<widget name="city" position="605, 115" size="150,50" font="Regular;20" halign="left"/>
 		<widget name="language" position="735, 115" size="150,50" font="Regular;20" halign="left"/>
-		<widget position="590, 170" size="610, 415" name="entrylist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="590, 170" size="610, 415" name="entrylist" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
@@ -118,7 +118,7 @@
 	</screen>
 	<screen name="WeatherPluginEntryConfigScreenfore" position="0,0" size="1280,720" title="WeatherPlugin: Edit Entry (foreca.com)" backgroundColor="un44000000" flags="wfNoBorder">
 		<panel name="FullScreen2Window" />
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
@@ -131,8 +131,8 @@
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullScreen2Window" />
-		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
+		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
 		<widget name="lab1" position="100,150" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<!-- Gmail News Plugin -->
@@ -143,8 +143,8 @@
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullScreenWindow" />
 		<eLabel position="890, 80" size="320, 22" text="Google News" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
-		<widget position="590, 150" size="610, 440" name="mylist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
+		<widget position="590, 150" size="610, 440" name="mylist" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen  name="GnewsFeedScreenContent" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
 		<panel name="FullscreenRed1Panel" />
@@ -153,8 +153,8 @@
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullScreenWindow" />
 		<widget position="890, 80" size="320, 22" name="info" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_radio.png" position="45, 155" size="300,500"/>
-		<widget position="360, 150" size="830, 430" name="mylist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_820x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_source_radio.png" position="45, 155" size="300,500"/>
+		<widget position="360, 150" size="830, 430" name="mylist" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_820x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="FMenusimple" position="center,center" size="920,600" title="Feed"  flags="wfNoBorder" >
 		<widget name="titel" position="20,0" zPosition="1" size="560,130" font="Regular;24" transparent="1"  backgroundColor="#00000000" foregroundColor="yellow" valign="center" halign="left" />

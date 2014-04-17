@@ -54,7 +54,7 @@
 
 		<!-- Date/Time top left -->
 
-		<ePixmap position="3,7" size="184,58" pixmap="easy-skin-hd/time_panel.png" alphatest="blend" zPosition="-1" />
+		<ePixmap position="3,7" size="184,58" pixmap="easy-skin-aus-hd/time_panel.png" alphatest="blend" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="19,10" size="97,28" font="Regular; 26" valign="top" halign="right" foregroundColor="twhite" backgroundColor="un333333" transparent="1" shadowColor="#10000000" shadowOffset="-2,-2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -70,13 +70,13 @@
 		<!-- Bottom infobar backgrounds and trim -->
 
 		<!--	Top edge fading towards the top -->
-		<ePixmap position="0,548" size="1280,17" pixmap="easy-skin-hd/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<ePixmap position="0,548" size="1280,17" pixmap="easy-skin-aus-hd/infobar/sombranewarr-fs8.png" zPosition="-1" />
 		<!--	Middle section, eLabel just used for fill colour -->
 		<eLabel position="0,565" size="1280,72" zPosition="-1" backgroundColor="abackground" transparent="0" />
 		<!--	Bottom section fading towards the bottom -->
-		<ePixmap position="0,637" size="1280,83" pixmap="easy-skin-hd/navy_fondo-fs8.png" zPosition="-1" />
+		<ePixmap position="0,637" size="1280,83" pixmap="easy-skin-aus-hd/navy_fondo-fs8.png" zPosition="-1" />
 		<!--	Separator between service num/picon and rest of bar -->
-		<ePixmap position="172,574" size="2,110" pixmap="easy-skin-hd/navy_lineamed-fs8.png" />
+		<ePixmap position="172,574" size="2,110" pixmap="easy-skin-aus-hd/navy_lineamed-fs8.png" />
 
 		<!-- Bottom bar - service number, name & picon -->
 
@@ -100,56 +100,56 @@
 		<!-- Bottom bar - info icons top right -->
 
 		<!--	Subservices icon -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/infobar/ico_sub.png" position="930,566" size="44,30" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_sub.png" position="930,566" size="44,30" alphatest="on">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	Networking activity icon -->
-		<ePixmap position="975,568" size="19,22" pixmap="easy-skin-hd/infobar/ico_net_off.png" alphatest="blend" />
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" position="975,568" size="19,22" zPosition="1" pixmap="easy-skin-hd/infobar/ico_net_on.png" alphatest="blend">
+		<ePixmap position="975,568" size="19,22" pixmap="easy-skin-aus-hd/infobar/ico_net_off.png" alphatest="blend" />
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" position="975,568" size="19,22" zPosition="1" pixmap="easy-skin-aus-hd/infobar/ico_net_on.png" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 
 		<!--	Dolby audio icon -->
-		<ePixmap pixmap="easy-skin-hd/infobar/ico_dolby_off.png" position="997,569" size="57,21" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/infobar/ico_dolby_on.png" position="997,569" size="57,21" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_dolby_off.png" position="997,569" size="57,21" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_dolby_on.png" position="997,569" size="57,21" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	Widescreen icon -->
-		<ePixmap pixmap="easy-skin-hd/infobar/ico_169_off.png" position="1139,569" size="37,20" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/infobar/ico_169_on.png" position="1139,569" size="37,20" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_169_off.png" position="1139,569" size="37,20" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_169_on.png" position="1139,569" size="37,20" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	Teletext icon -->
-		<ePixmap pixmap="easy-skin-hd/infobar/ico_txt_off.png" position="1062,569" size="35,19" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/infobar/ico_txt_on.png" position="1062,569" size="35,19" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_txt_off.png" position="1062,569" size="35,19" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_txt_on.png" position="1062,569" size="35,19" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	Encryption icon -->
-		<ePixmap pixmap="easy-skin-hd/infobar/ico_crypt_off.png" position="1100,568" size="30,21" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/infobar/ico_crypt_on.png" position="1100,568" size="30,21" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_crypt_off.png" position="1100,568" size="30,21" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_crypt_on.png" position="1100,568" size="30,21" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	HD TV icon -->
-		<ePixmap position="1180,569" size="30,20" pixmap="easy-skin-hd/infobar/ico_hd_off.png" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/infobar/ico_hd_on.png" position="1180,569" size="30,20" zPosition="1" alphatest="blend">
+		<ePixmap position="1180,569" size="30,20" pixmap="easy-skin-aus-hd/infobar/ico_hd_off.png" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_hd_on.png" position="1180,569" size="30,20" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	HBBTV icon -->
-		<ePixmap position="1213,568" size="56,20" pixmap="easy-skin-hd/infobar/ico_hbbtv_off.png" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/infobar/ico_hbbtv_on.png" position="1213,568" size="56,20" zPosition="1" alphatest="blend">
+		<ePixmap position="1213,568" size="56,20" pixmap="easy-skin-aus-hd/infobar/ico_hbbtv_off.png" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_hbbtv_on.png" position="1213,568" size="56,20" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -194,8 +194,8 @@
 		</widget>
 
 		<!--	Event progress bar -->
-		<ePixmap position="344,642" size="648,7" pixmap="easy-skin-hd/progress_event_background.png" alphatest="on" transparent="1" />
-		<widget source="session.Event_Now" render="Progress" position="344,643" size="648,8" pixmap="easy-skin-hd/progress_event.png" transparent="1" zPosition="1">
+		<ePixmap position="344,642" size="648,7" pixmap="easy-skin-aus-hd/progress_event_background.png" alphatest="on" transparent="1" />
+		<widget source="session.Event_Now" render="Progress" position="344,643" size="648,8" pixmap="easy-skin-aus-hd/progress_event.png" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 
@@ -224,12 +224,12 @@
 		</widget>
 
 		<!--	Digital broadcast type icons terrestrial/satellite -->
-		<widget source="session.FrontendInfo" render="Pixmap" position="1046,636" size="25,26" pixmap="easy-skin-hd/infobar/ico_dvb_s-fs8.png" alphatest="blend">
+		<widget source="session.FrontendInfo" render="Pixmap" position="1046,636" size="25,26" pixmap="easy-skin-aus-hd/infobar/ico_dvb_s-fs8.png" alphatest="blend">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" position="1046,636" size="25,26" pixmap="easy-skin-hd/infobar/ico_dvb_t-fs8.png" alphatest="blend">
+		<widget source="session.FrontendInfo" render="Pixmap" position="1046,636" size="25,26" pixmap="easy-skin-aus-hd/infobar/ico_dvb_t-fs8.png" alphatest="blend">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
@@ -301,7 +301,7 @@
 		  -->
 
 		<!--	AGC bar -->
-		<widget position="1109,639" render="Progress" size="100,5" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="easy-skin-hd/progress_snr.png">
+		<widget position="1109,639" render="Progress" size="100,5" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="easy-skin-aus-hd/progress_snr.png">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 
@@ -311,7 +311,7 @@
 		</widget>
 
 		<!--	SNR bar -->
-		<widget position="1109,654" render="Progress" size="100,5" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="easy-skin-hd/progress_snr.png">
+		<widget position="1109,654" render="Progress" size="100,5" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="easy-skin-aus-hd/progress_snr.png">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 
@@ -323,7 +323,7 @@
 		<!-- Recording status -->
 
 		<!-- REC icon -->
-		<widget source="session.RecordState" render="Pixmap" pixmap="easy-skin-hd/infobar/ico_rec.png" position="926,570" size="36,36" alphatest="blend">
+		<widget source="session.RecordState" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_rec.png" position="926,570" size="36,36" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
 
@@ -333,7 +333,7 @@
 		</widget>
 
 		<!-- Progress bar for recording -->
-		<widget source="session.RecordState" position="695,598" render="Progress" zPosition="1" pixmap="easy-skin-hd/progress_rec.png" size="258,4" borderWidth="0" transparent="1">
+		<widget source="session.RecordState" position="695,598" render="Progress" zPosition="1" pixmap="easy-skin-aus-hd/progress_rec.png" size="258,4" borderWidth="0" transparent="1">
 			<convert type="infoRecBm">Progress</convert>
 		</widget>
 
@@ -342,8 +342,8 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 
-		<!--<ePixmap position="32,515" size="131,83" zPosition="30" pixmap="easy-skin-hd/frame/frame_picon.png" transparent="1" alphatest="blend" />
-		<ePixmap position="51,525" size="100,60" zPosition="20" pixmap="easy-skin-hd/picon_default.png" alphatest="blend" />-->
+		<!--<ePixmap position="32,515" size="131,83" zPosition="30" pixmap="easy-skin-aus-hd/frame/frame_picon.png" transparent="1" alphatest="blend" />
+		<ePixmap position="51,525" size="100,60" zPosition="20" pixmap="easy-skin-aus-hd/picon_default.png" alphatest="blend" />-->
 	</screen>
 
 
@@ -355,7 +355,7 @@
 		<eLabel position="55,72" size="600,458" zPosition="-1" backgroundColor="abackground" />
 
 		<!-- Panel icon -->
-		<ePixmap name="logoazboxhd" position="62,114" size="40,37" pixmap="easy-skin-hd/infobar/ico_tv.png" alphatest="blend" />
+		<ePixmap name="logoazboxhd" position="62,114" size="40,37" pixmap="easy-skin-aus-hd/infobar/ico_tv.png" alphatest="blend" />
 
 		<!-- Service number & name -->
 		<widget source="session.CurrentService" render="Label" position="62,84" size="92,30" halign="center" font="Regular; 20" backgroundColor="background" transparent="1" foregroundColor="grey" noWrap="1" text="555">
@@ -433,10 +433,10 @@
 		<!-- Playback state indicator - top left -->
 
 		<!--	Frame -->
-		<ePixmap position="20,20" zPosition="-1" size="95,75" transparent="1" pixmap="easy-skin-hd/frame/frame80_95x75.png" />
+		<ePixmap position="20,20" zPosition="-1" size="95,75" transparent="1" pixmap="easy-skin-aus-hd/frame/frame80_95x75.png" />
 
 		<!--	Playback state icon -->
-		<widget name="statusicon" position="45,45" size="20,20" alphatest="on" pixmaps="easy-skin-hd/icons/play.png,easy-skin-hd/icons/pause.png,easy-skin-hd/icons/stop.png,easy-skin-hd/icons/forward.png,easy-skin-hd/icons/backward.png,easy-skin-hd/icons/slow.png,easy-skin-hd/icons/blank.png" />
+		<widget name="statusicon" position="45,45" size="20,20" alphatest="on" pixmaps="easy-skin-aus-hd/icons/play.png,easy-skin-aus-hd/icons/pause.png,easy-skin-aus-hd/icons/stop.png,easy-skin-aus-hd/icons/forward.png,easy-skin-aus-hd/icons/backward.png,easy-skin-aus-hd/icons/slow.png,easy-skin-aus-hd/icons/blank.png" />
 
 		<!-- Playback speed indicator -->
 		<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" />
@@ -444,38 +444,38 @@
 		<!-- Bottom infobar backgrounds and trim -->
 
 		<!--	Top edge fading towards the top -->
-		<ePixmap position="0,548" size="1280,17" pixmap="easy-skin-hd/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<ePixmap position="0,548" size="1280,17" pixmap="easy-skin-aus-hd/infobar/sombranewarr-fs8.png" zPosition="-1" />
 		<!--	Middle section, eLabel just used for fill colour -->
 		<eLabel position="0,565" size="1280,72" zPosition="-1" backgroundColor="abackground" transparent="0" />
 		<!--	Bottom section fading towards the bottom -->
-		<ePixmap position="0,637" size="1280,83" pixmap="easy-skin-hd/navy_fondo-fs8.png" zPosition="-1" alphatest="on" />
+		<ePixmap position="0,637" size="1280,83" pixmap="easy-skin-aus-hd/navy_fondo-fs8.png" zPosition="-1" alphatest="on" />
 		<!-- Horizontal divider between status icons and screen resolution -->
 		<eLabel position="86, 676" size="180, 1" backgroundColor="crypt_emm" />
 
 		<!-- Status icons -->
 
 		<!-- "Recording" icon, blinks when playback file is currently recording -->
-		<widget position="266, 620" size="36,36" source="session.RecordState" render="Pixmap" pixmap="easy-skin-hd/icons/i_rec.png" alphatest="on">
+		<widget position="266, 620" size="36,36" source="session.RecordState" render="Pixmap" pixmap="easy-skin-aus-hd/icons/i_rec.png" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 
 		<!--	Dolby audio icon -->
-		<ePixmap pixmap="easy-skin-hd/infobar/ico_dolby_off.png" position="82, 620" size="57, 36" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/infobar/ico_dolby_on.png" position="82, 620" size="57, 36" zPosition="1" alphatest="on">
+		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_dolby_off.png" position="82, 620" size="57, 36" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_dolby_on.png" position="82, 620" size="57, 36" zPosition="1" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 
 		<!--	Widescreen icon -->
-		<ePixmap pixmap="easy-skin-hd/infobar/ico_169_off.png" position="160, 620" size="36, 36" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/infobar/ico_169_on.png" position="160, 620" size="36, 36" zPosition="1" alphatest="on">
+		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_169_off.png" position="160, 620" size="36, 36" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_169_on.png" position="160, 620" size="36, 36" zPosition="1" alphatest="on">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 
 		<!--	HD TV icon -->
-		<ePixmap pixmap="easy-skin-hd/infobar/ico_hd_off.png" position="215, 620" size="36,36" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/infobar/ico_hd_on.png" position="215, 620" size="36, 36" zPosition="1" alphatest="on">
+		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_hd_off.png" position="215, 620" size="36,36" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_hd_on.png" position="215, 620" size="36, 36" zPosition="1" alphatest="on">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">800,2000</convert>
 			<convert type="ConditionalShowHide"/>
@@ -503,8 +503,8 @@
 		</widget>
 
 		<!--	Playback progress bar -->
-		<ePixmap position="393, 640" size="700,16" pixmap="easy-skin-hd/mpslider.png" zPosition="2" alphatest="on"/>
-		<widget source="session.CurrentService" render="PositionGauge" position="413, 641" size="560,14" pointer="easy-skin-hd/pointer.png:13,3">
+		<ePixmap position="393, 640" size="700,16" pixmap="easy-skin-aus-hd/mpslider.png" zPosition="2" alphatest="on"/>
+		<widget source="session.CurrentService" render="PositionGauge" position="413, 641" size="560,14" pointer="easy-skin-aus-hd/pointer.png:13,3">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 
@@ -521,7 +521,7 @@
 		<!-- Clock  -->
 
 		<!--	Clock - background -->
-		<ePixmap pixmap="easy-skin-hd/ruanalogic.png" position="1083,608" size="90,90" alphatest="blend" />
+		<ePixmap pixmap="easy-skin-aus-hd/ruanalogic.png" position="1083,608" size="90,90" alphatest="blend" />
 
 		<!--	Clock - seconds hand -->
 		<widget source="global.CurrentTime" render="Analogic" position="1095,620" size="65,65" borderColor="white" foregroundColor="white" linewidth="1" zPosition="1" alphatest="on">
@@ -547,21 +547,21 @@
 
 	<screen name="DVDPlayer" flags="wfNoBorder" position="0, 0" size="1280,720" title="DVDPlayer" backgroundColor="transparent">
 		<!-- Background -->
-		<ePixmap position="0, 70" size="1280,720" pixmap="easy-skin-hd/infobar.png" zPosition="-1"/>
+		<ePixmap position="0, 70" size="1280,720" pixmap="easy-skin-aus-hd/infobar.png" zPosition="-1"/>
 		<!-- Time -->
 		<widget position="1113, 661" size="95, 26" source="global.CurrentTime" render="Label" font="Named; 21" valign="bottom" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<!-- Channellogo (Picon) -->
-		<ePixmap position="75, 605" size="95,75" pixmap="easy-skin-hd/frame/frame80_95x75.png" zPosition="1"/>
-		<ePixmap position="87, 616" size="70,53" pixmap="easy-skin-hd/general/picon_movie.png" zPosition="2"/>
+		<ePixmap position="75, 605" size="95,75" pixmap="easy-skin-aus-hd/frame/frame80_95x75.png" zPosition="1"/>
+		<ePixmap position="87, 616" size="70,53" pixmap="easy-skin-aus-hd/general/picon_movie.png" zPosition="2"/>
 		<!-- Service name -->
 		<widget position="55, 560" size="1170, 25" source="session.CurrentService" render="Label" font="Named; 23" valign="center" halign="center" noWrap="1" backgroundColor="black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="white">
 			  <convert type="ServiceName">Name</convert>
 		</widget>
 		<!-- Progressbar (movie position)-->
-		<ePixmap position="184, 595" size="600,16" pixmap="easy-skin-hd/mpslider.png" zPosition="3" alphatest="on"/>
-		<widget source="session.CurrentService" render="PositionGauge" position="204, 596" size="560,14" zPosition="2" pointer="easy-skin-hd/pointer.png:13,3">
+		<ePixmap position="184, 595" size="600,16" pixmap="easy-skin-aus-hd/mpslider.png" zPosition="3" alphatest="on"/>
+		<widget source="session.CurrentService" render="PositionGauge" position="204, 596" size="560,14" zPosition="2" pointer="easy-skin-aus-hd/pointer.png:13,3">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<!-- Elapsed time -->
@@ -575,15 +575,15 @@
 		<!-- Chapter info -->
 		<widget name="chapterLabel" position="184, 645" size="380, 22" font="Regular;20" foregroundColor="unc3c3c9" backgroundColor="black" transparent="1"/>
 		<!-- Icons for help -->
-		<ePixmap position="1056, 594" pixmap="easy-skin-hd/icons/icon_rewind.png" size="36,36" alphatest="on"/>
-		<ePixmap position="1094, 594" pixmap="easy-skin-hd/icons/icon_play.png" size="36,36" alphatest="on"/>
-		<ePixmap position="1132, 594" pixmap="easy-skin-hd/icons/icon_pause.png" size="36,36" alphatest="on"/>
-		<ePixmap position="1170, 594" pixmap="easy-skin-hd/icons/icon_forward.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1056, 594" pixmap="easy-skin-aus-hd/icons/icon_rewind.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1094, 594" pixmap="easy-skin-aus-hd/icons/icon_play.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1132, 594" pixmap="easy-skin-aus-hd/icons/icon_pause.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1170, 594" pixmap="easy-skin-aus-hd/icons/icon_forward.png" size="36,36" alphatest="on"/>
 		<!-- Audio icon (is there multichannel audio?) -->
-		<ePixmap pixmap="easy-skin-hd/icons/i_dolby.png" position="1018, 594" zPosition="1" size="36,36" alphatest="on"/>
+		<ePixmap pixmap="easy-skin-aus-hd/icons/i_dolby.png" position="1018, 594" zPosition="1" size="36,36" alphatest="on"/>
 		<widget name="audioLabel" position="968, 645" size="130,22" font="Regular;18" backgroundColor="black" shadowColor="#1d354c" shadowOffset="-1,-1" transparent="1" valign="bottom"/>
 		<!-- Subtitle track info -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_txt.png" position="980, 594" zPosition="1" size="36,36" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/icons/i_txt.png" position="980, 594" zPosition="1" size="36,36" alphatest="on">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -614,11 +614,11 @@
 		<widget font="Regular;20" position="20,110" render="Label" size="460,190" source="RdsDecoder" transparent="1">
 			<convert type="RdsInfo">RadioText</convert>
 		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/icons/i_rass.png" position="70,310" render="Pixmap" size="48,48" source="RdsDecoder">
+		<widget alphatest="on" pixmap="easy-skin-aus-hd/icons/i_rass.png" position="70,310" render="Pixmap" size="48,48" source="RdsDecoder">
 		<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="easy-skin-hd/icons/i_rec.png" position="20,310" render="Pixmap" size="48,48" source="session.RecordState">
+		<widget alphatest="on" pixmap="easy-skin-aus-hd/icons/i_rec.png" position="20,310" render="Pixmap" size="48,48" source="session.RecordState">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>

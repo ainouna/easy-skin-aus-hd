@@ -101,18 +101,18 @@
 		<color name="WindowTitleBackground" color="transpBlack"/>
 		<color name="WindowTitleForeground" color="crypt_emm"/>
 		<borderset name="bsWindow">
-		      <pixmap pos="bpTopLeft" filename="easy-skin-hd/b_tl.png"/>
-		      <pixmap pos="bpTop" filename="easy-skin-hd/b_t.png"/>
-		      <pixmap pos="bpTopRight" filename="easy-skin-hd/b_tr.png"/>
-		      <pixmap pos="bpLeft" filename="easy-skin-hd/b_l.png"/>
-		      <pixmap pos="bpRight" filename="easy-skin-hd/b_r.png"/>
-		      <pixmap pos="bpBottomLeft" filename="easy-skin-hd/b_bl.png"/>
-		      <pixmap pos="bpBottom" filename="easy-skin-hd/b_b.png"/>
-		      <pixmap pos="bpBottomRight" filename="easy-skin-hd/b_br.png"/>
+		      <pixmap pos="bpTopLeft" filename="easy-skin-aus-hd/b_tl.png"/>
+		      <pixmap pos="bpTop" filename="easy-skin-aus-hd/b_t.png"/>
+		      <pixmap pos="bpTopRight" filename="easy-skin-aus-hd/b_tr.png"/>
+		      <pixmap pos="bpLeft" filename="easy-skin-aus-hd/b_l.png"/>
+		      <pixmap pos="bpRight" filename="easy-skin-aus-hd/b_r.png"/>
+		      <pixmap pos="bpBottomLeft" filename="easy-skin-aus-hd/b_bl.png"/>
+		      <pixmap pos="bpBottom" filename="easy-skin-aus-hd/b_b.png"/>
+		      <pixmap pos="bpBottomRight" filename="easy-skin-aus-hd/b_br.png"/>
 		</borderset>
 		<borderset name="bsListboxEntry">
-		      <pixmap pos="bpTop" filename="easy-skin-hd/tib-v.png"/>
-		      <pixmap pos="bpBottom" filename="easy-skin-hd/tib-v.png"/>
+		      <pixmap pos="bpTop" filename="easy-skin-aus-hd/tib-v.png"/>
+		      <pixmap pos="bpBottom" filename="easy-skin-aus-hd/tib-v.png"/>
 		</borderset>
 	</windowstyle>
 	<windowstyle type="skinned" id="1">
@@ -132,57 +132,57 @@
 
 	<!-- Switch menu pic -->
 	<switchpixmap>
-		<pixmap name="menu_on" filename="easy-skin-hd/menu/menu_on.png"  />
-		<pixmap name="menu_off" filename="easy-skin-hd/menu/menu_off.png" />
+		<pixmap name="menu_on" filename="easy-skin-aus-hd/menu/menu_on.png"  />
+		<pixmap name="menu_off" filename="easy-skin-aus-hd/menu/menu_off.png" />
 	</switchpixmap>
 	
 	<!-- Load Template Screens -->
-	<include filename="easy-skin-hd/skin_templates.xml"/>
+	<include filename="easy-skin-aus-hd/skin_templates.xml"/>
 	<!-- Load Menu->Wizards Screens -->
-	<include filename="easy-skin-hd/skin_wizards.xml"/>	
+	<include filename="easy-skin-aus-hd/skin_wizards.xml"/>	
 	<!-- Load Infobars Screens -->
-	<include filename="easy-skin-hd/skin_infobars.xml"/>
+	<include filename="easy-skin-aus-hd/skin_infobars.xml"/>
 	<!-- Load Menu->Setup->System Screens -->
-	<include filename="easy-skin-hd/skin_setup_system.xml"/>
+	<include filename="easy-skin-aus-hd/skin_setup_system.xml"/>
 	<!-- Load Menu->Setup->Network Screens -->
-	<include filename="easy-skin-hd/skin_setup_network.xml"/>
+	<include filename="easy-skin-aus-hd/skin_setup_network.xml"/>
 	<!-- Load Menu->Setup->Antenna Screens -->
-	<include filename="easy-skin-hd/skin_setup_antenna.xml"/>
+	<include filename="easy-skin-aus-hd/skin_setup_antenna.xml"/>
 	<!-- Load Menu->Setup->TV Screens -->
-	<include filename="easy-skin-hd/skin_setup_tv.xml"/>
+	<include filename="easy-skin-aus-hd/skin_setup_tv.xml"/>
 	<!-- Load Menu->Setup->MEDIA Screens -->
-	<include filename="easy-skin-hd/skin_setup_media.xml"/>
+	<include filename="easy-skin-aus-hd/skin_setup_media.xml"/>
 	<!-- Load Menu->Setup->Plugins  Screens -->
-	<include filename="easy-skin-hd/skin_setup_plugins.xml"/>
+	<include filename="easy-skin-aus-hd/skin_setup_plugins.xml"/>
 	<!-- Load Menu->Setup->Storage  Screens -->
-	<include filename="easy-skin-hd/skin_setup_storage.xml"/>
+	<include filename="easy-skin-aus-hd/skin_setup_storage.xml"/>
 	<!-- Load Menu->Setup->Storage  Screens -->
-	<include filename="easy-skin-hd/skin_setup_swmanager.xml"/>
+	<include filename="easy-skin-aus-hd/skin_setup_swmanager.xml"/>
 	<!-- Load Menu->Plugins  Screens -->
-	<include filename="easy-skin-hd/skin_plugins.xml"/>
+	<include filename="easy-skin-aus-hd/skin_plugins.xml"/>
 	<!-- Load Menu->Photos  Screens -->
-	<include filename="easy-skin-hd/skin_photos.xml"/>
+	<include filename="easy-skin-aus-hd/skin_photos.xml"/>
 	<!-- Load Menu->Music Screens -->
-	<include filename="easy-skin-hd/skin_music.xml"/>
+	<include filename="easy-skin-aus-hd/skin_music.xml"/>
 	<!-- Load Menu->Movies Screens -->
-	<include filename="easy-skin-hd/skin_videos.xml"/>
+	<include filename="easy-skin-aus-hd/skin_videos.xml"/>
 	<!-- Load Menu->Tasks Screens -->
-	<include filename="easy-skin-hd/skin_setup.xml"/>
+	<include filename="easy-skin-aus-hd/skin_setup.xml"/>
 
 	<screen position="0,150" size="1280,570" flags="wfNoBorder" name="GeneralMenu">
 		<widget name="frame" position="12,95" size="170,220" zPosition="1" alphatest="on" />
 		
 		<widget position="40,25" size="1200,25" name="title" font="Regular;22"  zPosition="2" transparent="1" foregroundColors="#555555,#999999" />
 
-		<widget position="22,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_0" render="Micon" pixmap="easy-skin-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="200,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_1" render="Micon" pixmap="easy-skin-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="378,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_2" render="Micon" pixmap="easy-skin-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="556,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_3" render="Micon" pixmap="easy-skin-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="734,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_4" render="Micon" pixmap="easy-skin-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="912,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_5" render="Micon" pixmap="easy-skin-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="1090,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_6" render="Micon" pixmap="easy-skin-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
+		<widget position="22,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_0" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
+		<widget position="200,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_1" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
+		<widget position="378,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_2" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
+		<widget position="556,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_3" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
+		<widget position="734,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_4" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
+		<widget position="912,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_5" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
+		<widget position="1090,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_6" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
 		
-		<widget position="0,10" size="1280,180" source="id_mainmenu_ext" render="Micon" path="easy-skin-hd/gmenu/" alphatest="on" zPosition="2" transparent="1" />
+		<widget position="0,10" size="1280,180" source="id_mainmenu_ext" render="Micon" path="easy-skin-aus-hd/gmenu/" alphatest="on" zPosition="2" transparent="1" />
 		<widget position="0,210" size="1280,76" name="list" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
 		
 		<widget position="15,290" size="250,250" name="list_sub_0" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
@@ -191,17 +191,17 @@
 		<widget position="765,290" size="250,250" name="list_sub_3" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
 		<widget position="1015,290" size="250,250" name="list_sub_4" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
 		
-		<widget position="122,280" size="35,10" name="up_sub_0" pixmap="easy-skin-hd/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		<widget position="372,280" size="35,10" name="up_sub_1" pixmap="easy-skin-hd/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		<widget position="622,280" size="35,10" name="up_sub_2" pixmap="easy-skin-hd/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		<widget position="872,280" size="35,10" name="up_sub_3" pixmap="easy-skin-hd/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		<widget position="1122,290" size="35,10" name="up_sub_4" pixmap="easy-skin-hd/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="122,280" size="35,10" name="up_sub_0" pixmap="easy-skin-aus-hd/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="372,280" size="35,10" name="up_sub_1" pixmap="easy-skin-aus-hd/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="622,280" size="35,10" name="up_sub_2" pixmap="easy-skin-aus-hd/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="872,280" size="35,10" name="up_sub_3" pixmap="easy-skin-aus-hd/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="1122,290" size="35,10" name="up_sub_4" pixmap="easy-skin-aus-hd/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
 		
-		<widget position="122,540" size="35,10" name="down_sub_0" pixmap="easy-skin-hd/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
-		<widget position="372,540" size="35,10" name="down_sub_1" pixmap="easy-skin-hd/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
-		<widget position="622,540" size="35,10" name="down_sub_2" pixmap="easy-skin-hd/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
-		<widget position="872,540" size="35,10" name="down_sub_3" pixmap="easy-skin-hd/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
-		<widget position="1122,540" size="35,10" name="down_sub_4" pixmap="easy-skin-hd/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="122,540" size="35,10" name="down_sub_0" pixmap="easy-skin-aus-hd/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="372,540" size="35,10" name="down_sub_1" pixmap="easy-skin-aus-hd/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="622,540" size="35,10" name="down_sub_2" pixmap="easy-skin-aus-hd/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="872,540" size="35,10" name="down_sub_3" pixmap="easy-skin-aus-hd/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="1122,540" size="35,10" name="down_sub_4" pixmap="easy-skin-aus-hd/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
 	</screen>
 	
 	<!-- Timer Screens -->
@@ -257,28 +257,28 @@
 	<!-- Timer edit list -->
 	<screen flags="wfNoBorder" name="TimerEditList" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer Editor">
 		<panel name="FullScreen2Window" />
-		<widget position="590, 145" size="610, 450" name="timerlist" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>		
+		<widget position="590, 145" size="610, 450" name="timerlist" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>		
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/menu/mainmenu_tv_recorded.png" position="250,155" size="300,470" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tv_recorded.png" position="250,155" size="300,470" zPosition="2"/>
 	</screen>
 	<!-- Timer entry -->
 	<screen flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer entry">
 		<panel name="FullScreen2Window" />
-		<widget position="590, 90" size="610, 500" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x255.png" position="50,90" size="400,255" alphatest="on" />
+		<widget position="590, 90" size="610, 500" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_400x255.png" position="50,90" size="400,255" alphatest="on" />
 		<widget name="description" position="70,100" size="360,235"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 		<widget name="HelpWindow" position="50,345" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="canceltext" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="oktext" position="440,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="cancel" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="ok" position="440,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="canceltext" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="oktext" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#9f1313" name="cancel" position="123, 635" size="0,0" />
@@ -288,7 +288,7 @@
 	<screen flags="wfNoBorder" name="TimerLog" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer log">
 		<panel name="FullScreen2Window" />
 		<widget enableWrapAround="1" name="loglist" position="650,195" scrollbarMode="showOnDemand" size="510,400" transparent="1" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="150,195" size="400,200"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="150,195" size="400,200"/>
 		<widget font="Regular;20" halign="center" name="logentry" position="170,215" size="360,160" transparent="1" valign="center" zPosition="2"/>
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
@@ -330,47 +330,47 @@
 		<panel name="FullscreenMenuButtonPanel" />
 		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
 			    backgroundColorSelected="#41000000"
-			    selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png"
+			    selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png"
 			    colorServiceDescription="#999999"
 			    colorServiceDescriptionSelected="#bbbbbb"
 			    foregroundColorServiceNotAvail="#777777"
 			    picServiceEventProgressbar="slider/slider_1280x10_hfg.png"    
 			    serviceItemHeight="50" serviceNumberFont="Regular;23" serviceNameFont="Regular;22" serviceInfoFont="Regular;21" scrollbarMode="showAlways"/>
-	<!--	<ePixmap pixmap="easy-skin-hd/icons/i_dolby_no.png" position="296, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_dolby.png" position="296, 110" size="36,36" zPosition="2" alphatest="on">
+	<!--	<ePixmap pixmap="easy-skin-aus-hd/icons/i_dolby_no.png" position="296, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/icons/i_dolby.png" position="296, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icons/i_format_no.png" position="259, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_format.png" position="259, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="easy-skin-aus-hd/icons/i_format_no.png" position="259, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/icons/i_format.png" position="259, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icons/i_txt_no.png" position="333, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_txt.png" position="333, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="easy-skin-aus-hd/icons/i_txt_no.png" position="333, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/icons/i_txt.png" position="333, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icons/i_fta.png" position="370, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_crypt.png" position="370, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="easy-skin-aus-hd/icons/i_fta.png" position="370, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/icons/i_crypt.png" position="370, 110" size="36,36" zPosition="2" alphatest="on">
 			  <convert type="ServiceInfo">IsCrypted</convert>
 			  <convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icons/i_sub_no.png" position="222, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_sub.png" position="222, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="easy-skin-aus-hd/icons/i_sub_no.png" position="222, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/icons/i_sub.png" position="222, 110" size="36,36" zPosition="2" alphatest="on">
 			  <convert type="ServiceInfo">SubservicesAvailable</convert>
 			  <convert type="ConditionalShowHide"/>
 		</widget>
-		<widget position="445, 110" size="36,36" source="session.RecordState" render="Pixmap" pixmap="easy-skin-hd/icons/i_rec.png" zPosition="1">
+		<widget position="445, 110" size="36,36" source="session.RecordState" render="Pixmap" pixmap="easy-skin-aus-hd/icons/i_rec.png" zPosition="1">
 			  <convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icons/i_sd.png" position="1170,565" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-hd/icons/i_hd.png" position="407, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="easy-skin-aus-hd/icons/i_sd.png" position="1170,565" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/icons/i_hd.png" position="407, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">800,2000</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap position="55, 105" size="126,82" pixmap="easy-skin-hd/frame_hd.png" zPosition="1" alphatest="on"/>
+		<ePixmap position="55, 105" size="126,82" pixmap="easy-skin-aus-hd/frame_hd.png" zPosition="1" alphatest="on"/>
 		<widget source="ServiceEvent" render="Picon2" position="68,116" size="100,60" zPosition="2" transparent="1" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Label" position="585, 80" size="625, 20" font="Named;18" halign="center" backgroundColor="black" foregroundColor="grey" transparent="1" zPosition="3">
 			<convert type="ServiceName">Provider</convert>
@@ -390,14 +390,14 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="ServiceEvent" render="Progress" position="137, 183" zPosition="1" pixmap="easy-skin-hd/progress.png" size="350, 8" borderWidth="1" borderColor="uncccccc">
+		<widget source="ServiceEvent" render="Progress" position="137, 183" zPosition="1" pixmap="easy-skin-aus-hd/progress.png" size="350, 8" borderWidth="1" borderColor="uncccccc">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="55, 245" zPosition="1" size="521, 324" font="Regular; 20" transparent="1" backgroundColor="black" foregroundColor="grey">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 
-		<ePixmap position="50, 597" size="15, 10" pixmap="easy-skin-hd/icons/icon_event.png" alphatest="on"/>
+		<ePixmap position="50, 597" size="15, 10" pixmap="easy-skin-aus-hd/icons/icon_event.png" alphatest="on"/>
 		<widget position="70, 590" size="70, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" halign="center" transparent="1" backgroundColor="black" foregroundColor="grey">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
@@ -408,10 +408,10 @@
 	</screen>
 	<!-- Channel selection - Radio -->
 	<screen name="ChannelSelectionRadio" position="150,100" size="980,560" title="Channel Selection" zPosition="-2">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="90,500" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="290,500" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="490,500" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="690,500" size="200,60" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position="90,500" size="200,60" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" position="290,500" size="200,60" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" position="490,500" size="200,60" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" position="690,500" size="200,60" zPosition="2"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="90,500" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="290,500" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="key_yellow" position="490,500" size="200,36" transparent="1" valign="center" zPosition="3"/>
@@ -460,13 +460,13 @@ self.autoResize()
 		<widget name="picture" pixmap="picon_default.png" position="0,0" size="100,60" alphatest="on" zPosition="1"/>
 	</screen>
 	<screen name="UnhandledKey" flags="wfNoBorder" position="620,30" size="100,100" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
-		<widget name="UnhandledKeyPixmap" pixmap="easy-skin-hd/unhandled-key.png" position="0,0" size="100,100" alphatest="off"/>
+		<widget name="UnhandledKeyPixmap" pixmap="easy-skin-aus-hd/unhandled-key.png" position="0,0" size="100,100" alphatest="off"/>
 	</screen>
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" zPosition="10" title="EPG Selection">
 		<widget position="75, 30" size="80, 20" halign="left" source="global.CurrentTime" render="Label" font="Named; 16" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="155, 30" size="450, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
@@ -581,19 +581,19 @@ self.autoResize()
 		</widget>
 		<widget source="job_status" render="Label" position="20,112" size="480,26" font="Regular;23" />
 		<widget name="config" position="20,154" size="480,20" />
-		<widget source="cancelable" render="Pixmap" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="20,200" size="200,60" alphatest="blend">
+		<widget source="cancelable" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position="20,200" size="200,60" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="cancelable" render="FixedLabel" text="Cancel" position="20,203" size="200,25" font="Regular;20" halign="center" valign="center" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="finished" render="Pixmap" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="240,200" size="200,60" alphatest="blend">
+		<widget source="finished" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" position="240,200" size="200,60" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="finished" render="FixedLabel" text="OK" position="240,203" size="200,25" font="Regular;20" halign="center" valign="center" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="backgroundable" render="Pixmap" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="250,200" size="200,60" alphatest="blend">
+		<widget source="backgroundable" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" position="250,200" size="200,60" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="backgroundable" render="FixedLabel" text="In background" position="250,203" size="200,25" font="Regular;20" halign="center" valign="center" transparent="1">
@@ -632,7 +632,7 @@ self.autoResize()
 		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,150" transparent="1" zPosition="2"/>
 		<widget name="booklist" position="650,335" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="textbook" position="650,295" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
 		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;22" halign="center" name="target" position="170,295" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<panel name="FullscreenRed1Panel" />
@@ -650,7 +650,7 @@ self.autoResize()
 		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,150" transparent="1" zPosition="2"/>
 		<widget name="booklist" position="650,335" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="textbook" position="650,295" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
 		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;22" halign="center" name="target" position="170,295" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<panel name="FullscreenRed1Panel" />
@@ -668,7 +668,7 @@ self.autoResize()
 		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,150" transparent="1" zPosition="2"/>
 		<widget name="booklist" position="650,335" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="textbook" position="650,295" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
 		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;22" halign="center" name="target" position="170,295" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<panel name="FullscreenRed1Panel" />
@@ -711,7 +711,7 @@ self.autoResize()
 					}
 			</convert>
 		</widget>
-		<ePixmap position="150,195" size="400,200" pixmap="easy-skin-hd/frame/frame_400x200.png" alphatest="on"  />
+		<ePixmap position="150,195" size="400,200" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" alphatest="on"  />
 		<widget position="170,205" size="360,180" source="introduction" render="Label" zPosition="10" font="Regular;21" halign="center" valign="center" transparent="1"/>
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
@@ -723,7 +723,7 @@ self.autoResize()
 		<eLabel position="675,140" size="430,35" text="Input device setup" font="Regular;28" transparent="1" zPosition="2" />
 		<eLabel position="665,180" size="450,2" backgroundColor="white" zPosition="2" />
 		<widget position="650,195" size="510,400" name="config" zPosition="2" />
-		<ePixmap position="150,195" size="400,200" pixmap="easy-skin-hd/frame/frame_400x200.png" alphatest="on" zPosition="2" />
+		<ePixmap position="150,195" size="400,200" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" alphatest="on" zPosition="2" />
 		<widget position="170,205" size="360,180" source="introduction" render="Label" valign="center" halign="center" font="Regular;20" transparent="1" zPosition="3" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
@@ -736,10 +736,10 @@ self.autoResize()
 	
 	<!-- RASS -->
 	<screen flags="wfNoBorder" name="RassInteractive" position="0,0" size="1280,720" title="RassInteractive">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/icons/rass_logo.png" position="675,143" size="50,21" transparent="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/icons/rass_logo.png" position="675,143" size="50,21" transparent="1"/>
 		<eLabel font="Regular;28" position="735,140" size="485,35" text="Interactive" transparent="1" zPosition="2"/>
 		<eLabel backgroundColor="white" position="665,180" size="450,2" zPosition="2"/>
-		<widget backgroundColor="#33000000" name="Marker" pixmap="easy-skin-hd/menu/on_main_menu_485x50.png" position="650,195" size="510,400" transparent="1" zPosition="2"/>
+		<widget backgroundColor="#33000000" name="Marker" pixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" position="650,195" size="510,400" transparent="1" zPosition="2"/>
 		<eLabel font="Regular;21" position="670,210" size="16,25" text="0" transparent="1" zPosition="3"/>
 		<eLabel font="Regular;21" position="1065,210" size="60,25" text="Index" transparent="1" zPosition="3"/>
 		<eLabel font="Regular;21" position="670,260" size="16,25" text="1" transparent="1" zPosition="3"/>
@@ -763,18 +763,18 @@ self.autoResize()
 	</screen>
 	<!-- RDS info -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" size="1280,720" zPosition="-2">
-    		<widget alphatest="on" name="RassLogo" pixmap="easy-skin-hd/icons/rass_logo.png" position="97,630" size="70,53" transparent="1" zPosition="2"/>
+    		<widget alphatest="on" name="RassLogo" pixmap="easy-skin-aus-hd/icons/rass_logo.png" position="97,630" size="70,53" transparent="1" zPosition="2"/>
         	<widget backgroundColor="#000000" font="Regular;28" halign="left" name="RtpText" noWrap="1" position="185,565" shadowColor="#000000" shadowOffset="-1,-1" size="850,53" transparent="1" valign="bottom"/>
         	<widget backgroundColor="#000000" font="Regular;22" halign="left" name="RadioText" noWrap="1" position="185,630" shadowColor="#000000" shadowOffset="-1,-1" size="850,53" transparent="1" valign="bottom"/>
 	</screen>
 	<!-- Mute -->
 	<screen backgroundColor="#ff000000" flags="wfNoBorder" name="Mute" position="1210,20" size="50,50" title="Mute" zPosition="10">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/general/mute_50x50_tx.png" position="0,0" size="50,50"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/general/mute_50x50_tx.png" position="0,0" size="50,50"/>
 	</screen>
 	<!-- Volume -->
 	<screen backgroundColor="black" flags="wfNoBorder" name="Volume" position="397,58" size="485,78" title="Volume" zPosition="1">
-		<ePixmap pixmap="easy-skin-hd/general/volume_tx.png" position="0,0" size="485,78"/>
-		<widget name="Volume" pixmap="easy-skin-hd/slider/slider_main.png" position="62,32" size="333,20" transparent="1" zPosition="2"/>
+		<ePixmap pixmap="easy-skin-aus-hd/general/volume_tx.png" position="0,0" size="485,78"/>
+		<widget name="Volume" pixmap="easy-skin-aus-hd/slider/slider_main.png" position="62,32" size="333,20" transparent="1" zPosition="2"/>
 	</screen>
 	
 	<!-- Numberzap -->
@@ -804,7 +804,7 @@ self.autoResize()
 
 	<!-- Numerical help dialog -->
 	<screen flags="wfNoBorder" name="NumericalTextInputHelpDialog" position="150,195" size="400,255" zPosition="2">
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x255.png" position="0,0" size="400,255" zPosition="-1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x255.png" position="0,0" size="400,255" zPosition="-1"/>
 		<widget backgroundColor="#44000000" font="Console;16" halign="center" name="key1" position="20,30" size="120,30" valign="center"/>
 		<widget backgroundColor="#44000000" font="Console;16" halign="center" name="key2" position="140,30" size="120,30" valign="center"/>
 		<widget backgroundColor="#44000000" font="Console;16" halign="center" name="key3" position="260,30" size="120,30" valign="center"/>
@@ -828,11 +828,11 @@ self.autoResize()
 	</screen>
 	<screen name="SimpleChannelSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Channel Selection">
 		<panel name="FullScreen2Window" /> 
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tv.png" position="55, 115" size="400,500"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tv.png" position="55, 115" size="400,500"/>
 		
 		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
 			    backgroundColorSelected="#41000000"
-			    selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png"
+			    selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png"
 			    colorServiceDescription="#999999"
 			    colorServiceDescriptionSelected="#bbbbbb"
 			    foregroundColorServiceNotAvail="#777777"
@@ -852,24 +852,24 @@ self.autoResize()
 	<!-- Subservice quickzap -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SubservicesQuickzap" position="0,90" size="1280,720" title="Subservices">
 		<!-- Background -->
-		<ePixmap pixmap="easy-skin-hd/general/infobar.png" position="0,0" size="1280,720" zPosition="-1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/general/infobar.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<!-- Time -->
 		<widget backgroundColor="#41000000" font="Regular;30" halign="center" position="75,485" render="Label" size="95,35" source="global.CurrentTime" transparent="1" valign="bottom">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<!-- Channellogo (Picon) -->
-		<ePixmap pixmap="easy-skin-hd/icons/picon_default.png" position="70,532" size="70,60" zPosition="2"/>
+		<ePixmap pixmap="easy-skin-aus-hd/icons/picon_default.png" position="70,532" size="70,60" zPosition="2"/>
 		<widget backgroundColor="#33294a6b" font="Regular;30" halign="left" name="CurrentSubserviceNumber" position="185,485" shadowColor="black" shadowOffset="-1,-1" size="50,34" transparent="1" valign="bottom" zPosition="2"/>
 		<widget backgroundColor="#33294a6b" font="Regular;30" halign="left" position="235,485" render="Label" shadowColor="black" shadowOffset="-1,-1" size="600,34" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<!-- Blinking pixmap (recording in progress?) -->
-		<widget pixmap="easy-skin-hd/icons/icon_rec.png" position="1150,556" render="Pixmap" size="48,48" source="session.RecordState" zPosition="1">
+		<widget pixmap="easy-skin-aus-hd/icons/icon_rec.png" position="1150,556" render="Pixmap" size="48,48" source="session.RecordState" zPosition="1">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen> 
 	<screen name="Subtitles" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Subtitle selection">
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -878,11 +878,11 @@ self.autoResize()
 		</widget>
 		<eLabel position="600, 135" size="320, 22" text="Subtitle selection" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
 		<eLabel position="455, 155" size="465, 2" backgroundColor="crypt_emm" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tv_channel.png" position="55,155" size="300,500"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tv_channel.png" position="55,155" size="300,500"/>
 		<widget position="450, 195" size="400, 400" name="config" scrollbarMode="showOnDemand" transparent="1" zPosition="2"/>
 	</screen>
 	<screen name="QuickSubtitlesConfigMenu" position="50,50" size="480,405" title="Subtitle settings" backgroundColor="#7f000000" flags="wfNoBorder">
-		<widget name="config" position="5,5" size="470,365" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget name="config" position="5,5" size="470,365" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget name="videofps" position="5,380" size="470,20" backgroundColor="#41000000" transparent="1" zPosition="2" font="Regular;16" valign="center" halign="left" foregroundColor="white"/>
 	</screen>
 	<!-- Subtitle area -->
@@ -895,11 +895,11 @@ self.autoResize()
 	<screen flags="wfNoBorder" name="TimeDateInput" backgroundColor="un44000000" position="0,0" size="1280,720" title="Time/Date Input">
 		<eLabel font="Regular;28" position="675,140" size="485,35" text="Time/Date Input" transparent="1" zPosition="2"/>
 		<eLabel backgroundColor="white" position="665,180" size="450,2" zPosition="2"/>
-		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="240,625" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="440,625" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="640,625" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="840,625" size="200,60" zPosition="2"/>
+		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position="240,625" size="200,60" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" position="440,625" size="200,60" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" position="640,625" size="200,60" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" position="840,625" size="200,60" zPosition="2"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="canceltext" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="oktext" position="440,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
 	</screen> 
@@ -909,7 +909,7 @@ self.autoResize()
 		<widget name="timeline_text" position="0,10" size="1280,30" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="0" />
 		<widget name="bouquetlist" position="0,35" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="0,65" size="1280,590" backgroundColor="background" EntryForegroundColorSelected="white" EntryForegroundColorNowSelected="white" RecordForegroundColorSelected="white" ZapForegroundColorSelected="white" scrollbarMode="showNever" zPosition="1" transparent="1" />
-		<widget name="timeline_now" position="0,50" zPosition="3" size="19,615" pixmap="easy-skin-hd/timeline-now.png" alphatest="on" />
+		<widget name="timeline_now" position="0,50" zPosition="3" size="19,615" pixmap="easy-skin-aus-hd/timeline-now.png" alphatest="on" />
 		<panel name="FullscreenLowRed1Panel"/>
 		<panel name="FullscreenLowGreen1Panel"/>
 		<panel name="FullscreenLowYellow1Panel"/>
@@ -985,7 +985,7 @@ self.autoResize()
 		<ePixmap pixmap="screens/fs-bg-bot.png" position="0,160" size="1280,40" zPosition="-1" />
 	</screen>
 	<screen name="SkinSelector" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Choose your Skin">
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 22" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -994,18 +994,18 @@ self.autoResize()
 		</widget>
 		<eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
 		<widget position="655, 185" size="350, 375" name="SkinList" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
+		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-aus-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
 		<widget position="200, 235" size="250,200" name="Preview" alphatest="on" zPosition="3"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget source="introduction" render="Label" position="110, 510" size="436, 24" zPosition="10" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1"/>
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm"/>
 	</screen>	
 	<screen name="PTSTimeshiftState" position="center,40"  backgroundColor="background" size="420,70" >
-		<widget name="statusicon" position="12,5" size="20,20" pixmaps="easy-skin-hd/icons/play.png,easy-skin-hd/icons/pause.png,easy-skin-hd/icons/stop.png,easy-skin-hd/icons/forward.png,easy-skin-hd/icons/backward.png,easy-skin-hd/icons/slow.png" zPosition="5" alphatest="on" />
+		<widget name="statusicon" position="12,5" size="20,20" pixmaps="easy-skin-aus-hd/icons/play.png,easy-skin-aus-hd/icons/pause.png,easy-skin-aus-hd/icons/stop.png,easy-skin-aus-hd/icons/forward.png,easy-skin-aus-hd/icons/backward.png,easy-skin-aus-hd/icons/slow.png" zPosition="5" alphatest="on" />
 		<widget name="speed" position="35,7" size="80,15" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="5" />
 		<widget source="session.CurrentService" render="Label" position="95,5" size="200,27" font="Regular;20" halign="left" foregroundColor="white"  backgroundColor="background">
 			<convert type="ServicePosition">Position</convert>
@@ -1021,7 +1021,7 @@ self.autoResize()
 		<widget name="eventname" position="60,49" zPosition="4" size="320,20" font="Regular;18" halign="center" backgroundColor="background"/>
 	</screen>
 	<screen name="TimeshiftState" position="202, 45"  backgroundColor="background" size="216,74" >
-		<widget name="statusicon" position="20,15" size="20,20" zPosition="3" alphatest="on" pixmaps="easy-skin-hd/icons/play.png,easy-skin-hd/icons/pause.png,easy-skin-hd/icons/stop.png,easy-skin-hd/icons/forward.png,easy-skin-hd/icons/backward.png,easy-skin-hd/icons/slow.png" />
+		<widget name="statusicon" position="20,15" size="20,20" zPosition="3" alphatest="on" pixmaps="easy-skin-aus-hd/icons/play.png,easy-skin-aus-hd/icons/pause.png,easy-skin-aus-hd/icons/stop.png,easy-skin-aus-hd/icons/forward.png,easy-skin-aus-hd/icons/backward.png,easy-skin-aus-hd/icons/slow.png" />
 		<widget name="speed" position="45,18" size="80,18" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="4" />
 		<widget name="state" position="0,0" size="0,0" />
 		<widget source="session.CurrentService" render="Label" position="88,17" size="50,20" font="Regular;17" foregroundColor="foreground" backgroundColor="background" halign="center" transparent="1" zPosition="2" valign="top">
@@ -1030,13 +1030,13 @@ self.autoResize()
 		<widget source="session.CurrentService" render="Label" position="140,17" size="50,20" font="Regular;17" foregroundColor="foreground" backgroundColor="background" halign="right" transparent="1" zPosition="2" valign="top">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<ePixmap position="23,35" size="170,15" zPosition="2" pixmap="easy-skin-hd/slider_back.png" alphatest="on" />
-		<widget source="session.CurrentService" render="Progress" position="23,35" size="170,15" zPosition="3" pixmap="easy-skin-hd/slider.png" transparent="1">
+		<ePixmap position="23,35" size="170,15" zPosition="2" pixmap="easy-skin-aus-hd/slider_back.png" alphatest="on" />
+		<widget source="session.CurrentService" render="Progress" position="23,35" size="170,15" zPosition="3" pixmap="easy-skin-aus-hd/slider.png" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 	</screen>
 	<screen name="SleepTimerEdit" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Sleep Timer">
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 22" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1044,11 +1044,11 @@ self.autoResize()
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<ePixmap position="150,195" size="400,200" pixmap="easy-skin-hd/frame/frame_400x200.png" alphatest="on" zPosition="2" />
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+		<ePixmap position="150,195" size="400,200" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" alphatest="on" zPosition="2" />
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
 		<widget position="200,210" size="300,170" name="current_status" valign="center" halign="center" font="Regular;20" backgroundColor="#31000000" transparent="1" zPosition="3" />
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
@@ -1083,16 +1083,16 @@ self.autoResize()
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
 		<widget name="SeekState" position="365,585" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>
-		<widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="easy-skin-hd/position_arrow.png:3,5" position="479,587" size="696,20" zPosition="3"/>
+		<widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="easy-skin-aus-hd/position_arrow.png:3,5" position="479,587" size="696,20" zPosition="3"/>
 		<eLabel backgroundColor="black" font="Regular;20" position="1060,630" size="140,22" text="OK = Menu" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="easy-skin-hd/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
-		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_play.png"/>
-		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_pause.png"/>
-		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_forward.png"/>
-		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_stop.png"/>
+		<ePixmap pixmap="easy-skin-aus-hd/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
+		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_play.png"/>
+		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_pause.png"/>
+		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_forward.png"/>
+		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_stop.png"/>
 	</screen>
 	<screen name="CutListMenu" position="center,center" size="510,485" backgroundColor="background" title="Cutlist editor - menu">
-		<widget source="menu" render="Listbox" position="0,0" size="485,500" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" scrollbarMode="showNever">
+		<widget source="menu" render="Listbox" position="0,0" size="485,500" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" scrollbarMode="showNever">
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,0), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
 				"fonts": [gFont("Regular",28)],
@@ -1127,17 +1127,17 @@ self.autoResize()
 		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<ePixmap pixmap="easy-skin-hd/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
-		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_play.png"/>
-		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_pause.png"/>
-		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_forward.png"/>
-		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-hd/icons/icon_stop.png"/>
-		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="un808888" pointer="easy-skin-hd/position_arrow.png:3,5" foregroundColor="black"/>
+		<ePixmap pixmap="easy-skin-aus-hd/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
+		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_play.png"/>
+		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_pause.png"/>
+		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_forward.png"/>
+		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_stop.png"/>
+		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="un808888" pointer="easy-skin-aus-hd/position_arrow.png:3,5" foregroundColor="black"/>
 		<widget name="SeekState" position="365, 585" zPosition="10" size="100,25" halign="center" font="Regular;20" valign="center" transparent="1"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
 	</screen>
 	<screen name="StreamTVList" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="StreamTV List">
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50,30" zPosition="3" size="14,14" alphatest="on"/>
+		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50,30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75,30" size="80,20" font="Named;16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 		<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1145,11 +1145,11 @@ self.autoResize()
 		<convert type="ClockToText">Date</convert>
 		</widget>
 		<eLabel position="50,102" size="1160,1" backgroundColor="crypt_emm" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55,155" size="300,500"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55,155" size="300,500"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" source="key_green" render="Label"  position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#a08500" font="Regular;20" halign="center" source="key_yellow" render="Label"  position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
@@ -1159,7 +1159,7 @@ self.autoResize()
 		<eLabel position="910,80" size="300,22" font="Named;20" backgroundColor="black" halign="right" transparent="1" text="StreamTV List" foregroundColor="crypt_emm"/>
 	</screen>
 	<screen name="VideoEnhancementSetup" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="VideoEnhancementSetup">
-		<ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50,30" zPosition="3" size="14,14" alphatest="on"/>
+		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50,30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75,30" size="80,20" font="Named;16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 		<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1167,12 +1167,12 @@ self.autoResize()
 		<convert type="ClockToText">Date</convert>
 		</widget>
 		<eLabel position="50,102" size="1160,1" backgroundColor="crypt_emm" zPosition="2"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55,155" size="300,500"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55,155" size="300,500"/>
 		<widget name="config" position="400,170" size="810,421" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" render="Label" source="key_red" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" render="Label" source="key_green" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#a08500" font="Regular;20" halign="center" render="Label" source="key_yellow" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
@@ -1189,16 +1189,16 @@ self.autoResize()
 	</screen> 
 	<screen name="AudioSelection" position="300,180" size="680,330" title="Audio">
 		<widget name="config" position="84,5" size="590,159" scrollbarMode="showNever" itemHeight="40" enableWrapAround="1" zPosition="3"/>
-		<widget source="key_red" render="Pixmap" pixmap="easy-skin-hd/buttons/key_red.png" position="5,5" size="35,25" alphatest="on">
+		<widget source="key_red" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_red.png" position="5,5" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_green" render="Pixmap" pixmap="easy-skin-hd/buttons/key_green.png" position="5,45" size="35,25" alphatest="on">
+		<widget source="key_green" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_green.png" position="5,45" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_yellow" render="Pixmap" pixmap="easy-skin-hd/buttons/key_yellow.png" position="5,85" size="35,25" alphatest="on">
+		<widget source="key_yellow" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_yellow.png" position="5,85" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_blue" render="Pixmap" pixmap="easy-skin-hd/buttons/key_blue.png" position="5,125" size="35,25" alphatest="on">
+		<widget source="key_blue" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_blue.png" position="5,125" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="streams" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" position="5,175" size="670,150" zPosition="3" >
@@ -1232,8 +1232,8 @@ self.autoResize()
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="list" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="list" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="FileManager" position="0,0" size="1280,720" title="File Manager" backgroundColor="un44000000" flags="wfNoBorder">
 		<panel name="FullScreen2Window" />
@@ -1260,15 +1260,15 @@ self.autoResize()
 		<panel name="FullscreenMenuButtonPanel" />
 	</screen>
 	<screen name="FileCommanderConfigScreen" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
-	  <!--<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_tv.png" position="55, 155" size="300,500"/>-->
+	  <!--<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_tv.png" position="55, 155" size="300,500"/>-->
 		<panel name="FullScreen2Window" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x400.png" position="50,115" size="400,400" alphatest="on" />
+		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_400x400.png" position="50,115" size="400,400" alphatest="on" />
 		<widget name="help" position="100,130" size="300,350"  font="Regular;19" halign="left" transparent="1" valign="center" zPosition="2"/>
-		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="FileCommanderScreenFileSelect" position="0,0" size="1280,720" title="File Commander - file selection" backgroundColor="un44000000" flags="wfNoBorder">
 		<panel name="FullScreen2Window" />
@@ -1288,9 +1288,9 @@ self.autoResize()
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
 		<widget font="Regular;20" halign="center" name="description" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;20" halign="center" name="text" position="590,510" size="610, 30" transparent="1" valign="center" zPosition="2"/>
 	</screen>
@@ -1300,9 +1300,9 @@ self.autoResize()
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 410" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 410" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
 		<widget font="Regular;20" halign="center" name="information" position="100,210" size="300,160" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<screen name="CrossEPG_Menu" position="0,0" size="1280, 720" backgroundColor="un44000000" title="CrossEPG Menu" flags="wfNoBorder" >
@@ -1312,8 +1312,8 @@ self.autoResize()
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (0, 5), size = (0, 0), png = 0),
@@ -1331,8 +1331,8 @@ self.autoResize()
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (35, 10), size = (400, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -1350,8 +1350,8 @@ self.autoResize()
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (35, 0), size = (520, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -1391,15 +1391,15 @@ self.autoResize()
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue1Panel" />
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget name="about" position="490, 170" size="710, 410" font="Regular;20" backgroundColor="black" transparent="1" zPosition="4" />
 	</screen>	
 
  <screen name="VlcMediaListScreen" position="90,90" size="1100,576" title="VlcMediaListScreen">
   <eLabel position="800, 25" size="300, 22" text="vlc player" font="Regular; 20" halign="center"/>
   <eLabel position="740,100" size="540,2" backgroundColor="crypt_emm"/>
-  <widget name="filelist_button_sel" pixmap="easy-skin-hd/epg_now.png" position="125,100" zPosition="3" size="1100, 35" alphatest="on"/>
-  <widget name="playlist_button_sel" pixmap="easy-skin-hd/epg_next.png" position="125,100" zPosition="3" size="1100,35" alphatest="on"/>
+  <widget name="filelist_button_sel" pixmap="easy-skin-aus-hd/epg_now.png" position="125,100" zPosition="3" size="1100, 35" alphatest="on"/>
+  <widget name="playlist_button_sel" pixmap="easy-skin-aus-hd/epg_next.png" position="125,100" zPosition="3" size="1100,35" alphatest="on"/>
   <widget name="filelist_text" position="192,107" zPosition="4" size="185,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
   <widget name="playlist_text" position="442,107" zPosition="4" size="185,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
   <eLabel position="740,133" size="540,2" backgroundColor="crypt_emm"/>
@@ -1551,13 +1551,13 @@ self.autoResize()
  <screen name="VirtualKeyBoard" position="90,100" size="1100,560" zPosition="99" title="VirtualKeyBoard">
   <eLabel position="0,0" size="1100,2" backgroundColor="crypt_emm"/>
   <widget name="header" position="20,30" size="740,30" font="Regular;24" transparent="1" noWrap="1" halign="center"/>
-  <ePixmap pixmap="easy-skin-hd/vkey_text.png" position="127,87" size="542,52" zPosition="-4" alphatest="on"/>
+  <ePixmap pixmap="easy-skin-aus-hd/vkey_text.png" position="127,87" size="542,52" zPosition="-4" alphatest="on"/>
   <widget name="text" position="130,90" size="536,46" font="Regular;40" transparent="1" noWrap="1" halign="right"/>
   <widget name="list" position="120,170" size="540,225" selectionDisabled="1" transparent="1"/>
   <eLabel position="780,0" size="2,518" backgroundColor="crypt_emm"/>
   <eLabel position="0,518" size="1100,2" backgroundColor="crypt_emm"/>
   <widget name="country" position="120,530" size="740,25" transparent="1" font="Regular;24" halign="center" valign="center" foregroundColor="yellow"/>
-  <ePixmap position="795, 55" size="300, 460" zPosition="2" pixmap="easy-skin-hd/menu/mainmenu_music_shuffle.png" transparent="1" alphatest="blend"/>
+  <ePixmap position="795, 55" size="300, 460" zPosition="2" pixmap="easy-skin-aus-hd/menu/mainmenu_music_shuffle.png" transparent="1" alphatest="blend"/>
  </screen>
 
  <screen name="CAidSelect" position="340,134" size="600,502" title="select CAId's">
@@ -1642,19 +1642,19 @@ self.autoResize()
   <eLabel position="0, 290" size="600, 1" backgroundColor="crypt_emm"/>
  </screen>
  <screen name="MusicExplorer" position="0, 70" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" zPosition="-1">
-  <ePixmap position="0, 0" zPosition="-1" size="1280,720" pixmap="easy-skin-hd/infobar.png"/>
-  <ePixmap position="82, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_rewind.png" alphatest="on" transparent="1"/>
-  <ePixmap position="120, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_play.png" alphatest="on" transparent="1"/>
-  <ePixmap position="158, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_pause.png" alphatest="on" transparent="1"/>
-  <ePixmap position="196, 520" zPosition="0" size="36,36" pixmap="easy-skin-hd/icons/icon_forward.png" alphatest="on" transparent="1"/>
+  <ePixmap position="0, 0" zPosition="-1" size="1280,720" pixmap="easy-skin-aus-hd/infobar.png"/>
+  <ePixmap position="82, 520" zPosition="0" size="36,36" pixmap="easy-skin-aus-hd/icons/icon_rewind.png" alphatest="on" transparent="1"/>
+  <ePixmap position="120, 520" zPosition="0" size="36,36" pixmap="easy-skin-aus-hd/icons/icon_play.png" alphatest="on" transparent="1"/>
+  <ePixmap position="158, 520" zPosition="0" size="36,36" pixmap="easy-skin-aus-hd/icons/icon_pause.png" alphatest="on" transparent="1"/>
+  <ePixmap position="196, 520" zPosition="0" size="36,36" pixmap="easy-skin-aus-hd/icons/icon_forward.png" alphatest="on" transparent="1"/>
   <widget source="session.CurrentService" render="Label" position="55, 490" size="1220, 26" font="Named; 20" halign="center" valign="center" noWrap="1" backgroundColor="black" transparent="1" foregroundColor="white">
    <convert type="ServiceName">Name</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="370, 570" size="100, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" shadowColor="black" shadowOffset="-1,-1" transparent="1">
    <convert type="ServicePosition">Position</convert>
   </widget>
-  <ePixmap position="393, 540" size="600,16" pixmap="easy-skin-hd/mpslider.png" zPosition="3" alphatest="on"/>
-  <widget source="session.CurrentService" render="PositionGauge" position="413, 541" size="560,14" zPosition="2" pointer="easy-skin-hd/pointer.png:13,3">
+  <ePixmap position="393, 540" size="600,16" pixmap="easy-skin-aus-hd/mpslider.png" zPosition="3" alphatest="on"/>
+  <widget source="session.CurrentService" render="PositionGauge" position="413, 541" size="560,14" zPosition="2" pointer="easy-skin-aus-hd/pointer.png:13,3">
    <convert type="ServicePosition">Gauge</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="910, 570" size="100, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1">
@@ -1669,10 +1669,10 @@ self.autoResize()
   <widget source="global.CurrentTime" render="Label" position="1068, 595" size="140, 20" font="Named; 16" valign="top" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
    <convert type="ClockToText">Format:%d.%m.%Y</convert>
   </widget>
-  <ePixmap position="234, 520" size="36, 36" pixmap="easy-skin-hd/icons/icon_stop.png" alphatest="on" transparent="1"/>
+  <ePixmap position="234, 520" size="36, 36" pixmap="easy-skin-aus-hd/icons/icon_stop.png" alphatest="on" transparent="1"/>
  </screen>
  <screen name="RSSSetup" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Simple RSS Reader Setup">
-  <ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+  <ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
   <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
    <convert type="ClockToText">Default</convert>
   </widget>
@@ -1680,12 +1680,12 @@ self.autoResize()
    <convert type="ClockToText">Date</convert>
   </widget>
   <eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-  <ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+  <ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
   <widget position="400, 170" size="810, 421" name="config" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-  <ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-  <ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-  <ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-  <ePixmap alphatest="on" pixmap="easy-skin-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+  <ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+  <ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+  <ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+  <ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
   <widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
   <widget backgroundColor="#1f771f" font="Regular;20" halign="center" source="key_green" render="Label" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
   <widget backgroundColor="#a08500" font="Regular;20" halign="center" source="key_yellow" render="Label" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
@@ -1694,7 +1694,7 @@ self.autoResize()
   <eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
  </screen>
  <screen name="RSSFeedView" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Simple RSS Reader">
-  <ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+  <ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
   <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
    <convert type="ClockToText">Default</convert>
   </widget>
@@ -1716,7 +1716,7 @@ self.autoResize()
   <widget source="summary" render="Label" position="155, 550" size="1060, 95" font="Regular;16" backgroundColor="black" transparent="1"/>
  </screen>
  <screen name="RSSEntryView" position="0,0" backgroundColor="un44000000" flags="wfNoBorder" size="1280,720" title="Simple RSS Reader">
-  <ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+  <ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
   <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
    <convert type="ClockToText">Default</convert>
   </widget>
@@ -1724,12 +1724,12 @@ self.autoResize()
    <convert type="ClockToText">Date</convert>
   </widget>
   <eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-  <ePixmap pixmap="easy-skin-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
+  <ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
   <widget source="info" render="Label" position="400, 120" size="810, 30" halign="right" font="Regular; 18" backgroundColor="black" transparent="1"/>
   <widget name="content" position="400, 170" size="810, 480" font="Regular; 22" backgroundColor="black" transparent="1"/>
  </screen>
  <screen name="RSSOverview" position="0,0" backgroundColor="un44000000" flags="wfNoBorder" size="1280,720" title="Simple RSS Reader">
-  <ePixmap pixmap="easy-skin-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+  <ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
   <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
    <convert type="ClockToText">Default</convert>
   </widget>
@@ -1737,7 +1737,7 @@ self.autoResize()
    <convert type="ClockToText">Date</convert>
   </widget>
   <eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-  <ePixmap pixmap="easy-skin-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
+  <ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
   <widget source="info" render="Label" position="400, 120" size="810, 30" halign="right" font="Regular; 18" backgroundColor="black" transparent="1"/>
   <widget name="content" position="400, 170" size="810, 380" font="Regular; 22" backgroundColor="black" transparent="1"/>
   <widget source="summary" render="Label" position="400, 560" size="810, 95" font="Regular;16" transparent="1" backgroundColor="black"/>

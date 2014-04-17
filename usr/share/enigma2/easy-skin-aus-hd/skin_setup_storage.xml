@@ -7,8 +7,8 @@
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<widget name="hddlist" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_source_mount.png" position="55, 155" size="300,500"/>
+		<widget name="hddlist" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_source_mount.png" position="55, 155" size="300,500"/>
 	</screen>
 	<!-- Harddisk setup -->
         <screen flags="wfNoBorder" name="HarddiskSetup" backgroundColor="un44000000" position="0,0" size="1280,720" title="Harddisk Setup">
