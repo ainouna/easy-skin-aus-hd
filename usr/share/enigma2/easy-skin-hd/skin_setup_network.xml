@@ -90,7 +90,7 @@
 		<widget name="InfoText" position="55, 122" size="740,476" zPosition="25" font="Regular;24" halign="center" valign="center"/>
 		<widget name="InfoTextBorder" position="0,0" size="0,0"/>
 	</screen>
-	<!-- Samba, NFS Service-->
+	<!-- NFS Service-->
 	<screen name="NetworkServiceSetup" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder">
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
@@ -109,6 +109,32 @@
 	<screen name="NetworkInadynLog" position="center,center" size="790,510">
 		<widget name="infotext" position="10,10" size="790,510" font="Console;16" />
 	</screen>
+	<screen name="NetworkSamba" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullscreenMenuButtonPanel" />
+		<panel name="FullScreen2Window" />
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
+		<ePixmap position="725, 185" size="400,300" pixmap="easy-skin-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
+		<widget name="lab1" position="800,235" size="150,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
+		<widget name="labactive" position="960,235" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
+		<widget name="lab2" position="800,305" size="150,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
+		<widget name="labstop" position="960,305" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="3"/>
+		<widget name="labrun" position="960,305" size="100,30" font="Regular;20" valign="center"  halign="center" backgroundColor="green" zPosition="4"/>
+	</screen>	
+	<screen name="NetworkSambaSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Network Setup - DynDNS Setup">
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+		<panel name="FullScreen2Window" />
+		<widget name="HelpWindow" pixmap="vkey_icon.png" position="55, 155" zPosition="1" size="440,350" transparent="1" alphatest="on" />
+		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-hd/buttons/key_text.png" transparent="1" alphatest="blend"/>		
+		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>	
 	<!-- FTP Service -->
 	<screen name="NetworkFtp" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Network Setup - FTP">
 		<panel name="FullscreenRed1Panel" />
