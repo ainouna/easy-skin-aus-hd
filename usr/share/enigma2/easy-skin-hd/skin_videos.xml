@@ -147,12 +147,12 @@
 		<widget name="HelpWindow" position="90,210" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<widget name="VKeyIcon" position="0,0" size="0,0"/>
 	</screen>
-	<screen name="MyTubeSuggestionsListScreen" position="80, 140" backgroundColor="background" zPosition="6" size="502, 227" flags="wfNoBorder">
+	<screen name="MyTubeSuggestionsListScreen" position="70, 140" backgroundColor="background" zPosition="6" size="502, 337" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-1" size="505, 227" alphatest="on" transparent="1" backgroundColor="transparent"/>
-		<widget source="suggestionslist" render="Listbox"  backgroundColor="background" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x20.png" position="0, 0" zPosition="7" size="500, 225" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="suggestionslist" render="Listbox"  backgroundColor="background" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x20.png" position="0, 0" zPosition="7" size="500, 325" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 						      {"template": [
-								      MultiContentEntryText(pos = (0, 1), size = (380, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+								      MultiContentEntryText(pos = (10, 1), size = (380, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 								      MultiContentEntryText(pos = (390, 1), size = (180, 24), font=1, flags = RT_HALIGN_RIGHT, text = 1), # index 1 are the rtesults
 							      ],
 						      "fonts": [gFont("Regular", 22),gFont("Regular", 18)],
@@ -161,11 +161,11 @@
 			</convert>
 		</widget>
 	</screen>
-	<screen name="MyTubeHistoryScreen" position="80, 140" backgroundColor="background" zPosition="6" size="505, 227" flags="wfNoBorder">
-		<widget source="historylist" render="Listbox"  backgroundColor="background" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x20.png" position="0, 0" zPosition="7" size="503, 225" scrollbarMode="showOnDemand" transparent="1">
+	<screen name="MyTubeHistoryScreen" position="70, 140" backgroundColor="background" zPosition="6" size="505, 327" flags="wfNoBorder">
+		<widget source="historylist" render="Listbox"  backgroundColor="background" selectionPixmap="easy-skin-hd/menu/on_main_menu_485x20.png" position="0, 0" zPosition="7" size="503, 325" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 						      {"template": [
-								      MultiContentEntryText(pos = (0, 1), size = (340, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+								      MultiContentEntryText(pos = (10, 1), size = (340, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 							      ],
 						      "fonts": [gFont("Regular", 22),gFont("Regular", 18)],
 						      "itemHeight": 25
