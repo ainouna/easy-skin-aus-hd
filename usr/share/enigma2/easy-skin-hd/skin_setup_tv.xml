@@ -2,27 +2,17 @@
 	<!-- Channel Selection, Recording Settings, TimeShift Settings, Subtitles Settings, EPG Settings, use SETUP Screen Skin -->
 	<!-- Common interface - selection -->
 	<screen flags="wfNoBorder" name="CiSelection" position="0,0" size="1280, 720" backgroundColor="un44000000"  title="Select Common interface">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
-		<widget name="text" position="100,150" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<panel name="SetupCommon" />
+		<widget name="text" position="60,130" size="380,170"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 		<widget name="entries" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- Common interface - menu -->
 	<screen flags="wfNoBorder" name="MMIDialog" position="0,0" size="1280, 720" backgroundColor="un44000000"  title="Common interface - menu">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
+		<panel name="SetupCommon" />
 		<widget name="entries" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
-		<widget name="title" position="100,110" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget name="subtitle" position="100,140" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget name="bottom" position="100,170" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="title" position="100,170" size="300,30"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="subtitle" position="100,200" size="300,30"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="bottom" position="100,230" size="300,30"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<!-- Parental control - change pin -->
 	<screen align="center" flags="wfNoBorder" name="ParentalControlChangePin" position="0,0" size="1280,720" title="Change pin code">
@@ -32,7 +22,7 @@
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tasks_setup_parental.png" position="55, 155" size="300,500"/>
-		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<panel name="SetupConfig"/>
 	</screen>
 	<!-- ParentalControlSetup -->
 	<screen name="ParentalControlSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="ParentalControlSetup">
@@ -56,16 +46,11 @@
 	</screen>
 	<!-- Pin input -->
 	<screen flags="wfNoBorder" name="PinInput" position="0, 0" size="1280, 720" backgroundColor="un44000000" title="Pin code needed">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
+		<panel name="SetupCommon" />
 		<widget name="input" position="590, 150" font="Named; 46" size="210, 50" backgroundColor="#41000000" transparent="1"/>
-		<ePixmap pixmap="easy-skin-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
-		<widget name="service" position="100,110" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget name="text" position="100,140" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget name="tries" position="100,170" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="service" position="100,170" size="300,30"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="text" position="100,200" size="300,30"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="tries" position="100,230" size="300,30"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<screen name="ZapHistoryConfigurator" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Zap History Setup">
 		<panel name="FullScreen2Window" />
@@ -73,7 +58,7 @@
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
+		<panel name="SetupConfig"/>
 		<ePixmap pixmap="easy-skin-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 </skin>
