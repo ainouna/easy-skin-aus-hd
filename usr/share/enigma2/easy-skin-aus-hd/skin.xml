@@ -216,10 +216,10 @@
 		<widget source="list" render="Listbox" position="10,35" size="540,325" scrollbarMode="showOnDemand">
 			<convert type="StringList" />
 		</widget>
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<panel name="MenuYellow1Panel" />
-		<panel name="MenuBlue1Panel" />
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
 	</screen>		
 	<screen name="TimerEdit" position="70,130" size="590,335">
 		<widget name="description" position="10,10" size="580,40" font="Regular;25" transparent="1" />
@@ -247,18 +247,10 @@
 		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_400x255.png" position="50,90" size="400,255" alphatest="on" />
 		<widget name="description" position="70,100" size="360,235"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 		<widget name="HelpWindow" position="50,345" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="canceltext" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="oktext" position="440,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="cancel" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="ok" position="440,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="canceltext" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="oktext" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#9f1313" name="cancel" position="123, 635" size="0,0" />
-		<widget backgroundColor="#1f771f" name="ok" position="398, 635" size="0,0" />
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
 	</screen>
 	<!-- Timer log -->
 	<screen name="TimerLog" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="un44000000" title="Timer log">
