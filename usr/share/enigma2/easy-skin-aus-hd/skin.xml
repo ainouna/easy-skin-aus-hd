@@ -260,11 +260,10 @@
 		<widget backgroundColor="#1f771f" name="ok" position="398, 635" size="0,0" />
 	</screen>
 	<!-- Timer log -->
-	<screen flags="wfNoBorder" name="TimerLog" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer log">
+	<screen name="TimerLog" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="un44000000" title="Timer log">
 		<panel name="FullScreen2Window" />
-		<widget enableWrapAround="1" name="loglist" position="650,195" scrollbarMode="showOnDemand" size="510,400" transparent="1" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="150,195" size="400,200"/>
-		<widget font="Regular;20" halign="center" name="logentry" position="170,215" size="360,160" transparent="1" valign="center" zPosition="2"/>
+		<widget name="loglist" position="140,100" size="1000,400" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="2"/>
+		<widget name="logentry" font="Console;18" position="140,520" size="1000,60" transparent="1" zPosition="2"/>
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
