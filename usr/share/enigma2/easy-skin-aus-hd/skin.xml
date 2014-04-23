@@ -477,12 +477,12 @@ self.autoResize()
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="Title" render="Label" position="135,25" size="800,43" font="Regular;32" transparent="1" foregroundColor="#FEE620" backgroundColor="#00151515" zPosition="1" />
-		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="#279e9fa4" foregroundColor="#315215b" />
+		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="#279e9fa4" foregroundColor="#0315215b" />
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="#ff000000" />
 		<widget source="session.CurrentService" render="Label" position="697,82" size="570,25" font="Regular;22" foregroundColor="#00b1762b" borderWidth="2" backgroundColor="#ff000000" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget name="bouquetlist" position="20,130" size="660,540" foregroundColor="#FEE620" backgroundColor="#315215b" foregroundColorSelected="#00000000" backgroundColorSelected="#00acacac" borderColor="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" />
+		<widget name="bouquetlist" position="20,130" size="660,540" foregroundColor="#FEE620" backgroundColor="#0315215b" foregroundColorSelected="#00000000" backgroundColorSelected="#00acacac" borderColor="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" />
 		<widget name="lab1" position="20,130" size="660,540" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="#0015215b" transparent="0" />
 		<widget name="list" position="20,130" size="660,540" selectionPixmap="buttons/FocusBar_H36x660.png" zPosition="3" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="now_button" pixmap="epg/now_next_more.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
