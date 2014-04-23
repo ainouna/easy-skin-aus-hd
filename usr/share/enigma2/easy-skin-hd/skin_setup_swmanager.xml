@@ -182,7 +182,7 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<widget source="list" render="Listbox" pposition="535,145" size="710, 463" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="535,145" size="710, 463" selectionPixmap="easy-skin-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 					{"template": [
 							MultiContentEntryText(pos = (50, 1), size = (540, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
