@@ -306,7 +306,7 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<panel name="FullscreenTextButtonPanel"/>		
+		<panel name="FullscreenVKeyIconButtonPanel"/>		
 		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>
@@ -343,7 +343,7 @@
 		<panel name="FullscreenGreen2Panel" />
 		<panel name="FullscreenYellow2Panel" />
 		<panel name="FullscreenBlue2Panel" />
-		<panel name="FullscreenTextButtonPanel"/>		
+		<panel name="FullscreenVKeyIconButtonPanel"/>		
 		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>

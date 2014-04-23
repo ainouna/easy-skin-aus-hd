@@ -232,7 +232,8 @@
 	<!-- Timer edit list -->
 	<screen flags="wfNoBorder" name="TimerEditList" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer Editor">
 		<panel name="FullScreen2Window" />
-		<widget position="590, 145" size="610, 450" name="timerlist" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>		
+		<widget position="590, 145" size="610, 450" name="timerlist" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<panel name="FullscreenInfoButtonPanel"/>
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
@@ -889,6 +890,8 @@ self.autoResize()
 		<panel name="FullscreenLowYellow1Panel"/>
 		<panel name="FullscreenLowBlue1Panel"/>
 		<panel name="FullscreenLowMenuButtonPanel"/>
+		<panel name="FullscreenLowInfoButtonPanel"/>
+		<panel name="FullscreenLowTextButtonPanel"/>
 		<panel name="FullscreenLowHelpButtonPanel"/>
 	</screen>
 	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="#15215b" transparent="0" flags="wfNoBorder">

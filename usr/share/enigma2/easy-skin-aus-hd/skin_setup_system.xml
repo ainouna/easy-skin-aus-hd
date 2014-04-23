@@ -77,7 +77,7 @@
 		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
 	</screen>
 	<screen name="SetupTextHelp">
-		<panel name="FullscreenTextButtonPanel"/>
+		<panel name="FullscreenVKeyIconButtonPanel"/>
 		<widget name="HelpWindow" position="50,335" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="SetupConfig">
