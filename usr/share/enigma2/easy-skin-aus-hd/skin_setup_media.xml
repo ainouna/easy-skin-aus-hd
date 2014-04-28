@@ -1,5 +1,5 @@
 <skin>
-	<!-- Picutre Player Setup use SETUP screen skin -->
+	<!-- Picture Player Setup use SETUP screen skin -->
 	<!-- Media Player Settings -->
 	<screen name="MediaPlayerSettings" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
 		<panel name="FullScreen2Window" />
