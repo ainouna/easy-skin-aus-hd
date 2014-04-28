@@ -99,7 +99,7 @@
 		<color name="ListboxMarkedAndSelectedBackground" color="un253658a4"/>
 		<color name="ListboxMarkedAndSelectedForeground" color="un800000"/>
 		<color name="WindowTitleBackground" color="transpBlack"/>
-		<color name="WindowTitleForeground" color="crypt_emm"/>
+		<color name="WindowTitleForeground" color="listbox"/>
 		<borderset name="bsWindow">
 		      <pixmap pos="bpTopLeft" filename="easy-skin-aus-hd/b_tl.png"/>
 		      <pixmap pos="bpTop" filename="easy-skin-aus-hd/b_t.png"/>
