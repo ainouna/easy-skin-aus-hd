@@ -513,7 +513,6 @@ self.autoResize()
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 		<panel name="FullscreenMenuButtonPanel"/>
-		<panel name="FullscreenHelpButtonPanel"/>
 	</screen>
 	<screen name="EventViewSimple" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Eventview">
 		<panel name="FullScreen2Window" />
@@ -944,15 +943,14 @@ self.autoResize()
 		<widget name="bouquetlist" position="0,75" size="1280,85" itemHeight="42" backgroundColor="#15215b" foregroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="0,75" size="1280,85" backgroundColor="#15215b" EntryForegroundColorSelected="#0015215b" EntryForegroundColorNowSelected="#0015215b" RecordForegroundColorSelected="#0015215b" ZapForegroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
 		<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="epg/timeline-now.png" alphatest="on" />
-		<ePixmap pixmap="buttons/key_menu.png" position="20,166" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
-		<ePixmap pixmap="buttons/red.png" position="90,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="key_red" position="130,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="#FFFFFF" backgroundColor="#00151515" />
-		<ePixmap pixmap="buttons/green.png" position="380,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="key_green" position="420,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="#FFFFFF" backgroundColor="#00151515" />
-		<ePixmap pixmap="buttons/yellow.png" position="670,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="key_yellow" position="710,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="#FFFFFF" backgroundColor="#00151515" />
-		<ePixmap pixmap="buttons/blue.png" position="960,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="key_blue" position="1000,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="#FFFFFF" backgroundColor="#00151515" />
+		<panel name="FullscreenSmallRedPanel"/>
+		<panel name="FullscreenSmallGreenPanel"/>
+		<panel name="FullscreenSmallYellowPanel"/>
+		<panel name="FullscreenSmallBluePanel"/>
+		<panel name="FullscreenSmallMenuButtonPanel"/>
+		<panel name="FullscreenSmallInfoButtonPanel"/>
+		<panel name="FullscreenSmallTextButtonPanel"/>
+		<panel name="FullscreenSmallHelpButtonPanel"/>
 		<ePixmap pixmap="screens/fs-bg-bot.png" position="0,160" size="1280,40" zPosition="-1" />
 	</screen>
 	<screen name="SkinSelector" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Choose your Skin">

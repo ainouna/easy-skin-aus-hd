@@ -33,174 +33,103 @@
 		<eLabel position="50,625" size="1180,2" backgroundColor="darkgrey" zPosition="1" />
 	</screen>
 
-<!-- Screen layer to add the MENU button hint -->
-
+<!-- Full screen button hints -->
 	<screen name="FullscreenMenuButtonPanel">
 		<ePixmap position="50,635" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_menu_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
-
-<!-- Screen layer to add the INFO button hint -->
-
 	<screen name="FullscreenInfoButtonPanel">
 		<ePixmap position="100,635" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_info_50x35.png" alphatest="blend" transparent="1" zPosition="11" />
 	</screen>
-
-<!-- Screen layer to add the RED button hint background -->
-
 	<screen name="FullscreenRed1Panel">
 		<ePixmap position="160,635" size="200,60" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" alphatest="on" zPosition="1" />
 		<widget position="160,635" size="200,36" name="key_red" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" transparent="1" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the RED button hint -->
-
 	<screen name="FullscreenRed2Panel">
 		<ePixmap position="160,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" zPosition="1" />
 		<widget position="160,635" size="200,36" source="key_red" backgroundColor="#9f1313" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the GREEN button hint background -->
-
 	<screen name="FullscreenGreen1Panel">
 		<ePixmap position="410,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" zPosition="1" />
 		<widget position="410,635" size="200,36" name="key_green" backgroundColor="#1f771f" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the GREEN button hint -->
-
 	<screen name="FullscreenGreen2Panel">
 		<ePixmap position="410,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" zPosition="1" />
 		<widget position="410,635" size="200,36" source="key_green" backgroundColor="#1f771f" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the YELLOW button hint background -->
-
 	<screen name="FullscreenYellow1Panel">
 		<ePixmap position="660,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" zPosition="1" />
 		<widget position="660,635" size="200,36" name="key_yellow" backgroundColor="#a08500" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the YELLOW button hint -->
-
 	<screen name="FullscreenYellow2Panel">
 		<ePixmap position="660,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" zPosition="1" />
 		<widget position="660,635" size="200,36" source="key_yellow" backgroundColor="#a08500" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the BLUE button hint background -->
-
 	<screen name="FullscreenBlue1Panel">
 		<ePixmap position="910,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" zPosition="1" />
 		<widget position="910,635" size="200,36" name="key_blue" backgroundColor="#18188b" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the BLUE button hint -->
-
 	<screen name="FullscreenBlue2Panel">
 		<ePixmap position="910,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" zPosition="1" />
 		<widget position="910,635" size="200,36" source="key_blue" backgroundColor="#18188b" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the Virtual Keyboard Icon -->
-
 	<screen name="FullscreenVKeyIconButtonPanel">
 		<widget position="1120,635" size="50,35" name="VKeyIcon" pixmap="easy-skin-aus-hd/buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="11" />
 	</screen>
-
-<!-- Screen layer to add the TEXT button hint -->
-
 	<screen name="FullscreenTextButtonPanel">
 		<ePixmap position="1120,635" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
-
-<!-- Screen layer to add the HELP button hint -->
-
 	<screen name="FullscreenHelpButtonPanel">
 		<ePixmap position="1170,635" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_help_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
 
 <!--
- |  "Low" button hint backgrounds and button hints
- |  lower on the screen to allow a little more screen
- |  space. Used in GraphicalEPG and in GraphicalEPGPIG.
+ |  "Low" button hint backgrounds and button hints lower on the screen to allow a
+ |  little more screen space. Used in GraphicalEPG and in GraphicalEPGPIG.
  +-->
-
-<!-- Screen layer to add the low MENU button hint -->
-
 	<screen name="FullscreenLowMenuButtonPanel">
 		<ePixmap position="50,670" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_menu_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
-
-<!-- Screen layer to add the low INFO button hint -->
-
 	<screen name="FullscreenLowInfoButtonPanel">
 		<ePixmap position="100,670" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_info_50x35.png" alphatest="blend" transparent="1" zPosition="11" />
 	</screen>
-
-<!-- Screen layer to add the low RED button hint background -->
-
 	<screen name="FullscreenLowRed1Panel">
 		<ePixmap position="160,670" size="200,50" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" alphatest="on" zPosition="1"/>
 		<widget position="160,670" size="200,36" name="key_red" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" transparent="1" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the low RED button hint -->
-
 	<screen name="FullscreenLowRed2Panel">
 		<ePixmap position="160,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" zPosition="1"/>
 		<widget position="160,670" size="200,36" backgroundColor="#9f1313" font="Regular;20" halign="center" render="Label" source="key_red" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the low GREEN button hint background -->
-
 	<screen name="FullscreenLowGreen1Panel">
 		<ePixmap position="410,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" zPosition="1" />
 		<widget position="410,670" size="200,36" backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the low GREEN button hint -->
-
 	<screen name="FullscreenLowGreen2Panel">
 		<ePixmap position="410,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" zPosition="1" />
 		<widget position="410,670" size="200,36" backgroundColor="#1f771f" font="Regular;20" halign="center" render="Label" source="key_green" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the low YELLOW button hint background -->
-
 	<screen name="FullscreenLowYellow1Panel">
 		<ePixmap position="660,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" zPosition="1" />
 		<widget position="660,670" size="200,36" backgroundColor="#a08500" font="Regular;20" halign="center" name="key_yellow" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the low YELLOW button hint -->
-
 	<screen name="FullscreenLowYellow2Panel">
 		<ePixmap position="660,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" zPosition="1" />
 		<widget position="660,670" size="200,36" backgroundColor="#a08500" font="Regular;20" halign="center" render="Label" source="key_yellow" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the low BLUE button hint background -->
-
 	<screen name="FullscreenLowBlue1Panel">
 		<ePixmap position="910,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" zPosition="1" />
 		<widget position="910,670" size="200,36" backgroundColor="#18188b" font="Regular;20" halign="center" name="key_blue" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the low BLUE button hint -->
-
 	<screen name="FullscreenLowBlue2Panel">
 		<ePixmap position="910,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" zPosition="1" />
 		<widget position="910,670" size="200,36" backgroundColor="#18188b" font="Regular;20" halign="center" render="Label" source="key_blue" transparent="1" valign="center" zPosition="3" />
 	</screen>
-
-<!-- Screen layer to add the low TEXT button hint -->
-
+	<screen name="FullscreenLowVKeyIconButtonPanel">
+		<widget position="1120,670" size="50,35" name="VKeyIcon" pixmap="easy-skin-aus-hd/buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="11" />
+	</screen>
 	<screen name="FullscreenLowTextButtonPanel">
 		<ePixmap position="1120,670" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
-
-<!-- Screen layer to add the low HELP button hint -->
-
 	<screen name="FullscreenLowHelpButtonPanel">
 		<ePixmap position="1170,670" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_help_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
@@ -209,45 +138,35 @@
  |  "Small" button hint backgrounds and button hints to fit in
  |  the limited space at the bottom of GraphicalInfoBarEPG.
  +-->
-
-<!-- Screen layer to add the small MENU button hint -->
-
-	<screen name="FullscreenSmallMenuPanel">
-		<ePixmap pixmap="buttons/key_menu.png" position="15,166" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+	<screen name="FullscreenSmallMenuButtonPanel">
+		<ePixmap position="50,166" size="35,25" pixmap="easy-skin-aus-hd/buttons/key_menu.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
-
-<!-- Screen layer to add the small HELP button hint -->
-
+	<screen name="FullscreenSmallInfoButtonPanel">
+		<ePixmap position="100,166" size="35,25" pixmap="easy-skin-aus-hd/buttons/key_info.png" alphatest="blend" transparent="1" zPosition="11" />
+	</screen>
+	<screen name="FullscreenSmallRedPanel">
+		<ePixmap position="155,170" size="15,16" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_red.png" zPosition="1" />
+		<widget position="175,166" size="200,25" backgroundColor="#18188b" font="Regular;20" halign="left" name="key_red" transparent="1" valign="center" zPosition="3" />
+	</screen>
+	<screen name="FullscreenSmallGreenPanel">
+		<ePixmap position="405,170" size="15,16" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_green.png" zPosition="1" />
+		<widget position="425,166" size="200,25" backgroundColor="#18188b" font="Regular;20" halign="left" name="key_green" transparent="1" valign="center" zPosition="3" />
+	</screen>
+	<screen name="FullscreenSmallYellowPanel">
+		<ePixmap position="655,170" size="15,16" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_yellow.png" zPosition="1" />
+		<widget position="675,166" size="200,25" backgroundColor="#18188b" font="Regular;20" halign="left" name="key_yellow" transparent="1" valign="center" zPosition="3" />
+	</screen>
+	<screen name="FullscreenSmallBluePanel">
+		<ePixmap position="905,170" size="15,16" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_blue.png" zPosition="1" />
+		<widget position="925,166" size="200,25" backgroundColor="#18188b" font="Regular;20" halign="left" name="key_blue" transparent="1" valign="center" zPosition="3" />
+	</screen>
+	<screen name="FullscreenSmallVKeyIconButtonPanel">
+		<widget position="1120,166" size="35,25" name="VKeyIcon" pixmap="easy-skin-aus-hd/buttons/key_text.png" alphatest="blend" transparent="1" zPosition="11" />
+	</screen>
+	<screen name="FullscreenSmallTextButtonPanel">
+		<ePixmap position="1120,166" size="35,25" pixmap="easy-skin-aus-hd/buttons/key_text.png" alphatest="blend" transparent="1" zPosition="10" />
+	</screen>
 	<screen name="FullscreenSmallHelpButtonPanel">
-		<ePixmap pixmap="buttons/key_help.png" position="1230,166" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap position="1170,166" size="35,25" pixmap="easy-skin-aus-hd/buttons/key_help.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
-
-<!-- Screen layer to add the small RED button hint -->
-
-	<screen name="FullscreenSmall2RedPanel">
-		<ePixmap pixmap="buttons/red.png" position="65,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="key_red" position="115,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-	</screen>
-
-<!-- Screen layer to add the small GREEN button hint -->
-
-	<screen name="FullscreenSmall2GreenPanel">
-		<ePixmap pixmap="buttons/green.png" position="335,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="key_green" position="395,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-	</screen>
-
-<!-- Screen layer to add the small YELLOW button hint -->
-
-	<screen name="FullscreenSmall2YellowPanel">
-		<ePixmap pixmap="buttons/yellow.png" position="645,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="key_yellow" position="685,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-	</screen>
-
-<!-- Screen layer to add the small BLUE button hint -->
-
-	<screen name="FullscreenSmall2BluePanel">
-		<ePixmap pixmap="buttons/blue.png" position="935,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="key_blue" position="975,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-	</screen>
-
 </skin>
