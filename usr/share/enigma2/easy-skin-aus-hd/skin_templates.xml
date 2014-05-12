@@ -33,6 +33,15 @@
 		<eLabel position="50,625" size="1180,2" backgroundColor="darkgrey" zPosition="1" />
 	</screen>
 
+	<screen name="SetupCommon">
+		<panel name="FullScreen2Window" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<panel name="FullscreenYellow2Panel" />
+		<panel name="FullscreenBlue2Panel" />
+		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
+	</screen>
+
 <!-- Full screen button hints -->
 	<screen name="FullscreenMenuButtonPanel">
 		<ePixmap position="50,635" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_menu_50x35.png" alphatest="blend" transparent="1" zPosition="10" />

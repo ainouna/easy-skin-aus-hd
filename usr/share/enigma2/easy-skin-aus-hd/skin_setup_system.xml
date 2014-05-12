@@ -68,14 +68,6 @@
 		<widget source="fixed_address" render="Label" position="100,175" size="300,40"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 		<widget source="current_address" render="Label" position="100,215" size="300,40"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 	</screen>
-	<screen name="SetupCommon">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
-	</screen>
 	<screen name="SetupTextHelp">
 		<panel name="FullscreenVKeyIconButtonPanel"/>
 		<widget name="HelpWindow" position="50,335" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
