@@ -50,7 +50,7 @@
 		<ePixmap position="100,635" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_info_50x35.png" alphatest="blend" transparent="1" zPosition="11" />
 	</screen>
 	<screen name="FullscreenRed1Panel">
-		<ePixmap position="160,635" size="200,60" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" alphatest="on" zPosition="1" />
+		<ePixmap position="160,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" zPosition="1" />
 		<widget position="160,635" size="200,36" name="key_red" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" transparent="1" zPosition="3" />
 	</screen>
 	<screen name="FullscreenRed2Panel">
@@ -102,7 +102,7 @@
 		<ePixmap position="100,670" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_info_50x35.png" alphatest="blend" transparent="1" zPosition="11" />
 	</screen>
 	<screen name="FullscreenLowRed1Panel">
-		<ePixmap position="160,670" size="200,50" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" alphatest="on" zPosition="1"/>
+		<ePixmap position="160,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" zPosition="1"/>
 		<widget position="160,670" size="200,36" name="key_red" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" transparent="1" zPosition="3" />
 	</screen>
 	<screen name="FullscreenLowRed2Panel">
