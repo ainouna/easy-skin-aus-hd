@@ -142,6 +142,8 @@
 	<include filename="easy-skin-aus-hd/skin_wizards.xml"/>	
 	<!-- Load Infobars Screens -->
 	<include filename="easy-skin-aus-hd/skin_infobars.xml"/>
+	<!-- Load Menu->Tasks Screens -->
+	<include filename="easy-skin-aus-hd/skin_setup.xml"/>
 	<!-- Load Menu->Setup->System Screens -->
 	<include filename="easy-skin-aus-hd/skin_setup_system.xml"/>
 	<!-- Load Menu->Setup->Network Screens -->
@@ -166,8 +168,6 @@
 	<include filename="easy-skin-aus-hd/skin_music.xml"/>
 	<!-- Load Menu->Movies Screens -->
 	<include filename="easy-skin-aus-hd/skin_videos.xml"/>
-	<!-- Load Menu->Tasks Screens -->
-	<include filename="easy-skin-aus-hd/skin_setup.xml"/>
 
 	<screen position="0,150" size="1280,570" flags="wfNoBorder" name="GeneralMenu">
 		<widget name="frame" position="12,95" size="170,220" zPosition="1" alphatest="on" />
