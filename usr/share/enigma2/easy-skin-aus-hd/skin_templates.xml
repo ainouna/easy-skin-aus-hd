@@ -3,27 +3,7 @@
 
 <!-- Screen layer to add heading clock, title and pin stripes  -->
 
-<!--
- |  This is only used in AutoTimerSettings, GnewsFeedScreenList,
- |  GnewsFeedScreenContent, UpdatePlugin and ParentalControlSetup.
- +-->
-
 	<screen name="FullScreenWindow">
-		<panel name="FullScreenWindowCommon"/>
-	</screen>
-
-<!-- Screen layer to add heading clock, title and pin stripes -->
-
-	<screen name="FullScreen2Window">
-		<panel name="FullScreenWindowCommon"/>
-	</screen>
-
-<!-- 
- |   Common parts of screen layers to add heading clock, title and
- |   pin stripes. Base for FullScreenWindow and FullScreen2Window.
- +-->
-
-	<screen name="FullScreenWindowCommon">
 		<ePixmap position="50,36" size="14,14" pixmap="easy-skin-aus-hd/icons/clock.png" alphatest="on" zPosition="3" />
 		<widget position="75,30" size="375,25" source="global.CurrentTime" backgroundColor="black" font="Named;22" foregroundColor="white" halign="left" render="Label" transparent="1" zPosition="3">
 			<convert type="ClockToText">Format:%a %e-%b-%Y %H:%M</convert>
@@ -33,44 +13,67 @@
 		<eLabel position="50,625" size="1180,2" backgroundColor="darkgrey" zPosition="1" />
 	</screen>
 
+	<screen name="FullScreenColourPanel">
+		<panel position="0,635" size="200,60">
+			<panel name="RedPanel" />
+			<panel name="GreenPanel" />
+			<panel name="YellowPanel" />
+			<panel name="BluePanel" />
+		</panel>
+	</screen>
+
+	<screen name="FullScreenLowColourPanel">
+		<panel position="0,670" size="200,50">
+			<panel name="RedPanel" />
+			<panel name="GreenPanel" />
+			<panel name="YellowPanel" />
+			<panel name="BluePanel" />
+		</panel>
+	</screen>
+
+	<screen name="RedPanel">
+		<ePixmap position="160,0" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" zPosition="1" />
+		<widget position="160,0" size="200,36" name="key_red" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" transparent="1" zPosition="3" />
+		<widget position="160,0" size="200,36" source="key_red" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" render="Label" transparent="1" zPosition="4" />
+	</screen>
+	<screen name="GreenPanel">
+		<ePixmap position="410,0" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" zPosition="1" />
+		<widget position="410,0" size="200,36" name="key_green" backgroundColor="#1f771f" font="Regular;20" halign="center" valign="center" transparent="1" zPosition="3" />
+		<widget position="410,0" size="200,36" source="key_green" backgroundColor="#1f771f" font="Regular;20" halign="center" valign="center" render="Label" transparent="1" zPosition="4" />
+	</screen>
+	<screen name="YellowPanel">
+		<ePixmap position="660,0" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" zPosition="1" />
+		<widget position="660,0" size="200,36" name="key_yellow" backgroundColor="#a08500" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
+		<widget position="660,0" size="200,36" source="key_yellow" backgroundColor="#a08500" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="4" />
+	</screen>
+	<screen name="BluePanel">
+		<ePixmap position="910,0" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" zPosition="1" />
+		<widget position="910,0" size="200,36" name="key_blue" backgroundColor="#18188b" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
+		<widget position="910,0" size="200,36" source="key_blue" backgroundColor="#18188b" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="4" />
+	</screen>
+
+	<screen name="MenuButtonPanel">
+		<ePixmap position="50,0" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_menu_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
+	</screen>
+	<screen name="InfoButtonPanel">
+		<ePixmap position="100,0" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_info_50x35.png" alphatest="blend" transparent="1" zPosition="11" />
+	</screen>
+	<screen name="VKeyIconButtonPanel">
+		<widget position="1120,0" size="50,35" name="VKeyIcon" pixmap="easy-skin-aus-hd/buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="11" />
+	</screen>
+	<screen name="TextButtonPanel">
+		<ePixmap position="1120,0" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
+	</screen>
+	<screen name="HelpButtonPanel">
+		<ePixmap position="1170,0" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_help_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
+	</screen>
+
 <!-- Full screen button hints -->
 	<screen name="FullscreenMenuButtonPanel">
 		<ePixmap position="50,635" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_menu_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
 	<screen name="FullscreenInfoButtonPanel">
 		<ePixmap position="100,635" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_info_50x35.png" alphatest="blend" transparent="1" zPosition="11" />
-	</screen>
-	<screen name="FullscreenRed1Panel">
-		<ePixmap position="160,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" zPosition="1" />
-		<widget position="160,635" size="200,36" name="key_red" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" transparent="1" zPosition="3" />
-	</screen>
-	<screen name="FullscreenRed2Panel">
-		<ePixmap position="160,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" zPosition="1" />
-		<widget position="160,635" size="200,36" source="key_red" backgroundColor="#9f1313" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="3" />
-	</screen>
-	<screen name="FullscreenGreen1Panel">
-		<ePixmap position="410,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" zPosition="1" />
-		<widget position="410,635" size="200,36" name="key_green" backgroundColor="#1f771f" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
-	</screen>
-	<screen name="FullscreenGreen2Panel">
-		<ePixmap position="410,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" zPosition="1" />
-		<widget position="410,635" size="200,36" source="key_green" backgroundColor="#1f771f" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="3" />
-	</screen>
-	<screen name="FullscreenYellow1Panel">
-		<ePixmap position="660,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" zPosition="1" />
-		<widget position="660,635" size="200,36" name="key_yellow" backgroundColor="#a08500" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
-	</screen>
-	<screen name="FullscreenYellow2Panel">
-		<ePixmap position="660,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" zPosition="1" />
-		<widget position="660,635" size="200,36" source="key_yellow" backgroundColor="#a08500" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="3" />
-	</screen>
-	<screen name="FullscreenBlue1Panel">
-		<ePixmap position="910,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" zPosition="1" />
-		<widget position="910,635" size="200,36" name="key_blue" backgroundColor="#18188b" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
-	</screen>
-	<screen name="FullscreenBlue2Panel">
-		<ePixmap position="910,635" size="200,60" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" zPosition="1" />
-		<widget position="910,635" size="200,36" source="key_blue" backgroundColor="#18188b" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="3" />
 	</screen>
 	<screen name="FullscreenVKeyIconButtonPanel">
 		<widget position="1120,635" size="50,35" name="VKeyIcon" pixmap="easy-skin-aus-hd/buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="11" />
@@ -91,38 +94,6 @@
 	</screen>
 	<screen name="FullscreenLowInfoButtonPanel">
 		<ePixmap position="100,670" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_info_50x35.png" alphatest="blend" transparent="1" zPosition="11" />
-	</screen>
-	<screen name="FullscreenLowRed1Panel">
-		<ePixmap position="160,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" zPosition="1"/>
-		<widget position="160,670" size="200,36" name="key_red" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" transparent="1" zPosition="3" />
-	</screen>
-	<screen name="FullscreenLowRed2Panel">
-		<ePixmap position="160,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" zPosition="1"/>
-		<widget position="160,670" size="200,36" backgroundColor="#9f1313" font="Regular;20" halign="center" render="Label" source="key_red" transparent="1" valign="center" zPosition="3" />
-	</screen>
-	<screen name="FullscreenLowGreen1Panel">
-		<ePixmap position="410,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" zPosition="1" />
-		<widget position="410,670" size="200,36" backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" transparent="1" valign="center" zPosition="3" />
-	</screen>
-	<screen name="FullscreenLowGreen2Panel">
-		<ePixmap position="410,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" zPosition="1" />
-		<widget position="410,670" size="200,36" backgroundColor="#1f771f" font="Regular;20" halign="center" render="Label" source="key_green" transparent="1" valign="center" zPosition="3" />
-	</screen>
-	<screen name="FullscreenLowYellow1Panel">
-		<ePixmap position="660,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" zPosition="1" />
-		<widget position="660,670" size="200,36" backgroundColor="#a08500" font="Regular;20" halign="center" name="key_yellow" transparent="1" valign="center" zPosition="3" />
-	</screen>
-	<screen name="FullscreenLowYellow2Panel">
-		<ePixmap position="660,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" zPosition="1" />
-		<widget position="660,670" size="200,36" backgroundColor="#a08500" font="Regular;20" halign="center" render="Label" source="key_yellow" transparent="1" valign="center" zPosition="3" />
-	</screen>
-	<screen name="FullscreenLowBlue1Panel">
-		<ePixmap position="910,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" zPosition="1" />
-		<widget position="910,670" size="200,36" backgroundColor="#18188b" font="Regular;20" halign="center" name="key_blue" transparent="1" valign="center" zPosition="3" />
-	</screen>
-	<screen name="FullscreenLowBlue2Panel">
-		<ePixmap position="910,670" size="200,50" alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" zPosition="1" />
-		<widget position="910,670" size="200,36" backgroundColor="#18188b" font="Regular;20" halign="center" render="Label" source="key_blue" transparent="1" valign="center" zPosition="3" />
 	</screen>
 	<screen name="FullscreenLowVKeyIconButtonPanel">
 		<widget position="1120,670" size="50,35" name="VKeyIcon" pixmap="easy-skin-aus-hd/buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="11" />

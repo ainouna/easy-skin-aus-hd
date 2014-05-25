@@ -8,11 +8,8 @@
 	</screen>  
 	<!-- Tuner Configuration -->
 	<screen name="NimSelection" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Choose Tuner">
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
-		<panel name="FullScreen2Window" />  
+		<panel name="FullScreenWindow" />  
+		<panel name="FullScreenColourPanel" />
 		<widget enableWrapAround="1" position="650,195" render="Listbox" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_515x120.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" size="525,400" source="nimlist" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -29,11 +26,8 @@
 	</screen>
 	<!-- Tuner setup -->
 	<screen flags="wfNoBorder" name="NimSetup" position="0, 0" size="1280, 720" backgroundColor="un44000000" title="Reception Settings">
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreen2Window" />  
+		<panel name="FullScreenWindow" />  
+		<panel name="FullScreenColourPanel" />
 		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>	
 		<ePixmap position="55, 155" size="300, 500" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_system.png"/>	
 	</screen>
@@ -98,11 +92,8 @@
 	</screen>
 	<!-- Service scan -->
 	<screen flags="wfNoBorder" name="ServiceScan" position="0,0" size="1280, 720" backgroundColor="un44000000" title="Service Scan">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<eLabel font="Regular;28" position="675,140" size="485,35" text="Scanned services:" transparent="1" zPosition="2"/>
 		<eLabel backgroundColor="white" position="665,180" size="450,2" zPosition="2"/>
 		<widget backgroundColor="#33000000" name="servicelist" position="650,195" selectionDisabled="1" size="485,400" transparent="1" scrollbarMode="showOnDemand" zPosition="1"/>
@@ -168,11 +159,8 @@
 		<widget font="Regular;21" halign="reight" name="fec_value" position="370,445" size="150,22" transparent="1" valign="center" zPosition="1"/>
 	</screen>	
 	<screen name="FastScanScreen" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="FastScanScreen">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
 		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<ePixmap alphatest="on" name="textborder" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="2"/>
