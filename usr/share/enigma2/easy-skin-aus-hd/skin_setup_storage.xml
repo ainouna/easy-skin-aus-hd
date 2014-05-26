@@ -2,11 +2,8 @@
 	<!-- Harddisk Setup use SETUP screen skin -->
 	<!-- Format and Initialize -->
 	<screen position="0,0" size="1280,720" name="HarddiskSelection" flags="wfNoBorder" backgroundColor="un44000000" title="Select HDD">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget name="hddlist" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_source_mount.png" position="55, 155" size="300,500"/>
 	</screen>

@@ -1,10 +1,38 @@
 <skin>
-<!-- Power / Restart and Information Menu Screens -->
-
-<!-- Power / Restart (MENU > Power) Menu -->
-
+	<screen name="SetupCommon">
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
+		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
+	</screen>
+	<screen name="SetupTextHelp">
+		<panel name="FullscreenVKeyIconButtonPanel"/>
+		<widget name="HelpWindow" position="50,335" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+	</screen>
+	<screen name="SetupConfig">
+		<widget name="config" position="510, 100" size="720, 500" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_705x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>
+	<!-- General Setup Screen -->
+	<screen name="GeneralSetup" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Setup" >
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,115" size="400,200" />
+		<widget name="description" position="60,130" size="380,170" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="list" position="500, 120" size="380, 500" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_380x50.png" backgroundColor="#41000000" transparent="1" />
+		<widget name="sublist" position="920,125" size="300,460" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_300x50.png" backgroundColor="#41000000" transparent="1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_320x495.png" position="910,110" size="400,495" zPosition="-1" alphatest="on" />
+	</screen>
+	<!-- Setup -->
+	<screen name="Setup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
+		<panel name="SetupCommon" />
+		<panel name="SetupTextHelp" />
+		<panel name="SetupConfig"/>
+		<widget name="footnote" position="1,1" zPosition="1" size="1,1" transparent="1"/>
+		<widget name="description" position="60,130" size="380,170"  font="Regular;18" halign="center" transparent="1" valign="center" zPosition="2"/>
+	</screen>
+	<!-- Power / Restart and Information Menu Screens -->
+	<!-- Power / Restart (MENU > Power) Menu -->
 	<screen backgroundColor="background" flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1280,720" title="Power / Restart">
-		<panel name="FullScreen2Window" />
+		<panel name="FullScreenWindow" />
 		<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
@@ -37,10 +65,9 @@
 		</widget>
 	</screen>	
 
-<!-- Information (MENU > Information) Menu -->
-
+	<!-- Information (MENU > Information) Menu -->
 	<screen backgroundColor="background" flags="wfNoBorder" name="Menu" position="0,0" size="1280,720" title="Information">
-		<panel name="FullScreen2Window" />
+		<panel name="FullScreenWindow" />
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_tv.png" position="200,100" size="300,500" zPosition="2" />
 		<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -65,7 +92,7 @@
  +-->
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="About" position="0,0" size="1280,720" title="About">
-		<panel name="FullScreen2Window" />
+		<panel name="FullScreenWindow" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" zPosition="2" />
 		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="500,115" size="580,379" transparent="1" zPosition="2" />
 	</screen>
@@ -80,7 +107,7 @@
  +-->
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="SystemNetworkInfo" size="1280,720" title="About">
-		<panel name="FullScreen2Window" />
+		<panel name="FullScreenWindow" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" zPosition="2" />
 		<widget backgroundColor="window-bg" font="Regular;20" halign="left" position="500,115" render="Label" size="120,21" source="IFtext" transparent="1" zPosition="10" />
 		<widget backgroundColor="window-bg" font="Regular;20" halign="left" source="IF" render="Label" position="677,115" size="600,21" transparent="1" zPosition="10" />
@@ -92,19 +119,16 @@
 <!-- Sevice Information (MENU > Information > Service) Screens -->
 
 	<screen backgroundColor="un44000000" flags="wfNoBorder" name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo">
-		<panel name="FullScreen2Window" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" />
 		<widget name="infolist" position="500,115" scrollbarMode="showOnDemand" selectionDisabled="1" size="780,495" transparent="1" />
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
 	</screen>
 
 <!-- ??? Menu -->
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" title="Main Menu">
-		<panel name="FullScreen2Window" />
+		<panel name="FullScreenWindow" />
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2" />
 		<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -129,7 +153,7 @@
 <!-- ??? Screen -->
 
 <screen backgroundColor="background" flags="wfNoBorder" name="SystemMemoryInfo" size="1280,720" title="About">
-		<panel name="FullScreen2Window" />
+		<panel name="FullScreenWindow" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2" />
 		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="630,190" size="580,379" transparent="1" zPosition="2" />
 	</screen>
@@ -137,7 +161,7 @@
 <!-- ??? Screen -->
 
 <screen backgroundColor="background" flags="wfNoBorder" name="Devices" size="1280,720" title="About">
-		<panel name="FullScreen2Window" />
+		<panel name="FullScreenWindow" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2" />
 		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="630,190" size="580,379" transparent="1" zPosition="2" />
 	</screen>

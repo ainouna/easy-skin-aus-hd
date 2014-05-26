@@ -6,11 +6,8 @@
 		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="SoftwareManagerInfo" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Softwaremanager informations" >
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget position="590, 170" size="610, 415" source="list" render="Listbox" scrollbarMode="showOnDemand" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" selectionDisabled="0">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -32,11 +29,8 @@
 		<widget name="slider" transparent="1" backgroundColor="transpBlack" position="center,390" size="503,30" />
 	</screen>
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Softwaremanager..." >
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-aus-hd/frame/frame_400x400.png" alphatest="on" zPosition="2"/>
 		<widget position="665,145" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -59,57 +53,39 @@
 		</widget>
 	</screen>
 	<screen name="RestoreMenu" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Restore Backups">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget name="filelist" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="BackupSelection" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Select files/folders to backup">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="55, 155" size="300,500"/>
 		<widget name="checkList" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="IpkgInstaller" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Ipkg Installer...">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget name="list" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap position="125, 185" size="400,300" pixmap="easy-skin-aus-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
 		<widget source="introduction" render="Label" position="150, 205" size="350,260" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
 	</screen>
 	<screen name="IPKGMenu" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Select IPKG source.....">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget name="filelist" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="IPKGSource" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="IPKG source">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget name="text" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="BackupScreen" position="135,144" size="350,310" title="Backup is running">
 		<widget name="config" position="10,10" size="330,250" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
  	<screen name="PacketManager" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Softwaremanager..." >
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget source="list" render="Listbox" position="665,145"  size="500,450" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -126,11 +102,8 @@
 		</widget>
 	</screen>
 	<screen name="PluginManager" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extensions management">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget source="list" render="Listbox" position="535,145" size="710, 463" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"templates":
@@ -155,11 +128,8 @@
 		<widget source="status" render="Label" position="85, 205" size="350,260" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
 	</screen>
  	<screen name="PluginManagerInfo" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extensions management">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget source="list" render="Listbox" position="535,145" size="710, 463" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand">
 				<convert type="TemplatedMultiContent">
 					{"template": [
@@ -177,11 +147,8 @@
 		<widget source="status" render="Label" position="85, 205" size="350,260" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
 	</screen>
 	<screen name="PluginManagerHelp" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extensions management">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget source="list" render="Listbox" position="535,145" size="710, 463" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 					{"template": [

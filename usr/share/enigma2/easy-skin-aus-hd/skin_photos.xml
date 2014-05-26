@@ -1,10 +1,7 @@
 <skin>
 	<screen name="picshow" position="0,0" backgroundColor="background" size="1280,720" flags="wfNoBorder" title="PicturePlayer">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget position="650,150" size="510,450" name="filelist" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>		
 		<widget position="169,150" size="372,280" name="thn" transparent="1" alphatest="on" />
 		<eLabel position="120,445" size="470,1" backgroundColor="#777777" zPosition="2" />
@@ -12,11 +9,8 @@
 	</screen>
  
 	<screen name="Pic_Exif" position="0,0" backgroundColor="background" size="1280,720" flags="wfNoBorder" title="PicturePlayer">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<ePixmap position="55, 155" size="300, 500" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_photo.png"/>
 		<widget source="menu" backgroundColor="background" render="Listbox" position="510, 130" size="700, 480" zPosition="3" scrollbarMode="showOnDemand" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
@@ -28,11 +22,8 @@
 		</widget>
 	</screen>  
 	<screen name="EcasaPictureWall" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
-		<panel name="FullScreen2Window" />
-		<panel name="FullscreenRed2Panel" />
-		<panel name="FullscreenGreen2Panel" />
-		<panel name="FullscreenYellow2Panel" />
-		<panel name="FullscreenBlue2Panel" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenHelpButtonPanel"/>
 		<!-- <panel name="FullscreenMenuButtonPanel" /> -->
 		<widget name="waitingtext" position="center,center" size="1280,720" backgroundColor="#41000000"  valign="center" halign="center" font="Regular;26" transparent="1"/>
@@ -58,19 +49,13 @@
 		<widget name="highlight" position="110,272" size="190,5"/>
 	</screen>
 	<screen name="ViewerSelectScreen" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreen2Window" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget position="590, 170" size="610, 415" name="list" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="WebcamViewer" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreen2Window" />
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
 		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -82,6 +67,8 @@
 		</widget>
 	</screen>
 	<screen name="TravelWebcamviewer" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 		<widget source="list" render="Listbox" position="590, 140" size="610, 445" zPosition="1" scrollbarMode="showOnDemand" transparent="1"  >
 			<convert type="TemplatedMultiContent">
 			{"templates":
@@ -109,12 +96,6 @@
 		<widget name="count" position="25,585" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="page" position="170,585" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="currentnumbers" position="315,585" zPosition="5" size="240,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-
-		<panel name="FullscreenRed1Panel" />
-		<panel name="FullscreenGreen1Panel" />
-		<panel name="FullscreenYellow1Panel" />
-		<panel name="FullscreenBlue1Panel" />
-		<panel name="FullScreen2Window" />
 	</screen>
 </skin>
 	
