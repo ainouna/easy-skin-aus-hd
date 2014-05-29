@@ -5,7 +5,7 @@
 		<widget font="Regular;20" halign="center" source="introduction" render="Label" position="60,130" size="380,170" transparent="1" valign="center" zPosition="2"/>
 		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
-	<screen name="SoftwareManagerInfo" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Softwaremanager informations" >
+	<screen name="SoftwareManagerInfo" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Software Manager Information" >
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<widget position="590, 170" size="610, 415" source="list" render="Listbox" scrollbarMode="showOnDemand" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" selectionDisabled="0">
@@ -55,30 +55,30 @@
 	<screen name="RestoreMenu" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Restore Backups">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget name="filelist" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="filelist" position="510,100" size="720, 500" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="BackupSelection" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Select files/folders to backup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="55, 155" size="300,500"/>
-		<widget name="checkList" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="checkList" position="510,100" size="720, 500" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="IpkgInstaller" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Ipkg Installer...">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget name="list" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
-		<ePixmap position="125, 185" size="400,300" pixmap="easy-skin-aus-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
-		<widget source="introduction" render="Label" position="150, 205" size="350,260" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
+		<widget name="list" position="510,100" size="720, 500" scrollbarMode="showOnDemand" transparent="1"/>
+		<ePixmap position="100, 185" size="400,300" pixmap="easy-skin-aus-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
+		<widget source="introduction" render="Label" position="125, 205" size="350,260" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
 	</screen>
 	<screen name="IPKGMenu" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Select IPKG source.....">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget name="filelist" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="filelist" position="510,100" size="720,500" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="IPKGSource" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="IPKG source">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget name="text" position="665,145" size="500, 500" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="text" position="60,100" size="1160,30" font="Regular;20" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="BackupScreen" position="135,144" size="350,310" title="Backup is running">
 		<widget name="config" position="10,10" size="330,250" transparent="1" scrollbarMode="showOnDemand"/>
@@ -86,37 +86,37 @@
  	<screen name="PacketManager" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Softwaremanager..." >
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget source="list" render="Listbox" position="665,145"  size="500,450" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+		<widget source="list" render="Listbox" position="510,100" size="720,500" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (10, 5), size = (670, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (10, 35), size = (670, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (690, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
-						MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index 4 is the div pixmap
+						MultiContentEntryText(pos = (10, 1), size = (650, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (10, 27), size = (650, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+						MultiContentEntryPixmapAlphaTest(pos = (660, 0), size = (48, 48), png = 4), # index 4 is the status pixmap
+						MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (720, 2), png = 5), # index 4 is the div pixmap
 					],
-				"fonts": [gFont("Regular", 22),gFont("Regular", 17)],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 16)],
 
-				"itemHeight": 60
+				"itemHeight": 50
 				}
 			</convert>
 		</widget>
 	</screen>
-	<screen name="PluginManager" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extensions management">
+	<screen name="PluginManager" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extension management">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget source="list" render="Listbox" position="535,145" size="710, 463" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="510,100" size="720,500" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (51,[
-							MultiContentEntryText(pos = (30, 1), size = (570, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (30, 25), size = (570, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-							MultiContentEntryPixmapAlphaTest(pos = (635, 0), size = (48, 48), png = 5), # index 5 is the status pixmap
-							MultiContentEntryPixmapAlphaTest(pos = (0, 49), size = (650, 2), png = 6), # index 6 is the div pixmap
+							MultiContentEntryText(pos = (10, 1), size = (650, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+							MultiContentEntryText(pos = (10, 27), size = (650, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+							MultiContentEntryPixmapAlphaTest(pos = (660, 0), size = (48, 48), png = 5), # index 5 is the status pixmap
+							MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (720, 2), png = 6), # index 6 is the div pixmap
 						]),
 					"category": (50,[
-							MultiContentEntryText(pos = (30, 0), size = (600, 22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (30, 22), size = (600, 16), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-							MultiContentEntryPixmapAlphaTest(pos = (0, 38), size = (650, 2), png = 3), # index 3 is the div pixmap
+							MultiContentEntryText(pos = (30, 1), size = (630, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+							MultiContentEntryText(pos = (30, 27), size = (630, 20), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+							MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (720, 2), png = 3), # index 3 is the div pixmap
 						])
 					},
 					"fonts": [gFont("Regular", 22),gFont("Regular", 16)],
@@ -127,7 +127,7 @@
 		<ePixmap position="60, 185" size="400,300" pixmap="easy-skin-aus-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
 		<widget source="status" render="Label" position="85, 205" size="350,260" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
 	</screen>
- 	<screen name="PluginManagerInfo" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extensions management">
+	<screen name="PluginManagerInfo" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extension management">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<widget source="list" render="Listbox" position="535,145" size="710, 463" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand">
@@ -146,7 +146,7 @@
 		<ePixmap position="60, 185" size="400,300" pixmap="easy-skin-aus-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
 		<widget source="status" render="Label" position="85, 205" size="350,260" zPosition="3" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
 	</screen>
-	<screen name="PluginManagerHelp" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extensions management">
+	<screen name="PluginManagerHelp" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extension management">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<widget source="list" render="Listbox" position="535,145" size="710, 463" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand">
