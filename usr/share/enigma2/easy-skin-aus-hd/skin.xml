@@ -502,9 +502,9 @@ self.autoResize()
 	<!-- Location Box -->
 	<screen flags="wfNoBorder" name="LocationBox" backgroundColor="background" position="0,0" size="1280,720">
 		<panel name="FullScreenWindow" />
-		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,150" transparent="1" zPosition="2"/>
-		<widget name="booklist" position="650,335" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
-		<widget name="textbook" position="650,295" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
+		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,230" transparent="1" zPosition="2"/>
+		<widget name="booklist" position="650,410" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
+		<widget name="textbook" position="650,380" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
 		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;22" halign="center" name="target" position="170,295" size="360,80" transparent="1" valign="center" zPosition="2"/>
@@ -515,11 +515,16 @@ self.autoResize()
 		<widget name="blue" position="0,0" size="0,0"/>
 	</screen>
 	<!-- Movie Location Box -->
+	<!--
+	 |  Currently unused because LocationBox.MovieLocationBox is a
+	 |  function call to LocationBox.LocationBox's constructor,
+	 |  so it uses the LocationBox screen
+	 +-->
 	<screen name="MovieLocationBox" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
 		<panel name="FullScreenWindow" />
-		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,150" transparent="1" zPosition="2"/>
-		<widget name="booklist" position="650,335" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
-		<widget name="textbook" position="650,295" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
+		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,230" transparent="1" zPosition="2"/>
+		<widget name="booklist" position="650,410" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
+		<widget name="textbook" position="650,380" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
 		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;22" halign="center" name="target" position="170,295" size="360,80" transparent="1" valign="center" zPosition="2"/>
@@ -532,9 +537,9 @@ self.autoResize()
 	<!-- Timeshift Location Box -->
 	<screen name="TimeshiftLocationBox" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
 		<panel name="FullScreenWindow" />
-		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,150" transparent="1" zPosition="2"/>
-		<widget name="booklist" position="650,335" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
-		<widget name="textbook" position="650,295" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
+		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,230" transparent="1" zPosition="2"/>
+		<widget name="booklist" position="650,410" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
+		<widget name="textbook" position="650,380" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
 		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;22" halign="center" name="target" position="170,295" size="360,80" transparent="1" valign="center" zPosition="2"/>
