@@ -58,8 +58,12 @@
 		<widget name="lab1" position="0,10" size="1280,620" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 		<widget name="timeline_text" position="0,10" size="1280,30" backgroundColor="black" foregroundColor="white" transparent="0" zPosition="0" />
 		<widget name="bouquetlist" position="0,35" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="4" transparent="0" />
-		<widget name="list" position="0,65" size="1280,590" scrollbarMode="showNever" zPosition="1" transparent="0"
-		        backgroundColor="background" EntryForegroundColorSelected="black" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="white" ZapForegroundColorSelected="white" />
+		<widget name="list" position="0,65" size="1280,590" scrollbarMode="showNever" zPosition="1" transparent="1"
+		        backgroundColor="#00022b"
+		        EntryBackgroundColor="#00022b" EntryBackgroundColorNow="#00033c" RecordBackgroundColor="#450000" ZapBackgroundColor="#003c03"
+		        EntryBackgroundColorSelected="#d8c653" EntryBackgroundColorNowSelected="#d8c664" RecordBackgroundColorSelected="#ffc653" ZapBackgroundColorSelected="#c6d864"
+		        EntryForegroundColor="white" EntryForegroundColorNow="white" RecordForegroundColor="white" ZapForegroundColor="white"
+		        EntryForegroundColorSelected="black" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" />
 		<widget name="timeline_now" position="0,50" zPosition="3" size="19,615" pixmap="easy-skin-aus-hd/timeline-now.png" alphatest="blend" />
 		<panel name="FullScreenLowColourPanel" />
 		<panel name="FullscreenLowMenuButtonPanel"/>
@@ -72,7 +76,7 @@
 		<widget position="0,270" size="1280,390" name="lab1" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="#15215b" transparent="0" />
 	    <ePixmap position="0,0" size="1280,720" pixmap="epg/singlechanselection.png" zPosition="-1"/>
 		<widget position="880,20" size="388,218" source="session.VideoPicture" render="Pig" zPosition="3" backgroundColor="#ff000000" />
-	    <widget position="880,2" size="388,18" source="session.Event_Now" render="Progress" pixmap="screens/progress.png" foregroundColor="#FFFFFF" transparent="1" zPosition="0" alphatest="blend" >
+	    <widget position="880,2" size="388,18" source="session.Event_Now" render="Progress" pixmap="screens/progress.png" foregroundColor="#FFFFFF" transparent="1" zPosition="0" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<eLabel position="880,20" size="388,25" zPosition="4" backgroundColor="#a0000000" />
@@ -99,7 +103,11 @@
 		<widget position="20,75" size="830,217" name="bouquetlist" foregroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" />
 		<widget position="0,270" size="1280,30" name="timeline_text" backgroundColor="#010242" foregroundColor="#00FEE620" transparent="1" zPosition="1" />
 		<widget position="0,305" size="1280,360" name="list" scrollbarMode="showNever" zPosition="1" transparent="1"
-		        backgroundColor="background" EntryForegroundColorSelected="black" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="white" ZapForegroundColorSelected="white" />
+		        backgroundColor="#00022b"
+		        EntryBackgroundColor="#00022b" EntryBackgroundColorNow="#00033c" RecordBackgroundColor="#450000" ZapBackgroundColor="#003c03"
+		        EntryBackgroundColorSelected="#d8c653" EntryBackgroundColorNowSelected="#d8c664" RecordBackgroundColorSelected="#ffc653" ZapBackgroundColorSelected="#c6d864"
+		        EntryForegroundColor="white" EntryForegroundColorNow="white" RecordForegroundColor="white" ZapForegroundColor="white"
+		        EntryForegroundColorSelected="black" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" />
 		<widget position="0,300" size="19,370" name="timeline_now" zPosition="3" pixmap="epg/timeline-now-pig.png" alphatest="on" />
 		<panel name="FullScreenLowColourPanel" />
 		<panel name="FullscreenLowMenuButtonPanel"/>
