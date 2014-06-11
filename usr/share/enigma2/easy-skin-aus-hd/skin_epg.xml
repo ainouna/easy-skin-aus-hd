@@ -1,5 +1,5 @@
 <skin>
-	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" zPosition="10" title="EPG Selection">
+	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Selection">
 		<panel name="FullScreenWindow" />
 		<widget name="list" position="155, 73" size="995, 425" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="Event" render="Label" position="157, 515" size="995, 104" font="Regular;18" foregroundColor="grey" backgroundColor="background" transparent="1">
