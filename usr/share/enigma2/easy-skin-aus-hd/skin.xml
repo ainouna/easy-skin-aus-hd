@@ -385,6 +385,10 @@ self.autoResize()
 		<widget name="text" position="0,0" size="0,0" font="Regular;22" />
 		<widget name="list" position="10,10" size="220,50" enableWrapAround="1" />
 	</screen>
+	<screen name="RecordTimerQuestion1" position="center,center" size="240,95" zPosition="5" flags="wfNoBorder" >
+		<widget name="text" position="0,0" size="0,0" font="Regular;22" />
+		<widget name="list" position="10,10" size="220,75" enableWrapAround="1" />
+	</screen>
 	<screen name="Console" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Command execution...">
 		<panel name="FullScreenWindow" />
 		<widget name="text" position="55,100" size="1060,520" transparent="1" font="Console;21"/>
