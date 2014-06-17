@@ -230,10 +230,11 @@
 	<!-- Timer edit list -->
 	<screen flags="wfNoBorder" name="TimerEditList" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer Editor">
 		<panel name="FullScreenWindow" />
-		<widget position="590, 145" size="610, 450" name="timerlist" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="590, 90" size="610, 500" name="timerlist" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_400x255.png" position="50,90" size="400,255" alphatest="on" />
+		<widget name="description" position="70,100" size="360,230"  font="Regular;20" halign="left" transparent="1" valign="center" zPosition="2"/>
 		<panel name="FullscreenInfoButtonPanel"/>
 		<panel name="FullScreenColourPanel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tv_recorded.png" position="250,155" size="300,470" zPosition="2"/>
 	</screen>
 	<!-- Timer entry -->
 	<screen flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer entry">
