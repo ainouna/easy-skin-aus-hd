@@ -176,27 +176,26 @@
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
 		<panel name="FullscreenHelpButtonPanel" />
-		<widget name="waitingtext" position="55, 135" size="760, 448" backgroundColor="background" zPosition="4" font="Regular;22" halign="center" valign="center"/>
-		<widget source="Service" render="Label" position="280, 95" zPosition="1" size="190, 22" font="Named;18" halign="center" backgroundColor="background" transparent="1" foregroundColor="grey">
-			<convert type="MovieInfo">FileSize</convert>
-		</widget>
-		<widget name="list" backgroundColor="background" position="55, 135" size="752,450" enableWrapAround="1" zPosition="1"/>
-		<widget name="freeDiskSpace" backgroundColor="un44000000" position="55, 593" size="755, 25" font="Regular;22" halign="center" foregroundColor="foreground"/>
-		<widget source="Service" render="Label" position="825, 102" backgroundColor="background" zPosition="1" size="320, 44" font="Regular; 19" halign="center" foregroundColor="white">
+		<widget position="50,95" size="720,500" name="waitingtext" font="Regular;22" halign="center" valign="center" backgroundColor="background" zPosition="4" />
+		<widget position="50,95" size="720,500" name="list" enableWrapAround="1" scrollbarMode="showAlways" backgroundColor="background" />
+		<widget position="50,600" size="720,25" name="freeDiskSpace" font="Named;20" halign="center" backgroundColor="background" />
+		<widget position="780,75" size="420,25" source="Service" render="Label" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="background" zPosition="1" >
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget source="Service" render="Label" position="830, 150" backgroundColor="background" zPosition="1" size="320, 220" font="Regular; 17" halign="left" foregroundColor="grey">
+		<widget position="780,120" size="420,200" source="Service" render="Label" font="Regular;17" halign="left" backgroundColor="background" zPosition="1" >
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
-		<widget source="Service" render="Label" position="825, 374" backgroundColor="background" zPosition="1" size="320, 22" font="Regular; 20" halign="center" foregroundColor="white">
+		<widget position="780,340" size="420,250" source="Service" render="Label" font="Regular;17" halign="left" backgroundColor="background" zPosition="1" >
+			<convert type="EventName">ExtendedDescription</convert>
+		</widget>
+		<widget position="800,600" size="180,22" source="Service" render="Label" font="Named;18" halign="left" backgroundColor="background" zPosition="1" >
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget source="Service" render="Label" position="830, 403" backgroundColor="background" zPosition="1" size="320, 220" font="Regular; 17" foregroundColor="grey">
-			<convert type="EventName">ExtendedDescription</convert>
+		<widget position="980,600" size="200, 22" source="Service" render="Label" font="Named;18" halign="right" backgroundColor="background" zPosition="1" >
+			<convert type="MovieInfo">FileSize</convert>
 		</widget>
 		<widget backgroundColor="background" name="DescriptionBorder" position="0,0" size="0,0"/>
-		<eLabel position="820, 80" size="1, 546" backgroundColor="crypt_emm"/>
 	</screen> 
 	<!-- Media Portal -->
 	<screen name="haupt_Screen" position="0,0" size="1280,720" flags="wfNoBorder">
