@@ -255,9 +255,10 @@
 	<!-- Timer sanity conflict -->
 	<screen flags="wfNoBorder" name="TimerSanityConflict" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer sanity error">
 		<panel name="FullScreenWindow" />
-		<widget name="list" position="385,195" scrollbarMode="showOnDemand" size="510,200" transparent="1" zPosition="2"/>
-		<widget name="timer1" position="120,415" scrollbarMode="showOnDemand" size="510,200" transparent="1" zPosition="2"/>
-		<widget name="timer2" position="650,415" scrollbarMode="showOnDemand" size="510,200" transparent="1" zPosition="2"/>
+		<widget source="lab1" render="Label" position="120, 85" size="510, 24" zPosition="2" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1"/>
+		<widget source="lab2" render="Label" position="650, 85" size="510, 24" zPosition="2" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1"/>
+		<widget name="timer1" position="120,115" scrollbarMode="showOnDemand" size="510,500" transparent="1" zPosition="2"/>
+		<widget name="timer2" position="650,115" scrollbarMode="showOnDemand" size="510,500" transparent="1" zPosition="2"/>
 		<panel name="FullScreenColourPanel" />
 	</screen>
 	<!-- Timer Selection -->
