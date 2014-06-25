@@ -94,7 +94,7 @@
 	<screen backgroundColor="background" flags="wfNoBorder" name="About" position="0,0" size="1280,720" title="About">
 		<panel name="FullScreenWindow" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" zPosition="2" />
-		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="500,115" size="580,379" transparent="1" zPosition="2" />
+		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="500,115" size="730,475" transparent="1" zPosition="2" />
 	</screen>
 
 <!-- Network Information (MENU > Information > Network) Screen -->
