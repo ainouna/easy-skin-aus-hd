@@ -65,7 +65,8 @@
 		</widget>
 	</screen>	
 
-	<!-- Information (MENU > Information) Menu -->
+<!-- Information (MENU > Information) Menu -->
+
 	<screen backgroundColor="background" flags="wfNoBorder" name="Menu" position="0,0" size="1280,720" title="Information">
 		<panel name="FullScreenWindow" />
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_tv.png" position="200,100" size="300,500" zPosition="2" />
@@ -81,9 +82,45 @@
 		</widget>
 	</screen>
 
+<!-- Screen layout template for Information (MENU > Information) Screens -->
+
+	<screen name="SystemInfoPanel">
+		<panel name="FullScreenWindow" />
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" zPosition="2" />
+	</screen>
+
+	<screen name="SystemInfoWidgetPanel">
+		<panel  position="500,115" size="730,475" >
+			<panel name="SystemInfoWidget" />
+		</panel>
+	</screen>
+
+<!-- Widget layout template for Information (MENU > Information) Screens -->
+
+	<screen name="SystemInfoWidget">
+		<widget source="list" render="Listbox" position="0,0" size="730,475" scrollbarMode="showOnDemand" transparent="1" zPosition="2">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					# 0   100 200 300 400 500 600 700
+					# |   |   |   |   |   |   |   |
+					# 00000000000000000000000000000 Heading, larger font
+					#  1111111 22222222222222222222 Normal label/value
+					# 33333333 44444444444444444444 Heading label/value, large font
+					MultiContentEntryText(pos = (0, 1), size = (730, 25), font = 1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a heading, whole line, large font
+					MultiContentEntryText(pos = (25, 1), size = (175, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a label
+					MultiContentEntryText(pos = (225, 1), size = (505, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the information
+					MultiContentEntryText(pos = (0, 1), size = (200, 25), font = 1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is a label, large font
+					MultiContentEntryText(pos = (225, 1), size = (505, 25), font = 1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the information, large font
+					],
+					"fonts": [gFont("Regular", 22),gFont("Regular", 24)],
+					"itemHeight": 25,
+					"selectionEnabled": False,
+				}
+			</convert>
+		</widget>
+	</screen>
+
 <!-- About Information (MENU > Information > About) Screen -->
-<!-- Devices Information (MENU > Information > Devices) Screen -->
-<!-- Memory Information (MENU > Information > Memory) Screen -->
 
 <!--
  |  The height of the window widget that holds the data should be sized to 
@@ -92,9 +129,55 @@
  +-->
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="About" position="0,0" size="1280,720" title="About">
-		<panel name="FullScreenWindow" />
-		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" zPosition="2" />
-		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="500,115" size="730,475" transparent="1" zPosition="2" />
+		<panel name="SystemInfoPanel" />
+		<panel name="SystemInfoWidgetPanel" />
+	</screen>
+
+<!-- Devices Information (MENU > Information > Devices) Screen -->
+
+	<screen backgroundColor="background" flags="wfNoBorder" name="Devices" size="1280,720" title="Device Information">
+		<panel name="SystemInfoPanel" />
+		<widget source="list" render="Listbox" position="500,115" size="730,475" scrollbarMode="showOnDemand" transparent="1" zPosition="2">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					# 0   100 200 300 400 500 600 700
+					# |   |   |   |   |   |   |   |
+					# 00000000000000000000000000000 Heading, larger font
+					#  1111111 22222222222222222222 Normal label/value
+					# 33333333 44444444444444444444 Heading label/value, large font
+					#  5555555 6666666666666 777777 HDD entry, DLNA type
+					#   888888 9999 AAAAAA BBBBBBBB Filesystem, smaller font
+					#  CCCCCCCCCCCCCCCCCCCCCCCCCCCC Wide filesystem name, smaller font
+					#  DDDDDDDDDDDDDDDDDDDDDDDDDDDD Wide DLNA name
+					MultiContentEntryText(pos = (0, 1), size = (730, 25), font = 1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a heading, whole line, large font
+					MultiContentEntryText(pos = (25, 1), size = (175, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a label
+					MultiContentEntryText(pos = (225, 1), size = (505, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the information
+					MultiContentEntryText(pos = (0, 1), size = (200, 25), font = 1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is a label, large font
+					MultiContentEntryText(pos = (225, 1), size = (505, 25), font = 1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the information, large font
+
+					MultiContentEntryText(pos = (25, 1), size = (175, 25), font = 0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is a HDD name
+					MultiContentEntryText(pos = (225, 1), size = (325, 25), font = 0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is a HDD type
+					MultiContentEntryText(pos = (575, 1), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is a HDD size
+					MultiContentEntryText(pos = (50, 1), size = (150, 25), font = 2, flags = RT_HALIGN_LEFT, text = 8), # index 8 is a filesystem name
+					MultiContentEntryText(pos = (225, 1), size = (100, 25), font = 2, flags = RT_HALIGN_LEFT, text = 9), # index 9 filesystem type
+					MultiContentEntryText(pos = (350, 1), size = (150, 25), font = 2, flags = RT_HALIGN_LEFT, text = 10), # index 10 filesystem size
+					MultiContentEntryText(pos = (525, 1), size = (205, 25), font = 2, flags = RT_HALIGN_LEFT, text = 11), # index 11 filesystem free
+					MultiContentEntryText(pos = (25, 1), size = (705, 25), font = 2, flags = RT_HALIGN_LEFT, text = 12), # index 12 is a whole line filesystem name
+					MultiContentEntryText(pos = (25, 1), size = (705, 25), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is a whole line DLNA name
+					],
+					"fonts": [gFont("Regular", 22),gFont("Regular", 24), gFont("Regular", 21)],
+					"itemHeight": 25,
+					"selectionEnabled": False,
+				}
+			</convert>
+		</widget>
+	</screen>
+
+<!-- Memory Information (MENU > Information > Memory) Screen -->
+
+	<screen backgroundColor="background" flags="wfNoBorder" name="SystemMemoryInfo" size="1280,720" title="Memory Information">
+		<panel name="SystemInfoPanel" />
+		<panel name="SystemInfoWidgetPanel" />
 	</screen>
 
 <!-- Network Information (MENU > Information > Network) Screen -->
@@ -106,22 +189,20 @@
  |  the first place.
  +-->
 
-	<screen backgroundColor="background" flags="wfNoBorder" name="SystemNetworkInfo" size="1280,720" title="About">
-		<panel name="FullScreenWindow" />
-		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" zPosition="2" />
+	<screen backgroundColor="background" flags="wfNoBorder" name="SystemNetworkInfo" size="1280,720" title="Network Information">
+		<panel name="SystemInfoPanel" />
 		<widget backgroundColor="window-bg" font="Regular;20" halign="left" position="500,115" render="Label" size="120,21" source="IFtext" transparent="1" zPosition="10" />
 		<widget backgroundColor="window-bg" font="Regular;20" halign="left" source="IF" render="Label" position="677,115" size="600,21" transparent="1" zPosition="10" />
 		<widget backgroundColor="window-bg" font="Regular;20" halign="left" source="Statustext" render="Label" position="500,138" size="115,21" transparent="1" zPosition="10" />
 		<widget alphatest="on" name="statuspic" pixmaps="buttons/button_green.png,buttons/button_green_off.png" position="677,138" zPosition="10" size="15,16" transparent="1" />
-		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="500,185" size="580,560" transparent="1" zPosition="2" />
+		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="500,185" size="580,425" transparent="1" zPosition="2" />
 	</screen>
 
 <!-- Sevice Information (MENU > Information > Service) Screens -->
 
 	<screen backgroundColor="un44000000" flags="wfNoBorder" name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo">
-		<panel name="FullScreenWindow" />
+		<panel name="SystemInfoPanel" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" />
 		<widget name="infolist" position="500,115" scrollbarMode="showOnDemand" selectionDisabled="1" size="780,495" transparent="1" />
 	</screen>
 
@@ -148,21 +229,5 @@
 		<eLabel font="Regular;23" position="10,20" size="380,23" text="Translation:" />
 		<widget font="Regular;20" position="10,55" render="Label" size="380,20" source="TranslatorName" />
 		<widget font="Regular;20" position="10,100" render="Label" size="380,250" source="TranslationInfo" />
-	</screen>
-
-<!-- ??? Screen -->
-
-<screen backgroundColor="background" flags="wfNoBorder" name="SystemMemoryInfo" size="1280,720" title="About">
-		<panel name="FullScreenWindow" />
-		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2" />
-		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="630,190" size="580,379" transparent="1" zPosition="2" />
-	</screen>
-
-<!-- ??? Screen -->
-
-<screen backgroundColor="background" flags="wfNoBorder" name="Devices" size="1280,720" title="About">
-		<panel name="FullScreenWindow" />
-		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2" />
-		<widget font="Regular;22" halign="left" name="AboutScrollLabel" position="630,190" size="580,379" transparent="1" zPosition="2" />
 	</screen>
 </skin>
