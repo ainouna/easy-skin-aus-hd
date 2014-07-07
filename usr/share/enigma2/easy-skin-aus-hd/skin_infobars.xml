@@ -105,11 +105,11 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 
-		<!--	Networking activity icon -->
+		<!--	Networking activity icon - this was indicator for updates
 		<ePixmap position="975,568" size="19,22" pixmap="easy-skin-aus-hd/infobar/ico_net_off.png" alphatest="blend" />
 		<widget source="global.OnlineStableUpdateState" render="Pixmap" position="975,568" size="19,22" zPosition="1" pixmap="easy-skin-aus-hd/infobar/ico_net_on.png" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
+		</widget> -->
 
 		<!--	Dolby audio icon -->
 		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_dolby_off.png" position="997,569" size="57,21" alphatest="blend" />

@@ -1020,6 +1020,25 @@ self.autoResize()
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
 		<widget position="590, 170" size="610, 415" name="list" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
+	<screen name="HistoryZapSelector" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
+		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>	  
+		<widget source="menu" render="Listbox" position="590, 170" size="635, 415" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_625x85.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (95, 0), size = (10, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (115, 0), size = (360, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0xbab329),
+						MultiContentEntryText(pos = (115, 20), size = (370, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0xbab329),
+						MultiContentEntryText(pos = (115, 40), size = (280, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0xbab329),
+						MultiContentEntryPixmapAlphaBlend(pos=(0, 5), size=(83, 50), png=6, flags = BT_SCALE)
+					],
+				 "fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
+				 "itemHeight": 85
+				}
+			</convert>
+		</widget>
+	</screen>
 	<screen name="FileManager" position="0,0" size="1280,720" title="File Manager" backgroundColor="un44000000" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />
 		<widget name="list_left_text" font="Regular;28" position="90,70" size="150,35" zPosition="1" foregroundColor="white" backgroundColor="transpBlack" transparent="1"/>
