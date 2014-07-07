@@ -654,19 +654,6 @@ self.autoResize()
 		<widget font="Regular;23" halign="right" name="number" position="145,15" size="80,25" valign="center"/>
 		<widget font="Regular;23" halign="right" name="servicename" position="35,45" size="210,25" valign="center"/>
 	</screen>
-	<screen name="HistoryZapSelector" position="center,center" size="350,240" title="History zap...">
-		<widget source="menu" render="Listbox" position="0,0" size="350,240" scrollbarMode="showOnDemand" transparent="1" zPosition="2">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (10, 0), size = (20, 22), flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-						MultiContentEntryText(pos = (40, 0), size = (290, 22), font = 1, flags = RT_HALIGN_LEFT, text = 2)
-					],
-				 "fonts": [gFont("Regular", 22), gFont("Regular", 20)],
-				 "itemHeight": 22
-				}
-			</convert>
-		</widget>
-	</screen>
 
 	<!-- PVR state -->
 	<screen backgroundColor="transpBlack" flags="wfNoBorder" name="PVRState" position="70,70" size="174,79">
