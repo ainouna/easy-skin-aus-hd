@@ -231,7 +231,6 @@
 		<panel name="SystemInfoPanel" />
 		<panel name="ServiceInfoWidgetPanel" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenMenuButtonPanel" />
 	</screen>
 
 <!-- ??? Menu -->
