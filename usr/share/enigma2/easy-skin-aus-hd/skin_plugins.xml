@@ -66,9 +66,10 @@
 	<screen name="Gmailbodyviewer" position="0,0" size="1280,720" title="Gmail - View Mail"  backgroundColor="un44000000" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />  
 		<panel name="FullScreenColourPanel" />
-		<widget name="author" position="123,140" size="1020,30" transparent="1" halign="left" font="Regular;20" foregroundColor="yellow"/>
-		<widget name="tdate" position="123,170" size="1020,30" transparent="1" halign="left" font="Regular;20" foregroundColor="yellow"/>
-		<widget name="text" position="center,210" size="1020,400" scrollbarMode="showOnDemand" transparent="1" zPosition="2" font="Regular;22" />
+		<widget name="title"  position="100,120" size="1080,30" transparent="1" halign="left" font="Regular;24" foregroundColor="white"/>
+		<widget name="author" position="100,150" size="1080,30" transparent="1" halign="left" font="Regular;20" foregroundColor="grey"/>
+		<widget name="tdate"  position="100,170" size="1080,30" transparent="1" halign="left" font="Regular;20" foregroundColor="grey"/>
+		<widget name="text"  position="100,210" size="1080,400" transparent="1" halign="left" font="Regular;20" scrollbarMode="showOnDemand" />
 	</screen>
 	<screen name="Gmailfeedsscrn" position="0,0" size="1280,720" title="Gmail - Mail List" backgroundColor="un44000000" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />  
