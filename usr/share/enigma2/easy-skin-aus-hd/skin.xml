@@ -266,9 +266,11 @@
 		<panel name="FullScreenWindow" />
 		<widget enableWrapAround="1" name="timerlist" position="650,195" scrollbarMode="showOnDemand" size="510,400" transparent="1" zPosition="2"/>
 	</screen>
-	<screen name="ServiceInfoSimple" position="center,center" size="650,300" title="Service info">
-		<widget name="infolist" position="0,0" size="650,300" selectionDisabled="1" />
-	</screen>	
+
+<!-- Popup service information in Channel selection, MENU>show transponder info -->
+	<screen name="ServiceInfoSimple" position="center,center" size="650,320" title="Service Information">
+		<panel name="ServiceInfoSimpleWidgetPanel" />
+	</screen>
 
 	<screen name="BouquetSelector" position="center,center" size="560,550" backgroundColor="background">
 		<widget name="menu" position="0,0" size="560,512" itemHeight="30" foregroundColor="white" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
@@ -279,7 +281,6 @@
 	<screen name="ChannelSelection" position="0, 0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Channel Selection">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenMenuButtonPanel" />
 		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
 			    backgroundColorSelected="#41000000"
 			    selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png"
