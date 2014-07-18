@@ -124,7 +124,7 @@
 		<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="#010242" foregroundColor="#00FEE620" transparent="1" zPosition="0" />
 		<widget name="bouquetlist" position="0,75" size="1280,85" itemHeight="42" backgroundColor="#15215b" foregroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="0,75" size="1280,85" backgroundColor="#15215b" EntryForegroundColorSelected="#0015215b" EntryForegroundColorNowSelected="#0015215b" RecordForegroundColorSelected="#0015215b" ZapForegroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
-		<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="epg/timeline-now.png" alphatest="blend" />
+		<widget name="timeline_now" position="0,70" zPosition="3" size="19,95" pixmap="epg/timeline-now-infobar.png" alphatest="blend" />
 		<panel name="FullscreenSmallRedPanel"/>
 		<panel name="FullscreenSmallGreenPanel"/>
 		<panel name="FullscreenSmallYellowPanel"/>
