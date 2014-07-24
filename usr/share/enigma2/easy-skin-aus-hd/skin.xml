@@ -3,7 +3,7 @@
 		<resolution xres="1280" yres="720" bpp="32"/>
 	</output>
 	<colors>
-		<color name="background" value="#41000000"/>
+		<color name="background" value="#44000000"/>
 		<color name="background2" value="#25000000"/>
 		<color name="black" value="#00000000"/>
 		<color name="blue" value="#006565ff"/>
@@ -23,7 +23,7 @@
 		<color name="tibline" value="#001d77aa"/>
 		<color name="transparent" value="#ffffffff"/>
 		<color name="transparent2" value="#ff000000"/>
-		<color name="transpBlack" value="#30000000"/>
+		<color name="transpBlack" value="#44000000"/>
 		<color name="transpWhite" value="#77ffffff"/>
 		<color name="transpyellow" value="#33bab329"/>
 		<color name="un0" value="#00000000"/>
