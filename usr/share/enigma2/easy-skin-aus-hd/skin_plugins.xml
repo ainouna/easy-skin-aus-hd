@@ -61,7 +61,6 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<widget name="info" position="605, 115" size="150,50" font="Regular;20" halign="left"/>
 	</screen>
 	<screen name="Gmailbodyviewer" position="0,0" size="1280,720" title="Gmail - View Mail"  backgroundColor="un44000000" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />  
