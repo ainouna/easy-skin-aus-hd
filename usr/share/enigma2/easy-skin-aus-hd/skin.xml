@@ -557,7 +557,7 @@ self.autoResize()
 		<widget name="yellow" position="0,0" size="0,0"/>
 		<widget name="blue" position="0,0" size="0,0"/>
 	</screen>
-	<screen name="MessageBoxTemplate">
+        <screen name="MessageBoxTemplate" zPosition="4">
 		<widget name="text" position="65,8" size="100%,0" font="Regular;22" />
 		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="0,0" size="53,53" alphatest="on" />
 		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,0" size="53,53" alphatest="on" />
@@ -567,10 +567,10 @@ self.autoResize()
 self.autoResize()
 		</applet>
 	</screen>
-	<screen name="MessageBox" position="center,center" size="60%,10">
+        <screen name="MessageBox" position="center,center" size="60%,10" zPosition="4">
 		 <panel name= "MessageBoxTemplate" />
 	</screen>
-	<screen name="MessageBoxSimple" position="center,center" size="60%,10">
+        <screen name="MessageBoxSimple" position="center,center" size="60%,10" zPosition="4">
 		 <panel name= "MessageBoxTemplate" />
 	</screen>
 	<screen name="InputDeviceSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Input device">
@@ -677,7 +677,7 @@ self.autoResize()
 		<widget backgroundColor="#44000000" font="Console;16" halign="center" name="key0" position="140,195" size="120,35" valign="center"/>
 		<widget backgroundColor="#44000000" font="Console;16" halign="center" name="help2"  position="260,195" size="120,30" valign="center"/>
 	</screen>
- 	<!-- Picture in picture -->
+	<!-- Picture in picture -->
 	<screen name="PictureInPicture" position="400,60" zPosition="-1" size="240,192" flags="wfNoBorder">
 		<widget name="video" position="0,0" size="240,192" backgroundColor="transparent" />
 	</screen>
