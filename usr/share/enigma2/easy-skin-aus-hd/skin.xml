@@ -3,21 +3,25 @@
 		<resolution xres="1280" yres="720" bpp="32"/>
 	</output>
 	<colors>
+		<color name="black" value="#00000000"/>
+		<color name="darkergrey" value="#00333333"/>
+		<color name="darkgrey" value="#00666666"/>
+		<color name="grey" value="#00999999"/>
+		<color name="white" value="#00ffffff"/>
+		<color name="red" value="#00ff2525"/>
+		<color name="yellow" value="#00d2d225"/>
+		<color name="green" value="#003f9614"/>
+		<color name="blue" value="#005f5fff"/>
+
 		<color name="background" value="#44000000"/>
 		<color name="background2" value="#25000000"/>
-		<color name="black" value="#00000000"/>
-		<color name="blue" value="#006565ff"/>
 		<color name="crypt_back" value="#25000000"/>
 		<color name="crypt_ecm" value="#00bcb5e6"/>
 		<color name="crypt_emm" value="#0c1a58a5"/>
 		<color name="dark" value="#00294a6b"/>
-		<color name="darkgrey" value="#00666666"/>
 		<color name="foreground" value="#00dddddd"/>
-		<color name="green" value="#00389416"/>
-		<color name="grey" value="#00999999"/>
 		<color name="listbox" value="#0075a6ff"/>
 		<color name="rds_text_bg" value="#00003258"/>
-		<color name="red" value="#00ff2525"/>
 		<color name="rssviewtop" value="#00005050"/>
 		<color name="rssviewtop2" value="#0038465b"/>
 		<color name="tibline" value="#001d77aa"/>
@@ -61,8 +65,6 @@
 		<color name="une5b243" value="#00e5b243"/>
 		<color name="unf0b400" value="#00f0b400"/>
 		<color name="unff0000" value="#00ff0000"/>
-		<color name="white" value="#00ffffff"/>
-		<color name="yellow" value="#00bab329"/>
 		
 		<color name="fondoazul" value="#0001090f" />
 		<color name="rwhite" value="#00ffffff" />
@@ -74,9 +76,7 @@
 		<color name="un363636" value="#00363636" />
 		<color name="progresoazul" value="#1130608f" />
 		<color name="twhite" value="#10ffffff" />
-		<color name="naranja" value="#00daa82d" />
 		<color name="un22363636" value="#22363636" />
-		<color name="ungrisalt" value="#11161616" />
 		<color name="abackground" value="#1300070d" />
 	</colors>
 	<fonts>
