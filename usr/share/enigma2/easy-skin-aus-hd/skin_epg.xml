@@ -96,7 +96,7 @@
 		<widget position="900,240" size="330,25" source="global.CurrentTime" render="Label" font="Regular;22" valign="bottom" foregroundColor="#FFFFFF" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%a, %d %b %Y %H:%M</convert>
 		</widget>
-		<widget position="20,75" size="830,217" name="bouquetlist" foregroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" font="Console;22" />
+		<widget position="20,75" size="830,217" name="bouquetlist" foregroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" />
 		<widget position="0,270" size="1280,30" name="timeline_text" backgroundColor="#010242" foregroundColor="#00FEE620" transparent="1" zPosition="1" />
 		<widget position="0,305" size="1280,360" name="list" scrollbarMode="showNever" zPosition="1" transparent="1" backgroundColor="#00022b"
 			ServiceBackgroundColor="#00022b" ServiceBackgroundColorNow="#00056f" ServiceForegroundColor="white" ServiceForegroundColorNow="white"
