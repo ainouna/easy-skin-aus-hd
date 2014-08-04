@@ -56,7 +56,11 @@
 
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Electronic Program Guide">
 		<widget name="lab1" position="0,30" size="1280,640" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-		<widget name="timeline_text" position="0,30" size="1280,30" backgroundColor="black" foregroundColor="white" transparent="0" zPosition="0" />
+		<widget position="25,0" size="825,30" source="Title" render="Label" font="Regular;25" valign="bottom" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="#00151515" zPosition="1" />
+		<widget position="900,0" size="330,30" source="global.CurrentTime" render="Label" font="Regular;20" valign="bottom" foregroundColor="#00FFFFFF" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a, %d %b %Y %H:%M</convert>
+		</widget>
+		<widget name="timeline_text" position="0,30" size="1280,30" backgroundColor="#00010242" foregroundColor="#00FEE620"  transparent="1" zPosition="0" />
 		<widget name="bouquetlist" position="0,35" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="0,65" size="1280,590" scrollbarMode="showNever" zPosition="1" transparent="1" backgroundColor="#0000022b"
 			ServiceBackgroundColor="#0000022b" ServiceBackgroundColorNow="#0000056f" ServiceForegroundColor="white" ServiceForegroundColorNow="white"
@@ -121,10 +125,10 @@
 		</widget>
 		<widget source="Title" render="Label" position="20,10" size="850,43" font="Regular;32" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="#00151515" zPosition="1" />
 		<widget name="lab1" position="0,50" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="#0015215b" transparent="0" />
-		<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="#00010242" foregroundColor="#00FEE620" transparent="1" zPosition="0" />
+		<widget name="timeline_text" position="0,50" size="1280,25" backgroundColor="#00010242" foregroundColor="#00FEE620" transparent="1" zPosition="0" />
 		<widget name="bouquetlist" position="0,75" size="1280,85" itemHeight="42" backgroundColor="#0015215b" foregroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget name="list" position="0,75" size="1280,85" backgroundColor="#0015215b" EntryForegroundColorSelected="#0015215b" RecordForegroundColorSelected="#0015215b" ZapForegroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
-		<widget name="timeline_now" position="0,70" zPosition="3" size="19,95" pixmap="epg/timeline-now-infobar.png" alphatest="blend" />
+		<widget name="timeline_now" position="0,72" zPosition="3" size="19,91" pixmap="epg/timeline-now-infobar.png" alphatest="blend" />
 		<panel name="FullscreenSmallRedPanel"/>
 		<panel name="FullscreenSmallGreenPanel"/>
 		<panel name="FullscreenSmallYellowPanel"/>
