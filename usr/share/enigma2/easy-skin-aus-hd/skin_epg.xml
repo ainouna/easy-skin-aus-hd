@@ -1,6 +1,7 @@
 <skin>
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Selection">
 		<panel name="FullScreenWindow" />
+		<widget name="lab1" position="155, 73" size="995, 546" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="background" transparent="0" />
 		<widget name="list" position="155, 73" size="995, 425" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="Event" render="Label" position="157, 515" size="995, 104" font="Regular;18" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
