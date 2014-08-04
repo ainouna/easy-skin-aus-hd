@@ -5,6 +5,7 @@
 		<widget source="Event" render="Label" position="157, 515" size="995, 104" font="Regular;18" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
+		<widget name="number" position="157, 515" size="995, 104" font="Regular;22" backgroundColor="background" transparent="0" />
 		<eLabel position="50, 510" size="1180, 1" backgroundColor="crypt_emm"/>
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel"/>
