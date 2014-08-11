@@ -89,25 +89,25 @@
 		<widget position="880,2" size="388,18" source="session.Event_Now" render="Progress" pixmap="screens/progress.png" foregroundColor="#FFFFFF" transparent="1" zPosition="0" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget position="770,20" size="90,40" source="Event" render="Pixmap" pixmap="epg/icetv_90x40.png" alphatest="blend" zPosition="0">
-			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
 		<widget position="880,20" size="388,25" source="session.CurrentService" render="Label" font="Regular;22" foregroundColor="#00FEE620" borderWidth="1" borderColor="#0015215b" transparent="1" valign="top" halign="center" noWrap="1" zPosition="5" >
 			<convert type="ServiceName">Name</convert>
 		</widget>		
-		<widget position="25,40" size="65,30" source="Event" render="Label" halign="right" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#FEE620">
+		<widget position="25,40" size="65,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#FEE620">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget position="120,40" size="650,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#FEE620">
+		<widget position="120,40" size="760,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#FEE620">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget position="25,75" size="825,125" source="Event" render="Label" zPosition="1" font="Regular;22" foregroundColor="#00ffffff" backgroundColor="#0015215b" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget position="25,220" size="825,45" source="Title" render="Label" font="Regular;28" valign="bottom" transparent="1" foregroundColor="#FFFFFF" backgroundColor="#00151515" zPosition="1" />
-		<widget position="900,240" size="330,25" source="global.CurrentTime" render="Label" font="Regular;22" valign="bottom" foregroundColor="#FFFFFF" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
+		<widget position="25,220" size="825,45" source="Title" render="Label" font="Regular;24" valign="bottom" transparent="1" foregroundColor="#FFFFFF" backgroundColor="#00151515" zPosition="1" />
+		<widget position="880,240" size="40,18" source="Event" render="Pixmap" pixmap="epg/icetv_40x18.png" alphatest="blend" zPosition="1">
+			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget position="920,240" size="330,25" source="global.CurrentTime" render="Label" font="Regular;22" valign="bottom" foregroundColor="#FFFFFF" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%a, %d %b %Y %H:%M</convert>
 		</widget>
 		<widget position="20,75" size="830,217" name="bouquetlist" foregroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" />
