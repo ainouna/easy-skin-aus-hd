@@ -135,5 +135,18 @@
 		<widget name="statusbar" position="10,490" size="1080,20" font="Regular;18" foregroundColor="uncccccc" transparent="1"/>
 		<eLabel position="0,518" size="1100,2" backgroundColor="crypt_emm"/>
 		<panel name="FullscreenMenuButtonPanel"/>
+	</screen>
+	<!-- IP Channels -->
+	<screen name="ServerEditor" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" >
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
+		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+	</screen>	
+	<screen name="StreamingChannelFromServerScreen" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" >
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
+		<widget position="590, 145" size="610, 450" name="list" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<ePixmap position="50,195" size="400,200" alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png"/>
+		<widget position="60,205" size="380,180" source="statusbar" render="Label" font="Regular;20" halign="center" valign="center" transparent="1" zPosition="2"/>		
 	</screen>	
 </skin>  
