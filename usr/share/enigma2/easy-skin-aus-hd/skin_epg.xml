@@ -1,6 +1,7 @@
 <skin>
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Selection">
 		<panel name="FullScreenWindow" />
+		<widget name="lab1" position="155, 73" size="995, 546" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="background" transparent="0" />
 		<widget position="770,32" size="40,18" source="Event" render="Pixmap" pixmap="epg/icetv_40x18.png" alphatest="blend" zPosition="1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
@@ -9,6 +10,7 @@
 		<widget source="Event" render="Label" position="157, 515" size="995, 104" font="Regular;18" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
+		<widget name="number" position="157, 515" size="995, 104" font="Regular;22" backgroundColor="background" transparent="0" />
 		<eLabel position="50, 510" size="1180, 1" backgroundColor="crypt_emm"/>
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel"/>
@@ -31,13 +33,13 @@
 		<widget source="Service" render="Picon" position="20,9" size="100,60" zPosition="5" alphatest="blend" backgroundColor="#00151515" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="Title" render="Label" position="135,25" size="800,43" font="Regular;32" transparent="1" foregroundColor="#FEE620" backgroundColor="#00151515" zPosition="1" />
+		<widget source="Title" render="Label" position="135,25" size="800,43" font="Regular;32" transparent="1" foregroundColor="#00FEE620" backgroundColor="#00151515" zPosition="1" />
 		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="#279e9fa4" foregroundColor="#0315215b" />
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="#ff000000" />
 		<widget source="session.CurrentService" render="Label" position="697,82" size="570,25" font="Regular;22" foregroundColor="#00b1762b" borderWidth="2" backgroundColor="#ff000000" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget name="bouquetlist" position="20,130" size="660,540" foregroundColor="#FEE620" backgroundColor="#0315215b" foregroundColorSelected="#00000000" backgroundColorSelected="#00acacac" borderColor="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" />
+		<widget name="bouquetlist" position="20,130" size="660,540" foregroundColor="#00FEE620" backgroundColor="#0315215b" foregroundColorSelected="#00000000" backgroundColorSelected="#00acacac" borderColor="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" />
 		<widget name="lab1" position="20,130" size="660,540" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="#0015215b" transparent="0" />
 		<widget name="list" position="20,130" size="660,540" selectionPixmap="buttons/FocusBar_H36x660.png" zPosition="3" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="now_button" pixmap="epg/now_next_more.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
@@ -46,11 +48,11 @@
 		<widget name="now_button_sel" pixmap="epg/now_next_more_on.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
 		<widget name="next_button_sel" pixmap="epg/now_next_more_on.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
 		<widget name="more_button_sel" pixmap="epg/now_next_more_on.png" position="342,85" zPosition="1" size="152,34" alphatest="on" />
-		<widget name="now_text" position="50,85" zPosition="2" size="120,34" text="NOW" font="Regular;20" halign="center" valign="center" foregroundColor="#FEE620" backgroundColor="#005c5c5c" transparent="1" />
-		<widget name="next_text" position="207,85" zPosition="2" size="120,34" text="NEXT" font="Regular;20" halign="center" valign="center" foregroundColor="#FEE620" backgroundColor="#005c5c5c" transparent="1" />
-		<widget name="more_text" position="361,85" zPosition="2" size="120,34" text="MORE" font="Regular;20" halign="center" valign="center" foregroundColor="#FEE620" backgroundColor="#005c5c5c" transparent="1" />
+		<widget name="now_text" position="50,85" zPosition="2" size="120,34" text="NOW" font="Regular;20" halign="center" valign="center" foregroundColor="#00FEE620" backgroundColor="#005c5c5c" transparent="1" />
+		<widget name="next_text" position="207,85" zPosition="2" size="120,34" text="NEXT" font="Regular;20" halign="center" valign="center" foregroundColor="#00FEE620" backgroundColor="#005c5c5c" transparent="1" />
+		<widget name="more_text" position="361,85" zPosition="2" size="120,34" text="MORE" font="Regular;20" halign="center" valign="center" foregroundColor="#00FEE620" backgroundColor="#005c5c5c" transparent="1" />
 		<widget name="date" position="500,93" size="180,35" font="Regular;18" backgroundColor="#0015215b" valign="center" halign="left" transparent="1" />
-		<widget source="Event" render="Label" position="695,410" size="575,250" font="Regular;22" backgroundColor="#0015215b" foregroundColor="#FEE620" transparent="1" valign="top" zPosition="2">
+		<widget source="Event" render="Label" position="695,410" size="575,250" font="Regular;22" backgroundColor="#0015215b" foregroundColor="#00FEE620" transparent="1" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<panel name="FullScreenLowColourPanel" />
@@ -62,16 +64,26 @@
 
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Electronic Program Guide">
 		<widget name="lab1" position="0,30" size="1280,640" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
+		<widget position="25,0" size="825,30" source="Title" render="Label" font="Regular;25" valign="bottom" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="#00151515" zPosition="1" />
+		<widget position="900,0" size="330,30" source="global.CurrentTime" render="Label" font="Regular;20" valign="bottom" foregroundColor="#00FFFFFF" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%a, %d %b %Y %H:%M</convert>
+		</widget>
 		<widget position="1230,31" size="40,18" source="Event" render="Pixmap" pixmap="epg/icetv_40x18.png" alphatest="blend" zPosition="1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="timeline_text" position="0,30" size="1280,30" backgroundColor="black" foregroundColor="white" transparent="0" zPosition="0" />
+		<widget name="timeline_text" position="0,30" size="1280,30" backgroundColor="#00010242" foregroundColor="#00FEE620" TimelineTicksOn="yes" TimelineTickAlignment="right" TimelineTextPadding="0" transparent="1" zPosition="0" />
+		<widget position="0,52" size="2,7" name="timeline0" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,52" size="2,7" name="timeline1" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,52" size="2,7" name="timeline2" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,52" size="2,7" name="timeline3" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,52" size="2,7" name="timeline4" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,52" size="2,7" name="timeline5" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
 		<widget name="bouquetlist" position="0,35" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="4" transparent="0" />
-		<widget name="list" position="0,65" size="1280,590" scrollbarMode="showNever" zPosition="1" transparent="1" backgroundColor="#00022b"
-			ServiceBackgroundColor="#00022b" ServiceBackgroundColorNow="#00056f" ServiceForegroundColor="white" ServiceForegroundColorNow="white"
-			EntryBackgroundColor="#00022b" RecordBackgroundColor="#8a0000" ZapBackgroundColor="#006f00"
-			EntryBackgroundColorSelected="#d8c653" RecordBackgroundColorSelected="#FF3737" ZapBackgroundColorSelected="#55FF37"
+		<widget name="list" position="0,65" size="1280,590" scrollbarMode="showNever" zPosition="1" transparent="1" backgroundColor="#0000022b"
+			ServiceBackgroundColor="#0000022b" ServiceBackgroundColorNow="#0000056f" ServiceForegroundColor="white" ServiceForegroundColorNow="white"
+			EntryBackgroundColor="#0000022b" RecordBackgroundColor="#008a0000" ZapBackgroundColor="#00006f00"
+			EntryBackgroundColorSelected="#00d8c653" RecordBackgroundColorSelected="#00FF3737" ZapBackgroundColorSelected="#0055FF37"
 			EntryForegroundColor="white" RecordForegroundColor="white" ZapForegroundColor="white"
 			EntryForegroundColorSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" />
 		<widget name="timeline_now" position="0,60" zPosition="3" size="20,600" pixmap="epg/timeline-now.png" alphatest="blend" />
@@ -81,41 +93,47 @@
 		<panel name="FullscreenLowTextButtonPanel"/>
 		<panel name="FullscreenLowHelpButtonPanel"/>
 	</screen>
-	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="#15215b" transparent="0" flags="wfNoBorder">
+	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="#0015215b" transparent="0" flags="wfNoBorder">
 		<!--  lab1 tells the user to wait while gathering data, it then goes away -->
-		<widget position="0,270" size="1280,390" name="lab1" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="#15215b" transparent="0" />
+		<widget position="0,270" size="1280,390" name="lab1" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="#0015215b" transparent="0" />
 		<ePixmap position="0,0" size="1280,720" pixmap="epg/singlechanselection.png" zPosition="-1"/>
 		<widget position="880,20" size="388,218" source="session.VideoPicture" render="Pig" zPosition="3" backgroundColor="#ff000000" />
-		<widget position="880,2" size="388,18" source="session.Event_Now" render="Progress" pixmap="screens/progress.png" foregroundColor="#FFFFFF" transparent="1" zPosition="0" >
+		<widget position="880,2" size="388,18" source="session.Event_Now" render="Progress" pixmap="screens/progress.png" foregroundColor="#00FFFFFF" transparent="1" zPosition="0" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget position="880,20" size="388,25" source="session.CurrentService" render="Label" font="Regular;22" foregroundColor="#00FEE620" borderWidth="1" borderColor="#0015215b" transparent="1" valign="top" halign="center" noWrap="1" zPosition="5" >
 			<convert type="ServiceName">Name</convert>
 		</widget>		
-		<widget position="25,40" size="65,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#FEE620">
+		<widget position="25,40" size="65,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget position="120,40" size="760,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#FEE620">
+		<widget position="120,40" size="760,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget position="25,75" size="825,125" source="Event" render="Label" zPosition="1" font="Regular;22" foregroundColor="#00ffffff" backgroundColor="#0015215b" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget position="25,220" size="825,45" source="Title" render="Label" font="Regular;24" valign="bottom" transparent="1" foregroundColor="#FFFFFF" backgroundColor="#00151515" zPosition="1" />
+		<widget position="25,220" size="825,45" source="Title" render="Label" font="Regular;24" valign="bottom" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="#00151515" zPosition="1" />
 		<widget position="880,240" size="40,18" source="Event" render="Pixmap" pixmap="epg/icetv_40x18.png" alphatest="blend" zPosition="1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget position="920,240" size="330,25" source="global.CurrentTime" render="Label" font="Regular;22" valign="bottom" foregroundColor="#FFFFFF" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
+		<widget position="920,240" size="330,25" source="global.CurrentTime" render="Label" font="Regular;22" valign="bottom" foregroundColor="#00FFFFFF" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%a, %d %b %Y %H:%M</convert>
 		</widget>
 		<widget position="20,75" size="830,217" name="bouquetlist" foregroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" />
-		<widget position="0,270" size="1280,30" name="timeline_text" backgroundColor="#010242" foregroundColor="#00FEE620" transparent="1" zPosition="1" />
-		<widget position="0,305" size="1280,360" name="list" scrollbarMode="showNever" zPosition="1" transparent="1" backgroundColor="#00022b"
-			ServiceBackgroundColor="#00022b" ServiceBackgroundColorNow="#00056f" ServiceForegroundColor="white" ServiceForegroundColorNow="white"
-			EntryBackgroundColor="#00022b" RecordBackgroundColor="#8a0000" ZapBackgroundColor="#006f00"
-			EntryBackgroundColorSelected="#d8c653" RecordBackgroundColorSelected="#FF3737" ZapBackgroundColorSelected="#55FF37"
+		<widget position="0,270" size="1280,30" name="timeline_text" TimelineTicksOn="yes" TimelineTickAlignment="right" TimelineTextPadding="0" backgroundColor="#00010242" foregroundColor="#00FEE620" transparent="1" zPosition="1" />
+		<widget position="0,292" size="2,7" name="timeline0" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,292" size="2,7" name="timeline1" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,292" size="2,7" name="timeline2" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,292" size="2,7" name="timeline3" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,292" size="2,7" name="timeline4" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,292" size="2,7" name="timeline5" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,305" size="1280,360" name="list" scrollbarMode="showNever" zPosition="1" transparent="1" backgroundColor="#0000022b"
+			ServiceBackgroundColor="#0000022b" ServiceBackgroundColorNow="#0000056f" ServiceForegroundColor="white" ServiceForegroundColorNow="white"
+			EntryBackgroundColor="#0000022b" RecordBackgroundColor="#008a0000" ZapBackgroundColor="#00006f00"
+			EntryBackgroundColorSelected="#00d8c653" RecordBackgroundColorSelected="#00FF3737" ZapBackgroundColorSelected="#0055FF37"
 			EntryForegroundColor="white" RecordForegroundColor="white" ZapForegroundColor="white"
 			EntryForegroundColorSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" />
 		<widget position="0,300" size="20,370" name="timeline_now" zPosition="3" pixmap="epg/timeline-now-pig.png" alphatest="blend" />
@@ -125,7 +143,7 @@
 		<panel name="FullscreenLowTextButtonPanel"/>
 		<panel name="FullscreenLowHelpButtonPanel"/>
 	</screen>
-	<screen name="GraphicalInfoBarEPG" position="0,e-200" size="1280,200" backgroundColor="#15215b" transparent="0" flags="wfNoBorder" >
+	<screen name="GraphicalInfoBarEPG" position="0,e-200" size="1280,200" backgroundColor="#0015215b" transparent="0" flags="wfNoBorder" >
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
 		<widget position="770,4" size="40,18" source="Event" render="Pixmap" pixmap="epg/icetv_40x18.png" alphatest="blend" zPosition="1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
@@ -137,12 +155,18 @@
 		<widget source="global.CurrentTime" render="Label" position="910,27" size="350,25" font="Regular;18" foregroundColor="#00b3b3b3" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<widget source="Title" render="Label" position="20,10" size="850,43" font="Regular;32" transparent="1" foregroundColor="#FFFFFF" backgroundColor="#00151515" zPosition="1" />
+		<widget source="Title" render="Label" position="20,10" size="850,43" font="Regular;32" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="#00151515" zPosition="1" />
 		<widget name="lab1" position="0,50" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="#0015215b" transparent="0" />
-		<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="#010242" foregroundColor="#00FEE620" transparent="1" zPosition="0" />
-		<widget name="bouquetlist" position="0,75" size="1280,85" itemHeight="42" backgroundColor="#15215b" foregroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="0" />
-		<widget name="list" position="0,75" size="1280,85" backgroundColor="#15215b" EntryForegroundColorSelected="#0015215b" RecordForegroundColorSelected="#0015215b" ZapForegroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
-		<widget name="timeline_now" position="0,70" zPosition="3" size="19,95" pixmap="epg/timeline-now-infobar.png" alphatest="blend" />
+		<widget name="timeline_text" position="0,50" size="1280,25" TimelineTicksOn="yes" TimelineTickAlignment="right" TimelineTextPadding="0" backgroundColor="#00010242" foregroundColor="#00FEE620" transparent="1" zPosition="0" />
+		<widget position="0,69" size="2,4" name="timeline0" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,69" size="2,4" name="timeline1" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,69" size="2,4" name="timeline2" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,69" size="2,4" name="timeline3" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,69" size="2,4" name="timeline4" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,69" size="2,4" name="timeline5" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget name="bouquetlist" position="0,75" size="1280,85" itemHeight="42" backgroundColor="#0015215b" foregroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="0" />
+		<widget name="list" position="0,75" size="1280,85" backgroundColor="#0015215b" EntryForegroundColorSelected="#0015215b" RecordForegroundColorSelected="#0015215b" ZapForegroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
+		<widget name="timeline_now" position="0,72" zPosition="3" size="19,91" pixmap="epg/timeline-now-infobar.png" alphatest="blend" />
 		<panel name="FullscreenSmallRedPanel"/>
 		<panel name="FullscreenSmallGreenPanel"/>
 		<panel name="FullscreenSmallYellowPanel"/>
@@ -166,7 +190,7 @@
 	<screen name="CrossEPG_Menu" position="0,0" size="1280, 720" backgroundColor="un44000000" title="CrossEPG Menu" flags="wfNoBorder" >
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<eLabel backgroundColor="#9f1313" font="Regular;20" halign="center" text="Exit" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
+		<eLabel backgroundColor="#009f1313" font="Regular;20" halign="center" text="Exit" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
