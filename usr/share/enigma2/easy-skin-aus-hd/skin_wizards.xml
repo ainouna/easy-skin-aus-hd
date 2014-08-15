@@ -146,6 +146,7 @@
 	<screen flags="wfNoBorder" backgroundColor="background" name="StartHDDFormatWizard" position="0,0" size="1280,720" title="Welcome...">
 		<eLabel font="Regular;28" position="575,40" size="585,35" text="Welcome..." transparent="1" zPosition="2"/>
 		<panel name="WizardTemplate"/>
+		<widget font="Regular;20" halign="left" valign="top" name="errors" position="550,365" size="610,308" scrollbarMode="showOnDemand" transparent="1" zPosition="12"/>
 	</screen>
 
 	<!-- Final "Congratulations" Setup Wizard -->
