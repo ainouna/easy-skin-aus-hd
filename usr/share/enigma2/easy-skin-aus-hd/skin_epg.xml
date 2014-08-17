@@ -2,7 +2,7 @@
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Selection">
 		<panel name="FullScreenWindow" />
 		<widget name="lab1" position="155, 73" size="995, 546" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="background" transparent="0" />
-		<widget position="770,32" size="40,18" source="Event" render="Pixmap" pixmap="epg/icetv_40x18.png" alphatest="blend" zPosition="1">
+		<widget position="770,20" size="90,40" source="Event" render="Pixmap" pixmap="epg/icetv_90x40.png" alphatest="blend" zPosition="1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -18,7 +18,14 @@
 		<panel name="FullscreenHelpButtonPanel"/>
 	</screen>
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Selection Multi">
-		<ePixmap pixmap="epg/multiepg.png" position="0,0" size="1280,720" zPosition="-1"/>
+		<widget position="0,0" size="1280,720" source="Event" render="Pixmap" pixmap="epg/multiepg.png" zPosition="-1">
+			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True,Invert</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget position="0,0" size="1280,720" source="Event" render="Pixmap" pixmap="epg/epg_icetv.png" zPosition="-1">
+			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 		<widget position="700,20" size="90,40" source="Event" render="Pixmap" pixmap="epg/icetv_90x40.png" alphatest="blend" zPosition="1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
@@ -96,7 +103,14 @@
 	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="#0015215b" transparent="0" flags="wfNoBorder">
 		<!--  lab1 tells the user to wait while gathering data, it then goes away -->
 		<widget position="0,270" size="1280,390" name="lab1" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="#0015215b" transparent="0" />
-		<ePixmap position="0,0" size="1280,720" pixmap="epg/singlechanselection.png" zPosition="-1"/>
+		<widget position="0,0" size="1280,720" source="Event" render="Pixmap" pixmap="epg/multiepg.png" zPosition="-1">
+			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True,Invert</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget position="0,0" size="1280,720" source="Event" render="Pixmap" pixmap="epg/epg_icetv.png" zPosition="-1">
+			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 		<widget position="880,20" size="388,218" source="session.VideoPicture" render="Pig" zPosition="3" backgroundColor="#ff000000" />
 		<widget position="880,2" size="388,18" source="session.Event_Now" render="Progress" pixmap="screens/progress.png" foregroundColor="#00FFFFFF" transparent="1" zPosition="0" >
 			<convert type="EventTime">Progress</convert>
@@ -145,7 +159,7 @@
 	</screen>
 	<screen name="GraphicalInfoBarEPG" position="0,e-200" size="1280,200" backgroundColor="#0015215b" transparent="0" flags="wfNoBorder" >
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
-		<widget position="770,4" size="40,18" source="Event" render="Pixmap" pixmap="epg/icetv_40x18.png" alphatest="blend" zPosition="1">
+		<widget position="770,4" size="90,40" source="Event" render="Pixmap" pixmap="epg/icetv_90x40.png" alphatest="blend" zPosition="1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
