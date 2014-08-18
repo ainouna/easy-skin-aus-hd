@@ -118,17 +118,18 @@
 					# 00000000000000000000000000000 Heading, larger font
 					#  1111111 22222222222222222222 Normal label/value
 					# 33333333 44444444444444444444 Heading label/value, large font
-					#  1111111 666666666 7777777777 Gateway with gateway and destination
-					# 33333333 888888888 5              Network heading
+					#  1111111 555555555 6666666666 Gateway with gateway and destination
+					# 33333333 777777777 888 9   Network interface heading
 					MultiContentEntryText(pos = (0, 1), size = (730, 25), font = 1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a heading, whole line, large font
 					MultiContentEntryText(pos = (25, 1), size = (175, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a label
 					MultiContentEntryText(pos = (225, 1), size = (505, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the information
 					MultiContentEntryText(pos = (0, 1), size = (200, 25), font = 1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is a label, large font
 					MultiContentEntryText(pos = (225, 1), size = (505, 25), font = 1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the information, large font
-					MultiContentEntryPixmapAlphaTest(pos = (475, 5), size = (15, 16), png = 5), # index 5 is the link state pixmap
-					MultiContentEntryText(pos = (225, 1), size = (225, 25), font = 0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is the network info gateway
-					MultiContentEntryText(pos = (475, 1), size = (265, 25), font = 0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is the network info gateway destination
-					MultiContentEntryText(pos = (225, 1), size = (225, 25), font = 1, flags = RT_HALIGN_LEFT, text = 8), # index 8 is the interface type
+					MultiContentEntryText(pos = (225, 1), size = (225, 25), font = 0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the network info gateway
+					MultiContentEntryText(pos = (475, 1), size = (265, 25), font = 0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is the network info gateway destination
+					MultiContentEntryText(pos = (225, 1), size = (225, 25), font = 1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is the interface type
+					MultiContentEntryText(pos = (475, 1), size = (100, 25), font = 1, flags = RT_HALIGN_LEFT, text = 8), # index 8 internet label
+					MultiContentEntryPixmapAlphaTest(pos = (600, 7), size = (15, 16), png = 9), # index 9 is the link state pixmap
 					],
 					"fonts": [gFont("Regular", 22),gFont("Regular", 24)],
 					"itemHeight": 25,
