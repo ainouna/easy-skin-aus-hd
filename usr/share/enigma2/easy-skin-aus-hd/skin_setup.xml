@@ -95,22 +95,10 @@
 		</panel>
 	</screen>
 
-	<screen name="ServiceInfoWidgetPanel">
-		<panel position="500,115" size="730,475" >
-			<panel name="ServiceInfoWidget" />
-		</panel>
-	</screen>
-
-	<screen name="ServiceInfoSimpleWidgetPanel">
-		<panel position="20,10" size="610,320" >
-			<panel name="ServiceInfoWidget" />
-		</panel>
-	</screen>
-
 <!-- Widget layout template for Information (MENU > Information) Screens -->
 
 	<screen name="SystemInfoWidget">
-		<widget source="list" render="Listbox" position="0,0" size="730,475" scrollbarMode="showOnDemand" transparent="1" zPosition="2">
+		<widget source="list" render="Listbox" position="fill" scrollbarMode="showOnDemand" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					# 0   100 200 300 400 500 600 700
@@ -119,7 +107,7 @@
 					#  1111111 22222222222222222222 Normal label/value
 					# 33333333 44444444444444444444 Heading label/value, large font
 					#  1111111 555555555 6666666666 Gateway with gateway and destination
-					# 33333333 777777777 888 9   Network interface heading
+					# 33333333 777777777 888 9      Network interface heading
 					MultiContentEntryText(pos = (0, 1), size = (730, 25), font = 1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a heading, whole line, large font
 					MultiContentEntryText(pos = (25, 1), size = (175, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a label
 					MultiContentEntryText(pos = (225, 1), size = (505, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the information
@@ -139,10 +127,19 @@
 		</widget>
 	</screen>
 
+<!-- Widget layout template for internet status line in Menu > Information > Network screen -->
+
+	<screen name="SystemInetInfoWidget">
+		<eLabel font="Regular;22" position="0,0" size="200,25" text="Hostname:" transparent="1" zPosition="2"/>
+		<widget name="hostname" position="225,0" size="225,25" font="Regular;22" halign="left" transparent="1" valign="top" zPosition="2"/>
+		<eLabel font="Regular;22" position="475,0" size="100,25" text="Internet:" transparent="1" zPosition="2"/>
+		<widget name="inetstatus" position="600,6" size="15,16" pixmaps="buttons/button_green_off.png,buttons/button_green.png" alphatest="on" zPosition="2"/>
+	</screen>
+
 <!-- Widget layout template for Information (MENU > Service) Screens -->
 
 	<screen backgroundColor="un44000000" flags="wfNoBorder" name="ServiceInfoWidget" position="0,0" size="730,475" title="Service Information">
-		<widget source="infolist" render="Listbox" position="0,0" scrollbarMode="showOnDemand" selectionDisabled="1" size="730,475" transparent="1" >
+		<widget source="infolist" render="Listbox" position="fill" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					# 0   100 200 300 400 500 600 700
@@ -223,14 +220,22 @@
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="SystemNetworkInfo" size="1280,720" title="Network Information">
 		<panel name="SystemInfoPanel" />
-		<panel name="SystemInfoWidgetPanel" />
+		<panel position="500,115" size="730,25" >
+			<panel name="SystemInetInfoWidget" />
+		</panel>
+		<eLabel position="500,152" size="730,2" backgroundColor="darkgrey" zPosition="1" />
+		<panel position="500,165" size="730,425" >
+			<panel name="SystemInfoWidget" />
+		</panel>
 	</screen>
 
 <!-- Sevice Information (MENU > Information > Service) Screens -->
 
 	<screen backgroundColor="un44000000" flags="wfNoBorder" name="ServiceInfo" position="0,0" size="1280,720" title="Service Information">
 		<panel name="SystemInfoPanel" />
-		<panel name="ServiceInfoWidgetPanel" />
+		<panel position="500,115" size="730,475" >
+			<panel name="ServiceInfoWidget" />
+		</panel>
 		<panel name="FullScreenColourPanel" />
 	</screen>
 
