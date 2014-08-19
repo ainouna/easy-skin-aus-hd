@@ -139,7 +139,7 @@
 <!-- Widget layout template for Information (MENU > Service) Screens -->
 
 	<screen backgroundColor="un44000000" flags="wfNoBorder" name="ServiceInfoWidget" position="0,0" size="730,475" title="Service Information">
-		<widget source="infolist" render="Listbox" position="fill" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1" >
+		<widget source="list" render="Listbox" position="fill" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					# 0   100 200 300 400 500 600 700
