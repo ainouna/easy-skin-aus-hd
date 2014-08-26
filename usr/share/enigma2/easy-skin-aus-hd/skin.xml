@@ -1231,7 +1231,7 @@ self.autoResize()
   <widget name="text" position="22,90" size="536,46" font="Regular;40" transparent="1" noWrap="1" halign="right"/>
   <widget name="list" position="20,170" size="540,225" selectionDisabled="1" transparent="1"/>
   <eLabel position="0,408" size="600,2" backgroundColor="crypt_emm"/>
-  <widget name="country" position="0,410" size="600,25" transparent="1" font="Regular;24" halign="center" valign="center" foregroundColor="yellow"/>
+  <widget name="country" position="0,410" size="600,25" transparent="1" font="Regular;20" halign="center" valign="center" foregroundColor="yellow"/>
  </screen>
 
  <screen name="CAidSelect" position="340,134" size="600,502" title="select CAId's">
