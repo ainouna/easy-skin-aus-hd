@@ -269,7 +269,9 @@
 
 <!-- Popup service information in Channel selection, MENU>show transponder info -->
 	<screen name="ServiceInfoSimple" position="center,center" size="650,320" title="Service Information">
-		<panel name="ServiceInfoSimpleWidgetPanel" />
+		<panel position="20,10" size="610,320" >
+			<panel name="ServiceInfoWidget" />
+		</panel>
 	</screen>
 
 	<screen name="BouquetSelector" position="center,center" size="560,550" backgroundColor="background">
