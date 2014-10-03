@@ -182,17 +182,14 @@
 		<widget position="780,75" size="420,25" source="Service" render="Label" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="background" zPosition="1" >
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget position="780,120" size="420,200" source="Service" render="Label" font="Regular;17" halign="left" backgroundColor="background" zPosition="1" >
-			<convert type="MovieInfo">ShortDescription</convert>
+		<widget position="780,120" size="460,450" source="Service" render="Label" font="Regular;20" halign="left" backgroundColor="background" zPosition="1" >
+			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget position="780,340" size="420,250" source="Service" render="Label" font="Regular;17" halign="left" backgroundColor="background" zPosition="1" >
-			<convert type="EventName">ExtendedDescription</convert>
-		</widget>
-		<widget position="800,600" size="180,22" source="Service" render="Label" font="Named;18" halign="left" backgroundColor="background" zPosition="1" >
+		<widget position="800,600" size="180,22" source="Service" render="Label" font="Named;20" halign="left" backgroundColor="background" zPosition="1" >
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget position="980,600" size="200, 22" source="Service" render="Label" font="Named;18" halign="right" backgroundColor="background" zPosition="1" >
+		<widget position="980,600" size="200, 22" source="Service" render="Label" font="Named;20" halign="right" backgroundColor="background" zPosition="1" >
 			<convert type="MovieInfo">FileSize</convert>
 		</widget>
 		<widget backgroundColor="background" name="DescriptionBorder" position="0,0" size="0,0"/>
