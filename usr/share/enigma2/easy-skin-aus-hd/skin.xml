@@ -283,6 +283,8 @@
 	<screen name="ChannelSelection" position="0, 0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Channel Selection">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
+		<panel name="FullscreenMenuButtonPanel" />
+		<panel name="FullscreenHelpButtonPanel" />
 		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
 			    backgroundColorSelected="#41000000"
 			    selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png"
