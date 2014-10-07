@@ -386,7 +386,7 @@
 
 		<!-- Event extended description -->
 		<widget source="session.Event_Now" render="Label" position="74,184" size="567,330" font="Regular; 19" valign="top" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2">
-			<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
 
@@ -422,7 +422,7 @@
 
 		<!-- Event extended description -->
 		<widget source="session.Event_Next" render="Label" position="718,184" size="508,330" font="Regular; 18" valign="top" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
-			<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
 
