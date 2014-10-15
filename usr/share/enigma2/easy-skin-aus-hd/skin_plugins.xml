@@ -148,5 +148,23 @@
 		<widget position="590, 145" size="610, 450" name="list" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<ePixmap position="50,195" size="400,200" alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png"/>
 		<widget position="60,205" size="380,180" source="statusbar" render="Label" font="Regular;20" halign="center" valign="center" transparent="1" zPosition="2"/>		
-	</screen>	
+	</screen>
+	<!-- IP Channels for T-Pod Plugin -->
+	<screen name="RemoteTunerScanner" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" >
+		<eLabel font="Regular;28" position="575,40" size="585,35" text="IPTV Server Scanner" transparent="1" zPosition="2"/>
+		<panel name="FullScreenColourPanel" />
+		<panel name="CommonWizard"/>
+	</screen>
+	<screen name="RemoteTunerServerEditor" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" >
+		<eLabel font="Regular;28" position="575,40" size="585,35" text="IPTV Server Setup" transparent="1" zPosition="2"/>
+		<panel name="FullScreenColourPanel" />
+		<panel name="CommonWizard"/>
+		<widget position="550,365" size="600,250" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>  
+	</screen>
+	<screen name="RemoteTunerServerDownloader" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" >
+		<eLabel font="Regular;28" position="575,40" size="585,35" text="IPTV Server Channel Downloader" transparent="1" zPosition="2"/>
+		<panel name="FullScreenColourPanel" />
+		<panel name="CommonWizard"/>
+		<widget position="550,365" size="600,250" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_585x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>  
+	</screen>
 </skin>  
