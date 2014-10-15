@@ -283,6 +283,8 @@
 	<screen name="ChannelSelection" position="0, 0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Channel Selection">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
+		<panel name="FullscreenMenuButtonPanel" />
+		<panel name="FullscreenHelpButtonPanel" />
 		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
 			    backgroundColorSelected="#41000000"
 			    selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png"
@@ -333,7 +335,7 @@
 		<widget source="ServiceEvent" render="Label" position="50, 146" zPosition="1" size="526, 22" font="Named; 21" halign="center" foregroundColor="white" transparent="1" backgroundColor="black">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="50, 211" zPosition="1" size="526, 22" font="Named; 21" halign="center" transparent="1" foregroundColor="white" backgroundColor="black">
+		<widget source="ServiceEvent" render="Label" position="50, 211" zPosition="1" size="526, 25" font="Named; 21" halign="center" transparent="1" foregroundColor="white" backgroundColor="black">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="50, 176" zPosition="1" size="70,22" font="Named; 19" halign="center" transparent="1" foregroundColor="white" backgroundColor="black">
