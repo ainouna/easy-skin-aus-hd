@@ -356,7 +356,7 @@
 
 		<ePixmap position="50, 597" size="15, 10" pixmap="easy-skin-aus-hd/icons/icon_event.png" alphatest="on"/>
 		<widget position="70, 590" size="70, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" halign="center" transparent="1" backgroundColor="black" foregroundColor="grey">
-			<convert type="EventTime">StartTime</convert>
+			<convert type="EventTime">NextStartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<widget position="140, 590" size="436, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" noWrap="1" transparent="1" backgroundColor="black" foregroundColor="grey">
