@@ -356,7 +356,7 @@
 
 		<ePixmap position="50, 597" size="15, 10" pixmap="easy-skin-aus-hd/icons/icon_event.png" alphatest="on"/>
 		<widget position="70, 590" size="70, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" halign="center" transparent="1" backgroundColor="black" foregroundColor="grey">
-			<convert type="EventTime">StartTime</convert>
+			<convert type="EventTime">NextStartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<widget position="140, 590" size="436, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" noWrap="1" transparent="1" backgroundColor="black" foregroundColor="grey">
@@ -488,6 +488,7 @@ self.autoResize()
 	<!-- Help menu -->
 	<screen flags="wfNoBorder" name="HelpMenu" backgroundColor="un44000000" position="0,0" size="1280,720" title="Help">
 		<panel name="FullScreenWindow" />
+		<panel name="FullscreenHelpButtonPanel" />
 		<widget name="list" position="500,110" scrollbarMode="showOnDemand" size="660,450" transparent="1" zPosition="2"/>
 		<widget alphatest="on" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="250,110" size="154,500" zPosition="10"/>
 		<!--+ For the key indicator pixmaps, "position" is used for
