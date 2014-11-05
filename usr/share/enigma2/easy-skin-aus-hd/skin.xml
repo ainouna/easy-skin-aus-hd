@@ -286,8 +286,7 @@
 		<panel name="FullscreenMenuButtonPanel" />
 		<panel name="FullscreenHelpButtonPanel" />
 		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
-			    backgroundColorSelected="#41000000"
-			    selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png"
+			    backgroundColorSelected="#41002299"
 			    colorServiceDescription="#999999"
 			    colorServiceDescriptionSelected="#bbbbbb"
 			    foregroundColorServiceNotAvail="#777777"
