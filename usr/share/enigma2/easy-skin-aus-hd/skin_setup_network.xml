@@ -18,6 +18,8 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenHelpButtonPanel" />
+		<panel name="FullscreenVKeyIconButtonPanel"/>
+		<widget name="HelpWindow" position="848,338" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel position="55, 155" size="1100, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<widget position="55, 160" size="710, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
@@ -35,8 +37,6 @@
 		<widget source="Adaptertext" render="Label" position="55, 75" size="140,25" zPosition="10" font="Regular;22" transparent="1"/>
 		<widget source="Adapter" render="Label" position="195, 75" size="600, 25" zPosition="10" font="Regular;22" transparent="1"/>
 		<widget source="introduction2" render="Label" position="55, 570" size="740,30" zPosition="10" font="Regular;24" halign="center" transparent="1"/>
-		<widget name="VKeyIcon" pixmap="easy-skin-aus-hd/buttons/key_text.png" position="55, 638" zPosition="10" size="35,25" transparent="1" alphatest="on"/>
-		<widget name="HelpWindow" pixmap="easy-skin-aus-hd/buttons/key_text.png" position="160,115" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 	</screen>
 	<!-- Network name server -->
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Nameserver Setup">
@@ -115,10 +115,9 @@
 	<screen name="NetworkSambaSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Network Setup - DynDNS Setup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="55, 155" zPosition="1" size="440,350" transparent="1" alphatest="on" />
-		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-aus-hd/buttons/key_text.png" transparent="1" alphatest="blend"/>		
+		<panel name="SetupTextHelp"/>
+		<panel name="SetupConfig"/>
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>	
 	<!-- FTP Service -->
 	<screen name="NetworkFtp" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Network Setup - FTP">
@@ -167,9 +166,9 @@
 	<screen name="NetworkuShareSetup" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Network Setup - DLNA Server Setup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget name="HelpWindow" position="50,335" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<panel name="SetupTextHelp" />
+		<panel name="SetupConfig"/>
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- DLNA Server Setup Menu Selection-->
 	<screen name="uShareSelection" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Network Setup - DLNA Server Setup">
@@ -206,10 +205,9 @@
 	<screen name="NetworkInadynSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Network Setup - DynDNS Setup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="55, 155" zPosition="1" size="440,350" transparent="1" alphatest="on" />
-		<ePixmap position="65,645" size="35, 25" zPosition="10" pixmap="easy-skin-aus-hd/buttons/key_text.png" transparent="1" alphatest="blend"/>		
+		<panel name="SetupTextHelp"/>
+		<panel name="SetupConfig"/>
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<!-- Mount Manager -->
 	<screen name="AutoMountManager" backgroundColor="un44000000" position="0,0" size="1280,720" flags="wfNoBorder" title="Mount Manager">
