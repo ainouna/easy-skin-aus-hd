@@ -6,8 +6,8 @@
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="list" position="155, 73" size="995, 425" transparent="1" scrollbarMode="showOnDemand"/>
-		<widget source="Event" render="Label" position="157, 515" size="995, 104" font="Regular;18" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget name="list" position="55, 73" size="1175, 425" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget source="Event" render="Label" position="55, 515" size="1175, 104" font="Regular;18" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget name="number" position="157, 515" size="995, 104" font="Regular;22" backgroundColor="background" transparent="0" />
