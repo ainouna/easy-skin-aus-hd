@@ -979,20 +979,21 @@ self.autoResize()
 		<eLabel position="0, 115" size="560, 2" backgroundColor="crypt_emm"/>
 	</screen> 
 	<screen name="AudioSelection" position="300,180" size="680,330" title="Audio">
-		<widget name="config" position="84,5" size="590,159" scrollbarMode="showNever" itemHeight="40" enableWrapAround="1" zPosition="3"/>
-		<widget source="key_red" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_red.png" position="5,5" size="35,25" alphatest="on">
+		<widget source="key_red" position="5,2" size="35,25" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_red.png" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_green" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_green.png" position="5,45" size="35,25" alphatest="on">
+		<widget source="key_green" position="5,32" size="35,25" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_green.png" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_yellow" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_yellow.png" position="5,85" size="35,25" alphatest="on">
+		<widget source="key_yellow" position="5,62" size="35,25" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_yellow.png" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_blue" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_blue.png" position="5,125" size="35,25" alphatest="on">
+		<widget source="key_blue" position="5,92" size="35,25" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_blue.png" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="streams" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" position="5,175" size="670,150" zPosition="3" >
+		<widget name="config" position="70,0" size="600,120" scrollbarMode="showNever" itemHeight="30" enableWrapAround="1" zPosition="3"/>
+		<eLabel position="0,125" size="680,1" backgroundColor="grey" zPosition="3"/>
+		<widget source="streams" position="5,130" size="670,200" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" zPosition="3" >
 			<convert type="TemplatedMultiContent">
 			  {"templates":
 			    {"default": (25, [ 
@@ -1015,7 +1016,6 @@ self.autoResize()
 			    }
 			</convert>
 		</widget>
-		<eLabel position="0,167" size="680,1" backgroundColor="grey" zPosition="3"/>
 	</screen> 
 	<screen name="ZapHistoryBrowser" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
 		<panel name="FullScreenWindow" />
