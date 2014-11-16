@@ -1431,4 +1431,10 @@ self.autoResize()
   <widget name="content" position="400, 170" size="810, 380" font="Regular; 22" backgroundColor="black" transparent="1"/>
   <widget source="summary" render="Label" position="400, 560" size="810, 95" font="Regular;16" transparent="1" backgroundColor="black"/>
  </screen>
+
+	<screen name="AutoVideoModeLabel" position="e-340,100" size="300,50" flags="wfNoBorder" backgroundColor="#7f110000" zPosition="11" >
+		<widget name="content" position="10,5" size="280,20" font="Regular;18" transparent="1" />
+		<widget name="restxt" position="10,25" size="280,20" font="Regular;18" transparent="1" />
+	</screen>
+
 </skin>
