@@ -218,7 +218,8 @@
 			<convert type="StringList" />
 		</widget>
 		<panel name="FullScreenColourPanel" />
-	</screen>		
+	</screen>
+
 	<screen name="TimerEdit" position="70,130" size="590,335">
 		<widget name="description" position="10,10" size="580,40" font="Regular;25" transparent="1" />
 		<widget name="lbegin" position="405,102" size="103,30" font="Regular;25" foregroundColor="red" transparent="1" />
@@ -227,6 +228,7 @@
 		<widget name="end" position="508,150" size="72,35" font="Regular;25" transparent="1" />
 		<widget name="apply" position="10,240" size="250,35" transparent="1" />
 	</screen>
+
 	<!-- Timer edit list -->
 	<screen flags="wfNoBorder" name="TimerEditList" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer Editor">
 		<panel name="FullScreenWindow" />
@@ -236,6 +238,7 @@
 		<panel name="FullscreenInfoButtonPanel"/>
 		<panel name="FullScreenColourPanel" />
 	</screen>
+
 	<!-- Timer entry -->
 	<screen flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer entry">
 		<panel name="FullScreenWindow" />
@@ -245,6 +248,7 @@
 		<widget name="HelpWindow" position="50,345" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<panel name="FullScreenColourPanel" />
 	</screen>
+
 	<!-- Timer log -->
 	<screen name="TimerLog" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="un44000000" title="Timer log">
 		<panel name="FullScreenWindow" />
@@ -252,6 +256,7 @@
 		<widget name="logentry" font="Console;18" position="140,520" size="1000,60" transparent="1" zPosition="2"/>
 		<panel name="FullScreenColourPanel" />
 	</screen>
+
 	<!-- Timer sanity conflict -->
 	<screen flags="wfNoBorder" name="TimerSanityConflict" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer sanity error">
 		<panel name="FullScreenWindow" />
@@ -261,6 +266,7 @@
 		<widget name="timer2" position="650,115" scrollbarMode="showOnDemand" size="510,500" transparent="1" zPosition="2"/>
 		<panel name="FullScreenColourPanel" />
 	</screen>
+
 	<!-- Timer Selection -->
 	<screen flags="wfNoBorder" name="TimerSelection" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer selection">
 		<panel name="FullScreenWindow" />
@@ -277,9 +283,11 @@
 	<screen name="BouquetSelector" position="center,center" size="560,550" backgroundColor="background">
 		<widget name="menu" position="0,0" size="560,512" itemHeight="30" foregroundColor="white" backgroundColor="black" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
+
 	<screen name="ChannelContextMenu" position="center,center" size="560,550" backgroundColor="background">
 		<widget name="menu" position="0,0" size="580,480" itemHeight="30" foregroundColor="white" backgroundColor="background" transparent="0" scrollbarMode="showOnDemand" />
 	</screen>
+
 	<screen name="ChannelSelection" position="0, 0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Channel Selection">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
@@ -362,6 +370,7 @@
 			<convert type="EventName">NextName</convert>
 		</widget>		
 	</screen>
+
 	<!-- Channel selection - Radio -->
 	<screen name="ChannelSelectionRadio" position="150,100" size="980,560" title="Channel Selection" zPosition="-2">
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position="90,500" size="200,60" zPosition="2"/>
@@ -379,34 +388,41 @@
 		<widget backgroundColor="#41000000" font="Regular;28" foregroundColor="#3366cc" position="20,40" render="Label" size="460,26" source="global.CurrentTime" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M %A %d %B %Y</convert>
 		</widget>
-	</screen>	
+	</screen>
+
 	<screen name="ChoiceBox" position="center,center" size="520,130" zPosition="5">
 		<widget name="text" position="0,0" size="520,0" font="Regular;22" />
 		<widget name="list" position="100,100" size="520,0" enableWrapAround="1"/>
 		<applet type="onLayoutFinish">
 self.autoResize()
 		</applet>
-	</screen>	
+	</screen>
+
 	<screen name="RecordTimerQuestion" position="center,center" size="240,70" zPosition="5" flags="wfNoBorder" >
 		<widget name="text" position="0,0" size="0,0" font="Regular;22" />
 		<widget name="list" position="10,10" size="220,50" enableWrapAround="1" />
 	</screen>
+
 	<screen name="RecordTimerQuestion1" position="center,center" size="240,95" zPosition="5" flags="wfNoBorder" >
 		<widget name="text" position="0,0" size="0,0" font="Regular;22" />
 		<widget name="list" position="10,10" size="220,75" enableWrapAround="1" />
 	</screen>
+
 	<screen name="Console" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Command execution...">
 		<panel name="FullScreenWindow" />
 		<widget name="text" position="55,100" size="1060,520" transparent="1" font="Console;21"/>
-	</screen>	
+	</screen>
+
 	<screen name="clockDisplay" position="center,center" size="300,300">
 		<widget name="okbutton" position="10,10" size="280,40" transparent="0" />
 		<widget name="title" position="10,120" size="280,50" transparent="0" />
 		<widget name="theClock" position="10,60" size="280,50" transparent="0" />
 	</screen>
+
 	<screen name="configTest" position="490,240" size="300,240">
 		<widget name="config" position="10,10" size="280,220" transparent="0" />
 	</screen>
+
 	<screen name="Dish" flags="wfNoBorder" position="20,20" size="150,200" zPosition="-1" backgroundColor="transparent">
 		<widget name="Dishpixmap" position="0,0" size="130,160" zPosition="-1" pixmap="icons/dish.png" transparent="1" alphatest="on" />
 		<widget name="turnTime" position="25,0" size="120,20" zPosition="1" font="Regular;20" halign="right" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1" />
@@ -415,13 +431,16 @@ self.autoResize()
 		<widget name="Goto" position="0,183" size="50,17" zPosition="1" font="Regular;17" halign="right" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1" />
 		<widget name="posGoto" position="57,180" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1" />
 	</screen>
+
 	<screen name="Screensaver" position="fill" flags="wfNoBorder">
 		<eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
 		<widget name="picture" pixmap="picon_default.png" position="0,0" size="100,60" alphatest="on" zPosition="1"/>
 	</screen>
+
 	<screen name="UnhandledKey" flags="wfNoBorder" position="620,30" size="100,100" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
 		<widget name="UnhandledKeyPixmap" pixmap="easy-skin-aus-hd/unhandled-key.png" position="0,0" size="100,100" alphatest="off"/>
 	</screen>
+
 	<!-- EventView -->
 	<screen name="EventView" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Eventview">
 		<panel name="FullScreenWindow" />
@@ -432,12 +451,14 @@ self.autoResize()
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel"/>
 	</screen>
+
 	<screen name="EventViewSimple" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Eventview">
 		<panel name="FullScreenWindow" />
 		<widget name="datetime" position="430, 105" size="340,25" font="Named; 20" halign="center" backgroundColor="black" transparent="1" foregroundColor="white"/>
 		<widget name="duration" position="770, 105" size="340,25" font="Named; 20" halign="right" backgroundColor="black" transparent="1" foregroundColor="white"/>
 		<widget name="FullDescription" position="90, 160" size="1040, 445" font="Regular; 23" backgroundColor="background" transparent="1" foregroundColor="white"/>
-	</screen>	
+	</screen>
+
 	<!--<screen name="InfoBarEventView" position="0,0" size="1280,250" backgroundColor="infobar_sunken" flags="wfNoBorder" zPosition="1">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
 		<widget source="Title" render="Label" position="20,10" size="850,43" font="Named;32" transparent="1" foregroundColor="#00b3b3b3" backgroundColor="#00151515" zPosition="1" />
@@ -445,6 +466,7 @@ self.autoResize()
 		<widget name="duration" position="1060,18" size="150,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="#12151515" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="FullDescription" position="10,50" size="1260,140" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
 	</screen>-->
+
 	<screen name="EventViewContextMenu" position="center,center" size="560,250">
 		<widget name="menu"  render="Listbox" position="0,0" size="580,233" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -483,7 +505,8 @@ self.autoResize()
 		<widget source="backgroundable" render="FixedLabel" text="In background" position="250,203" size="200,25" font="Regular;20" halign="center" valign="center" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-	</screen>	
+	</screen>
+
 	<!-- Help menu -->
 	<screen flags="wfNoBorder" name="HelpMenu" backgroundColor="un44000000" position="0,0" size="1280,720" title="Help">
 		<panel name="FullScreenWindow" />
@@ -507,21 +530,25 @@ self.autoResize()
 		<widget font="Regular;25" backgroundColor="crypt_emm" foregroundColor="yellow" halign="center" name="longshift_key0" position="500,565" size="660,30" transparent="1"/>
 		<widget font="Regular;25" backgroundColor="crypt_emm" foregroundColor="yellow" halign="center" name="longshift_key1" position="500,595" size="660,30" transparent="1"/>
 	</screen>
+
 	<screen name="InputBox" position="340,100" size="600,560" title="Search">
 		<widget name="text" position="10,30" size="580,30" font="Regular;22" halign="center" transparent="1"/>
 		<eLabel position="0,80" size="600,2" backgroundColor="crypt_emm"/>
 		<widget name="input" position="10,90" size="580,30" font="Regular;25" halign="center" transparent="1"/>
 		<eLabel position="0,130" size="600,2" backgroundColor="crypt_emm"/>
 	</screen>
+
 	<screen name="Ipkg" position="center,center" size="550,120">
 		<widget name="activityslider" position="0,0" size="550,5" pixmap="progress_small.png" />
 		<widget name="package" position="10,30" size="550,20" font="Regular;18" transparent="0" />
 		<widget name="status" position="10,60" size="550,45" font="Regular;18" transparent="0" />
 		<widget name="slider" position="10,100" size="530,15" pixmap="progress_big.png" borderWidth="2" borderColor="window-fg" />
 	</screen>
+
 	<screen name="InstallWizardIpkgUpdater" position="c-300,c-25" size="600,50" title=" ">
 		<widget source="statusbar" render="Label" position="0,0" zPosition="10" size="600,30" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 	</screen>
+
 	<!-- Location Box -->
 	<screen flags="wfNoBorder" name="LocationBox" backgroundColor="background" position="0,0" size="1280,720">
 		<panel name="FullScreenWindow" />
@@ -537,6 +564,7 @@ self.autoResize()
 		<widget name="yellow" position="0,0" size="0,0"/>
 		<widget name="blue" position="0,0" size="0,0"/>
 	</screen>
+
 	<!-- Movie Location Box -->
 	<!--
 	 |  Currently unused because LocationBox.MovieLocationBox is a
@@ -557,6 +585,7 @@ self.autoResize()
 		<widget name="yellow" position="0,0" size="0,0"/>
 		<widget name="blue" position="0,0" size="0,0"/>
 	</screen>
+
 	<!-- Timeshift Location Box -->
 	<screen name="TimeshiftLocationBox" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
 		<panel name="FullScreenWindow" />
@@ -572,7 +601,8 @@ self.autoResize()
 		<widget name="yellow" position="0,0" size="0,0"/>
 		<widget name="blue" position="0,0" size="0,0"/>
 	</screen>
-        <screen name="MessageBoxTemplate" zPosition="4">
+
+	<screen name="MessageBoxTemplate" zPosition="4">
 		<widget name="text" position="65,8" size="100%,0" font="Regular;22" />
 		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="0,0" size="53,53" alphatest="on" />
 		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,0" size="53,53" alphatest="on" />
@@ -582,12 +612,15 @@ self.autoResize()
 self.autoResize()
 		</applet>
 	</screen>
-        <screen name="MessageBox" position="center,center" size="60%,10" zPosition="4">
+
+	<screen name="MessageBox" position="center,center" size="60%,10" zPosition="4">
 		 <panel name= "MessageBoxTemplate" />
 	</screen>
-        <screen name="MessageBoxSimple" position="center,center" size="60%,10" zPosition="4">
+
+	<screen name="MessageBoxSimple" position="center,center" size="60%,10" zPosition="4">
 		 <panel name= "MessageBoxTemplate" />
 	</screen>
+
 	<screen name="InputDeviceSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Input device">
 		<panel name="FullScreenWindow" />
 		<eLabel position="675,140" size="430,35" text="Select input device" font="Regular;28" transparent="1" zPosition="2" />
@@ -607,6 +640,7 @@ self.autoResize()
 		<widget position="170,205" size="360,180" source="introduction" render="Label" zPosition="10" font="Regular;21" halign="center" valign="center" transparent="1"/>
 		<panel name="FullScreenColourPanel" />
 	</screen>
+
 	<screen name="InputDeviceSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Input device setup">
 		<panel name="FullScreenWindow" />
 		<eLabel position="675,140" size="430,35" text="Input device setup" font="Regular;28" transparent="1" zPosition="2" />
@@ -615,11 +649,12 @@ self.autoResize()
 		<ePixmap position="150,195" size="400,200" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" alphatest="on" zPosition="2" />
 		<widget position="170,205" size="360,180" source="introduction" render="Label" valign="center" halign="center" font="Regular;20" transparent="1" zPosition="3" />
 		<panel name="FullScreenColourPanel" />
-	</screen>	
+	</screen>
+
 	<screen name="MinuteInput" position="center,center" size="280,60">
 		<widget name="minutes" position="80,15" size="160,25" halign="right" font="Regular;23" transparent="1" />
-	</screen>	
-	
+	</screen>
+
 	<!-- RASS -->
 	<screen flags="wfNoBorder" name="RassInteractive" position="0,0" size="1280,720" title="RassInteractive">
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/icons/rass_logo.png" position="675,143" size="50,21" transparent="1"/>
@@ -647,6 +682,7 @@ self.autoResize()
 		<eLabel font="Regular;21" position="670,660" size="16,25" text="9" transparent="1" zPosition="3"/>
 		<widget alphatest="on" name="subpages_9" position="1080,660" size="36,20" zPosition="3"/>
 	</screen>
+
 	<!-- RDS info -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" size="1280,720" zPosition="-2">
 		<widget alphatest="on" name="RassLogo" pixmap="easy-skin-aus-hd/icons/rass_logo.png" position="97,630" size="70,53" transparent="1" zPosition="2"/>
@@ -658,6 +694,7 @@ self.autoResize()
 	<screen position="615,14" size="50,50" name="Mute" title="Mute" backgroundColor="#ff000000" flags="wfNoBorder" zPosition="10">
 		<ePixmap position="0,0" size="50,50" alphatest="blend" pixmap="easy-skin-aus-hd/general/mute_50x50_tx.png" />
 	</screen>
+
 	<!-- Volume -->
 	<screen position="397,54" size="485,78" name="Volume" title="Volume" backgroundColor="#ff000000" flags="wfNoBorder" zPosition="8">
 		<ePixmap position="0,0" size="485,78" alphatest="blend" pixmap="easy-skin-aus-hd/general/volume_tx.png" />
@@ -692,14 +729,17 @@ self.autoResize()
 		<widget backgroundColor="#44000000" font="Console;16" halign="center" name="key0" position="140,195" size="120,35" valign="center"/>
 		<widget backgroundColor="#44000000" font="Console;16" halign="center" name="help2"  position="260,195" size="120,30" valign="center"/>
 	</screen>
+
 	<!-- Picture in picture -->
 	<screen name="PictureInPicture" position="400,60" zPosition="-1" size="240,192" flags="wfNoBorder">
 		<widget name="video" position="0,0" size="240,192" backgroundColor="transparent" />
 	</screen>
+
 	<!-- Picture in picture setup -->
 	<screen name="PiPSetup" position="center,center" size="600,150" backgroundColor="transparent" flags="wfNoBorder" >
 		<widget name="text" position="0,0" size="600,150" font="Regular;23" />
 	</screen>
+
 	<screen name="SimpleChannelSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Channel Selection">
 		<panel name="FullScreenWindow" /> 
 		<panel name="FullScreenColourPanel" />
@@ -713,13 +753,15 @@ self.autoResize()
 			    foregroundColorServiceNotAvail="#777777"
 			    picServiceEventProgressbar="slider/slider_1280x10_hfg.png"    
 			    serviceItemHeight="50" serviceNumberFont="Regular;23" serviceNameFont="Regular;22" serviceInfoFont="Regular;21" scrollbarMode="showAlways"/>
-	</screen> 
+	</screen>
+ 
 	<!-- Subservice selection -->
 	<screen flags="wfNoBorder" name="SubserviceSelection" position="0,0" size="1280,720" title="Subservices">
 		<eLabel font="Regular;28" position="675,140" size="485,35" text="Subservices" transparent="1" zPosition="2"/>
 		<eLabel backgroundColor="white" position="665,180" size="450,2" zPosition="2"/>
 		<widget name="subservices" position="650,195" scrollbarMode="showOnDemand" size="510,400" transparent="1" zPosition="2"/>
 	</screen>
+
 	<!-- Subservice quickzap -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SubservicesQuickzap" position="0,90" size="1280,720" title="Subservices">
 		<!-- Background -->
@@ -738,7 +780,8 @@ self.autoResize()
 		<widget pixmap="easy-skin-aus-hd/icons/icon_rec.png" position="1150,556" render="Pixmap" size="48,48" source="session.RecordState" zPosition="1">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-	</screen> 
+	</screen>
+
 	<screen name="Subtitles" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Subtitle selection">
 		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -752,16 +795,19 @@ self.autoResize()
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tv_channel.png" position="55,155" size="300,500"/>
 		<widget position="450, 195" size="400, 400" name="config" scrollbarMode="showOnDemand" transparent="1" zPosition="2"/>
 	</screen>
+
 	<screen name="QuickSubtitlesConfigMenu" position="50,50" size="480,405" title="Subtitle settings" backgroundColor="#7f000000" flags="wfNoBorder">
 		<widget name="config" position="5,5" size="470,365" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget name="videofps" position="5,380" size="470,20" backgroundColor="#41000000" transparent="1" zPosition="2" font="Regular;16" valign="center" halign="left" foregroundColor="white"/>
 	</screen>
+
 	<!-- Subtitle area -->
 	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent"/>    
 	<!-- TextBox -->
 	<screen name="TextBox" backgroundColor="background" position="0,0" size="550,400" title="Message...">
 		<widget font="Regular;18" name="text" position="0,0" size="540,390"/>
 	</screen>
+
 	<!-- Time & date input -->
 	<screen flags="wfNoBorder" name="TimeDateInput" backgroundColor="un44000000" position="0,0" size="1280,720" title="Time/Date Input">
 		<eLabel font="Regular;28" position="675,140" size="485,35" text="Time/Date Input" transparent="1" zPosition="2"/>
@@ -773,7 +819,7 @@ self.autoResize()
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" position="840,625" size="200,60" zPosition="2"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="canceltext" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="oktext" position="440,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
-	</screen> 
+	</screen>
 
 	<screen name="SkinSelector" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Choose your Skin">
 		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
@@ -794,7 +840,8 @@ self.autoResize()
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget source="introduction" render="Label" position="110, 510" size="436, 24" zPosition="10" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1"/>
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm"/>
-	</screen>	
+	</screen>
+
 	<screen name="PTSTimeshiftState" position="center,40"  backgroundColor="background" size="420,70" >
 		<widget name="statusicon" position="12,5" size="20,20" pixmaps="easy-skin-aus-hd/icons/play.png,easy-skin-aus-hd/icons/pause.png,easy-skin-aus-hd/icons/stop.png,easy-skin-aus-hd/icons/forward.png,easy-skin-aus-hd/icons/backward.png,easy-skin-aus-hd/icons/slow.png" zPosition="5" alphatest="on" />
 		<widget name="speed" position="35,7" size="80,15" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="5" />
@@ -811,6 +858,7 @@ self.autoResize()
 		</widget>
 		<widget name="eventname" position="60,49" zPosition="4" size="320,20" font="Regular;18" halign="center" backgroundColor="background"/>
 	</screen>
+
 	<screen name="TimeshiftState" position="202, 45"  backgroundColor="background" size="216,74" >
 		<widget name="statusicon" position="20,15" size="20,20" zPosition="3" alphatest="on" pixmaps="easy-skin-aus-hd/icons/play.png,easy-skin-aus-hd/icons/pause.png,easy-skin-aus-hd/icons/stop.png,easy-skin-aus-hd/icons/forward.png,easy-skin-aus-hd/icons/backward.png,easy-skin-aus-hd/icons/slow.png" />
 		<widget name="speed" position="45,18" size="80,18" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="4" />
@@ -826,6 +874,7 @@ self.autoResize()
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 	</screen>
+
 	<screen name="SleepTimerEdit" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Sleep Timer">
 		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 22" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -846,7 +895,8 @@ self.autoResize()
 		<widget backgroundColor="#18188b" font="Regular;20" halign="center" name="key_blue" position="948, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget position="650,195" size="510,384" name="config" backgroundColor="background" transparent="1" font="Regular;20" halign="center" zPosition="2" />
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm"/>
-	</screen> 
+	</screen>
+
 	<screen flags="wfNoBorder" name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor">
 		<eLabel backgroundColor="grey" position="80,125" size="300,420" zPosition="1"/>
 		<eLabel backgroundColor="black" position="81,126" size="298,418" zPosition="2"/>
@@ -882,6 +932,7 @@ self.autoResize()
 		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_forward.png"/>
 		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_stop.png"/>
 	</screen>
+
 	<screen name="CutListMenu" position="center,center" size="510,485" backgroundColor="background" title="Cutlist editor - menu">
 		<widget source="menu" render="Listbox" position="0,0" size="485,500" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" backgroundColor="#41000000" scrollbarMode="showNever">
 			<convert type="TemplatedMultiContent">
@@ -892,7 +943,9 @@ self.autoResize()
 			</convert>
 		</widget>
 	</screen>
+
 	<screen name="Standby" position="0,0" size="1280,720" title="Standby" flags="wfNoBorder"/>
+
 	<screen name="TitleCutter" position="0,0" size="1280,720" title="Cutlist editor" flags="wfNoBorder">
 		<eLabel position="80,125" size="300,420" zPosition="1" backgroundColor="grey"/>
 		<eLabel position="81,126" size="298,418" zPosition="2" backgroundColor="black"/>
@@ -927,6 +980,7 @@ self.autoResize()
 		<widget name="SeekState" position="365, 585" zPosition="10" size="100,25" halign="center" font="Regular;20" valign="center" transparent="1"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
 	</screen>
+
 	<screen name="StreamTVList" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="StreamTV List">
 		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50,30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75,30" size="80,20" font="Named;16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -949,6 +1003,7 @@ self.autoResize()
 		<eLabel position="50,625" size="1160,1" backgroundColor="crypt_emm" zPosition="1"/>
 		<eLabel position="910,80" size="300,22" font="Named;20" backgroundColor="black" halign="right" transparent="1" text="StreamTV List" foregroundColor="crypt_emm"/>
 	</screen>
+
 	<screen name="VideoEnhancementSetup" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="VideoEnhancementSetup">
 		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50,30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75,30" size="80,20" font="Named;16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -971,13 +1026,15 @@ self.autoResize()
 		<eLabel position="50,625" size="1160,1" backgroundColor="crypt_emm" zPosition="1"/>
 		<eLabel position="810,80" size="400,22" font="Named;20" backgroundColor="black" halign="right" transparent="1" text="VideoEnhancementSetup" foregroundColor="crypt_emm"/>
 	</screen>
+
 	<screen name="VideoEnhancementPreview" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="VideoEnhancementPreview" >
 		<widget position="85, 125" size="200,36" render="Label" source="key_red" foregroundColor="red" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
 		<widget position="300, 125" size="200,36" render="Label" source="key_green" foregroundColor="green" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
 		<widget name="config" position="5, 0" size="550,60" scrollbarMode="showOnDemand"/>
 		<widget source="introduction" render="Label" position="5, 80" size="550,25" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="black" transparent="1"/>
 		<eLabel position="0, 115" size="560, 2" backgroundColor="crypt_emm"/>
-	</screen> 
+	</screen>
+
 	<screen name="AudioSelection" position="300,180" size="680,330" title="Audio">
 		<widget source="key_red" position="5,2" size="35,25" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_red.png" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -1016,13 +1073,15 @@ self.autoResize()
 			    }
 			</convert>
 		</widget>
-	</screen> 
+	</screen>
+
 	<screen name="ZapHistoryBrowser" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tv_zaphistory.png" position="55, 155" size="300,500"/>
 		<widget position="590, 170" size="610, 415" name="list" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
+
 	<screen name="HistoryZapSelector" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
@@ -1042,6 +1101,7 @@ self.autoResize()
 			</convert>
 		</widget>
 	</screen>
+
 	<screen name="FileManager" position="0,0" size="1280,720" title="File Manager" backgroundColor="un44000000" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />
 		<widget name="list_left_text" font="Regular;28" position="90,70" size="150,35" zPosition="1" foregroundColor="white" backgroundColor="transpBlack" transparent="1"/>
@@ -1051,6 +1111,7 @@ self.autoResize()
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
 	</screen>
+
 	<screen name="FileCommanderScreen" position="0,0" size="1280,720" title="File Commander" backgroundColor="un44000000" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />
 		<widget name="list_left_head" font="Regular;18" position="50,70" size="570,40" zPosition="1" foregroundColor="yellow" backgroundColor="transpBlack" transparent="1"/>
@@ -1060,6 +1121,7 @@ self.autoResize()
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
 	</screen>
+
 	<screen name="FileCommanderConfigScreen" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
 	  <!--<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_tv.png" position="55, 155" size="300,500"/>-->
 		<panel name="FullScreenWindow" />
@@ -1068,6 +1130,7 @@ self.autoResize()
 		<widget name="help" position="100,130" size="300,350"  font="Regular;19" halign="left" transparent="1" valign="center" zPosition="2"/>
 		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
+
 	<screen name="FileCommanderScreenFileSelect" position="0,0" size="1280,720" title="File Commander - file selection" backgroundColor="un44000000" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />
 		<widget name="list_left_head" font="Regular;18" position="50,70" size="570,40" zPosition="1" foregroundColor="yellow" backgroundColor="transpBlack" transparent="1"/>
@@ -1076,6 +1139,7 @@ self.autoResize()
 		<widget name="list_right" position="645,120" size="580,475" zPosition="1" transparent="1" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="background" />
 		<panel name="FullScreenColourPanel" />
 	</screen>
+
 	<!-- Setup -->
 	<screen name="TranscodingSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Transcoding Setup">
 		<panel name="FullScreenWindow" />
@@ -1086,75 +1150,77 @@ self.autoResize()
 		<widget font="Regular;20" halign="center" name="description" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;20" halign="center" name="text" position="590,510" size="610, 30" transparent="1" valign="center" zPosition="2"/>
 	</screen>
- <screen name="VlcMediaListScreen" position="90,90" size="1100,576" title="VlcMediaListScreen">
-  <eLabel position="800, 25" size="300, 22" text="vlc player" font="Regular; 20" halign="center"/>
-  <eLabel position="740,100" size="540,2" backgroundColor="crypt_emm"/>
-  <widget name="filelist_button_sel" pixmap="easy-skin-aus-hd/epg_now.png" position="125,100" zPosition="3" size="1100, 35" alphatest="on"/>
-  <widget name="playlist_button_sel" pixmap="easy-skin-aus-hd/epg_next.png" position="125,100" zPosition="3" size="1100,35" alphatest="on"/>
-  <widget name="filelist_text" position="192,107" zPosition="4" size="185,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
-  <widget name="playlist_text" position="442,107" zPosition="4" size="185,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
-  <eLabel position="740,133" size="540,2" backgroundColor="crypt_emm"/>
-  <widget name="filelist" position="140,145" size="500, 375" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
-  <widget name="playlist" position="640,145" size="460, 375" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
-  <widget position="240, 535" size="200,36" name="key_red" font="Regular;20" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
-  <widget position="440, 535" size="200,36" name="key_green" font="Regular;20" foregroundColor="green" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
-  <widget position="640, 535" size="200,36" name="key_yellow" font="Regular;20" foregroundColor="yellow" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
-  <widget position="840, 535" size="200,36" name="key_blue" font="Regular;20" halign="center" foregroundColor="blue" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
-  <eLabel position="0, 525" size="1100, 2" backgroundColor="crypt_emm"/>
- </screen>
- <screen name="VlcServerListScreen" position="90,90" size="1100,576" title="Select a VLC-Server Profile">
-  <widget name="serverlabel" position="250, 80" size="850, 22" font="Regular; 20" transparent="1"/>
-  <eLabel position="235, 110" size="860, 2" backgroundColor="crypt_emm"/>
-  <widget name="serverlist" position="240, 130" size="800, 370" scrollbarMode="showOnDemand" transparent="1">
-   <convert type="TemplatedMultiContent">
+
+	<screen name="VlcMediaListScreen" position="90,90" size="1100,576" title="VlcMediaListScreen">
+		<eLabel position="800, 25" size="300, 22" text="vlc player" font="Regular; 20" halign="center"/>
+		<eLabel position="740,100" size="540,2" backgroundColor="crypt_emm"/>
+		<widget name="filelist_button_sel" pixmap="easy-skin-aus-hd/epg_now.png" position="125,100" zPosition="3" size="1100, 35" alphatest="on"/>
+		<widget name="playlist_button_sel" pixmap="easy-skin-aus-hd/epg_next.png" position="125,100" zPosition="3" size="1100,35" alphatest="on"/>
+		<widget name="filelist_text" position="192,107" zPosition="4" size="185,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="playlist_text" position="442,107" zPosition="4" size="185,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
+		<eLabel position="740,133" size="540,2" backgroundColor="crypt_emm"/>
+		<widget name="filelist" position="140,145" size="500, 375" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="playlist" position="640,145" size="460, 375" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget position="240, 535" size="200,36" name="key_red" font="Regular;20" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
+		<widget position="440, 535" size="200,36" name="key_green" font="Regular;20" foregroundColor="green" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
+		<widget position="640, 535" size="200,36" name="key_yellow" font="Regular;20" foregroundColor="yellow" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
+		<widget position="840, 535" size="200,36" name="key_blue" font="Regular;20" halign="center" foregroundColor="blue" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
+		<eLabel position="0, 525" size="1100, 2" backgroundColor="crypt_emm"/>
+	</screen>
+
+	<screen name="VlcServerListScreen" position="90,90" size="1100,576" title="Select a VLC-Server Profile">
+		<widget name="serverlabel" position="250, 80" size="850, 22" font="Regular; 20" transparent="1"/>
+		<eLabel position="235, 110" size="860, 2" backgroundColor="crypt_emm"/>
+		<widget name="serverlist" position="240, 130" size="800, 370" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (25, 7), size = (550, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 24)],
 				"itemHeight": 40}
 			</convert>
-  </widget>
-  <widget position="240, 535" size="200,36" name="key_red" font="Regular;20" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
-  <widget position="440, 535" size="200,36" name="key_green" font="Regular;20" foregroundColor="green" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
-  <widget position="640, 535" size="200,36" name="key_yellow" foregroundColor="yellow" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
-  <widget position="840, 535" size="200,36" name="key_blue" foregroundColor="blue" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
-  <eLabel position="0, 520" size="1100, 2" backgroundColor="crypt_emm"/>
- </screen>
- <screen name="VlcServerConfigScreen" position="90,90" size="1100,576" title="Edit VLC Server">
-  <eLabel position="800, 25" size="300, 22" text="vlc server config" font="Regular;20" halign="right"/>
-  <eLabel position="180, 47" size="920, 2" backgroundColor="crypt_emm"/>
-  <widget name="config" position="200,110" size="880, 400" scrollbarMode="showOnDemand" transparent="1"/>
-  <widget position="240, 535" size="200,36" name="key_red" font="Regular;20" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
-  <widget position="440, 535" size="200,36" name="key_green" font="Regular;20" foregroundColor="green" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
-  <widget position="640, 535" size="200,36" name="key_yellow" font="Regular;20" foregroundColor="yellow" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
-  <widget position="840, 535" size="200,36" name="key_blue" font="Regular;20" foregroundColor="blue" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
-  <eLabel position="0, 525" size="1100, 2" backgroundColor="crypt_emm"/>
- </screen>
+		</widget>
+		<widget position="240, 535" size="200,36" name="key_red" font="Regular;20" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
+		<widget position="440, 535" size="200,36" name="key_green" font="Regular;20" foregroundColor="green" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
+		<widget position="640, 535" size="200,36" name="key_yellow" foregroundColor="yellow" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
+		<widget position="840, 535" size="200,36" name="key_blue" foregroundColor="blue" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
+		<eLabel position="0, 520" size="1100, 2" backgroundColor="crypt_emm"/>
+	</screen>
 
+	<screen name="VlcServerConfigScreen" position="90,90" size="1100,576" title="Edit VLC Server">
+		<eLabel position="800, 25" size="300, 22" text="vlc server config" font="Regular;20" halign="right"/>
+		<eLabel position="180, 47" size="920, 2" backgroundColor="crypt_emm"/>
+		<widget name="config" position="200,110" size="880, 400" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget position="240, 535" size="200,36" name="key_red" font="Regular;20" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
+		<widget position="440, 535" size="200,36" name="key_green" font="Regular;20" foregroundColor="green" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
+		<widget position="640, 535" size="200,36" name="key_yellow" font="Regular;20" foregroundColor="yellow" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
+		<widget position="840, 535" size="200,36" name="key_blue" font="Regular;20" foregroundColor="blue" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
+		<eLabel position="0, 525" size="1100, 2" backgroundColor="crypt_emm"/>
+	</screen>
 
- <screen name="browser_favo" position="90, 90" size="1100, 576" title="Favourites" backgroundColor="background">
-  <widget source="menu" render="Listbox" position="150, 50" size="780,450" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
-   <convert type="TemplatedMultiContent">
-				{ "template": [ MultiContentEntryPixmapAlphaTest(pos = (10, 8), size = (64, 64), png = 0),
-				MultiContentEntryText(pos = (90, 5), size = (660, 35), flags = RT_HALIGN_CENTER, text = 1, border_width=1),
-				MultiContentEntryText(pos = (90, 40), size = (660, 35), flags = RT_VALIGN_CENTER|RT_HALIGN_LEFT, text = 2, font=1)], 
-				"fonts": [gFont("Regular", 28), gFont("Regular", 18)], "itemHeight": 75 }
-			</convert>
-  </widget>
-  <widget name="label" position="315, 535" size="450,30" font="Regular;24" halign="center" valign="center"/>
-  <widget name="border" separator="s_e_p.png" position="0,0" size="0,0"/>
-  <eLabel position="0, 525" size="1100, 2" backgroundColor="crypt_emm"/>
- </screen>
+	<screen name="browser_favo" position="90, 90" size="1100, 576" title="Favourites" backgroundColor="background">
+		<widget source="menu" render="Listbox" position="150, 50" size="780,450" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
+		<convert type="TemplatedMultiContent">
+			{ "template": [ MultiContentEntryPixmapAlphaTest(pos = (10, 8), size = (64, 64), png = 0),
+			MultiContentEntryText(pos = (90, 5), size = (660, 35), flags = RT_HALIGN_CENTER, text = 1, border_width=1),
+			MultiContentEntryText(pos = (90, 40), size = (660, 35), flags = RT_VALIGN_CENTER|RT_HALIGN_LEFT, text = 2, font=1)], 
+			"fonts": [gFont("Regular", 28), gFont("Regular", 18)], "itemHeight": 75 }
+		</convert>
+		</widget>
+		<widget name="label" position="315, 535" size="450,30" font="Regular;24" halign="center" valign="center"/>
+		<widget name="border" separator="s_e_p.png" position="0,0" size="0,0"/>
+		<eLabel position="0, 525" size="1100, 2" backgroundColor="crypt_emm"/>
+	</screen>
 
- <screen name="TitleProperties" position="90,100" size="1100,560" title="Properties of current title">
+	<screen name="TitleProperties" position="90,100" size="1100,560" title="Properties of current title">
+		<widget name="thumbnail" position="20,20" size="260,160" alphatest="on"/>
+		<widget source="serviceinfo" render="Label" position="320,20" size="740,160" font="Regular;21" backgroundColor="un252b4247" transparent="1"/>
+		<eLabel position="0,195" size="1100,2" backgroundColor="crypt_emm"/>
+		<widget name="config" position="20,210" size="1060,300" scrollbarMode="showOnDemand" transparent="1"/>
+		<eLabel position="0,518" size="1100,2" backgroundColor="crypt_emm"/>
+		<widget source="key_red" render="Label" position=" 20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red"/>
+		<widget source="key_green" render="Label" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green"/>
+		<widget source="key_blue" render="Label" position="830,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="blue"/>
+	</screen>
 
-  <widget name="thumbnail" position="20,20" size="260,160" alphatest="on"/>
-  <widget source="serviceinfo" render="Label" position="320,20" size="740,160" font="Regular;21" backgroundColor="un252b4247" transparent="1"/>
-  <eLabel position="0,195" size="1100,2" backgroundColor="crypt_emm"/>
-  <widget name="config" position="20,210" size="1060,300" scrollbarMode="showOnDemand" transparent="1"/>
-  <eLabel position="0,518" size="1100,2" backgroundColor="crypt_emm"/>
-  <widget source="key_red" render="Label" position=" 20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red"/>
-  <widget source="key_green" render="Label" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green"/>
-  <widget source="key_blue" render="Label" position="830,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="blue"/>
- </screen>
  <screen name="TitleList" position="170, 90" size="920, 576" title="DVD Tool">
   <widget source="title_label" render="Label" position="10, 18" size="900, 45" font="Regular;22" transparent="1"/>
   <widget source="error_label" render="Label" position="10, 78" size="900, 365" zPosition="3" font="Regular;20"/>
@@ -1180,6 +1246,7 @@ self.autoResize()
   <widget source="key_blue" render="Label" position="695, 535" zPosition="3" foregroundColor="blue" size="195, 35" font="Regular; 20" halign="center" valign="center" backgroundColor="black" transparent="1"/>
   <eLabel position="0, 525" size="920, 2" backgroundColor="crypt_emm"/>
  </screen>
+
  <screen name="DVDMovieSelection" position="0,0" size="1280,720" flags="wfNoBorder" title="Select a movie">
   <widget name="waitingtext" position="55, 135" size="760, 448" zPosition="4" font="Regular;22" halign="center" valign="center"/>
   <widget source="Service" render="Label" position="280, 95" zPosition="1" size="190, 22" font="Named;18" halign="center" backgroundColor="black" transparent="1" foregroundColor="grey">
@@ -1206,9 +1273,11 @@ self.autoResize()
   <eLabel position="55, 80" size="1100, 1" backgroundColor="crypt_emm"/>
   <eLabel position="835, 60" size="320, 20" font="Named; 16" backgroundColor="black" halign="right" transparent="1" foregroundColor="crypt_emm" text="Select a movie"/>
  </screen>
+
  <screen name="FileBrowser" position="250,150" size="780,460" title="DVD File Browser">
   <widget name="filelist" position="5,10" size="770,440" scrollbarMode="showOnDemand" transparent="1"/>
  </screen>
+
  <screen name="ProjectSettings" position="90,100" size="1100,560" title="Collection settings">
   <widget name="config" position="10,10" size="1080,350" scrollbarMode="showOnDemand" transparent="1"/>
   <widget source="info" render="Label" position="10,380" size="1080, 130" font="Regular;20"/>
@@ -1218,6 +1287,7 @@ self.autoResize()
   <widget source="key_yellow" render="Label" position="560,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="yellow"/>
   <widget source="key_blue" render="Label" position="830,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="blue"/>
  </screen>
+
  <screen name="DVDToolbox" position="90,100" size="1100,560" title="DVD media toolbox">
   <widget source="info" render="Label" position="20,60" size="1060,100" font="Regular;22"/>
   <widget name="details" position="20,200" size="1060,200" font="Regular;20"/>
@@ -1228,6 +1298,7 @@ self.autoResize()
   <widget source="key_green" render="Label" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green"/>
   <widget source="key_yellow" render="Label" position="560,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="yellow"/>
  </screen>
+
  <screen name="CDInfo" position="90,100" size="1100,560" title="CDInfo">
   <eLabel position="0,0" size="1100,2" backgroundColor="crypt_emm"/>
   <widget source="info" render="Label" position="20,20" size="260,200" font="Regular;21" transparent="1"/>
@@ -1239,6 +1310,7 @@ self.autoResize()
   <widget source="key_green" render="Label" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green"/>
   <widget source="key_blue" render="Label" position="830,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="blue"/>
  </screen>
+
  <screen name="VirtualKeyBoard" position="340,150" size="600,435" zPosition="99" title="Virtual keyboard">
   <eLabel position="0,0" size="600,2" backgroundColor="crypt_emm"/>
   <widget name="header" position="0,30" size="600,30" font="Regular;24" transparent="1" noWrap="1" halign="center"/>
@@ -1256,12 +1328,14 @@ self.autoResize()
   <widget source="key_red" render="Label" position=" 40,467" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" backgroundColor="black" transparent="1"/>
   <widget source="key_green" render="Label" position="310,467" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" backgroundColor="black" transparent="1"/>
  </screen>
+
  <screen name="CIselectMainMenu" position="340,134" size="600,502" title="CI Assignment">
   <widget name="CiList" position="5, 10" size="590, 440" zPosition="3" scrollbarMode="showOnDemand"/>
   <eLabel position="0,460" size="600,2" backgroundColor="crypt_emm"/>
   <widget source="key_red" render="Label" position=" 40,467" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" backgroundColor="black" transparent="1"/>
   <widget source="key_green" render="Label" position="310,467" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" backgroundColor="black" transparent="1"/>
  </screen>
+
  <screen name="easyCIconfigMenu" position="90,100" size="1100,560" title="CI Assignment">
   <eLabel position="0,0" size="1100,2" backgroundColor="crypt_emm"/>
   <widget source="ServiceList_desc" render="Label" position="10,10" size="1080,30" font="Regular;24"/>
@@ -1274,6 +1348,7 @@ self.autoResize()
   <widget source="ServiceList_info" render="Label" position="715, 60" size="385, 450" zPosition="2" font="Regular;20" backgroundColor="black" transparent="1"/>
   <eLabel position="711, 50" size="2, 470" backgroundColor="crypt_emm"/>
  </screen>
+
  <screen name="myProviderSelection" position="90,100" size="1100,560" title="Select provider to add...">
   <widget name="list" position="10,20" size="1080, 460" scrollbarMode="showOnDemand"/>
   <eLabel position="0,518" size="1100, 2" backgroundColor="crypt_emm"/>
@@ -1283,6 +1358,7 @@ self.autoResize()
   <widget source="key_yellow" render="Label" position="570,525" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="yellow" backgroundColor="black" transparent="1"/>
   <widget source="key_blue" render="Label" position="840,525" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="blue" backgroundColor="black" transparent="1"/>
  </screen>
+
  <screen name="myChannelSelection" position="90,100" size="1100,560" title="Select service to add...">
   <widget name="list" position="10,20" size="1080, 460" scrollbarMode="showOnDemand"/>
   <eLabel position="0,518" size="1100, 2" backgroundColor="crypt_emm"/>
@@ -1292,6 +1368,7 @@ self.autoResize()
   <widget source="key_yellow" render="Label" position="570,525" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="yellow" backgroundColor="black" transparent="1"/>
   <widget source="key_blue" render="Label" position="840,525" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="blue" backgroundColor="black" transparent="1"/>
  </screen>
+
  <screen name="CIconfigMenu" position="160,90" size="900,576" title="CI assignment">
   <widget source="key_red" render="Label" position="90, 535" zPosition="1" size="180,36" foregroundColor="red" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
   <widget source="key_green" render="Label" position="290, 535" zPosition="1" size="180,36" foregroundColor="green" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
@@ -1304,6 +1381,7 @@ self.autoResize()
   <widget source="ServiceList_info" render="Label" position="10, 120" size="880, 250" zPosition="2" font="Regular;20" backgroundColor="black" transparent="1"/>
   <eLabel position="0, 525" size="900, 2" backgroundColor="crypt_emm"/>
  </screen>
+
  <screen name="devicesMount" position="90,100" size="1100,560" title="Devices">
   <widget source="menu" render="Listbox" position="10,10" size="1080,440" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
    <convert type="TemplatedMultiContent">
@@ -1317,6 +1395,7 @@ self.autoResize()
   <widget name="key_yellow" position="560,525" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="yellow" backgroundColor="black" transparent="1"/>
   <widget name="key_blue" position="830,525" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="blue" backgroundColor="black" transparent="1"/>
  </screen>
+
  <screen name="HotplugScreen" position="350,160" size="580,290" title="">
   <widget name="icon" position="10,25" size="65,65" alphatest="on"/>
   <widget name="info" position="100,10" size="470,100" font="Regular;20"/>
@@ -1324,12 +1403,14 @@ self.autoResize()
   <widget name="menu" position="10,120" size="560,160" scrollbarMode="showOnDemand"/>
   <widget name="border" position="0,0" size="0,0"/>
  </screen>
+
  <screen name="RecordPathsSettings" position="290, 150" size="600, 350" title="Recording paths">
   <widget source="key_red" render="Label" position="80, 305" zPosition="1" size="200, 36" font="Regular;20" halign="center" valign="center" foregroundColor="red" backgroundColor="black" transparent="1"/>
   <widget source="key_green" render="Label" position="330, 305" zPosition="1" size="200, 36" font="Regular;20" halign="center" valign="center" foregroundColor="green" backgroundColor="black" transparent="1"/>
   <widget name="config" position="10, 10" size="580, 240" transparent="1"/>
   <eLabel position="0, 290" size="600, 1" backgroundColor="crypt_emm"/>
  </screen>
+
  <screen name="MusicExplorer" position="0, 70" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" zPosition="-1">
   <ePixmap position="0, 0" zPosition="-1" size="1280,720" pixmap="easy-skin-aus-hd/infobar.png"/>
   <ePixmap position="82, 520" zPosition="0" size="36,36" pixmap="easy-skin-aus-hd/icons/icon_rewind.png" alphatest="on" transparent="1"/>
@@ -1360,6 +1441,7 @@ self.autoResize()
   </widget>
   <ePixmap position="234, 520" size="36, 36" pixmap="easy-skin-aus-hd/icons/icon_stop.png" alphatest="on" transparent="1"/>
  </screen>
+
  <screen name="RSSSetup" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Simple RSS Reader Setup">
   <ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
   <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -1382,6 +1464,7 @@ self.autoResize()
   
   <eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
  </screen>
+ 
  <screen name="RSSFeedView" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Simple RSS Reader">
   <ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
   <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -1404,6 +1487,7 @@ self.autoResize()
   </widget>
   <widget source="summary" render="Label" position="155, 550" size="1060, 95" font="Regular;16" backgroundColor="black" transparent="1"/>
  </screen>
+ 
  <screen name="RSSEntryView" position="0,0" backgroundColor="un44000000" flags="wfNoBorder" size="1280,720" title="Simple RSS Reader">
   <ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
   <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -1417,6 +1501,7 @@ self.autoResize()
   <widget source="info" render="Label" position="400, 120" size="810, 30" halign="right" font="Regular; 18" backgroundColor="black" transparent="1"/>
   <widget name="content" position="400, 170" size="810, 480" font="Regular; 22" backgroundColor="black" transparent="1"/>
  </screen>
+ 
  <screen name="RSSOverview" position="0,0" backgroundColor="un44000000" flags="wfNoBorder" size="1280,720" title="Simple RSS Reader">
   <ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
   <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -1431,4 +1516,10 @@ self.autoResize()
   <widget name="content" position="400, 170" size="810, 380" font="Regular; 22" backgroundColor="black" transparent="1"/>
   <widget source="summary" render="Label" position="400, 560" size="810, 95" font="Regular;16" transparent="1" backgroundColor="black"/>
  </screen>
+
+	<screen name="AutoVideoModeLabel" position="e-340,100" size="300,50" flags="wfNoBorder" backgroundColor="#7f110000" zPosition="11" >
+		<widget name="content" position="10,5" size="280,20" font="Regular;18" transparent="1" />
+		<widget name="restxt" position="10,25" size="280,20" font="Regular;18" transparent="1" />
+	</screen>
+
 </skin>
