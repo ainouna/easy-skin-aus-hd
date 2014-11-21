@@ -85,17 +85,17 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<!--	Channellogo (Picon) -->
-		<widget source="session.CurrentService" render="Picon" position="30,575" size="130,80" transparent="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Picon" position="50,575" size="100,60" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<!--	Service number -->
-		<widget source="session.CurrentService" render="Label" position="36,645" size="129,72" halign="center" font="Regular; 40" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2" valign="top" text="23:24">
+		<widget source="session.CurrentService" render="Label" position="35,645" size="130,72" halign="center" font="Regular; 40" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2" valign="top" text="23:24">
 			<convert type="ServiceName">ServiceNumber</convert>
 		</widget>
 		<!--	Conditional Access Module (CAM) name -->
-		<widget source="session.CurrentService" render="Label" position="30,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
+		<!-- <widget source="session.CurrentService" render="Label" position="30,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
 			<convert type="EGExtraInfo">CamName</convert>
-		</widget>
+		</widget> -->
 
 		<!-- Bottom bar - info icons top right -->
 
