@@ -522,10 +522,34 @@ self.autoResize()
 		<widget alphatest="blend" name="indicator_u1" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
 		<widget alphatest="blend" name="indicator_u2" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
 		<widget alphatest="blend" name="indicator_u3" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u4" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u5" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u6" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u7" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u8" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u9" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u10" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u11" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u12" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u13" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u14" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u15" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
 		<widget alphatest="blend" name="indicator_l0" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
 		<widget alphatest="blend" name="indicator_l1" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
 		<widget alphatest="blend" name="indicator_l2" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
 		<widget alphatest="blend" name="indicator_l3" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l4" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l5" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l6" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l7" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l8" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l9" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l10" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l11" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l12" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l13" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l14" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l15" pixmap="easy-skin-aus-hd/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
 
 		<widget font="Regular;25" backgroundColor="crypt_emm" foregroundColor="yellow" halign="center" name="longshift_key0" position="500,565" size="660,30" transparent="1"/>
 		<widget font="Regular;25" backgroundColor="crypt_emm" foregroundColor="yellow" halign="center" name="longshift_key1" position="500,595" size="660,30" transparent="1"/>
