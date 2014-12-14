@@ -54,6 +54,7 @@
 	<screen name="SHOUTcastWidget" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="SHOUTcast">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
+		<panel name="FullscreenMenuButtonPanel" />
 		<widget name="headertext" position="127, 120" zPosition="1" size="1060, 23" font="Regular;20" transparent="1" backgroundColor="black"/>
 		<widget name="statustext" position="69, 260" zPosition="1" size="1160, 90" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="black"/>
 		<widget name="list" position="127, 155" zPosition="2" size="1060, 316" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black"/>
