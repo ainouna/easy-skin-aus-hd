@@ -113,6 +113,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
+		<panel name="FullscreenHelpButtonPanel" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_source_youtube.png" position="55, 155" size="300,500"/>
 		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>		
 		<widget source="feedlist" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_625x85.png" backgroundColor="#41000000" render="Listbox" position="590, 160" size="635, 425" zPosition="2" scrollbarMode="showOnDemand" transparent="1">
