@@ -176,6 +176,7 @@
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
 		<panel name="FullscreenHelpButtonPanel" />
+		<panel name="FullscreenInfoButtonPanel" />
 		<widget position="50,95" size="720,500" name="waitingtext" font="Regular;22" halign="center" valign="center" backgroundColor="background" zPosition="4" />
 		<widget position="50,95" size="720,500" name="list" enableWrapAround="1" scrollbarMode="showAlways" backgroundColor="background" />
 		<widget position="50,600" size="720,25" name="freeDiskSpace" font="Named;20" halign="center" backgroundColor="background" />

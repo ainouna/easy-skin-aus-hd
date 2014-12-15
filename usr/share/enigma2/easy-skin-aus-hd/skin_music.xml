@@ -5,6 +5,7 @@
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
 		<panel name="FullscreenHelpButtonPanel"/>
+		<panel name="FullscreenInfoButtonPanel" />
 		<eLabel backgroundColor="white" position="665,340" size="450,2" zPosition="2"/>
 		<widget enableWrapAround="1" name="filelist" position="650,120" scrollbarMode="showOnDemand" size="570,207" transparent="1" zPosition="2"/>
 		<widget enableWrapAround="1" name="playlist" position="650,347" scrollbarMode="showOnDemand" size="570,254" transparent="1" zPosition="2"/>
