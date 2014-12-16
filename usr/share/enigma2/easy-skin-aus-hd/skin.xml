@@ -1120,6 +1120,7 @@ self.autoResize()
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
 		<panel name="FullscreenInfoButtonPanel" />
+		<panel name="FullscreenVKeyIconButtonPanel" />
 	</screen>
 
 	<screen name="FileCommanderConfigScreen" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
