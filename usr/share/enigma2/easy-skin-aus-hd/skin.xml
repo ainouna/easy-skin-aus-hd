@@ -293,6 +293,7 @@
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
 		<panel name="FullscreenHelpButtonPanel" />
+		<panel name="FullscreenInfoButtonPanel" />
 		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
 			    backgroundColorSelected="#41002299"
 			    colorServiceDescription="#999999"
@@ -450,6 +451,7 @@ self.autoResize()
 		<widget name="epg_description" position="90, 160" size="1040, 445" font="Regular; 23" backgroundColor="background" transparent="1" foregroundColor="white"/>
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel"/>
+		<panel name="FullscreenInfoButtonPanel" />
 	</screen>
 
 	<screen name="EventViewSimple" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Eventview">
@@ -587,6 +589,8 @@ self.autoResize()
 		<widget name="green" position="0,0" size="0,0"/>
 		<widget name="yellow" position="0,0" size="0,0"/>
 		<widget name="blue" position="0,0" size="0,0"/>
+		<panel name="FullscreenMenuButtonPanel" />
+		<panel name="FullscreenHelpButtonPanel" />
 	</screen>
 
 	<!-- Movie Location Box -->
@@ -767,6 +771,9 @@ self.autoResize()
 	<screen name="SimpleChannelSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Channel Selection">
 		<panel name="FullScreenWindow" /> 
 		<panel name="FullScreenColourPanel" />
+		<panel name="FullscreenMenuButtonPanel" />
+		<panel name="FullscreenHelpButtonPanel" />
+		<panel name="FullscreenInfoButtonPanel" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tv.png" position="55, 115" size="400,500"/>
 		
 		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
@@ -846,23 +853,13 @@ self.autoResize()
 	</screen>
 
 	<screen name="SkinSelector" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Choose your Skin">
-		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 22" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 22" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
+		<panel name="FullScreenWindow" />
 		<widget position="655, 185" size="350, 375" name="SkinList" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<ePixmap position="125, 185" size="400,400" pixmap="easy-skin-aus-hd/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
 		<widget position="200, 235" size="250,200" name="Preview" alphatest="on" zPosition="3"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget source="introduction" render="Label" position="110, 510" size="436, 24" zPosition="10" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1"/>
+		<panel name="FullScreenColourPanel" />
+		<panel name="FullscreenInfoButtonPanel" />
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm"/>
 	</screen>
 
@@ -949,12 +946,13 @@ self.autoResize()
 		</widget>
 		<widget name="SeekState" position="365,585" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>
 		<widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="easy-skin-aus-hd/position_arrow.png:3,5" position="479,587" size="696,20" zPosition="3"/>
-		<eLabel backgroundColor="black" font="Regular;20" position="1060,630" size="140,22" text="OK = Menu" transparent="1" zPosition="1"/>
+		<eLabel backgroundColor="black" font="Regular;20" position="110,630" size="140,22" text="OK = Menu" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="easy-skin-aus-hd/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
 		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_play.png"/>
 		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_pause.png"/>
 		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_forward.png"/>
 		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_stop.png"/>
+		<panel name="FullscreenHelpButtonPanel" />
 	</screen>
 
 	<screen name="CutListMenu" position="center,center" size="510,485" backgroundColor="background" title="Cutlist editor - menu">
@@ -1059,7 +1057,7 @@ self.autoResize()
 		<eLabel position="0, 115" size="560, 2" backgroundColor="crypt_emm"/>
 	</screen>
 
-	<screen name="AudioSelection" position="300,180" size="680,330" title="Audio">
+	<screen name="AudioSelection" position="center,center" size="680,355" title="Audio">
 		<widget source="key_red" position="5,2" size="35,25" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_red.png" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -1097,6 +1095,7 @@ self.autoResize()
 			    }
 			</convert>
 		</widget>
+		<ePixmap position="5,330" size="35,25" pixmap="easy-skin-aus-hd/buttons/key_menu.png" alphatest="blend" transparent="1" />
 	</screen>
 
 	<screen name="ZapHistoryBrowser" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
@@ -1144,6 +1143,8 @@ self.autoResize()
 		<widget name="list_right" position="645,120" size="580,475" zPosition="1" transparent="1" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="background" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
+		<panel name="FullscreenInfoButtonPanel" />
+		<panel name="FullscreenVKeyIconButtonPanel" />
 	</screen>
 
 	<screen name="FileCommanderConfigScreen" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
