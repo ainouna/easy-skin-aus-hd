@@ -17,6 +17,6 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="SetupConfig"/>
-		<widget name="Preview" position="80,110" size="154,500"  font="Regular;18" halign="center" transparent="1" valign="center" zPosition="2"  alphatest="blend"/>
+		<widget name="Preview" position="150,100" size="200,500" backgroundColor="#ff000000" font="Regular;18" halign="center" transparent="1" valign="center" zPosition="2"  alphatest="blend"/>
 	</screen>
 </skin>
