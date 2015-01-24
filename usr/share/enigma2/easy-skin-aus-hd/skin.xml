@@ -85,6 +85,7 @@
 		<font filename="ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1"/>
 		<font filename="tuxtxt.ttf" name="Console" scale="100"/>
 		<font filename="DroidSans-Bold.ttf" name="Named" scale="100"/>
+		<alias name="Fixed" font="Console" size="20" height="25" />
 	</fonts>
 	<windowstyle type="skinned" id="0">
 		<title offset="20,8" font="Named;23"/>
