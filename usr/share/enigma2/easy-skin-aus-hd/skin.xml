@@ -460,6 +460,8 @@ self.autoResize()
 		<widget name="datetime" position="430, 105" size="340,25" font="Named; 20" halign="center" backgroundColor="black" transparent="1" foregroundColor="white"/>
 		<widget name="duration" position="770, 105" size="340,25" font="Named; 20" halign="right" backgroundColor="black" transparent="1" foregroundColor="white"/>
 		<widget name="FullDescription" position="90, 160" size="1040, 445" font="Regular; 23" backgroundColor="background" transparent="1" foregroundColor="white"/>
+		<panel name="FullscreenMenuButtonPanel"/>
+		<panel name="FullscreenInfoButtonPanel" />
 	</screen>
 
 	<!--<screen name="InfoBarEventView" position="0,0" size="1280,250" backgroundColor="infobar_sunken" flags="wfNoBorder" zPosition="1">
