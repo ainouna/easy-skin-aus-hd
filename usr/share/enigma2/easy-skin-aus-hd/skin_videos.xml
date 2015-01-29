@@ -170,10 +170,12 @@
 			</convert>
 		</widget>
 	</screen>
+
 	<screen name="MovieContextMenu" position="340,180" size="600,400" title="Movielist menu">
 		<widget name="menu" position="20,20" size="560,360" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
-	<!-- Movie Selection -->
+
+<!-- Movie Selection -->
 	<screen name="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Select a movie">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
@@ -183,7 +185,8 @@
 		<panel name="FullscreenTextButtonPanel" />
 		<widget position="50,95" size="720,500" name="waitingtext" font="Regular;22" halign="center" valign="center" backgroundColor="background" zPosition="4" />
 		<widget position="50,95" size="720,500" name="list" enableWrapAround="1" scrollbarMode="showAlways" backgroundColor="background" />
-		<widget position="50,600" size="720,25" name="freeDiskSpace" font="Named;20" halign="center" backgroundColor="background" />
+		<widget position="50,600" size="360,25" name="freeDiskSpace" font="Named;20" halign="center" backgroundColor="background" />
+		<widget position="410,600" size="360,25" name="TrashcanSize" font="Named;20" halign="center" backgroundColor="background" />
 		<widget position="780,75" size="420,25" source="Service" render="Label" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="background" zPosition="1" >
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
@@ -199,7 +202,8 @@
 		</widget>
 		<widget backgroundColor="background" name="DescriptionBorder" position="0,0" size="0,0"/>
 	</screen> 
-	<!-- Media Portal -->
+
+<!-- Media Portal -->
 	<screen name="haupt_Screen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/mpback.png" />
 		<widget source="session.VideoPicture" render="Pig" position="886,22" size="328,186" zPosition="3" backgroundColor="transparent" />
