@@ -1,7 +1,6 @@
 <skin>
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Selection">
 		<panel name="FullScreenWindow" />
-		<widget name="lab1" position="155, 73" size="995, 546" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="background" transparent="0" />
 		<widget position="770,20" size="90,40" source="Event" render="Pixmap" pixmap="epg/icetv_90x40.png" alphatest="blend" zPosition="1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
@@ -47,7 +46,6 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget name="bouquetlist" position="20,130" size="660,540" foregroundColor="#00FEE620" backgroundColor="#0315215b" foregroundColorSelected="#00000000" backgroundColorSelected="#00acacac" borderColor="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" />
-		<widget name="lab1" position="20,130" size="660,540" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="#0015215b" transparent="0" />
 		<widget name="list" position="20,130" size="660,540" selectionPixmap="buttons/FocusBar_H36x660.png" zPosition="3" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="now_button" pixmap="epg/now_next_more.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
 		<widget name="next_button" pixmap="epg/now_next_more.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
@@ -70,7 +68,6 @@
 	</screen>
 
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Electronic Program Guide">
-		<widget name="lab1" position="0,30" size="1280,640" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 		<widget position="25,0" size="825,30" source="Title" render="Label" font="Regular;25" valign="bottom" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="#00151515" zPosition="1" />
 		<widget position="900,0" size="330,30" source="global.CurrentTime" render="Label" font="Regular;20" valign="bottom" foregroundColor="#00FFFFFF" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%a, %d %b %Y %H:%M</convert>
@@ -101,8 +98,6 @@
 		<panel name="FullscreenLowHelpButtonPanel"/>
 	</screen>
 	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="#0015215b" transparent="0" flags="wfNoBorder">
-		<!--  lab1 tells the user to wait while gathering data, it then goes away -->
-		<widget position="0,270" size="1280,390" name="lab1" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="#0015215b" transparent="0" />
 		<widget position="0,0" size="1280,720" source="Event" render="Pixmap" pixmap="epg/multiepg.png" zPosition="-1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True,Invert</convert>
 			<convert type="ConditionalShowHide" />
@@ -170,7 +165,6 @@
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget source="Title" render="Label" position="20,10" size="850,43" font="Regular;32" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="#00151515" zPosition="1" />
-		<widget name="lab1" position="0,50" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="#0015215b" transparent="0" />
 		<widget name="timeline_text" position="0,50" size="1280,25" TimelineTicksOn="yes" TimelineTickAlignment="right" TimelineTextPadding="0" backgroundColor="#00010242" foregroundColor="#00FEE620" transparent="1" zPosition="0" />
 		<widget position="0,69" size="2,4" name="timeline0" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
 		<widget position="0,69" size="2,4" name="timeline1" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
