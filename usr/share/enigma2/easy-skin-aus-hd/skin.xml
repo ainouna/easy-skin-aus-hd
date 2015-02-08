@@ -682,7 +682,7 @@ self.autoResize()
 		<panel name="FullScreenColourPanel" />
 	</screen>
 
-	<screen name="MinuteInput" position="center,center" size="280,60">
+	<screen name="MinuteInput" position="center,center" size="280,60" title="Enter time in minutes">
 		<widget name="minutes" position="80,15" size="160,25" halign="right" font="Regular;23" transparent="1" />
 	</screen>
 
