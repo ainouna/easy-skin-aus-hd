@@ -885,13 +885,13 @@ self.autoResize()
 
 	<screen name="TimeshiftState" position="200,45" size="300,55" backgroundColor="background">
 		<widget name="statusicon" position="10,0" size="20,20" zPosition="3" alphatest="on" pixmaps="easy-skin-aus-hd/icons/play.png,easy-skin-aus-hd/icons/pause.png,easy-skin-aus-hd/icons/stop.png,easy-skin-aus-hd/icons/forward.png,easy-skin-aus-hd/icons/backward.png,easy-skin-aus-hd/icons/slow.png" />
-		<widget name="speed" position="50,0" size="50,20" font="Regular;17" halign="left" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="4" />
+		<widget name="speed" position="50,0" size="60,20" font="Regular;17" halign="left" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="4" />
 		<widget name="state" position="0,0" size="0,0" />
 		<widget name="eventname" position="10,35" size="200,20" font="Regular;17"/>
-		<widget source="session.CurrentService" render="Label" position="100,0" size="50,20" font="Regular;17" foregroundColor="foreground" backgroundColor="background" halign="right" valign="top" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Label" position="110,0" size="90,20" font="Regular;17" foregroundColor="foreground" backgroundColor="background" halign="right" valign="top" transparent="1" zPosition="2">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="240,0" size="50,20" font="Regular;17" foregroundColor="foreground" backgroundColor="background" halign="right" valign="top" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Label" position="200,0" size="90,20" font="Regular;17" foregroundColor="foreground" backgroundColor="background" halign="right" valign="top" transparent="1" zPosition="2">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 		<ePixmap position="10,20" size="280,15" zPosition="2" pixmap="easy-skin-aus-hd/slider_back.png" alphatest="on" />
