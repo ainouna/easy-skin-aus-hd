@@ -875,9 +875,9 @@ self.autoResize()
 		<widget source="session.CurrentService" render="Label" position="280,5" size="120,27" font="Regular;20" halign="right" foregroundColor="white" backgroundColor="background">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget name="PTSSeekPointer" position="0,30" zPosition="3" size="19,20" pixmap="/usr/share/enigma2/skin_default/timeline-now.png" alphatest="on" />
-		<ePixmap position="15,33" size="390,15" zPosition="1" pixmap="/usr/share/enigma2/skin_default/slider_back.png" alphatest="on"/>
-			 <widget source="session.CurrentService" render="Progress" position="15,33" size="390,15" zPosition="2" pixmap="/usr/share/enigma2/skin_default/slider.png" transparent="1">
+		<widget name="PTSSeekPointer" position="0,30" zPosition="3" size="19,20" pixmap="timeline-now.png" alphatest="on" />
+		<ePixmap position="15,33" size="390,15" zPosition="1" pixmap="slider_back.png" alphatest="on"/>
+			 <widget source="session.CurrentService" render="Progress" position="15,33" size="390,15" zPosition="2" pixmap="slider.png" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<widget name="eventname" position="60,49" zPosition="4" size="320,20" font="Regular;18" halign="center" backgroundColor="background"/>
@@ -887,7 +887,7 @@ self.autoResize()
 		<widget name="statusicon" position="10,0" size="20,20" zPosition="3" alphatest="on" pixmaps="easy-skin-aus-hd/icons/play.png,easy-skin-aus-hd/icons/pause.png,easy-skin-aus-hd/icons/stop.png,easy-skin-aus-hd/icons/forward.png,easy-skin-aus-hd/icons/backward.png,easy-skin-aus-hd/icons/slow.png" />
 		<widget name="speed" position="50,0" size="60,20" font="Regular;17" halign="left" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="4" />
 		<widget name="state" position="0,0" size="0,0" />
-		<widget name="eventname" position="10,35" size="200,20" font="Regular;17"/>
+		<widget name="eventname" position="10,35" size="280,20" font="Regular;17"/>
 		<widget source="session.CurrentService" render="Label" position="110,0" size="90,20" font="Regular;17" foregroundColor="foreground" backgroundColor="background" halign="right" valign="top" transparent="1" zPosition="2">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
