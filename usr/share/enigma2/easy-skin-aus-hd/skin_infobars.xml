@@ -55,14 +55,11 @@
 		<!-- Date/Time top left -->
 
 		<ePixmap position="3,7" size="184,58" pixmap="easy-skin-aus-hd/time_panel.png" alphatest="blend" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="19,10" size="97,28" font="Regular; 26" valign="top" halign="right" foregroundColor="twhite" backgroundColor="un333333" transparent="1" shadowColor="#10000000" shadowOffset="-2,-2">
-			<convert type="ClockToText">Default</convert>
+		<widget position="20,10" size="164,28" source="global.CurrentTime" render="Label" font="Regular; 26" halign="center" foregroundColor="twhite" backgroundColor="transpBlack" transparent="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="116,13" size="46,20" font="Regular; 18" valign="top" halign="left" backgroundColor="un333333" foregroundColor="twhite" transparent="1" shadowColor="#10000000" shadowOffset="-2,-2">
-			<convert type="ClockToText">Format::%S</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="19,40" size="143,20" font="Regular; 17" halign="center" backgroundColor="transpBlack" foregroundColor="titulos" transparent="1">
-			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		<widget position="20,40" size="164,20" source="global.CurrentTime" render="Label" font="Regular; 17" halign="center" foregroundColor="titulos" backgroundColor="transpBlack" transparent="1">
+			<convert type="ClockToText">Format:%d %b %Y</convert>
 		</widget>
 
 		<!-- Bottom bar -->
@@ -99,73 +96,60 @@
 
 		<!-- Bottom bar - info icons top right -->
 
-		<!--	Subservices icon -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_sub.png" position="930,566" size="44,30" alphatest="on">
-			<convert type="ServiceInfo">SubservicesAvailable</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-
 		<!--	Online software updates -->
-		<ePixmap position="970,568" size="22,22" pixmap="easy-skin-aus-hd/infobar/ico_update_off.png" alphatest="blend" />
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" position="970,568" size="22,22" zPosition="1" pixmap="easy-skin-aus-hd/infobar/ico_update_on.png" alphatest="blend">
+		<ePixmap position="998,568" size="22,22" pixmap="easy-skin-aus-hd/infobar/ico_update_off.png" alphatest="blend" />
+		<widget position="998,568" size="22,22" source="global.OnlineStableUpdateState" render="Pixmap" zPosition="1" pixmap="easy-skin-aus-hd/infobar/ico_update_on.png" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 
 		<!--	Dolby audio icon -->
-		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_dolby_off.png" position="997,569" size="57,21" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_dolby_on.png" position="997,569" size="57,21" zPosition="1" alphatest="blend">
+		<ePixmap position="1026,569" size="57,21" pixmap="easy-skin-aus-hd/infobar/ico_dolby_off.png" alphatest="blend" />
+		<widget position="1026,569" size="57,21" source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_dolby_on.png" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
-		<!--	Widescreen icon -->
-		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_169_off.png" position="1139,569" size="37,20" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_169_on.png" position="1139,569" size="37,20" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">IsWidescreen</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-
 		<!--	Teletext icon -->
-		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_txt_off.png" position="1062,569" size="35,19" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_txt_on.png" position="1062,569" size="35,19" zPosition="1" alphatest="blend">
+		<ePixmap position="1092,569" size="35,19" pixmap="easy-skin-aus-hd/infobar/ico_txt_off.png" alphatest="blend" />
+		<widget position="1092,569" size="35,19" source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_txt_on.png" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
-		<!--	Encryption icon -->
-		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_crypt_off.png" position="1100,568" size="30,21" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_crypt_on.png" position="1100,568" size="30,21" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">IsCrypted</convert>
+		<!--	Widescreen icon -->
+		<ePixmap position="1133,569" size="37,20" pixmap="easy-skin-aus-hd/infobar/ico_169_off.png" alphatest="blend" />
+		<widget position="1133,569" size="37,20" source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_169_on.png" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	HD TV icon -->
-		<ePixmap position="1180,569" size="30,20" pixmap="easy-skin-aus-hd/infobar/ico_hd_off.png" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_hd_on.png" position="1180,569" size="30,20" zPosition="1" alphatest="blend">
+		<ePixmap position="1176,569" size="30,20" pixmap="easy-skin-aus-hd/infobar/ico_hd_off.png" alphatest="blend" />
+		<widget position="1176,569" size="30,20" source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_hd_on.png" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
-			<convert type="ValueRange">721,1980</convert>
+			<convert type="ValueRange">800,2000</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	HBBTV icon -->
 		<ePixmap position="1213,568" size="56,20" pixmap="easy-skin-aus-hd/infobar/ico_hbbtv_off.png" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_hbbtv_on.png" position="1213,568" size="56,20" zPosition="1" alphatest="blend">
+		<widget position="1213,568" size="56,20" source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_hbbtv_on.png" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	Video resolution -->
-		<widget source="session.CurrentService" render="Label" font="Regular;14" position="1143,605" size="50,20" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
+		<widget position="1143,605" size="50,20" source="session.CurrentService" render="Label" font="Regular;14" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" font="Regular; 12" position="1194,605" size="15,20" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="1" />
-		<widget source="session.CurrentService" render="Label" font="Regular;14" position="1210,605" size="50,20" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
+		<eLabel position="1194,605" size="15,20" text="x" font="Regular; 14" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="1" />
+		<widget position="1210,605" size="50,20" source="session.CurrentService" render="Label" font="Regular;14" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 
 		<!--	Digital broadcast type / tranporder info  -->
 
-		<widget source="session.CurrentService" render="Label" position="839,677" size="409,60" font="Regular; 14" halign="right" foregroundColor="border1" backgroundColor="black" transparent="1" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget position="839,677" size="409,60" source="session.CurrentService" render="Label" font="Regular; 14" halign="right" foregroundColor="border1" backgroundColor="black" transparent="1" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="PliExtraInfo">TransponderInfo2line</convert>
 		</widget>
 
@@ -428,18 +412,6 @@
 
 
 	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder" >
-
-		<!-- Playback state indicator - top left -->
-
-		<!--	Frame -->
-		<ePixmap position="20,20" zPosition="-1" size="95,75" transparent="1" pixmap="easy-skin-aus-hd/frame/frame80_95x75.png" />
-
-		<!--	Playback state icon -->
-		<widget name="statusicon" position="45,45" size="20,20" alphatest="on" pixmaps="easy-skin-aus-hd/icons/play.png,easy-skin-aus-hd/icons/pause.png,easy-skin-aus-hd/icons/stop.png,easy-skin-aus-hd/icons/forward.png,easy-skin-aus-hd/icons/backward.png,easy-skin-aus-hd/icons/slow.png,easy-skin-aus-hd/icons/blank.png" />
-
-		<!-- Playback speed indicator -->
-		<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" />
-
 		<!-- Bottom infobar backgrounds and trim -->
 
 		<!--	Top edge fading towards the top -->
@@ -448,98 +420,83 @@
 		<eLabel position="0,565" size="1280,72" zPosition="-1" backgroundColor="abackground" transparent="0" />
 		<!--	Bottom section fading towards the bottom -->
 		<ePixmap position="0,637" size="1280,83" pixmap="easy-skin-aus-hd/navy_fondo-fs8.png" zPosition="-1" alphatest="on" />
-		<!-- Horizontal divider between status icons and screen resolution -->
-		<eLabel position="86, 676" size="180, 1" backgroundColor="crypt_emm" />
+
+		<!--	Recording name -->
+		<widget source="session.CurrentService" render="Label" position="0,580" size="1280,30" font="Named;22" halign="center" valign="center" noWrap="1" backgroundColor="black" transparent="1" foregroundColor="white">
+			<convert type="ServiceName">Name</convert>
+		</widget>
 
 		<!-- Status icons -->
 
-		<!-- "Recording" icon, blinks when playback file is currently recording -->
-		<widget position="266, 620" size="36,36" source="session.RecordState" render="Pixmap" pixmap="easy-skin-aus-hd/icons/i_rec.png" alphatest="on">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-
 		<!--	Dolby audio icon -->
-		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_dolby_off.png" position="82, 620" size="57, 36" alphatest="on"/>
+		<ePixmap position="82,620" size="57,36" pixmap="easy-skin-aus-hd/infobar/ico_dolby_off.png" alphatest="on"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_dolby_on.png" position="82, 620" size="57, 36" zPosition="1" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 
 		<!--	Widescreen icon -->
-		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_169_off.png" position="160, 620" size="36, 36" alphatest="on"/>
+		<ePixmap position="160,620" size="36,36" pixmap="easy-skin-aus-hd/infobar/ico_169_off.png" alphatest="on"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_169_on.png" position="160, 620" size="36, 36" zPosition="1" alphatest="on">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 
 		<!--	HD TV icon -->
-		<ePixmap pixmap="easy-skin-aus-hd/infobar/ico_hd_off.png" position="215, 620" size="36,36" alphatest="on"/>
+		<ePixmap position="215,620" size="36,36" pixmap="easy-skin-aus-hd/infobar/ico_hd_off.png" alphatest="on"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_hd_on.png" position="215, 620" size="36, 36" zPosition="1" alphatest="on">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">800,2000</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 
-		<!--	Video resolution -->
-		<widget source="session.CurrentService" render="Label" font="Regular; 18" position="103, 683" size="57, 20" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
-			<convert type="ServiceInfo">VideoWidth</convert>
-		</widget>
-		<eLabel text="x" font="Regular; 18" position="164, 683" size="15, 20" halign="center" backgroundColor="black" transparent="1" foregroundColor="grey"/>
-		<widget source="session.CurrentService" render="Label" font="Regular; 18" position="182, 683" size="57, 20" halign="left" backgroundColor="black" transparent="1" foregroundColor="white">
-			<convert type="ServiceInfo">VideoHeight</convert>
-		</widget>
+		<!--	Playback state icon -->
+		<widget name="statusicon" position="620,615" size="20,20" alphatest="on" pixmaps="easy-skin-aus-hd/icons/play.png,easy-skin-aus-hd/icons/pause.png,easy-skin-aus-hd/icons/stop.png,easy-skin-aus-hd/icons/forward.png,easy-skin-aus-hd/icons/backward.png,easy-skin-aus-hd/icons/slow.png,easy-skin-aus-hd/icons/blank.png" />
 
-		<!-- Recording state information -->
+		<!-- Playback speed indicator -->
+		<widget name="speed" position="650,615" size="120,20" font="Regular;16" halign="left" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
 
-		<!--	Recording name -->
-		<widget source="session.CurrentService" render="Label" position="55, 590" size="1220, 26" font="Named; 23" halign="center" valign="center" noWrap="1" backgroundColor="black" transparent="1" foregroundColor="white">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-
-		<!--	Playback progress position -->
-		<widget source="session.CurrentService" render="Label" position="370, 670" size="100, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" shadowColor="black" shadowOffset="-1,-1" transparent="1">
-			<convert type="ServicePosition">Position</convert>
+		<!-- "Recording" icon, shown when there is an active recording -->
+		<widget position="1040,620" size="36,36" source="session.RecordState" render="Pixmap" pixmap="infobar/ico_rec.png" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
 		</widget>
 
 		<!--	Playback progress bar -->
-		<ePixmap position="393, 640" size="700,16" pixmap="easy-skin-aus-hd/mpslider.png" zPosition="2" alphatest="on"/>
-		<widget source="session.CurrentService" render="PositionGauge" position="413, 641" size="560,14" pointer="easy-skin-aus-hd/pointer.png:13,3">
+		<eLabel position="270,650" size="740,18" backgroundColor="darkergrey"/>
+		<widget position="270,651" size="740,16" source="session.CurrentService" render="PositionGauge" pointer="pointer_blue.png:3,3" transparent="1" zPosition="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 
+		<!--	Playback progress position -->
+		<widget position="270,670" size="130,20" source="session.CurrentService" halign="left" valign="top" render="Label" font="Regular;18" backgroundColor="black" shadowColor="black" shadowOffset="-1,-1" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+
 		<!--	Recording length -->
-		<widget source="session.CurrentService" render="Label" position="655, 670" size="110, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1">
+		<widget position="550,670" size="180,20" source="session.CurrentService" halign="center" valign="top" render="Label" font="Regular;18" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 
 		<!--	Playback time remaining -->
-		<widget source="session.CurrentService" render="Label" position="910, 670" size="100, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1">
+		<widget position="880,670" size="130,20" source="session.CurrentService" halign="right" valign="top" render="Label" font="Regular;18" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 
+		<!--	Video resolution -->
+		<widget position="80, 670" size="70,20" source="session.CurrentService" font="Regular;16" halign="right" render="Label" foregroundColor="white" backgroundColor="black" transparent="1">
+			<convert type="ServiceInfo">VideoWidth</convert>
+		</widget>
+		<eLabel position="150, 670" size="15,20" text="x" font="Regular;16" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1"/>
+		<widget position="165, 670" size="70,20" source="session.CurrentService" font="Regular;16" halign="left" render="Label" foregroundColor="white" backgroundColor="black" transparent="1">
+			<convert type="ServiceInfo">VideoHeight</convert>
+		</widget>
+
 		<!-- Clock  -->
-
-		<!--	Clock - background -->
-		<ePixmap pixmap="easy-skin-aus-hd/ruanalogic.png" position="1083,608" size="90,90" alphatest="blend" />
-
-		<!--	Clock - seconds hand -->
-		<widget source="global.CurrentTime" render="Analogic" position="1095,620" size="65,65" borderColor="white" foregroundColor="white" linewidth="1" zPosition="1" alphatest="on">
-			  <convert type="Analogiccon">AnalogSeconds</convert>
+		<widget position="1080,640" size="160,28" source="global.CurrentTime" render="Label" font="Regular;24" halign="center" foregroundColor="twhite" backgroundColor="transpBlack" transparent="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
-
-		<!--	Clock - minutes hand -->
-		<widget source="global.CurrentTime" render="Analogic" position="1105,629" size="47,47" borderColor="white" foregroundColor="white" linewidth="2" zPosition="1" alphatest="on">
-			  <convert type="Analogiccon">AnalogMinutes</convert>
-		</widget>
-
-		<!--	Clock - hour hand -->
-		<widget source="global.CurrentTime" render="Analogic" position="1113,638" size="30,30" borderColor="white" foregroundColor="white" linewidth="2" zPosition="1" alphatest="on">
-			  <convert type="Analogiccon">AnalogHours</convert>
-		</widget>
-
-		<!--	Clock - date -->
-		<widget source="global.CurrentTime" render="Label" position="1085,700" size="300,22" font="Regular;18" halign="left" backgroundColor="transpBlack" foregroundColor="white" transparent="1" >
-			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		<widget position="1080,670" size="164,20" source="global.CurrentTime" render="Label" font="Regular;16" halign="center" foregroundColor="titulos" backgroundColor="transpBlack" transparent="1">
+			<convert type="ClockToText">Format:%d %b %Y</convert>
 		</widget>
 	</screen>
 
