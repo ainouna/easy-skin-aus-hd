@@ -949,7 +949,7 @@ self.autoResize()
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
 		<widget name="SeekState" position="365,585" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>
-		<widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="easy-skin-aus-hd/position_arrow.png:3,5" position="479,587" size="696,20" zPosition="3"/>
+		<widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="position_arrow.png:3,5" position="479,587" size="696,20" zPosition="3"/>
 		<eLabel backgroundColor="black" font="Regular;20" position="110,630" size="140,22" text="OK = Menu" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="easy-skin-aus-hd/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
 		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_play.png"/>
@@ -1002,7 +1002,7 @@ self.autoResize()
 		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_pause.png"/>
 		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_forward.png"/>
 		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="easy-skin-aus-hd/icons/icon_stop.png"/>
-		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="un808888" pointer="easy-skin-aus-hd/position_arrow.png:3,5" foregroundColor="black"/>
+		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="un808888" pointer="position_arrow.png:3,5" foregroundColor="black"/>
 		<widget name="SeekState" position="365, 585" zPosition="10" size="100,25" halign="center" font="Regular;20" valign="center" transparent="1"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
 	</screen>
