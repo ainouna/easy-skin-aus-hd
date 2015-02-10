@@ -462,9 +462,9 @@
 		</widget>
 
 		<!--	Playback progress bar -->
-		<eLabel position="270,650" size="740,14" backgroundColor="darkergrey"/>
-		<widget position="270,651" size="740,12" source="session.CurrentService" render="Progress" pixmap="slider.png" transparent="1" zPosition="1">
-			<convert type="ServicePosition">Position</convert>
+		<eLabel position="270,650" size="740,18" backgroundColor="darkergrey"/>
+		<widget position="270,651" size="740,16" source="session.CurrentService" render="PositionGauge" pointer="pointer_blue.png:3,3" transparent="1" zPosition="1">
+			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 
 		<!--	Playback progress position -->
