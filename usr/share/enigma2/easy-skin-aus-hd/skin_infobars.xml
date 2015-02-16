@@ -333,43 +333,42 @@
 	<!-- Second TV infobar Now extended information -->
 
 	<screen name="SecondInfoBarNow" position="0,0" size="1280,720" backgroundColor="transparent2" flags="wfNoBorder">
-
 		<!-- Panel background -->
 		<eLabel position="55,72" size="600,458" zPosition="-1" backgroundColor="abackground" />
 
-		<!-- Panel icon -->
-		<ePixmap name="logoazboxhd" position="62,114" size="40,37" pixmap="easy-skin-aus-hd/infobar/ico_tv.png" alphatest="blend" />
-
 		<!-- Service number & name -->
-		<widget source="session.CurrentService" render="Label" position="62,84" size="92,30" halign="center" font="Regular; 20" backgroundColor="background" transparent="1" foregroundColor="grey" noWrap="1" text="555">
+		<widget position="62,84" size="92,30" source="session.CurrentService" render="Label" halign="center" font="Regular; 20" backgroundColor="background" transparent="1" foregroundColor="grey" noWrap="1" text="555">
 			<convert type="ServiceName">ServiceNumber</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="156,82" size="414,30" font="Regular; 20" transparent="1" valign="center" backgroundColor="black" halign="left" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2" noWrap="1">
+		<widget position="156,82" size="414,30" source="session.CurrentService" render="Label" font="Regular; 20" transparent="1" valign="center" backgroundColor="black" halign="left" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 
+		<!-- Panel icon -->
+		<ePixmap position="62,114" size="40,37" name="logoazboxhd" pixmap="easy-skin-aus-hd/infobar/ico_tv.png" alphatest="blend" />
+
+		<!-- Event name -->
+		<widget position="121,127" size="520,23" source="session.Event_Now" render="Label" halign="left" valign="top" font="Regular; 18" backgroundColor="background" transparent="1" noWrap="1" foregroundColor="colorsel" shadowColor="#000000" shadowOffset="-2,-2">
+			<convert type="EventName">Name</convert>
+		</widget>
+
 		<!-- Event start & end times, and time remaining -->
-		<widget source="session.Event_Now" render="Label" position="101,150" size="66,28" halign="right" font="Regular; 18" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
+		<widget position="101,150" size="66,28" source="session.Event_Now" render="Label" halign="right" valign="top" font="Regular; 18" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="-" position="168,150" size="20,28" halign="center" font="Regular; 18" foregroundColor="foreground" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" valign="center" />
-		<widget source="session.Event_Now" render="Label" position="188,150" size="66,28" halign="left" font="Regular; 18" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
+		<eLabel position="168,150" size="20,28" text="-" halign="center" valign="top" font="Regular; 18" foregroundColor="foreground" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2"/>
+		<widget position="188,150" size="66,28" source="session.Event_Now" render="Label" halign="left" valign="top" font="Regular; 18" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="241,150" size="97,28" halign="right" font="Regular; 18" backgroundColor="background" transparent="1" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
+		<widget position="260,150" size="240,28" source="session.Event_Now" render="Label" halign="left" valign="top" font="Regular; 18" backgroundColor="background" transparent="1" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 
-		<!-- Event name -->
-		<widget source="session.Event_Now" render="Label" position="121,127" size="520,23" halign="left" font="Regular; 19" backgroundColor="background" transparent="1" noWrap="1" foregroundColor="colorsel" shadowColor="#000000" shadowOffset="-2,-2">
-			<convert type="EventName">Name</convert>
-		</widget>
-
 		<!-- Event extended description -->
-		<widget source="session.Event_Now" render="Label" position="74,184" size="567,330" font="Regular; 19" valign="top" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget position="75,184" size="560,330" source="session.Event_Now" render="Label" font="Regular; 19" valign="top" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
@@ -379,33 +378,33 @@
 
 	<screen name="SecondInfoBarNext" position="0,0" size="1280,720" backgroundColor="transparent2" flags="wfNoBorder">
 		<!-- Panel background -->
-		<eLabel position="697,72" size="546,458" zPosition="-1" backgroundColor="abackground" />
+		<eLabel position="700,72" size="540,458" zPosition="-1" backgroundColor="abackground" />
 
 		<!-- Panel icon -->
-		<eLabel name="nexticon" position="702,127" size="29,28" halign="center" valign="center" font="Regular; 18" text="&gt;&gt;" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2" transparent="1" />
+		<eLabel position="705,127" size="29,23" name="nexticon" halign="left" valign="top" font="Regular; 18" text="&gt;&gt;" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2" transparent="1" />
+
+		<!-- Event name -->
+		<widget position="735,127" size="520,23" source="session.Event_Next" render="Label" halign="left" valign="top" font="Regular; 18" backgroundColor="background" transparent="1" noWrap="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2">
+			<convert type="EventName">Name</convert>
+		</widget>
 
 		<!-- Event start & end times, and duration -->
-		<widget source="session.Event_Next" render="Label" position="715,150" size="66,28" halign="right" font="Regular; 18" foregroundColor="grey" backgroundColor="background" transparent="1" valign="center" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget position="715,150" size="66,28" source="session.Event_Next" render="Label" halign="right" valign="top" font="Regular; 18" foregroundColor="grey" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="-" position="782,150" size="20,28" halign="center" font="Regular; 18" foregroundColor="foreground" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" valign="center" />
-		<widget source="session.Event_Next" render="Label" position="800,150" size="66,28" halign="left" font="Regular; 18" foregroundColor="grey" backgroundColor="background" transparent="1" valign="center" shadowColor="#000000" shadowOffset="-2,-2">
+		<eLabel position="782,150" size="20,28" text="-" halign="center" valign="top" font="Regular; 18" foregroundColor="foreground" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2"/>
+		<widget position="802,150" size="66,28" source="session.Event_Next" render="Label" halign="left" valign="top" font="Regular; 18" foregroundColor="grey" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="853,150" size="97,28" halign="right" font="Regular; 18" backgroundColor="background" transparent="1" valign="center" shadowColor="#000000" shadowOffset="-2,-2" foregroundColor="un53a9ff">
+		<widget position="874,150" size="240,28" source="session.Event_Next" render="Label" halign="left" valign="top" font="Regular; 18" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" foregroundColor="un53a9ff">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
 
-		<!-- Event name -->
-		<widget source="session.Event_Next" render="Label" position="732,127" size="494,28" halign="left" font="Regular; 18" backgroundColor="background" transparent="1" noWrap="1" valign="center" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2">
-			<convert type="EventName">Name</convert>
-		</widget>
-
 		<!-- Event extended description -->
-		<widget source="session.Event_Next" render="Label" position="718,184" size="508,330" font="Regular; 18" valign="top" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget position="720,184" size="500,330" source="session.Event_Next" render="Label" font="Regular; 18" valign="top" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
@@ -463,7 +462,7 @@
 
 		<!--	Playback progress bar -->
 		<eLabel position="270,650" size="740,18" backgroundColor="darkergrey"/>
-		<widget position="270,651" size="740,16" source="session.CurrentService" render="PositionGauge" pointer="pointer_blue.png:3,3" transparent="1" zPosition="1">
+		<widget position="270,651" size="740,16" source="session.CurrentService" render="PositionGauge" pointer="pointer_blue.png:3,3" foregroundColor="darkgrey" transparent="1" zPosition="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 
