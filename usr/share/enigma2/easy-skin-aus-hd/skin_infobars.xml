@@ -55,12 +55,11 @@
 
 	<!-- Clock -->
 
-	<screen name="InfoBarClock" position="0,0" size="184,58" backgroundColor="transparent2" flags="wfNoBorder">
-		<ePixmap position="0,0" size="184,58" pixmap="easy-skin-aus-hd/time_panel.png" alphatest="blend" zPosition="-1" />
-		<widget position="17,3" size="164,28" source="global.CurrentTime" render="Label" font="Regular; 26" halign="center" foregroundColor="twhite" backgroundColor="transpBlack" transparent="1">
+	<screen name="InfoBarClock" position="0,0" size="124,50" backgroundColor="transparent2" flags="wfNoBorder">
+		<widget position="0,0" size="124,28" source="global.CurrentTime" render="Label" font="Regular; 26" halign="center" foregroundColor="twhite" backgroundColor="transpBlack" transparent="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
-		<widget position="17,33" size="164,20" source="global.CurrentTime" render="Label" font="Regular; 17" halign="center" foregroundColor="titulos" backgroundColor="transpBlack" transparent="1">
+		<widget position="0,30" size="124,20" source="global.CurrentTime" render="Label" font="Regular; 17" halign="center" foregroundColor="titulos" backgroundColor="transpBlack" transparent="1">
 			<convert type="ClockToText">Format:%d %b %Y</convert>
 		</widget>
 	</screen>
@@ -123,12 +122,6 @@
 
 	<screen name="InfoBarCommon" position="0,0" size="1280,720" backgroundColor="transparent2" flags="wfNoBorder">
 
-		<!-- Date/Time top left -->
-
-		<panel position="7,7" size="184,58" >
-			<panel name="InfoBarClock" />
-		</panel>
-
 		<!-- Bottom bar -->
 
 		<!-- Bottom infobar backgrounds and trim -->
@@ -144,17 +137,25 @@
 
 		<!-- Bottom bar - service number, name & picon -->
 
+		<!--	Service number -->
+		<widget source="session.CurrentService" render="Label" position="193,574" size="55,30" halign="left" font="Regular; 24" backgroundColor="background" transparent="1" foregroundColor="titulos" shadowColor="#000000" shadowOffset="-2,-2" text="23:24">
+			<convert type="ServiceName">ServiceNumber</convert>
+		</widget>
+
 		<!--	Service name -->
-		<widget source="session.CurrentService" render="Label" position="182,574" size="577,30" font="Regular; 24" backgroundColor="background" transparent="1" valign="center" foregroundColor="titulos" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget source="session.CurrentService" render="Label" position="268,574" size="491,30" font="Regular; 24" backgroundColor="background" transparent="1" foregroundColor="titulos" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
+
+		<!-- Date/Time top left of bar -->
+
+		<panel position="38,574" size="164,50" >
+			<panel name="InfoBarClock" />
+		</panel>
+
 		<!--	Channellogo (Picon) -->
-		<widget source="session.CurrentService" render="Picon" position="50,575" size="100,60" transparent="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Picon" position="50,625" size="100,60" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
-		</widget>
-		<!--	Service number -->
-		<widget source="session.CurrentService" render="Label" position="35,645" size="130,42" halign="center" font="Regular; 40" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2" valign="top" text="23:24">
-			<convert type="ServiceName">ServiceNumber</convert>
 		</widget>
 		<!--	Conditional Access Module (CAM) name -->
 		<!-- <widget source="session.CurrentService" render="Label" position="30,687" size="641,20" font="Regular; 15" halign="left" foregroundColor="border1" backgroundColor="background" transparent="1">
@@ -163,32 +164,27 @@
 
 		<!-- Bottom bar - info icons top right -->
 
+		<!-- Icons for Online services -->
 
-		<!-- Icons for DTV services -->
-
-		<panel position="1002,568" size="22,22" >
+		<panel position="1002,574" size="22,22" >
 			<panel name="InfoBarOnlineIcons" />
 		</panel>
 
 		<!-- Icons for DTV services -->
 
-		<panel position="1030,568" size="97,20" >
+		<panel position="1030,574" size="97,20" >
 			<panel name="InfoBarDTVIcons" />
 		</panel>
 
 		<!-- Icons for video stream state -->
 
-		<panel position="1133,568" size="136,21" >
+		<panel position="1133,574" size="136,21" >
 			<panel name="InfoBarVideoIcons" />
 		</panel>
 
-		<!--	Video resolution -->
-		<widget position="1143,605" size="50,20" source="session.CurrentService" render="Label" font="Regular;14" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
-			<convert type="ServiceInfo">VideoWidth</convert>
-		</widget>
-		<eLabel position="1194,605" size="15,20" text="x" font="Regular; 14" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="1" />
-		<widget position="1210,605" size="50,20" source="session.CurrentService" render="Label" font="Regular;14" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
-			<convert type="ServiceInfo">VideoHeight</convert>
+		<!--	Video Info -->
+		<widget position="1143,608" size="115,20" source="session.CurrentService" render="Label" font="Regular;14" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1">
+			<convert type="ServiceInfo">VideoInfo</convert>
 		</widget>
 
 		<!--	Digital broadcast type / tranponder info  -->
@@ -200,14 +196,14 @@
 		<!-- Current event information -->
 
 		<!--	Start & end time -->
-		<widget source="session.Event_Now" render="Label" position="175,615" size="73,28" halign="right" font="Regular; 21" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
+		<widget source="session.Event_Now" render="Label" position="192,615" size="56,28" halign="left" font="Regular; 21" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
 			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<eLabel text="-" position="248,615" size="20,28" halign="center" font="Regular; 21" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" valign="center" />
 		<widget source="session.Event_Now" render="Label" position="268,615" size="73,28" halign="left" font="Regular; 21" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
 			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Default</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 
 		<!--	Event name -->
@@ -230,14 +226,14 @@
 		<!-- Next event information -->
 
 		<!--	Start & end time -->
-		<widget source="session.Event_Next" render="Label" position="175,653" size="73,28" halign="right" font="Regular; 21" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget source="session.Event_Next" render="Label" position="192,653" size="56,28" halign="left" font="Regular; 21" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<eLabel text="-" position="248,653" size="20,28" halign="center" font="Regular; 21" foregroundColor="foreground" backgroundColor="background" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" />
 		<widget source="session.Event_Next" render="Label" position="268,653" size="73,28" halign="left" font="Regular; 21" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Default</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 
 		<!--	Event name -->
@@ -458,75 +454,66 @@
 		<!-- Bottom infobar backgrounds and trim -->
 
 		<!--	Top edge fading towards the top -->
-		<ePixmap position="0,548" size="1280,17" pixmap="easy-skin-aus-hd/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<ePixmap position="0,603" size="1280,17" pixmap="easy-skin-aus-hd/infobar/sombranewarr-fs8.png" zPosition="-1" />
 		<!--	Middle section, eLabel just used for fill colour -->
-		<eLabel position="0,565" size="1280,72" zPosition="-1" backgroundColor="abackground" transparent="0" />
+		<eLabel position="0,620" size="1280,17" zPosition="-1" backgroundColor="abackground" transparent="0" />
 		<!--	Bottom section fading towards the bottom -->
 		<ePixmap position="0,637" size="1280,83" pixmap="easy-skin-aus-hd/navy_fondo-fs8.png" zPosition="-1" alphatest="on" />
 
+		<!-- Date/Time top left of bar -->
+		<panel position="38,635" size="164,50" >
+			<panel name="InfoBarClock" />
+		</panel>
+
 		<!--	Recording name -->
-		<widget source="session.CurrentService" render="Label" position="0,580" size="1280,30" font="Named;22" halign="center" valign="center" noWrap="1" backgroundColor="black" transparent="1" foregroundColor="white">
+		<widget source="session.CurrentService" render="Label" position="270,630" size="740,30" font="Named;22" halign="center" valign="center" noWrap="1" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 
-		<!-- Status icons -->
-
-		<!-- Icons for video stream state -->
-
-		<panel position="92,619" size="136,21" >
-			<panel name="InfoBarVideoIcons" />
-		</panel>
-
 		<!--	Playback state icon -->
-		<widget name="statusicon" position="620,615" size="20,20" alphatest="on" pixmaps="easy-skin-aus-hd/icons/play.png,easy-skin-aus-hd/icons/pause.png,easy-skin-aus-hd/icons/stop.png,easy-skin-aus-hd/icons/forward.png,easy-skin-aus-hd/icons/backward.png,easy-skin-aus-hd/icons/slow.png,easy-skin-aus-hd/icons/blank.png" />
+		<widget name="statusicon" position="230,658" size="20,20" alphatest="on" pixmaps="easy-skin-aus-hd/icons/play.png,easy-skin-aus-hd/icons/pause.png,easy-skin-aus-hd/icons/stop.png,easy-skin-aus-hd/icons/forward.png,easy-skin-aus-hd/icons/backward.png,easy-skin-aus-hd/icons/slow.png,easy-skin-aus-hd/icons/blank.png" />
 
 		<!-- Playback speed indicator -->
-		<widget name="speed" position="650,615" size="120,20" font="Regular;16" halign="left" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
-
-		<!-- "Recording" icon, shown when there is an active recording -->
-		<widget position="1040,620" size="36,36" source="session.RecordState" render="Pixmap" pixmap="infobar/ico_rec.png" alphatest="blend">
-			<convert type="ConditionalShowHide"/>
-		</widget>
+		<widget name="speed" position="205,680" size="45,20" font="Regular;16" halign="right" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
 
 		<!--	Playback progress bar -->
-		<eLabel position="270,650" size="740,18" backgroundColor="darkergrey"/>
-		<widget position="270,651" size="740,16" source="session.CurrentService" render="PositionGauge" pointer="pointer_blue.png:3,3" foregroundColor="darkgrey" transparent="1" zPosition="1">
+		<eLabel position="260,660" size="760,18" backgroundColor="darkergrey"/>
+		<widget position="260,661" size="760,16" source="session.CurrentService" render="PositionGauge" pointer="pointer_blue.png:3,3" foregroundColor="darkgrey" transparent="1" zPosition="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 
 		<!--	Playback progress position -->
-		<widget position="270,670" size="130,20" source="session.CurrentService" halign="left" valign="top" render="Label" font="Regular;18" backgroundColor="black" shadowColor="black" shadowOffset="-1,-1" transparent="1">
+		<widget position="270,680" size="130,20" source="session.CurrentService" halign="left" valign="top" render="Label" font="Regular;18" backgroundColor="black" shadowColor="black" shadowOffset="-1,-1" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 
 		<!--	Recording length -->
-		<widget position="550,670" size="180,20" source="session.CurrentService" halign="center" valign="top" render="Label" font="Regular;18" backgroundColor="black" transparent="1">
+		<widget position="550,680" size="180,20" source="session.CurrentService" halign="center" valign="top" render="Label" font="Regular;18" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 
 		<!--	Playback time remaining -->
-		<widget position="880,670" size="130,20" source="session.CurrentService" halign="right" valign="top" render="Label" font="Regular;18" backgroundColor="black" transparent="1">
+		<widget position="890,680" size="130,20" source="session.CurrentService" halign="right" valign="top" render="Label" font="Regular;18" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 
-		<!--	Video resolution -->
-		<widget position="80, 670" size="70,20" source="session.CurrentService" font="Regular;16" halign="right" render="Label" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ServiceInfo">VideoWidth</convert>
-		</widget>
-		<eLabel position="150, 670" size="15,20" text="x" font="Regular;16" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1"/>
-		<widget position="165, 670" size="70,20" source="session.CurrentService" font="Regular;16" halign="left" render="Label" foregroundColor="white" backgroundColor="black" transparent="1">
-			<convert type="ServiceInfo">VideoHeight</convert>
+		<!-- Status icons -->
+
+		<!-- "Recording" icon, shown when there is an active recording -->
+		<widget position="1057,630" size="36,36" source="session.RecordState" render="Pixmap" pixmap="infobar/ico_rec.png" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
 		</widget>
 
-		<!-- Clock  -->
-		<widget position="1080,640" size="160,28" source="global.CurrentTime" render="Label" font="Regular;24" halign="center" foregroundColor="twhite" backgroundColor="transpBlack" transparent="1">
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
-		</widget>
-		<widget position="1080,670" size="164,20" source="global.CurrentTime" render="Label" font="Regular;16" halign="center" foregroundColor="titulos" backgroundColor="transpBlack" transparent="1">
-			<convert type="ClockToText">Format:%d %b %Y</convert>
+		<!-- Icons for video stream state -->
+		<panel position="1133,635" size="136,21" >
+			<panel name="InfoBarVideoIcons" />
+		</panel>
+
+		<!--	Video Info -->
+		<widget position="1124,670" size="136,20" source="session.CurrentService" font="Regular;16" halign="right" render="Label" foregroundColor="white" backgroundColor="black" transparent="1">
+			<convert type="ServiceInfo">VideoInfo</convert>
 		</widget>
 	</screen>
-
 
 	<screen name="DVDPlayer" flags="wfNoBorder" position="0, 0" size="1280,720" title="DVDPlayer" backgroundColor="transparent">
 		<!-- Background -->
@@ -572,7 +559,6 @@
 		</widget>
 		<widget name="subtitleLabel" position="920, 645" size="48,22" font="Regular;18" backgroundColor="black" shadowColor="#1d354c" shadowOffset="-1,-1" transparent="1" valign="bottom"/>
 	</screen>
-
 
       <!-- Radio infobar -->
 	<screen flags="wfNoBorder" name="RadioInfoBar" position="150,180" size="480,390" title="Radio" zPosition="2">
