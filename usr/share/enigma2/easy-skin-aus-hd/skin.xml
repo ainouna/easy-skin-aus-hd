@@ -343,7 +343,7 @@
 		<widget source="session.CurrentService" render="Label" position="585, 80" size="625, 20" font="Named;18" halign="center" backgroundColor="black" foregroundColor="grey" transparent="1" zPosition="3">
 			<convert type="ServiceName">Provider</convert>
 		</widget>-->
-		<widget source="ServiceEvent" render="Label" position="50, 146" zPosition="1" size="526, 22" font="Named; 21" halign="center" foregroundColor="white" transparent="1" backgroundColor="black">
+		<widget source="ServiceEvent" render="Label" position="50, 140" zPosition="1" size="526, 26" font="Named; 21" halign="center" foregroundColor="white" transparent="1" backgroundColor="black">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="50, 211" zPosition="1" size="526, 25" font="Named; 21" halign="center" transparent="1" foregroundColor="white" backgroundColor="black">
