@@ -44,7 +44,7 @@
 	<screen name="MyTubeVideoHelpScreen" position="300,90" size="680,570" title="MyTubePlayerHelpScreen...">
 		<widget name="detailtext" position="10,10" size="660, 500" zPosition="3" font="Regular;22" transparent="1" halign="left" valign="top"/>
 		<eLabel position="0,518" size="680,2" backgroundColor="crypt_emm"/>
-		<widget position=" 50,525" size="200,36" name="key_red" font="Regular;20" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/> &gt;
+		<widget position=" 50,525" size="200,36" name="key_red" font="Regular;20" foregroundColor="red" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="3"/>
 		<ePixmap position="570,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
 		<widget name="title" position="0,0" size="0,0"/>
 	</screen>
@@ -80,7 +80,7 @@
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/buttons/button_200x60_red.png" position=" 80,525" size="200,60" zPosition="1"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position=" 80,525" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<ePixmap position="980,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
-		<widget name="thumbnail" position="0,0" size="180,135" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
+		<widget name="thumbnail" position="0,0" size="180,135" alphatest="on"/> <!-- fake entry for dynamic thumbnail resizing, currently there is no other way doing this. -->
 	</screen>
 	<screen name="MyTubeSettingsScreen" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="MyTubeSettingsScreen">
 		<panel name="FullScreenWindow" />
@@ -139,7 +139,7 @@
 				}
 				</convert>
 		</widget>
-		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
+		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> <!-- fake entry for dynamic thumbnail resizing, currently there is no other way doing this. -->
 		<widget name="HelpWindow" position="122,365" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="MyTubeSuggestionsListScreen" position="70,70" backgroundColor="background" zPosition="6" size="505,280" flags="wfNoBorder">
