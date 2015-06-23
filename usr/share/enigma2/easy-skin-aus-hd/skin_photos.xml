@@ -90,7 +90,7 @@
 			}
 			</convert>
 		</widget>
-		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
+		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> <!-- fake entry for dynamic thumbnail resizing, currently there is no other way doing this. -->
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
 
 		<widget name="count" position="25,585" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
