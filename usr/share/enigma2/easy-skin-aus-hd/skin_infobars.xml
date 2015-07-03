@@ -407,8 +407,15 @@
 		</widget>
 
 		<!-- Event extended description -->
-		<widget position="20,112" size="560,330" source="session.Event_Now" render="Label" font="Regular; 19" valign="top" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget position="20,112" size="560,306" source="session.Event_Now" render="Label" font="Regular; 19" valign="top" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<!-- Event Rating and Genre Area -->
+		<widget source="session.Event_Now" render="Label" position="20,428" size="80,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" transparent="1">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="110,428" size="470,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" halign="right" transparent="1">
+			<convert type="EventName">Genre,Country=AUS</convert>
 		</widget>
 	</screen>
 
@@ -443,8 +450,15 @@
 		</widget>
 
 		<!-- Event extended description -->
-		<widget position="20,112" size="500,330" source="session.Event_Next" render="Label" font="Regular; 18" valign="top" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget position="20,112" size="500,306" source="session.Event_Next" render="Label" font="Regular; 18" valign="top" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<!-- Event Rating and Genre Area -->
+		<widget source="session.Event_Next" render="Label" position="20,428" size="80,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" transparent="1">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="110,428" size="410,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" halign="right" transparent="1">
+			<convert type="EventName">Genre,Country=AUS</convert>
 		</widget>
 	</screen>
 
