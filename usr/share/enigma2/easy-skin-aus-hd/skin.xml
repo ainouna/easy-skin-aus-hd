@@ -361,8 +361,14 @@
 		<widget source="ServiceEvent" render="Progress" position="137, 183" zPosition="1" pixmap="easy-skin-aus-hd/progress.png" size="350, 8" borderWidth="1" borderColor="uncccccc">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="55, 245" zPosition="1" size="521, 324" font="Regular; 20" transparent="1" backgroundColor="black" foregroundColor="grey">
-			<convert type="EventName">ExtendedDescription</convert>
+		<widget source="ServiceEvent" render="Label" position="50,246" size="80,24" backgroundColor="black" font="Named;20" foregroundColor="grey" transparent="1">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="130,246" size="446,24" backgroundColor="black" font="Named;18" foregroundColor="grey" halign="right" transparent="1">
+			<convert type="EventName">Genre,Country=AUS</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="50, 280" zPosition="1" size="526, 299" font="Regular; 20" transparent="1" backgroundColor="black" foregroundColor="grey">
+			<convert type="EventName">FullDescription</convert>
 		</widget>
 
 		<ePixmap position="50, 597" size="15, 10" pixmap="easy-skin-aus-hd/icons/icon_event.png" alphatest="on"/>
@@ -451,7 +457,16 @@ self.autoResize()
 		<widget name="channel" position="90, 105" size="340,25" font="Named; 20" backgroundColor="black" transparent="1" foregroundColor="white"/>
 		<widget name="datetime" position="430, 105" size="340,25" font="Named; 20" halign="center" backgroundColor="black" transparent="1" foregroundColor="white"/>
 		<widget name="duration" position="770, 105" size="340,25" font="Named; 20" halign="right" backgroundColor="black" transparent="1" foregroundColor="white"/>
-		<widget name="epg_description" position="90, 160" size="1040, 445" font="Regular; 23" backgroundColor="background" transparent="1" foregroundColor="white"/>
+		<widget name="epg_description" position="90, 160" size="1040, 416" font="Regular; 23" backgroundColor="background" transparent="1" foregroundColor="white"/>
+		<widget source="Event" render="Label" position="90,595" size="50,20" font="Regular;18" foregroundColor="white" transparent="1">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget source="Event" render="Label" position="140,595" size="500,20" font="Regular;18" foregroundColor="white" transparent="1">
+			<convert type="EventName">Rating</convert>
+		</widget>
+		<widget source="Event" render="Label" position="650,595" size="480,20" font="Regular;18" foregroundColor="white" halign="right" transparent="1">
+			<convert type="EventName">Genre,Country=AUS</convert>
+		</widget>
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel"/>
 		<panel name="FullscreenInfoButtonPanel" />
