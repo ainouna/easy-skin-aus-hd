@@ -70,7 +70,7 @@
 	<screen backgroundColor="background" flags="wfNoBorder" name="Menu" position="0,0" size="1280,720" title="Information">
 		<panel name="FullScreenWindow" />
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_tv.png" position="200,100" size="300,500" zPosition="2" />
-		<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
+			<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu_information" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
 				"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
@@ -237,23 +237,6 @@
 			<panel name="ServiceInfoWidget" />
 		</panel>
 		<panel name="FullScreenColourPanel" />
-	</screen>
-
-<!-- ??? Menu -->
-
-	<screen backgroundColor="background" flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" title="Main Menu">
-		<panel name="FullScreenWindow" />
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="250,155" size="300,470" zPosition="2" />
-		<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{
-				"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (415, 10), size = (50, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4) ],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
 	</screen>
 
 <!-- ??? Screen -->
