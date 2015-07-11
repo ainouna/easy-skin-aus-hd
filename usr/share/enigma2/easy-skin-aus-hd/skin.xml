@@ -365,7 +365,7 @@
 			<convert type="EventName">SmallRating</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="130,246" size="446,24" backgroundColor="black" font="Named;18" foregroundColor="grey" halign="right" transparent="1">
-			<convert type="EventName">Genre,Country=AUS</convert>
+			<convert type="EventName">Genre</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="50, 280" zPosition="1" size="526, 299" font="Regular; 20" transparent="1" backgroundColor="black" foregroundColor="grey">
 			<convert type="EventName">FullDescription</convert>
@@ -465,7 +465,7 @@ self.autoResize()
 			<convert type="EventName">Rating</convert>
 		</widget>
 		<widget source="Event" render="Label" position="650,595" size="480,20" font="Regular;18" foregroundColor="white" halign="right" transparent="1">
-			<convert type="EventName">Genre,Country=AUS</convert>
+			<convert type="EventName">Genre</convert>
 		</widget>
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel"/>
