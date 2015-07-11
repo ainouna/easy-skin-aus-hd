@@ -415,7 +415,7 @@
 			<convert type="EventName">SmallRating</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="110,428" size="470,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" halign="right" transparent="1">
-			<convert type="EventName">Genre,Country=AUS</convert>
+			<convert type="EventName">Genre</convert>
 		</widget>
 	</screen>
 
@@ -458,7 +458,7 @@
 			<convert type="EventName">SmallRating</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="110,428" size="410,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" halign="right" transparent="1">
-			<convert type="EventName">Genre,Country=AUS</convert>
+			<convert type="EventName">Genre</convert>
 		</widget>
 	</screen>
 

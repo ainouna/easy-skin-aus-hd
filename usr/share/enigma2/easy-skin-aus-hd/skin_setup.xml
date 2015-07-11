@@ -69,7 +69,7 @@
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" title="Information">
 		<panel name="FullScreenWindow" />
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_tv.png" position="200,100" size="300,500" zPosition="2" />
+		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="200,100" size="300,500" zPosition="2" />
 		<widget backgroundColor="#41000000" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{

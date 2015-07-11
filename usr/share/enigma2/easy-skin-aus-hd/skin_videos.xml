@@ -210,7 +210,7 @@
 		</widget>
 		<widget position="1118,600" size="35,20" name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="on" />
 		<widget source="Service" render="Label" position="780,520" size="460,20" font="Regular;18" foregroundColor="grey" transparent="1" zPosition="1">
-			<convert type="EventName">Genre,Country=AUS</convert>
+			<convert type="EventName">Genre</convert>
 		</widget>
 		<widget source="Service" render="Label" position="780,550" size="80,20" font="Regular;18" foregroundColor="grey" transparent="1" zPosition="1">
 			<convert type="EventName">SmallRating</convert>
