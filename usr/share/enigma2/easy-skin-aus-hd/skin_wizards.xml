@@ -4,7 +4,6 @@
 	  | LanguageWizard and TutorialWizard
 	  -->
 	<screen flags="wfNoBorder" name="WizardTemplate" backgroundColor="background" position="0,0" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>
 		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
 		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -74,7 +73,6 @@
 
 	<!-- Language Wizard -->
 	<screen flags="wfNoBorder" backgroundColor="background" name="LanguageWizard" position="0,0" size="1280,720" title="Language selection">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>
 		<eLabel font="Regular;28" position="675,40" size="485,35" text="Language Selection" transparent="1" zPosition="2"/>
 		<eLabel backgroundColor="white" position="665,80" size="470,2" zPosition="2"/>
 		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
@@ -114,7 +112,6 @@
 
 	<!-- Tutorial Wizard -->
 	<screen flags="wfNoBorder" backgroundColor="background" name="TutorialWizard" position="0,0" size="1280,720" title="Welcome...">
-		<eLabel backgroundColor="black" position="0,0" size="1280,720" zPosition="-1"/>
 		<eLabel font="Regular;28" position="675,40" size="485,35" text="Welcome..." transparent="1" zPosition="2"/>
 		<ePixmap pixmap="easy-skin-aus-hd/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
