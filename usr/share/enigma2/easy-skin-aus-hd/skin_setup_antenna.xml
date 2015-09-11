@@ -4,13 +4,13 @@
 	  <!--<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_tv.png" position="55, 155" size="300,500"/>-->
 		<panel name="SetupCommon" />
 		<widget name="text" position="60,130" size="380,170"  font="Regular;20" halign="center" transparent="1" valign="top" zPosition="2"/>
-		<widget name="config" position="590,100" size="618,512" itemHeight="32" font="Regular;24" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_605x32.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget name="config" position="590,100" size="618,512" itemHeight="32" font="Regular;24" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>  
 	<!-- Tuner Configuration -->
 	<screen name="NimSelection" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Choose Tuner">
 		<panel name="FullScreenWindow" />  
 		<panel name="FullScreenColourPanel" />
-		<widget enableWrapAround="1" position="650,195" render="Listbox" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_515x120.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" size="525,400" source="nimlist" transparent="1" zPosition="2">
+		<widget enableWrapAround="1" position="650,195" render="Listbox" scrollbarMode="showOnDemand" size="525,400" source="nimlist" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 5), size = (390, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
@@ -28,7 +28,7 @@
 	<screen flags="wfNoBorder" name="NimSetup" position="0, 0" size="1280, 720" backgroundColor="un44000000" title="Reception Settings">
 		<panel name="FullScreenWindow" />  
 		<panel name="FullScreenColourPanel" />
-		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>	
+		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>	
 		<ePixmap position="55, 155" size="300, 500" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_system.png"/>	
 	</screen>
 	<!-- Automatic Scan -->
@@ -59,7 +59,7 @@
 		<eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm" zPosition="1"/>
 		<widget name="header" position="890, 80" size="320, 22" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x400.png" position="150,195" size="400,400"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/icons/dish_scan.png" position="220,250" size="119,110" transparent="1" zPosition="1"/>
 		<widget font="Regular;23" name="introduction" position="350,260" size="90,30" transparent="1" zPosition="2"/>
@@ -162,7 +162,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
+		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
 		<ePixmap alphatest="on" name="textborder" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="2"/>
 		<widget font="Regular;24" halign="center" name="introduction" position="170,270" size="360,50" transparent="1" zPosition="3"/>		
 		<eLabel position="50, 625" size="1160, 1" backgroundColor="crypt_emm"/>

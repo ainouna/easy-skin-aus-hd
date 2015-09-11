@@ -4,7 +4,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenHelpButtonPanel" />
-		<widget position="55, 160" size="710, 415" name="menulist" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColorSelected="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 160" size="710, 415" name="menulist" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="55, 155" size="1100, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<widget source="description" render="Label" position="825, 180" size="300, 420" font="Regular;19" halign="center" valign="center" backgroundColor="black" transparent="1"/>
@@ -22,7 +22,7 @@
 		<widget name="HelpWindow" position="848,338" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel position="55, 155" size="1100, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
-		<widget position="55, 160" size="710, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 160" size="710, 415" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget source="DNS1text" render="Label" position="865, 370" size="250, 22" zPosition="1" font="Regular;20" halign="center" foregroundColor="transpBlack" backgroundColor="grey"/>
 		<widget source="DNS2text" render="Label" position="865, 440" size="250, 22" zPosition="1" font="Regular;20" halign="center" foregroundColor="transpBlack" backgroundColor="grey"/>
 		<widget source="DNS1" render="Label" position="865, 400" size="250, 22" zPosition="1" font="Regular;20" halign="center"/>
@@ -213,7 +213,7 @@
 	<screen name="AutoMountManager" backgroundColor="un44000000" position="0,0" size="1280,720" flags="wfNoBorder" title="Mount Manager">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget source="config" render="Listbox" position="55, 120" size="740,420" zPosition="10" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_730x70.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
+		<widget source="config" render="Listbox" position="55, 120" size="740,420" zPosition="10" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
 		<convert type="TemplatedMultiContent">
 					    {"template": [
 							    MultiContentEntryText(pos = (60, 10), size = (580, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
@@ -263,7 +263,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenVKeyIconButtonPanel"/>		
-		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>
 		<widget source="introduction" render="Label" position="55, 575" size="740, 30" zPosition="10" font="Regular;24" halign="center" transparent="1"/>
@@ -294,7 +294,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenVKeyIconButtonPanel"/>		
-		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>
 		<widget source="introduction" render="Label" position="55, 575" size="740, 30" zPosition="10" font="Regular;24" halign="center" transparent="1"/>
@@ -303,7 +303,7 @@
 	</screen> 
 	<screen name="NetworkBrowser" position="0,0" backgroundColor="background" size="1280,720" flags="wfNoBorder" title="Network Neighbourhood">
 		<panel name="FullScreenWindow" />
-		<widget source="list" render="Listbox" position="55, 120" size="740,420" zPosition="10" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_730x70.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1">
+		<widget source="list" render="Listbox" position="55, 120" size="740,420" zPosition="10" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 					      {"template": [
 							      MultiContentEntryPixmapAlphaTest(pos = (10, 11), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
@@ -325,19 +325,19 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 150" size="610, 435" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="590, 150" size="610, 435" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>	
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Network Setup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenHelpButtonPanel" />
-		<widget position="55, 160" size="710, 415" name="menulist" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 160" size="710, 415" name="menulist" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget source="introduction" render="Label" position="c-385, 470" size="740, 30" zPosition="10" font="Regular; 24" halign="center" valign="center" backgroundColor="un9f1313" transparent="1"/>
 	</screen>	
 	<screen name="NetworkSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Network Setup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget position="55, 160" size="710, 415" name="menu" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_700x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="55, 160" size="710, 415" name="menu" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="815,100" size="2,518" backgroundColor="crypt_emm"/>
 		<eLabel position="55,618" size="1100,2" backgroundColor="crypt_emm"/>
 		<eLabel position="55,100" size="1100,2" backgroundColor="crypt_emm"/>
