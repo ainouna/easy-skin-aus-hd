@@ -22,7 +22,7 @@
 	<screen name="LanguageSelection" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Language selection" >
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget enableWrapAround="1" position="710, 140" render="Listbox" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_380x50.png" backgroundColor="#41000000"  scrollbarMode="showOnDemand" size="395,430" source="languages" transparent="1" zPosition="2">
+		<widget enableWrapAround="1" position="710, 140" render="Listbox" backgroundColor="#41000000"  scrollbarMode="showOnDemand" size="395,430" source="languages" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,

@@ -4,7 +4,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
-		<widget name="list" position="510, 130" size="700, 480" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" backgroundColorSelected="#41000000" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="510, 130" size="700, 480" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap position="55, 155" size="300, 500" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup_plugin.png"/>
 	</screen>
 	<!-- Plugin Browser Download / Remove -->
