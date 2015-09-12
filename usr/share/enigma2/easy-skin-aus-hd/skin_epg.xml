@@ -191,7 +191,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget position="590, 170" size="610, 410" name="config" itemHeight="50" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget position="590, 170" size="610, 410" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,195" size="400,200"/>
 		<widget font="Regular;20" halign="center" name="information" position="100,210" size="300,160" transparent="1" valign="center" zPosition="2"/>
 	</screen>
@@ -200,7 +200,7 @@
 		<panel name="FullScreenColourPanel" />
 		<eLabel backgroundColor="#009f1313" font="Regular;20" halign="center" text="Exit" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
+		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (0, 5), size = (0, 0), png = 0),
@@ -216,7 +216,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
+		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (35, 10), size = (400, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -232,7 +232,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
-		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_595x50.png" backgroundColor="#41000000" transparent="1" zPosition="2">
+		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (35, 0), size = (520, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),

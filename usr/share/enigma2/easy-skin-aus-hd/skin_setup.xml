@@ -2,38 +2,36 @@
 	<screen name="SetupCommon">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
+		<ePixmap position="55,120" size="390,180" borderColor="grey" borderWidth="2" transparent="1"/>
+		<widget name="description" position="60,125" size="380,170" font="Regular;18" halign="center" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<screen name="SetupTextHelp">
 		<panel name="FullscreenVKeyIconButtonPanel"/>
-		<widget name="HelpWindow" position="50,335" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" position="50,335" zPosition="1" size="400,200" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="SetupConfig">
-		<widget name="config" position="510, 100" size="720, 500" itemHeight="50" backgroundColor="background" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget name="config" position="510, 120" size="720, 450" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<!-- General Setup Screen -->
 	<screen name="GeneralSetup" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Setup" >
-		<panel name="FullScreenWindow" />
-		<panel name="FullScreenColourPanel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,115" size="400,200" />
-		<widget name="description" position="60,130" size="380,170" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget name="list" position="500, 120" size="400, 500" itemHeight="50" backgroundColor="background" scrollbarMode="showOnDemand" transparent="1" />
-		<widget name="sublist" position="920,125" size="300,450" itemHeight="45" backgroundColor="background" scrollbarMode="showOnDemand" transparent="1"/>
-		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_320x495.png" position="910,110" size="400,495" zPosition="-1" alphatest="on" />
+		<panel name="SetupCommon" />
+		<ePixmap position="480, 120" size="410, 460" borderColor="blue" borderWidth="2" transparent="1" />
+		<widget name="list" position="485, 125" size="400, 450" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" />
+		<ePixmap position="900,120" size="330,460" borderColor="blue" borderWidth="2" transparent="1" />
+		<widget name="sublist" position="905,125" size="320,450" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<!-- Setup -->
-	<screen name="Setup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
+	<screen name="Setup" position="0,0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Setup">
 		<panel name="SetupCommon" />
 		<panel name="SetupTextHelp" />
 		<panel name="SetupConfig"/>
-		<widget name="footnote" position="1,1" zPosition="1" size="1,1" transparent="1"/>
-		<widget name="description" position="60,130" size="380,170"  font="Regular;18" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="footnote" position="510,580" size="720,25" font="Regular;14" foregroundColor="grey" zPosition="1" transparent="1"/>
 	</screen>
 	<!-- Power / Restart and Information Menu Screens -->
 	<!-- Power / Restart (MENU > Power) Menu -->
 	<screen backgroundColor="background" flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1280,720" title="Power / Restart">
 		<panel name="FullScreenWindow" />
-		<widget backgroundColor="background" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
+		<widget backgroundColor="background" position="665,115" render="Listbox" scrollbarMode="showOnDemand" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
 				"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
@@ -70,7 +68,7 @@
 	<screen backgroundColor="background" flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" title="Information">
 		<panel name="FullScreenWindow" />
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_info.png" position="200,100" size="300,500" zPosition="2" />
-		<widget backgroundColor="background" position="665,115" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="easy-skin-aus-hd/menu/on_main_menu_485x50.png" size="500,500" source="menu" transparent="1">
+		<widget backgroundColor="background" position="665,115" render="Listbox" scrollbarMode="showOnDemand" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
 				"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
