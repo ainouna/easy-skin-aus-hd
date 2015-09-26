@@ -172,8 +172,6 @@
 	<include filename="easy-skin-aus-hd/skin_epg.xml"/>
 
 	<screen position="0,150" size="1280,570" flags="wfNoBorder" name="GeneralMenu">
-		<widget position="40,25" size="1200,25" name="title" font="Regular;22"  zPosition="2" transparent="1" foregroundColors="#555555,#999999" />
-
 		<widget position="0,10" size="1280,180" source="id_mainmenu_ext" render="Micon" path="easy-skin-aus-hd/gmenu/" alphatest="on" zPosition="2" transparent="1" />
 		<widget position="0,210" size="1280,76" name="list" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
 		
