@@ -176,14 +176,6 @@
 		
 		<widget position="40,25" size="1200,25" name="title" font="Regular;22"  zPosition="2" transparent="1" foregroundColors="#555555,#999999" />
 
-		<widget position="22,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_0" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="200,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_1" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="378,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_2" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="556,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_3" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="734,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_4" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="912,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_5" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="1090,20" size="150,150" source="id_mainmenu_plugins_tumb_ext_6" render="Micon" pixmap="easy-skin-aus-hd/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		
 		<widget position="0,10" size="1280,180" source="id_mainmenu_ext" render="Micon" path="easy-skin-aus-hd/gmenu/" alphatest="on" zPosition="2" transparent="1" />
 		<widget position="0,210" size="1280,76" name="list" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
 		
