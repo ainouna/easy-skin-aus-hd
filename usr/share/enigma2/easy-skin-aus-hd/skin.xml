@@ -189,19 +189,19 @@
 		      The values above are the defaults. The widget height
 		      should be 6 * itemHeight
 		-->
-		<widget position="15,200" size="250,300" name="list_sub_0" transparent="1" enableWrapAround="1"/>
-		<widget position="265,200" size="250,300" name="list_sub_1" transparent="1" enableWrapAround="1"/>
-		<widget position="515,200" size="250,300" name="list_sub_2" transparent="1" enableWrapAround="1"/>
-		<widget position="765,200" size="250,300" name="list_sub_3" transparent="1" enableWrapAround="1"/>
-		<widget position="1015,200" size="250,300" name="list_sub_4" transparent="1" enableWrapAround="1"/>
-		
+		<widget position="15,200" size="250,300" name="list_sub_0" borderWidth="1" transparent="1" enableWrapAround="1"/>
+		<widget position="265,200" size="250,300" name="list_sub_1" borderWidth="1" transparent="1" enableWrapAround="1"/>
+		<widget position="515,200" size="250,300" name="list_sub_2" borderWidth="1" transparent="1" enableWrapAround="1"/>
+		<widget position="765,200" size="250,300" name="list_sub_3" borderWidth="1" transparent="1" enableWrapAround="1"/>
+		<widget position="1015,200" size="250,300" name="list_sub_4" borderWidth="1" transparent="1" enableWrapAround="1"/>
+
 		<widget position="122,500" size="35,10" name="down_sub_0" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
 		<widget position="372,500" size="35,10" name="down_sub_1" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
 		<widget position="622,500" size="35,10" name="down_sub_2" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
 		<widget position="872,500" size="35,10" name="down_sub_3" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
 		<widget position="1122,500" size="35,10" name="down_sub_4" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
 	</screen>
-	
+
 	<!-- Generic Menu Screen -->
 	<screen name="Menu" title="Menu" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />
