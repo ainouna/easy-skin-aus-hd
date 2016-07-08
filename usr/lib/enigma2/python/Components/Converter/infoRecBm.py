@@ -136,7 +136,6 @@ class infoRecBm(Poll, Converter, object):
                             text = text[:66] + '...'
                     elif self.type == self.PROGRESO:
                         now = int(time())
-                        start_time = timer.begin
                         duration = timer.end - timer.begin
                         valor = int((int(time()) - timer.begin) * 100 / duration)
                         text = str(valor) + ' %'
@@ -170,7 +169,6 @@ class infoRecBm(Poll, Converter, object):
                 if timer.state == timer.StateRunning:
                     if self.type == self.PROGRESO:
                         now = int(time())
-                        start_time = timer.begin
                         duration = timer.end - timer.begin
                         try:
                             archivo = str(timer.Filename).replace('\n', '')
