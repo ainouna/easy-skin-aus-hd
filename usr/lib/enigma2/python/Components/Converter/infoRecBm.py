@@ -136,10 +136,12 @@ class infoRecBm(Poll, Converter, object):
                             text = text[:66] + '...'
                     elif self.type == self.PROGRESO:
                         now = int(time())
-                        start_time = timer.begin
                         duration = timer.end - timer.begin
-                        valor = int((int(time()) - timer.begin) * 100 / duration)
-                        text = str(valor) + ' %'
+                        if duration > 0:
+                            valor = int((now - timer.begin) * 100 / duration)
+                            text = str(valor) + ' %'
+                        else:
+                            text = '? %'
                     if archivo in ref or ref == str(timer.service_ref):
                         if mostrardebug:
                             os.system("echo 'break'>>/tmp/testrec.txt")
@@ -170,17 +172,14 @@ class infoRecBm(Poll, Converter, object):
                 if timer.state == timer.StateRunning:
                     if self.type == self.PROGRESO:
                         now = int(time())
-                        start_time = timer.begin
                         duration = timer.end - timer.begin
                         try:
                             archivo = str(timer.Filename).replace('\n', '')
                         except:
                             archivo = 'NA'
 
-                        valor = int((int(time()) - timer.begin) * 100 / duration)
-                        pos = valor
-                        len = 100
-                        valor = pos * 10000 / len
+                        if duration > 0:
+                            valor = 100 * int((now - timer.begin) * 100 / duration)
                         if archivo in ref or ref == str(timer.service_ref):
                             break
 
