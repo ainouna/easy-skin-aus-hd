@@ -78,7 +78,7 @@
 		<ePixmap position="110,635" size="50,35" pixmap="easy-skin-aus-hd/buttons/key_info_50x35.png" alphatest="blend" transparent="1" zPosition="11" />
 	</screen>
 	<screen name="FullscreenVKeyIconButtonPanel">
-		<widget position="1110,635" size="50,35" source="VKeyIcon" render=Pixmap" pixmap="easy-skin-aus-hd/buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="11">
+		<widget position="1110,635" size="50,35" source="VKeyIcon" render="Pixmap" pixmap="easy-skin-aus-hd/buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="11">
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
