@@ -77,7 +77,7 @@
 		<color name="progresoazul" value="#1130608f" />
 		<color name="twhite" value="#10ffffff" />
 		<color name="un22363636" value="#22363636" />
-		<color name="abackground" value="#1300070d" />
+		<color name="abackground" value="#1900070d" />
 	</colors>
 	<fonts>
 		<font filename="ds_digital.ttf" name="LCD" scale="100"/>
