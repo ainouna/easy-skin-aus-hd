@@ -463,7 +463,7 @@
 	</screen>
 
 
-	<screen name="MoviePlayer" position="0,603" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder" >
+	<screen name="MoviePlayer" position="0,603" size="1280,117" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder" >
 		<!-- Bottom infobar backgrounds and trim -->
 
 		<!--	Top edge fading towards the top -->
@@ -471,7 +471,7 @@
 		<!--	Middle section, eLabel just used for fill colour -->
 		<eLabel position="0,17" size="1280,17" zPosition="-1" backgroundColor="abackground" transparent="0" />
 		<!--	Bottom section fading towards the bottom -->
-		<ePixmap position="0,34" size="1280,83" pixmap="easy-skin-aus-hd/navy_fondo-fs8.png" zPosition="-1" alphatest="on" />
+		<ePixmap position="0,34" size="1280,83" pixmap="easy-skin-aus-hd/navy_fondo-fs8.png" zPosition="-1" />
 
 		<!-- Date/Time top left of bar -->
 		<panel position="38,32" size="164,50" >
