@@ -14,7 +14,7 @@
 		<widget source="session.CurrentService" render="Label" font="Regular; 18" position="172, 665" size="57, 20" halign="left" transparent="1" foregroundColor="white" backgroundColor="black">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
-		<ePixmap position="1100, 593" size="100,40" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MyTube/plugin.png" alphatest="on" transparent="1"/>
+		<ePixmap position="1100, 593" size="100,40" zPosition="1" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
 		<widget source="global.CurrentTime" render="Label" position="1088, 641" size="120, 26" font="Named; 21" valign="top" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ClockToText">Default</convert>
 		</widget>
