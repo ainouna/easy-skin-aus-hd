@@ -33,7 +33,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap position="95, 135" size="300, 500" pixmap="easy-skin-aus-hd/menu/mainmenu_tv_channel.png"/>
+		<ePixmap position="95, 135" size="300, 500" pixmap="menu/mainmenu_tv_channel.png"/>
 	</screen> 
 	<!-- Time Settings same as Setup Screen-->
 	<!-- Front Panel Settings same as Setup Screen-->
